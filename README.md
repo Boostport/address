@@ -54,7 +54,7 @@ func main() {
 An address may contain the following subdivisions:
 - Administrative areas, such as a state, province, island, etc.
 - Localities such as cities.
-- Dependent localities such as districts, surburbs, etc.
+- Dependent localities such as districts, suburbs, etc.
 
 When creating an address, certain countries have a pre-defined list of administrative areas, localities and dependent localities.
 In these cases, you **MUST** use the appropriate key when calling `WithAdministrativeArea()`, `WithLocality()` and `WithDependentLocality()`,
@@ -239,7 +239,7 @@ func main() {
 ```
 
 ## Address Data Format
-In a lot of cases, you might need to diplay a form to the user to enter their address.
+In a lot of cases, you might need to display a form to the user to enter their address.
 
 There is the `ListCountries()` method to get a list of available countries in your chosen language
 and the `GetCountry()` method to get detailed address format information for a given country.
@@ -262,7 +262,7 @@ type CountryData struct {
 ```
 
 The `Format` and `LatinizedFormat` fields are in Google's original formats (ex: `%O%n%N%n%A%n%C %S %Z` for Australia).
-A description of what the tokens represent is avaiable [here](https://github.com/googlei18n/libaddressinput/wiki/AddressValidationMetadata).
+A description of what the tokens represent is available [here](https://github.com/googlei18n/libaddressinput/wiki/AddressValidationMetadata).
 
 `Required` and `Allowed` represent fields that are required and allowed (not all allowed fields are required). The `Field` type
 can be converted to Google's token name by calling the `Key()` method.
