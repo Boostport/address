@@ -12,7 +12,7 @@ build:
     - script:
         name: install code climate
         code: |
-          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          wget -O cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
           chmod +x ./cc-test-reporter
           ./cc-test-reporter before-build
 
@@ -35,5 +35,4 @@ build:
     - script:
         name: send results to code climate
         code: |
-          echo $GO_TEST_EXIT_CODE
           ./cc-test-reporter after-build --exit-code $GO_TEST_EXIT_CODE
