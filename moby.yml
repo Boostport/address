@@ -1,0 +1,15 @@
+dev:
+  image: golang:1.10-alpine
+
+  steps:
+    - type: script
+      name: Set up workspace
+      options:
+        command: mkdir -p "$GOPATH/src/github.com/Boostport" && ln -s /source $GOPATH/src/github.com/Boostport/address
+
+  reload:
+    - type: script
+      name: Run tests
+      cwd: $GOPATH/src/github.com/Boostport/address
+      options:
+        command: go test -cover -coverprofile cover.out -v ./... && go tool cover -func=cover.out

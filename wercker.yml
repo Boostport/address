@@ -1,0 +1,39 @@
+box:
+  id: golang:1.10-alpine
+  cmd: /bin/sh
+
+no-response-timeout: 20
+
+build:
+  steps:
+
+    - setup-go-workspace
+
+    - script:
+        name: install code climate
+        code: |
+          curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          chmod +x ./cc-test-reporter
+          ./cc-test-reporter before-build
+
+    # Get the dependencies
+    - script:
+      name: get dependencies
+      code: |
+        apk update
+        apk add git
+        go get -u github.com/golang/dep/cmd/dep
+        dep ensure -v
+
+    # Test the project and upload
+    - script:
+        name: test
+        code: |
+          go test -coverprofile c.out ./...
+          export GO_TEST_EXIT_CODE=$?
+
+    - script:
+        name: send results to code climate
+        code: |
+          echo $GO_TEST_EXIT_CODE
+          ./cc-test-reporter after-build --exit-code $GO_TEST_EXIT_CODE
