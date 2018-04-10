@@ -121,15 +121,15 @@ func main() {
 
 	postalStringFormatter := address.PostalLabelFormatter{
 		Output:            address.StringOutputter{},
-		OriginCountryCode: "CA", // We are sending from Canada
+		OriginCountryCode: "FR", // We are sending from France
 	}
 
 	postalHTMLFormatter := address.PostalLabelFormatter{
 		Output:            address.HTMLOutputter{},
-		OriginCountryCode: "CA", // We are sending from Canada
+		OriginCountryCode: "FR", // We are sending from France
 	}
 
-	lang := "en" // Use the english names of the administrative areas, localityies and dependent localities where possible
+	lang := "en" // Use the English names of the administrative areas, localities and dependent localities where possible
 
 	fmt.Println(defStringFormatter.Format(addr, lang))
 	/* Output
