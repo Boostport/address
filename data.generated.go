@@ -25,20 +25,20 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `AD[1-7]0\d`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"06": {
-					regex: `^AD60[01]`},
-				"07": {
-					regex: `^AD50[01]`},
 				"02": {
 					regex: `^AD10[01]`},
 				"03": {
 					regex: `^AD20[01]`},
-				"08": {
-					regex: `^AD70[01]`},
 				"04": {
 					regex: `^AD40[01]`},
 				"05": {
 					regex: `^AD30[01]`},
+				"06": {
+					regex: `^AD60[01]`},
+				"07": {
+					regex: `^AD50[01]`},
+				"08": {
+					regex: `^AD70[01]`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
@@ -242,28 +242,28 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `(?:37)?\d{4}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"SH": {
-					regex: `^2[6-9]|3[01]`},
-				"SU": {
-					regex: `^3[2-5]`},
-				"VD": {
-					regex: `^3[6-8]`},
+				"AG": {
+					regex: `^0[2-5]`},
 				"AR": {
 					regex: `^0[6-8]`},
 				"AV": {
 					regex: `^09|1[01]`},
 				"ER": {
 					regex: `^00`},
-				"LO": {
-					regex: `^1[7-9]|2[01]`},
-				"AG": {
-					regex: `^0[2-5]`},
 				"GR": {
 					regex: `^1[2-6]`},
 				"KT": {
 					regex: `^2[2-5]`},
+				"LO": {
+					regex: `^1[7-9]|2[01]`},
+				"SH": {
+					regex: `^2[6-9]|3[01]`},
+				"SU": {
+					regex: `^3[2-5]`},
 				"TV": {
 					regex: `^39|4[0-2]`},
+				"VD": {
+					regex: `^3[6-8]`},
 			}},
 		Format:          "%N%n%O%n%A%n%Z%n%C%n%S",
 		LatinizedFormat: "%N%n%O%n%A%n%Z%n%C%n%S",
@@ -409,54 +409,54 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `((?:[A-HJ-NP-Z])?\d{4})([A-Z]{3})?`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"E": {
-					regex: `^E?[1-3]`},
-				"M": {
-					regex: `^M?[56]`},
-				"Z": {
-					regex: `^Z?[89]`},
-				"T": {
-					regex: `^T?[45]`},
-				"K": {
-					regex: `^K?[45]`},
-				"C": {
-					regex: `^C?1`},
-				"X": {
-					regex: `^X?[235-8]`},
-				"W": {
-					regex: `^W?3`},
-				"S": {
-					regex: `^S?[2368]`},
-				"G": {
-					regex: `^G?[2-5]`},
-				"U": {
-					regex: `^U?[89]`},
-				"P": {
-					regex: `^P?[37]`},
-				"F": {
-					regex: `^F?5`},
-				"Q": {
-					regex: `^Q?[38]`},
-				"B": {
-					regex: `^B?[1-36-8]`},
-				"Y": {
-					regex: `^Y?4`},
-				"D": {
-					regex: `^D?[4-6]`},
 				"A": {
 					regex: `^A?[34]`},
-				"J": {
-					regex: `^J?5`},
-				"V": {
-					regex: `^V?9`},
+				"B": {
+					regex: `^B?[1-36-8]`},
+				"C": {
+					regex: `^C?1`},
+				"D": {
+					regex: `^D?[4-6]`},
+				"E": {
+					regex: `^E?[1-3]`},
+				"F": {
+					regex: `^F?5`},
+				"G": {
+					regex: `^G?[2-5]`},
 				"H": {
 					regex: `^H?3`},
+				"J": {
+					regex: `^J?5`},
+				"K": {
+					regex: `^K?[45]`},
 				"L": {
 					regex: `^L?[3568]`},
+				"M": {
+					regex: `^M?[56]`},
 				"N": {
 					regex: `^N?3`},
+				"P": {
+					regex: `^P?[37]`},
+				"Q": {
+					regex: `^Q?[38]`},
 				"R": {
 					regex: `^R?[89]`},
+				"S": {
+					regex: `^S?[2368]`},
+				"T": {
+					regex: `^T?[45]`},
+				"U": {
+					regex: `^U?[89]`},
+				"V": {
+					regex: `^V?9`},
+				"W": {
+					regex: `^W?3`},
+				"X": {
+					regex: `^X?[235-8]`},
+				"Y": {
+					regex: `^Y?4`},
+				"Z": {
+					regex: `^Z?[89]`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C%n%S",
 		AllowedFields: map[Field]struct{}{
@@ -655,6 +655,12 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{4}`,
 			subdivisionRegex: map[string]postCodeRegex{
+				"ACT": {
+					regex: `^29|2540|260|261[0-8]|02|2620`},
+				"NSW": {
+					regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`},
+				"NT": {
+					regex: `^0[89]`},
 				"QLD": {
 					regex: `^[49]`},
 				"SA": {
@@ -665,12 +671,6 @@ var generated = data{
 					regex: `^[38]`},
 				"WA": {
 					regex: `^6|0872`},
-				"ACT": {
-					regex: `^29|2540|260|261[0-8]|02|2620`},
-				"NSW": {
-					regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`},
-				"NT": {
-					regex: `^0[89]`},
 			}},
 		Format: "%O%n%N%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
@@ -702,7 +702,7 @@ var generated = data{
 				},
 				{
 					ID:        "NSW",
-					Name:      "NewValid South Wales",
+					Name:      "New South Wales",
 					PostalKey: "NSW",
 				},
 				{
@@ -979,60 +979,60 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}-?\d{3}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"RO": {
-					regex: `^76[89]|789`},
-				"RR": {
-					regex: `^693`},
 				"AC": {
 					regex: `^699`},
 				"AL": {
 					regex: `^57`},
-				"PR": {
-					regex: `^8[0-7]`},
-				"PA": {
-					regex: `^6[6-7]|68[0-8]`},
-				"PI": {
-					regex: `^64`},
-				"RS": {
-					regex: `^9`},
-				"SP": {
-					regex: `^[01][1-9]`},
+				"AM": {
+					regex: `^69[0-24-8]`},
+				"AP": {
+					regex: `^689`},
+				"BA": {
+					regex: `^4[0-8]`},
 				"CE": {
 					regex: `^6[0-3]`},
 				"DF": {
 					regex: `^7[0-1]|72[0-7]|73[0-6]`},
-				"MA": {
-					regex: `^65`},
-				"RJ": {
-					regex: `^2[0-8]`},
-				"SC": {
-					regex: `^8[89]`},
-				"AP": {
-					regex: `^689`},
-				"AM": {
-					regex: `^69[0-24-8]`},
-				"BA": {
-					regex: `^4[0-8]`},
-				"PE": {
-					regex: `^5[0-6]`},
-				"SE": {
-					regex: `^49`},
-				"RN": {
-					regex: `^59`},
-				"MT": {
-					regex: `^78[0-8]`},
-				"GO": {
-					regex: `^72[89]|73[7-9]|7[4-6]`},
-				"MG": {
-					regex: `^3`},
-				"TO": {
-					regex: `^77`},
 				"ES": {
 					regex: `^29`},
+				"GO": {
+					regex: `^72[89]|73[7-9]|7[4-6]`},
+				"MA": {
+					regex: `^65`},
+				"MG": {
+					regex: `^3`},
 				"MS": {
 					regex: `^79`},
+				"MT": {
+					regex: `^78[0-8]`},
+				"PA": {
+					regex: `^6[6-7]|68[0-8]`},
 				"PB": {
 					regex: `^58`},
+				"PE": {
+					regex: `^5[0-6]`},
+				"PI": {
+					regex: `^64`},
+				"PR": {
+					regex: `^8[0-7]`},
+				"RJ": {
+					regex: `^2[0-8]`},
+				"RN": {
+					regex: `^59`},
+				"RO": {
+					regex: `^76[89]|789`},
+				"RR": {
+					regex: `^693`},
+				"RS": {
+					regex: `^9`},
+				"SC": {
+					regex: `^8[89]`},
+				"SE": {
+					regex: `^49`},
+				"SP": {
+					regex: `^[01][1-9]`},
+				"TO": {
+					regex: `^77`},
 			}},
 		Format: "%O%n%N%n%A%n%D%n%C-%S%n%Z",
 		AdministrativeAreaNameType: State,
@@ -23650,32 +23650,32 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"BC": {
-					regex: `^V`},
-				"NB": {
-					regex: `^E`},
-				"NS": {
-					regex: `^B`},
-				"PE": {
-					regex: `^C`},
-				"SK": {
-					regex: `^S|R8A`},
-				"YT": {
-					regex: `^Y`},
 				"AB": {
 					regex: `^T`},
+				"BC": {
+					regex: `^V`},
 				"MB": {
 					regex: `^R`},
+				"NB": {
+					regex: `^E`},
 				"NL": {
 					regex: `^A`},
+				"NS": {
+					regex: `^B`},
 				"NT": {
 					regex: `^X0E|X0G|X1A`},
 				"NU": {
 					regex: `^X0A|X0B|X0C`},
 				"ON": {
 					regex: `^K|L|M|N|P`},
+				"PE": {
+					regex: `^C`},
 				"QC": {
 					regex: `^G|H|J|K1A`},
+				"SK": {
+					regex: `^S|R8A`},
+				"YT": {
+					regex: `^Y`},
 			}},
 		Format: "%N%n%O%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
@@ -23719,7 +23719,7 @@ var generated = data{
 				},
 				{
 					ID:        "NB",
-					Name:      "NewValid Brunswick",
+					Name:      "New Brunswick",
 					PostalKey: "NB",
 				},
 				{
@@ -52985,60 +52985,60 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"PTS": {
-					regex: `^42`},
-				"LX": {
-					regex: `^85`},
-				"MN": {
-					regex: `^61`},
-				"DT": {
-					regex: `^34`},
+				"ALX": {
+					regex: `^2[13]`},
+				"ASN": {
+					regex: `^81`},
+				"AST": {
+					regex: `^71`},
 				"BA": {
 					regex: `^84`},
 				"BH": {
 					regex: `^22`},
-				"FYM": {
-					regex: `^63`},
-				"KFS": {
-					regex: `^33`},
-				"MT": {
-					regex: `^51`},
-				"DK": {
-					regex: `^35`},
-				"SUZ": {
-					regex: `^43`},
-				"MNF": {
-					regex: `^32`},
-				"AST": {
-					regex: `^71`},
-				"ALX": {
-					regex: `^2[13]`},
-				"GZ": {
-					regex: `^12`},
-				"WAD": {
-					regex: `^72`},
-				"SHG": {
-					regex: `^82`},
-				"IS": {
-					regex: `^41`},
-				"SHR": {
-					regex: `^44`},
-				"GH": {
-					regex: `^31`},
-				"C": {
-					regex: `^11`},
 				"BNS": {
 					regex: `^62`},
+				"C": {
+					regex: `^11`},
+				"DK": {
+					regex: `^35`},
+				"DT": {
+					regex: `^34`},
+				"FYM": {
+					regex: `^63`},
+				"GH": {
+					regex: `^31`},
+				"GZ": {
+					regex: `^12`},
+				"IS": {
+					regex: `^41`},
 				"JS": {
 					regex: `^46`},
-				"SIN": {
-					regex: `^45`},
-				"KN": {
-					regex: `^83`},
-				"ASN": {
-					regex: `^81`},
 				"KB": {
 					regex: `^13`},
+				"KFS": {
+					regex: `^33`},
+				"KN": {
+					regex: `^83`},
+				"LX": {
+					regex: `^85`},
+				"MN": {
+					regex: `^61`},
+				"MNF": {
+					regex: `^32`},
+				"MT": {
+					regex: `^51`},
+				"PTS": {
+					regex: `^42`},
+				"SHG": {
+					regex: `^82`},
+				"SHR": {
+					regex: `^44`},
+				"SIN": {
+					regex: `^45`},
+				"SUZ": {
+					regex: `^43`},
+				"WAD": {
+					regex: `^72`},
 			}},
 		Format:          "%N%n%O%n%A%n%C%n%S%n%Z",
 		LatinizedFormat: "%N%n%O%n%A%n%C%n%S%n%Z",
@@ -53281,7 +53281,7 @@ var generated = data{
 				},
 				{
 					ID:        "WAD",
-					Name:      "NewValid Valley Governorate",
+					Name:      "New Valley Governorate",
 					PostalKey: "الوادي الجديد",
 				},
 				{
@@ -53354,110 +53354,110 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"BU": {
-					regex: `^09`},
-				"CU": {
-					regex: `^16`},
-				"GU": {
-					regex: `^19`},
-				"LU": {
-					regex: `^27`},
-				"SA": {
-					regex: `^37`},
-				"B": {
-					regex: `^08`},
-				"M": {
-					regex: `^28`},
-				"TE": {
-					regex: `^44`},
-				"ZA": {
-					regex: `^49`},
-				"AV": {
-					regex: `^05`},
-				"CA": {
-					regex: `^11`},
-				"S": {
-					regex: `^39`},
-				"CS": {
-					regex: `^12`},
-				"CR": {
-					regex: `^13`},
-				"GR": {
-					regex: `^18`},
-				"SS": {
-					regex: `^20`},
-				"HU": {
-					regex: `^22`},
-				"GC": {
-					regex: `^35`},
-				"LE": {
-					regex: `^24`},
-				"OR": {
-					regex: `^32`},
-				"PO": {
-					regex: `^36`},
-				"VA": {
-					regex: `^47`},
-				"AB": {
-					regex: `^02`},
 				"A": {
 					regex: `^03`},
+				"AB": {
+					regex: `^02`},
+				"AL": {
+					regex: `^04`},
+				"AV": {
+					regex: `^05`},
+				"B": {
+					regex: `^08`},
+				"BA": {
+					regex: `^06`},
+				"BI": {
+					regex: `^48`},
+				"BU": {
+					regex: `^09`},
+				"C": {
+					regex: `^15`},
+				"CA": {
+					regex: `^11`},
+				"CC": {
+					regex: `^10`},
 				"CE": {
 					regex: `^51`},
+				"CO": {
+					regex: `^14`},
+				"CR": {
+					regex: `^13`},
+				"CS": {
+					regex: `^12`},
+				"CU": {
+					regex: `^16`},
+				"GC": {
+					regex: `^35`},
 				"GI": {
 					regex: `^17`},
+				"GR": {
+					regex: `^18`},
+				"GU": {
+					regex: `^19`},
+				"H": {
+					regex: `^21`},
+				"HU": {
+					regex: `^22`},
 				"J": {
 					regex: `^23`},
+				"L": {
+					regex: `^25`},
+				"LE": {
+					regex: `^24`},
+				"LO": {
+					regex: `^26`},
+				"LU": {
+					regex: `^27`},
+				"M": {
+					regex: `^28`},
 				"MA": {
 					regex: `^29`},
 				"ML": {
 					regex: `^52`},
-				"NA": {
-					regex: `^31`},
-				"TF": {
-					regex: `^38`},
-				"SG": {
-					regex: `^40`},
-				"CO": {
-					regex: `^14`},
-				"SO": {
-					regex: `^42`},
-				"TO": {
-					regex: `^45`},
-				"VI": {
-					regex: `^01`},
-				"PM": {
-					regex: `^07`},
-				"LO": {
-					regex: `^26`},
-				"V": {
-					regex: `^46`},
-				"BI": {
-					regex: `^48`},
-				"Z": {
-					regex: `^50`},
-				"AL": {
-					regex: `^04`},
-				"BA": {
-					regex: `^06`},
-				"CC": {
-					regex: `^10`},
-				"H": {
-					regex: `^21`},
-				"L": {
-					regex: `^25`},
 				"MU": {
 					regex: `^30`},
-				"SE": {
-					regex: `^41`},
+				"NA": {
+					regex: `^31`},
 				"O": {
 					regex: `^33`},
-				"C": {
-					regex: `^15`},
+				"OR": {
+					regex: `^32`},
 				"P": {
 					regex: `^34`},
+				"PM": {
+					regex: `^07`},
+				"PO": {
+					regex: `^36`},
+				"S": {
+					regex: `^39`},
+				"SA": {
+					regex: `^37`},
+				"SE": {
+					regex: `^41`},
+				"SG": {
+					regex: `^40`},
+				"SO": {
+					regex: `^42`},
+				"SS": {
+					regex: `^20`},
 				"T": {
 					regex: `^43`},
+				"TE": {
+					regex: `^44`},
+				"TF": {
+					regex: `^38`},
+				"TO": {
+					regex: `^45`},
+				"V": {
+					regex: `^46`},
+				"VA": {
+					regex: `^47`},
+				"VI": {
+					regex: `^01`},
+				"Z": {
+					regex: `^50`},
+				"ZA": {
+					regex: `^49`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
@@ -55238,9 +55238,9 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "NewValid Territories",
-					Name:      "NewValid Territories",
-					PostalKey: "NewValid Territories",
+					ID:        "New Territories",
+					Name:      "New Territories",
+					PostalKey: "New Territories",
 					Localities: []locality{
 						{
 							ID:   "Chek Lap Kok Lantau Island",
@@ -55757,9 +55757,9 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "NewValid Territories",
+					ID:        "New Territories",
 					Name:      "新界",
-					PostalKey: "NewValid Territories",
+					PostalKey: "New Territories",
 					Localities: []locality{
 						{
 							ID:   "Kau To Shan",
@@ -56517,76 +56517,76 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{6}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"AR": {
-					regex: `^79[0-2]`},
-				"LD": {
-					regex: `^682`},
-				"MP": {
-					regex: `^4[5-8]|490`},
-				"ML": {
-					regex: `^79[34]`},
-				"SK": {
-					regex: `^737|750`},
-				"UP": {
-					regex: `^2[0-35-8]|24[0-7]|26[12]`},
-				"DN": {
-					regex: `^396`},
-				"DL": {
-					regex: `^11`},
-				"NL": {
-					regex: `^79[78]`},
-				"PY": {
-					regex: `^60[579]`},
-				"RJ": {
-					regex: `^3[0-4]`},
-				"GJ": {
-					regex: `^3[6-9]`},
-				"KA": {
-					regex: `^5[4-9]|53[7-9]`},
-				"MN": {
-					regex: `^79[56]`},
 				"AN": {
 					regex: `^744`},
 				"AP": {
 					regex: `^5[0-3]`},
-				"CT": {
-					regex: `^49`},
-				"PB": {
-					regex: `^1[456]`},
-				"TR": {
-					regex: `^799`},
-				"CH": {
-					regex: `^16|1440[3-9]`},
-				"KL": {
-					regex: `^6[7-9]|6010|607008|777`},
-				"MZ": {
-					regex: `^796`},
-				"OR": {
-					regex: `^7[5-7]`},
-				"UT": {
-					regex: `^24[46-9]|254|26[23]`},
-				"DD": {
-					regex: `^396`},
-				"TG": {
-					regex: `^5[0-3]`},
+				"AR": {
+					regex: `^79[0-2]`},
 				"AS": {
 					regex: `^78`},
-				"HR": {
-					regex: `^1[23]`},
-				"JK": {
-					regex: `^1[89]`},
-				"MH": {
-					regex: `^4[0-4]`},
-				"TN": {
-					regex: `^6[0-6]|536`},
 				"BR": {
 					regex: `^8[0-5]`},
+				"CH": {
+					regex: `^16|1440[3-9]`},
+				"CT": {
+					regex: `^49`},
+				"DD": {
+					regex: `^396`},
+				"DL": {
+					regex: `^11`},
+				"DN": {
+					regex: `^396`},
 				"GA": {
 					regex: `^403`},
+				"GJ": {
+					regex: `^3[6-9]`},
 				"HP": {
 					regex: `^17`},
+				"HR": {
+					regex: `^1[23]`},
 				"JH": {
 					regex: `^81[4-9]|82|83[0-5]`},
+				"JK": {
+					regex: `^1[89]`},
+				"KA": {
+					regex: `^5[4-9]|53[7-9]`},
+				"KL": {
+					regex: `^6[7-9]|6010|607008|777`},
+				"LD": {
+					regex: `^682`},
+				"MH": {
+					regex: `^4[0-4]`},
+				"ML": {
+					regex: `^79[34]`},
+				"MN": {
+					regex: `^79[56]`},
+				"MP": {
+					regex: `^4[5-8]|490`},
+				"MZ": {
+					regex: `^796`},
+				"NL": {
+					regex: `^79[78]`},
+				"OR": {
+					regex: `^7[5-7]`},
+				"PB": {
+					regex: `^1[456]`},
+				"PY": {
+					regex: `^60[579]`},
+				"RJ": {
+					regex: `^3[0-4]`},
+				"SK": {
+					regex: `^737|750`},
+				"TG": {
+					regex: `^5[0-3]`},
+				"TN": {
+					regex: `^6[0-6]|536`},
+				"TR": {
+					regex: `^799`},
+				"UP": {
+					regex: `^2[0-35-8]|24[0-7]|26[12]`},
+				"UT": {
+					regex: `^24[46-9]|254|26[23]`},
 				"WB": {
 					regex: `^7[0-4]`},
 			}},
@@ -57065,224 +57065,224 @@ var generated = data{
 			subdivisionRegex: map[string]postCodeRegex{
 				"AG": {
 					regex: `^92`},
-				"GE": {
-					regex: `^16`},
-				"OT": {
-					regex: `^08020|0702|0703[08]`},
-				"VV": {
-					regex: `^89[89]`},
-				"AP": {
-					regex: `^63`},
-				"BS": {
-					regex: `^25`},
-				"LU": {
-					regex: `^55`},
-				"PC": {
-					regex: `^29`},
-				"RM": {
-					regex: `^00`},
-				"TN": {
-					regex: `^38`},
-				"VR": {
-					regex: `^37`},
+				"AL": {
+					regex: `^15`},
 				"AN": {
 					regex: `^60`},
-				"MC": {
-					regex: `^62`},
-				"NA": {
-					regex: `^80`},
-				"UD": {
-					regex: `^330[1-5]|33100`},
-				"FE": {
-					regex: `^44`},
-				"RC": {
-					regex: `^89[01]`},
-				"SS": {
-					regex: `^070[14]|0703[0-79]|07100`},
-				"CN": {
-					regex: `^12|18025`},
-				"FC": {
-					regex: `^47[015]`},
-				"PG": {
-					regex: `^06`},
-				"FG": {
-					regex: `^71`},
-				"LC": {
-					regex: `^23[89]`},
-				"RI": {
-					regex: `^02`},
-				"VE": {
-					regex: `^30`},
-				"PT": {
-					regex: `^51`},
-				"TP": {
-					regex: `^91`},
-				"AV": {
-					regex: `^83`},
-				"BO": {
-					regex: `^40`},
-				"GO": {
-					regex: `^34[01]7`},
-				"PV": {
-					regex: `^27`},
-				"SO": {
-					regex: `^23[01]`},
-				"TE": {
-					regex: `^64`},
-				"FI": {
-					regex: `^50`},
+				"AO": {
+					regex: `^11`},
+				"AP": {
+					regex: `^63`},
+				"AQ": {
+					regex: `^67`},
 				"AR": {
 					regex: `^52`},
-				"PA": {
-					regex: `^90`},
-				"NO": {
-					regex: `^28[01]`},
-				"PZ": {
-					regex: `^85`},
-				"RG": {
-					regex: `^97`},
-				"KR": {
-					regex: `^88[89]`},
-				"ME": {
-					regex: `^98`},
-				"MB": {
-					regex: `^208|20900`},
-				"NU": {
-					regex: `^080[1-3]|08100`},
-				"TV": {
-					regex: `^31`},
+				"AT": {
+					regex: `^14`},
+				"AV": {
+					regex: `^83`},
 				"BA": {
 					regex: `^70`},
-				"BR": {
-					regex: `^72`},
-				"CA": {
-					regex: `^0912[1-9]|0913[0-4]|0901[0289]|0902[03468]|0903[0234]|0904|0803[035]|08043`},
-				"CI": {
-					regex: `^0901[013-7]`},
-				"SV": {
-					regex: `^17|12071`},
+				"BG": {
+					regex: `^24`},
+				"BI": {
+					regex: `^13[89]`},
 				"BL": {
 					regex: `^32`},
+				"BN": {
+					regex: `^82`},
+				"BO": {
+					regex: `^40`},
+				"BR": {
+					regex: `^72`},
+				"BS": {
+					regex: `^25`},
+				"BT": {
+					regex: `^76[01]`},
+				"BZ": {
+					regex: `^39`},
+				"CA": {
+					regex: `^0912[1-9]|0913[0-4]|0901[0289]|0902[03468]|0903[0234]|0904|0803[035]|08043`},
+				"CB": {
+					regex: `^860[1-4]|86100`},
+				"CE": {
+					regex: `^81`},
+				"CH": {
+					regex: `^66`},
+				"CI": {
+					regex: `^0901[013-7]`},
+				"CL": {
+					regex: `^93`},
+				"CN": {
+					regex: `^12|18025`},
+				"CO": {
+					regex: `^22`},
+				"CR": {
+					regex: `^26[01]`},
+				"CS": {
+					regex: `^87`},
+				"CT": {
+					regex: `^95`},
+				"CZ": {
+					regex: `^88[01]`},
+				"EN": {
+					regex: `^94`},
+				"FC": {
+					regex: `^47[015]`},
+				"FE": {
+					regex: `^44`},
+				"FG": {
+					regex: `^71`},
+				"FI": {
+					regex: `^50`},
+				"FM": {
+					regex: `^638|63900`},
+				"FR": {
+					regex: `^03`},
+				"GE": {
+					regex: `^16`},
+				"GO": {
+					regex: `^34[01]7`},
+				"GR": {
+					regex: `^58`},
+				"IM": {
+					regex: `^18`},
+				"IS": {
+					regex: `^860[7-9]|86170`},
+				"KR": {
+					regex: `^88[89]`},
+				"LC": {
+					regex: `^23[89]`},
+				"LE": {
+					regex: `^73`},
+				"LI": {
+					regex: `^57`},
+				"LO": {
+					regex: `^26[89]`},
+				"LT": {
+					regex: `^04`},
+				"LU": {
+					regex: `^55`},
+				"MB": {
+					regex: `^208|20900`},
+				"MC": {
+					regex: `^62`},
+				"ME": {
+					regex: `^98`},
+				"MI": {
+					regex: `^20`},
+				"MN": {
+					regex: `^46`},
+				"MO": {
+					regex: `^41`},
 				"MS": {
 					regex: `^54`},
+				"MT": {
+					regex: `^75`},
+				"NA": {
+					regex: `^80`},
+				"NO": {
+					regex: `^28[01]`},
+				"NU": {
+					regex: `^080[1-3]|08100`},
+				"OG": {
+					regex: `^08037|0804[024-9]`},
+				"OR": {
+					regex: `^090[7-9]|09170|0801[039]|0803[04]`},
+				"OT": {
+					regex: `^08020|0702|0703[08]`},
+				"PA": {
+					regex: `^90`},
+				"PC": {
+					regex: `^29`},
 				"PD": {
 					regex: `^35`},
+				"PE": {
+					regex: `^65`},
+				"PG": {
+					regex: `^06`},
+				"PI": {
+					regex: `^56`},
+				"PN": {
+					regex: `^330[7-9]|33170`},
+				"PO": {
+					regex: `^59`},
+				"PR": {
+					regex: `^43`},
+				"PT": {
+					regex: `^51`},
+				"PU": {
+					regex: `^61`},
+				"PV": {
+					regex: `^27`},
+				"PZ": {
+					regex: `^85`},
+				"RA": {
+					regex: `^48`},
+				"RC": {
+					regex: `^89[01]`},
+				"RE": {
+					regex: `^42`},
+				"RG": {
+					regex: `^97`},
+				"RI": {
+					regex: `^02`},
+				"RM": {
+					regex: `^00`},
+				"RN": {
+					regex: `^47[89]`},
+				"RO": {
+					regex: `^45`},
+				"SA": {
+					regex: `^84`},
+				"SI": {
+					regex: `^53`},
+				"SO": {
+					regex: `^23[01]`},
+				"SP": {
+					regex: `^19`},
+				"SR": {
+					regex: `^96`},
+				"SS": {
+					regex: `^070[14]|0703[0-79]|07100`},
+				"SV": {
+					regex: `^17|12071`},
+				"TA": {
+					regex: `^74`},
+				"TE": {
+					regex: `^64`},
+				"TN": {
+					regex: `^38`},
+				"TO": {
+					regex: `^10`},
+				"TP": {
+					regex: `^91`},
+				"TR": {
+					regex: `^05`},
+				"TS": {
+					regex: `^3401|341[0-689]|34062`},
+				"TV": {
+					regex: `^31`},
+				"UD": {
+					regex: `^330[1-5]|33100`},
 				"VA": {
 					regex: `^21`},
 				"VB": {
 					regex: `^28[89]`},
-				"MN": {
-					regex: `^46`},
-				"VS": {
-					regex: `^0902[012579]|0903[015-9]|09040`},
-				"RO": {
-					regex: `^45`},
-				"TA": {
-					regex: `^74`},
-				"TR": {
-					regex: `^05`},
 				"VC": {
 					regex: `^13[01]`},
-				"BG": {
-					regex: `^24`},
-				"CO": {
-					regex: `^22`},
-				"CS": {
-					regex: `^87`},
-				"MO": {
-					regex: `^41`},
-				"OG": {
-					regex: `^08037|0804[024-9]`},
-				"RN": {
-					regex: `^47[89]`},
-				"AO": {
-					regex: `^11`},
-				"CZ": {
-					regex: `^88[01]`},
-				"VT": {
-					regex: `^01`},
-				"BN": {
-					regex: `^82`},
-				"BZ": {
-					regex: `^39`},
-				"GR": {
-					regex: `^58`},
-				"PI": {
-					regex: `^56`},
-				"RE": {
-					regex: `^42`},
-				"FR": {
-					regex: `^03`},
-				"IS": {
-					regex: `^860[7-9]|86170`},
-				"PU": {
-					regex: `^61`},
-				"MI": {
-					regex: `^20`},
-				"PN": {
-					regex: `^330[7-9]|33170`},
-				"TS": {
-					regex: `^3401|341[0-689]|34062`},
-				"PR": {
-					regex: `^43`},
-				"AL": {
-					regex: `^15`},
-				"AT": {
-					regex: `^14`},
-				"CB": {
-					regex: `^860[1-4]|86100`},
-				"IM": {
-					regex: `^18`},
-				"MT": {
-					regex: `^75`},
-				"SA": {
-					regex: `^84`},
-				"EN": {
-					regex: `^94`},
+				"VE": {
+					regex: `^30`},
 				"VI": {
 					regex: `^36`},
-				"BT": {
-					regex: `^76[01]`},
-				"CT": {
-					regex: `^95`},
-				"LT": {
-					regex: `^04`},
-				"SI": {
-					regex: `^53`},
-				"BI": {
-					regex: `^13[89]`},
-				"LI": {
-					regex: `^57`},
-				"PO": {
-					regex: `^59`},
-				"SR": {
-					regex: `^96`},
-				"SP": {
-					regex: `^19`},
-				"OR": {
-					regex: `^090[7-9]|09170|0801[039]|0803[04]`},
-				"CH": {
-					regex: `^66`},
-				"CR": {
-					regex: `^26[01]`},
-				"LO": {
-					regex: `^26[89]`},
-				"RA": {
-					regex: `^48`},
-				"AQ": {
-					regex: `^67`},
-				"LE": {
-					regex: `^73`},
-				"TO": {
-					regex: `^10`},
-				"CL": {
-					regex: `^93`},
-				"CE": {
-					regex: `^81`},
-				"FM": {
-					regex: `^638|63900`},
-				"PE": {
-					regex: `^65`},
+				"VR": {
+					regex: `^37`},
+				"VS": {
+					regex: `^0902[012579]|0903[015-9]|09040`},
+				"VT": {
+					regex: `^01`},
+				"VV": {
+					regex: `^89[89]`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
@@ -57998,100 +57998,100 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{3}-?\d{4}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"20": {
-					regex: `^3[89]|949`},
-				"36": {
-					regex: `^77`},
-				"41": {
-					regex: `^84`},
-				"45": {
-					regex: `^88`},
-				"06": {
-					regex: `^99`},
-				"08": {
-					regex: `^3[01]`},
-				"14": {
-					regex: `^2[1-5]|199`},
-				"17": {
-					regex: `^92|939`},
-				"35": {
-					regex: `^7[45]`},
-				"37": {
-					regex: `^76`},
-				"44": {
-					regex: `^87|839`},
 				"01": {
 					regex: `^0[4-9]|00[1-7]`},
-				"12": {
-					regex: `^2[6-9]`},
-				"24": {
-					regex: `^51|498|647`},
-				"32": {
-					regex: `^69|68[45]`},
-				"26": {
-					regex: `^6[0-2]|520`},
-				"10": {
-					regex: `^37|38[49]`},
-				"16": {
-					regex: `^93`},
-				"21": {
-					regex: `^50`},
-				"23": {
-					regex: `^4[4-9]|431`},
 				"02": {
 					regex: `^03|018`},
+				"03": {
+					regex: `^02`},
 				"04": {
 					regex: `^98`},
+				"05": {
+					regex: `^01`},
+				"06": {
+					regex: `^99`},
+				"07": {
+					regex: `^9[67]`},
+				"08": {
+					regex: `^3[01]`},
 				"09": {
 					regex: `^32|311|349`},
-				"42": {
-					regex: `^85|81[17]|848`},
+				"10": {
+					regex: `^37|38[49]`},
+				"11": {
+					regex: `^3[3-6]`},
+				"12": {
+					regex: `^2[6-9]`},
+				"13": {
+					regex: `^1[0-8]|19[0-8]|20`},
+				"14": {
+					regex: `^2[1-5]|199`},
+				"15": {
+					regex: `^9[45]|389`},
+				"16": {
+					regex: `^93`},
+				"17": {
+					regex: `^92|939`},
+				"18": {
+					regex: `^91|922`},
+				"19": {
+					regex: `^40`},
+				"20": {
+					regex: `^3[89]|949`},
+				"21": {
+					regex: `^50`},
+				"22": {
+					regex: `^4[1-9]`},
+				"23": {
+					regex: `^4[4-9]|431`},
+				"24": {
+					regex: `^51|498|647`},
+				"25": {
+					regex: `^52`},
+				"26": {
+					regex: `^6[0-2]|520`},
+				"27": {
+					regex: `^5[3-9]|618|630`},
+				"28": {
+					regex: `^6[5-7]|563`},
+				"29": {
+					regex: `^63|64[78]`},
+				"30": {
+					regex: `^64|519`},
+				"31": {
+					regex: `^68`},
+				"32": {
+					regex: `^69|68[45]`},
+				"33": {
+					regex: `^7[01]`},
 				"34": {
 					regex: `^7[23]`},
+				"35": {
+					regex: `^7[45]`},
+				"36": {
+					regex: `^77`},
+				"37": {
+					regex: `^76`},
 				"38": {
 					regex: `^79`},
 				"39": {
 					regex: `^78`},
 				"40": {
 					regex: `^8[0-3]|871`},
-				"13": {
-					regex: `^1[0-8]|19[0-8]|20`},
-				"18": {
-					regex: `^91|922`},
-				"22": {
-					regex: `^4[1-9]`},
-				"27": {
-					regex: `^5[3-9]|618|630`},
-				"46": {
-					regex: `^89`},
-				"30": {
-					regex: `^64|519`},
+				"41": {
+					regex: `^84`},
+				"42": {
+					regex: `^85|81[17]|848`},
 				"43": {
 					regex: `^86`},
-				"05": {
-					regex: `^01`},
-				"07": {
-					regex: `^9[67]`},
-				"11": {
-					regex: `^3[3-6]`},
-				"25": {
-					regex: `^52`},
-				"19": {
-					regex: `^40`},
-				"28": {
-					regex: `^6[5-7]|563`},
-				"29": {
-					regex: `^63|64[78]`},
+				"44": {
+					regex: `^87|839`},
+				"45": {
+					regex: `^88`},
+				"46": {
+					regex: `^89`},
 				"47": {
 					regex: `^90`},
-				"03": {
-					regex: `^02`},
-				"15": {
-					regex: `^9[45]|389`},
-				"31": {
-					regex: `^68`},
-				"33": {
-					regex: `^7[01]`},
 			}},
 		Format:                     "〒%Z%n%S%n%A%n%O%n%N",
 		LatinizedFormat:            "%N%n%O%n%A, %S%n%Z",
@@ -58834,27 +58834,79 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
+				"11": {
+					regex: `^0[1-8]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"강남구": {
+							regex: `^06[0-3]`},
+						"강동구": {
+							regex: `^05[2-4]`},
+						"강북구": {
+							regex: `^01[0-2]`},
+						"강서구": {
+							regex: `^07[5-8]`},
+						"관악구": {
+							regex: `^08[78]`},
+						"광진구": {
+							regex: `^0(?:49|5[01])`},
+						"구로구": {
+							regex: `^08[23]`},
+						"금천구": {
+							regex: `^08[56]`},
+						"노원구": {
+							regex: `^01[6-9]`},
+						"도봉구": {
+							regex: `^01[34]`},
+						"동대문구": {
+							regex: `^02[4-6]`},
+						"동작구": {
+							regex: `^0(?:69|70)`},
+						"마포구": {
+							regex: `^0(?:39|4[0-2])`},
+						"서대문구": {
+							regex: `^03[67]`},
+						"서초구": {
+							regex: `^06[5-8]`},
+						"성동구": {
+							regex: `^04[78]`},
+						"성북구": {
+							regex: `^02[78]`},
+						"송파구": {
+							regex: `^05[5-8]`},
+						"양천구": {
+							regex: `^0(?:7[89]|8[01])`},
+						"영등포구": {
+							regex: `^07[2-4]`},
+						"용산구": {
+							regex: `^04[34]`},
+						"은평구": {
+							regex: `^03[3-5]`},
+						"종로구": {
+							regex: `^03[01]`},
+						"중구": {
+							regex: `^04[56]|100`},
+						"중랑구": {
+							regex: `^02[0-2]`},
+					}},
 				"26": {
 					regex: `^4[6-9]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
+						"강서구": {
+							regex: `^467`},
+						"금정구": {
+							regex: `^46[23]`},
+						"기장군": {
+							regex: `^460`},
+						"남구": {
+							regex: `^48[45]`},
+						"동구": {
+							regex: `^48[78]`},
 						"동래구": {
 							regex: `^47[789]`},
 						"부산진구": {
 							regex: `^47[123]`},
-						"중구": {
-							regex: `^489`},
-						"해운대구": {
-							regex: `^48[01]`},
-						"남구": {
-							regex: `^48[45]`},
 						"북구": {
 							regex: `^46[56]`},
-						"강서구": {
-							regex: `^467`},
-						"영도구": {
-							regex: `^49[01]`},
-						"동구": {
-							regex: `^48[78]`},
 						"사상구": {
 							regex: `^4(?:69|70)`},
 						"사하구": {
@@ -58865,58 +58917,70 @@ var generated = data{
 							regex: `^48[23]`},
 						"연제구": {
 							regex: `^47[56]`},
-						"금정구": {
-							regex: `^46[23]`},
-						"기장군": {
-							regex: `^460`},
+						"영도구": {
+							regex: `^49[01]`},
+						"중구": {
+							regex: `^489`},
+						"해운대구": {
+							regex: `^48[01]`},
 					}},
-				"46": {
-					regex: `^5[7-9]\d{2}`,
+				"27": {
+					regex: `^4[12]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"화순군": {
-							regex: `^581`},
-						"고흥군": {
-							regex: `^595`},
-						"담양군": {
-							regex: `^573`},
-						"무안군": {
-							regex: `^585`},
-						"완도군": {
-							regex: `^591`},
-						"해남군": {
-							regex: `^590`},
-						"나주시": {
-							regex: `^58[23]`},
-						"신안군": {
-							regex: `^588`},
-						"여수시": {
-							regex: `^59[67]`},
-						"영광군": {
-							regex: `^570`},
-						"장성군": {
-							regex: `^572`},
-						"광양시": {
-							regex: `^57[78]`},
-						"구례군": {
-							regex: `^576`},
-						"보성군": {
-							regex: `^594`},
-						"순천시": {
-							regex: `^5(?:79|80)`},
-						"진도군": {
-							regex: `^589`},
-						"함평군": {
-							regex: `^571`},
-						"강진군": {
-							regex: `^592`},
-						"곡성군": {
-							regex: `^575`},
-						"목포시": {
-							regex: `^58[67]`},
-						"영암군": {
-							regex: `^584`},
-						"장흥군": {
-							regex: `^593`},
+						"남구": {
+							regex: `^42[45]`},
+						"달서구": {
+							regex: `^42[678]`},
+						"달성군": {
+							regex: `^4(?:29|30)`},
+						"동구": {
+							regex: `^41[0-2]`},
+						"북구": {
+							regex: `^41[45]`},
+						"서구": {
+							regex: `^41[78]`},
+						"수성구": {
+							regex: `^42[0-2]`},
+						"중구": {
+							regex: `^419`},
+					}},
+				"28": {
+					regex: `^2[1-3]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"강화군": {
+							regex: `^230`},
+						"계양구": {
+							regex: `^21[01]`},
+						"남구": {
+							regex: `^22[12]`},
+						"남동구": {
+							regex: `^21[5-7]`},
+						"동구": {
+							regex: `^225`},
+						"부평구": {
+							regex: `^21[34]`},
+						"서구": {
+							regex: `^22[6-8]`},
+						"연수구": {
+							regex: `^2(?:19|20)`},
+						"옹진군": {
+							regex: `^231`},
+						"중구": {
+							regex: `^223`},
+					}},
+				"29": {
+					regex: `^6[12]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"광산구": {
+							regex: `^62[2-4]`},
+						"남구": {
+							regex: `^61[67]`},
+						"동구": {
+							regex: `^61[45]`},
+						"북구": {
+							regex: `^61[0-2]`},
+						"서구": {
+							regex: `^6(?:19|20)`},
 					}},
 				"30": {
 					regex: `^3[45]\d{2}`,
@@ -58935,6 +58999,8 @@ var generated = data{
 				"31": {
 					regex: `^4[45]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
+						"남구": {
+							regex: `^44[67]`},
 						"동구": {
 							regex: `^44[01]`},
 						"북구": {
@@ -58943,24 +59009,184 @@ var generated = data{
 							regex: `^4(?:49|50)`},
 						"중구": {
 							regex: `^44[45]`},
-						"남구": {
-							regex: `^44[67]`},
+					}},
+				"41": {
+					regex: `^1[0-8]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"가평군": {
+							regex: `^124`},
+						"고양시": {
+							regex: `^10[2-5]`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"덕양구": {
+									regex: `^10[245]`},
+								"일산동구": {
+									regex: `^10[2-4]`},
+								"일산서구": {
+									regex: `^10[2-4]`},
+							}},
+						"과천시": {
+							regex: `^138`},
+						"광명시": {
+							regex: `^14[23]`},
+						"광주시": {
+							regex: `^12[78]`},
+						"구리시": {
+							regex: `^119`},
+						"군포시": {
+							regex: `^158`},
+						"김포시": {
+							regex: `^10[01]`},
+						"남양주시": {
+							regex: `^12[0-3]`},
+						"동두천시": {
+							regex: `^113`},
+						"부천시": {
+							regex: `^14[4-7]`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"소사구": {
+									regex: `^14[67]`},
+								"오정구": {
+									regex: `^14[45]`},
+								"원미구": {
+									regex: `^14[456]`},
+							}},
+						"성남시": {
+							regex: `^13[1-6]`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"분당구": {
+									regex: `^13[3-6]`},
+								"수정구": {
+									regex: `^13[1-46]`},
+								"중원구": {
+									regex: `^13[1-4]`},
+							}},
+						"수원시": {
+							regex: `^16[2-7]`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"권선구": {
+									regex: `^16[3-6]`},
+								"영통구": {
+									regex: `^16[245-7]`},
+								"장안구": {
+									regex: `^16[2-4]`},
+								"팔달구": {
+									regex: `^16[2-6]`},
+							}},
+						"시흥시": {
+							regex: `^1(?:49|5[01])`},
+						"안산시": {
+							regex: `^15[2-6]`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"단원구": {
+									regex: `^15[2-6]`},
+								"상록구": {
+									regex: `^15[2-6]`},
+							}},
+						"안성시": {
+							regex: `^17[56]`},
+						"안양시": {
+							regex: `^1(?:39|4[01])`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"동안구": {
+									regex: `^1(?:39|4[01])`},
+								"만안구": {
+									regex: `^1(?:39|40)`},
+							}},
+						"양주시": {
+							regex: `^11[45]`},
+						"양평군": {
+							regex: `^125`},
+						"여주시": {
+							regex: `^126`},
+						"연천군": {
+							regex: `^110`},
+						"오산시": {
+							regex: `^181`},
+						"용인시": {
+							regex: `^1(?:6[89]|7[01])`,
+							subdivisionRegex: map[string]postCodeRegex{
+								"기흥구": {
+									regex: `^1(?:6[89]|7[01])`},
+								"수지구": {
+									regex: `^16[89]`},
+								"처인구": {
+									regex: `^1(?:6[89]|7[01])`},
+							}},
+						"의왕시": {
+							regex: `^16[01]`},
+						"의정부시": {
+							regex: `^11[6-8]`},
+						"이천시": {
+							regex: `^17[34]`},
+						"파주시": {
+							regex: `^10[89]`},
+						"평택시": {
+							regex: `^1(?:7[7-9]|80)`},
+						"포천시": {
+							regex: `^111`},
+						"하남시": {
+							regex: `^1(?:29|30)`},
+						"화성시": {
+							regex: `^18[2-6]`},
+					}},
+				"42": {
+					regex: `^2[456]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"강릉시": {
+							regex: `^25[4-6]`},
+						"고성군": {
+							regex: `^247`},
+						"동해시": {
+							regex: `^25[78]`},
+						"삼척시": {
+							regex: `^259`},
+						"속초시": {
+							regex: `^24[89]`},
+						"양구군": {
+							regex: `^245`},
+						"양양군": {
+							regex: `^250`},
+						"영월군": {
+							regex: `^262`},
+						"원주시": {
+							regex: `^26[3-5]`},
+						"인제군": {
+							regex: `^246`},
+						"정선군": {
+							regex: `^261`},
+						"철원군": {
+							regex: `^240`},
+						"춘천시": {
+							regex: `^24[2-4]`},
+						"태백시": {
+							regex: `^260`},
+						"평창군": {
+							regex: `^253`},
+						"홍천군": {
+							regex: `^251`},
+						"화천군": {
+							regex: `^241`},
+						"횡성군": {
+							regex: `^252`},
 					}},
 				"43": {
 					regex: `^2[789]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"영동군": {
-							regex: `^291`},
-						"옥천군": {
-							regex: `^290`},
-						"제천시": {
-							regex: `^27[12]`},
+						"괴산군": {
+							regex: `^280`},
 						"단양군": {
 							regex: `^270`},
 						"보은군": {
 							regex: `^289`},
+						"영동군": {
+							regex: `^291`},
+						"옥천군": {
+							regex: `^290`},
 						"음성군": {
 							regex: `^27[67]`},
+						"제천시": {
+							regex: `^27[12]`},
 						"증평군": {
 							regex: `^279`},
 						"진천군": {
@@ -58979,238 +59205,32 @@ var generated = data{
 							}},
 						"충주시": {
 							regex: `^27[3-5]`},
-						"괴산군": {
-							regex: `^280`},
-					}},
-				"42": {
-					regex: `^2[456]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"양구군": {
-							regex: `^245`},
-						"춘천시": {
-							regex: `^24[2-4]`},
-						"홍천군": {
-							regex: `^251`},
-						"삼척시": {
-							regex: `^259`},
-						"정선군": {
-							regex: `^261`},
-						"태백시": {
-							regex: `^260`},
-						"평창군": {
-							regex: `^253`},
-						"화천군": {
-							regex: `^241`},
-						"고성군": {
-							regex: `^247`},
-						"동해시": {
-							regex: `^25[78]`},
-						"속초시": {
-							regex: `^24[89]`},
-						"영월군": {
-							regex: `^262`},
-						"원주시": {
-							regex: `^26[3-5]`},
-						"인제군": {
-							regex: `^246`},
-						"철원군": {
-							regex: `^240`},
-						"횡성군": {
-							regex: `^252`},
-						"강릉시": {
-							regex: `^25[4-6]`},
-						"양양군": {
-							regex: `^250`},
-					}},
-				"29": {
-					regex: `^6[12]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"광산구": {
-							regex: `^62[2-4]`},
-						"남구": {
-							regex: `^61[67]`},
-						"동구": {
-							regex: `^61[45]`},
-						"북구": {
-							regex: `^61[0-2]`},
-						"서구": {
-							regex: `^6(?:19|20)`},
-					}},
-				"27": {
-					regex: `^4[12]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"수성구": {
-							regex: `^42[0-2]`},
-						"중구": {
-							regex: `^419`},
-						"남구": {
-							regex: `^42[45]`},
-						"달서구": {
-							regex: `^42[678]`},
-						"달성군": {
-							regex: `^4(?:29|30)`},
-						"동구": {
-							regex: `^41[0-2]`},
-						"북구": {
-							regex: `^41[45]`},
-						"서구": {
-							regex: `^41[78]`},
-					}},
-				"50": {
-					regex: `^30[01]\d`},
-				"28": {
-					regex: `^2[1-3]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"강화군": {
-							regex: `^230`},
-						"계양구": {
-							regex: `^21[01]`},
-						"남구": {
-							regex: `^22[12]`},
-						"남동구": {
-							regex: `^21[5-7]`},
-						"부평구": {
-							regex: `^21[34]`},
-						"서구": {
-							regex: `^22[6-8]`},
-						"동구": {
-							regex: `^225`},
-						"연수구": {
-							regex: `^2(?:19|20)`},
-						"옹진군": {
-							regex: `^231`},
-						"중구": {
-							regex: `^223`},
-					}},
-				"49": {
-					regex: `^63[0-356]\d`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"서귀포시": {
-							regex: `^63[56]`},
-						"제주시": {
-							regex: `^63[0-3]`},
-					}},
-				"11": {
-					regex: `^0[1-8]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"강서구": {
-							regex: `^07[5-8]`},
-						"광진구": {
-							regex: `^0(?:49|5[01])`},
-						"성북구": {
-							regex: `^02[78]`},
-						"서대문구": {
-							regex: `^03[67]`},
-						"은평구": {
-							regex: `^03[3-5]`},
-						"종로구": {
-							regex: `^03[01]`},
-						"중구": {
-							regex: `^04[56]|100`},
-						"강동구": {
-							regex: `^05[2-4]`},
-						"구로구": {
-							regex: `^08[23]`},
-						"동작구": {
-							regex: `^0(?:69|70)`},
-						"마포구": {
-							regex: `^0(?:39|4[0-2])`},
-						"동대문구": {
-							regex: `^02[4-6]`},
-						"송파구": {
-							regex: `^05[5-8]`},
-						"양천구": {
-							regex: `^0(?:7[89]|8[01])`},
-						"영등포구": {
-							regex: `^07[2-4]`},
-						"강남구": {
-							regex: `^06[0-3]`},
-						"금천구": {
-							regex: `^08[56]`},
-						"노원구": {
-							regex: `^01[6-9]`},
-						"도봉구": {
-							regex: `^01[34]`},
-						"용산구": {
-							regex: `^04[34]`},
-						"중랑구": {
-							regex: `^02[0-2]`},
-						"강북구": {
-							regex: `^01[0-2]`},
-						"관악구": {
-							regex: `^08[78]`},
-						"서초구": {
-							regex: `^06[5-8]`},
-						"성동구": {
-							regex: `^04[78]`},
-					}},
-				"45": {
-					regex: `^5[4-6]\d{2}`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"전주시": {
-							regex: `^5(?:4[89]|5[01])`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"덕진구": {
-									regex: `^5(?:4[89]|50)`},
-								"완산구": {
-									regex: `^5(?:4[89]|5[01])`},
-							}},
-						"진안군": {
-							regex: `^554`},
-						"장수군": {
-							regex: `^556`},
-						"김제시": {
-							regex: `^543`},
-						"무주군": {
-							regex: `^555`},
-						"완주군": {
-							regex: `^553`},
-						"임실군": {
-							regex: `^559`},
-						"군산시": {
-							regex: `^54[01]`},
-						"부안군": {
-							regex: `^563`},
-						"정읍시": {
-							regex: `^56[12]`},
-						"고창군": {
-							regex: `^564`},
-						"순창군": {
-							regex: `^560`},
-						"익산시": {
-							regex: `^54[56]`},
-						"남원시": {
-							regex: `^55[78]`},
 					}},
 				"44": {
 					regex: `^3[1-3]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"공주시": {
-							regex: `^32[56]`},
-						"서천군": {
-							regex: `^336`},
-						"태안군": {
-							regex: `^321`},
-						"홍성군": {
-							regex: `^322`},
-						"부여군": {
-							regex: `^33[12]`},
-						"서산시": {
-							regex: `^3(?:19|20)`},
-						"아산시": {
-							regex: `^31[45]`},
-						"당진시": {
-							regex: `^31[78]`},
-						"예산군": {
-							regex: `^324`},
 						"계룡시": {
 							regex: `^328`},
+						"공주시": {
+							regex: `^32[56]`},
 						"금산군": {
 							regex: `^327`},
 						"논산시": {
 							regex: `^3(?:29|30)`},
+						"당진시": {
+							regex: `^31[78]`},
 						"보령시": {
 							regex: `^33[45]`},
+						"부여군": {
+							regex: `^33[12]`},
+						"서산시": {
+							regex: `^3(?:19|20)`},
+						"서천군": {
+							regex: `^336`},
+						"아산시": {
+							regex: `^31[45]`},
+						"예산군": {
+							regex: `^324`},
 						"천안시": {
 							regex: `^31[0-2]`,
 							subdivisionRegex: map[string]postCodeRegex{
@@ -59221,162 +59241,178 @@ var generated = data{
 							}},
 						"청양군": {
 							regex: `^333`},
+						"태안군": {
+							regex: `^321`},
+						"홍성군": {
+							regex: `^322`},
 					}},
-				"41": {
-					regex: `^1[0-8]\d{2}`,
+				"45": {
+					regex: `^5[4-6]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"광주시": {
-							regex: `^12[78]`},
-						"안양시": {
-							regex: `^1(?:39|4[01])`,
+						"고창군": {
+							regex: `^564`},
+						"군산시": {
+							regex: `^54[01]`},
+						"김제시": {
+							regex: `^543`},
+						"남원시": {
+							regex: `^55[78]`},
+						"무주군": {
+							regex: `^555`},
+						"부안군": {
+							regex: `^563`},
+						"순창군": {
+							regex: `^560`},
+						"완주군": {
+							regex: `^553`},
+						"익산시": {
+							regex: `^54[56]`},
+						"임실군": {
+							regex: `^559`},
+						"장수군": {
+							regex: `^556`},
+						"전주시": {
+							regex: `^5(?:4[89]|5[01])`,
 							subdivisionRegex: map[string]postCodeRegex{
-								"동안구": {
-									regex: `^1(?:39|4[01])`},
-								"만안구": {
-									regex: `^1(?:39|40)`},
+								"덕진구": {
+									regex: `^5(?:4[89]|50)`},
+								"완산구": {
+									regex: `^5(?:4[89]|5[01])`},
 							}},
-						"이천시": {
-							regex: `^17[34]`},
-						"포천시": {
-							regex: `^111`},
-						"가평군": {
-							regex: `^124`},
-						"안산시": {
-							regex: `^15[2-6]`,
+						"정읍시": {
+							regex: `^56[12]`},
+						"진안군": {
+							regex: `^554`},
+					}},
+				"46": {
+					regex: `^5[7-9]\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"강진군": {
+							regex: `^592`},
+						"고흥군": {
+							regex: `^595`},
+						"곡성군": {
+							regex: `^575`},
+						"광양시": {
+							regex: `^57[78]`},
+						"구례군": {
+							regex: `^576`},
+						"나주시": {
+							regex: `^58[23]`},
+						"담양군": {
+							regex: `^573`},
+						"목포시": {
+							regex: `^58[67]`},
+						"무안군": {
+							regex: `^585`},
+						"보성군": {
+							regex: `^594`},
+						"순천시": {
+							regex: `^5(?:79|80)`},
+						"신안군": {
+							regex: `^588`},
+						"여수시": {
+							regex: `^59[67]`},
+						"영광군": {
+							regex: `^570`},
+						"영암군": {
+							regex: `^584`},
+						"완도군": {
+							regex: `^591`},
+						"장성군": {
+							regex: `^572`},
+						"장흥군": {
+							regex: `^593`},
+						"진도군": {
+							regex: `^589`},
+						"함평군": {
+							regex: `^571`},
+						"해남군": {
+							regex: `^590`},
+						"화순군": {
+							regex: `^581`},
+					}},
+				"47": {
+					regex: `^(?:3[6-9]|40)\d{2}`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"경산시": {
+							regex: `^38[4-6]`},
+						"경주시": {
+							regex: `^38[0-2]`},
+						"고령군": {
+							regex: `^401`},
+						"구미시": {
+							regex: `^39[1-4]`},
+						"군위군": {
+							regex: `^390`},
+						"김천시": {
+							regex: `^39[56]`},
+						"문경시": {
+							regex: `^3(?:69|70)`},
+						"봉화군": {
+							regex: `^362`},
+						"상주시": {
+							regex: `^37[12]`},
+						"성주군": {
+							regex: `^400`},
+						"안동시": {
+							regex: `^36[67]`},
+						"영덕군": {
+							regex: `^364`},
+						"영양군": {
+							regex: `^365`},
+						"영주시": {
+							regex: `^36[01]`},
+						"영천시": {
+							regex: `^38[89]`},
+						"예천군": {
+							regex: `^368`},
+						"울릉군": {
+							regex: `^402`},
+						"울진군": {
+							regex: `^363`},
+						"의성군": {
+							regex: `^373`},
+						"청도군": {
+							regex: `^383`},
+						"청송군": {
+							regex: `^374`},
+						"칠곡군": {
+							regex: `^39[89]`},
+						"포항시": {
+							regex: `^37[5-9]`,
 							subdivisionRegex: map[string]postCodeRegex{
-								"단원구": {
-									regex: `^15[2-6]`},
-								"상록구": {
-									regex: `^15[2-6]`},
-							}},
-						"양평군": {
-							regex: `^125`},
-						"연천군": {
-							regex: `^110`},
-						"평택시": {
-							regex: `^1(?:7[7-9]|80)`},
-						"성남시": {
-							regex: `^13[1-6]`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"수정구": {
-									regex: `^13[1-46]`},
-								"중원구": {
-									regex: `^13[1-4]`},
-								"분당구": {
-									regex: `^13[3-6]`},
-							}},
-						"동두천시": {
-							regex: `^113`},
-						"안성시": {
-							regex: `^17[56]`},
-						"용인시": {
-							regex: `^1(?:6[89]|7[01])`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"기흥구": {
-									regex: `^1(?:6[89]|7[01])`},
-								"수지구": {
-									regex: `^16[89]`},
-								"처인구": {
-									regex: `^1(?:6[89]|7[01])`},
-							}},
-						"남양주시": {
-							regex: `^12[0-3]`},
-						"과천시": {
-							regex: `^138`},
-						"군포시": {
-							regex: `^158`},
-						"양주시": {
-							regex: `^11[45]`},
-						"고양시": {
-							regex: `^10[2-5]`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"덕양구": {
-									regex: `^10[245]`},
-								"일산동구": {
-									regex: `^10[2-4]`},
-								"일산서구": {
-									regex: `^10[2-4]`},
-							}},
-						"구리시": {
-							regex: `^119`},
-						"여주시": {
-							regex: `^126`},
-						"의왕시": {
-							regex: `^16[01]`},
-						"광명시": {
-							regex: `^14[23]`},
-						"부천시": {
-							regex: `^14[4-7]`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"소사구": {
-									regex: `^14[67]`},
-								"오정구": {
-									regex: `^14[45]`},
-								"원미구": {
-									regex: `^14[456]`},
-							}},
-						"의정부시": {
-							regex: `^11[6-8]`},
-						"화성시": {
-							regex: `^18[2-6]`},
-						"김포시": {
-							regex: `^10[01]`},
-						"시흥시": {
-							regex: `^1(?:49|5[01])`},
-						"오산시": {
-							regex: `^181`},
-						"파주시": {
-							regex: `^10[89]`},
-						"하남시": {
-							regex: `^1(?:29|30)`},
-						"수원시": {
-							regex: `^16[2-7]`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"권선구": {
-									regex: `^16[3-6]`},
-								"영통구": {
-									regex: `^16[245-7]`},
-								"장안구": {
-									regex: `^16[2-4]`},
-								"팔달구": {
-									regex: `^16[2-6]`},
+								"남구": {
+									regex: `^37[6-9]`},
+								"북구": {
+									regex: `^37[5-79]`},
 							}},
 					}},
 				"48": {
 					regex: `^5[0-3]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"통영시": {
-							regex: `^53[01]`},
+						"거제시": {
+							regex: `^53[23]`},
 						"거창군": {
 							regex: `^501`},
+						"고성군": {
+							regex: `^529`},
+						"김해시": {
+							regex: `^5(?:0[89]|10)`},
+						"남해군": {
+							regex: `^524`},
 						"밀양시": {
 							regex: `^504`},
+						"사천시": {
+							regex: `^525`},
 						"산청군": {
 							regex: `^522`},
 						"양산시": {
 							regex: `^50[56]`},
 						"의령군": {
 							regex: `^521`},
-						"고성군": {
-							regex: `^529`},
 						"진주시": {
 							regex: `^52[6-8]`},
-						"함안군": {
-							regex: `^520`},
-						"사천시": {
-							regex: `^525`},
-						"함양군": {
-							regex: `^500`},
-						"하동군": {
-							regex: `^523`},
-						"합천군": {
-							regex: `^502`},
-						"거제시": {
-							regex: `^53[23]`},
-						"김해시": {
-							regex: `^5(?:0[89]|10)`},
-						"남해군": {
-							regex: `^524`},
 						"창녕군": {
 							regex: `^503`},
 						"창원시": {
@@ -59393,63 +59429,27 @@ var generated = data{
 								"진해구": {
 									regex: `^51[5-7]`},
 							}},
+						"통영시": {
+							regex: `^53[01]`},
+						"하동군": {
+							regex: `^523`},
+						"함안군": {
+							regex: `^520`},
+						"함양군": {
+							regex: `^500`},
+						"합천군": {
+							regex: `^502`},
 					}},
-				"47": {
-					regex: `^(?:3[6-9]|40)\d{2}`,
+				"49": {
+					regex: `^63[0-356]\d`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"영양군": {
-							regex: `^365`},
-						"영주시": {
-							regex: `^36[01]`},
-						"울진군": {
-							regex: `^363`},
-						"영덕군": {
-							regex: `^364`},
-						"안동시": {
-							regex: `^36[67]`},
-						"영천시": {
-							regex: `^38[89]`},
-						"예천군": {
-							regex: `^368`},
-						"울릉군": {
-							regex: `^402`},
-						"고령군": {
-							regex: `^401`},
-						"구미시": {
-							regex: `^39[1-4]`},
-						"군위군": {
-							regex: `^390`},
-						"김천시": {
-							regex: `^39[56]`},
-						"상주시": {
-							regex: `^37[12]`},
-						"성주군": {
-							regex: `^400`},
-						"청도군": {
-							regex: `^383`},
-						"칠곡군": {
-							regex: `^39[89]`},
-						"경주시": {
-							regex: `^38[0-2]`},
-						"포항시": {
-							regex: `^37[5-9]`,
-							subdivisionRegex: map[string]postCodeRegex{
-								"남구": {
-									regex: `^37[6-9]`},
-								"북구": {
-									regex: `^37[5-79]`},
-							}},
-						"문경시": {
-							regex: `^3(?:69|70)`},
-						"봉화군": {
-							regex: `^362`},
-						"의성군": {
-							regex: `^373`},
-						"청송군": {
-							regex: `^374`},
-						"경산시": {
-							regex: `^38[4-6]`},
+						"서귀포시": {
+							regex: `^63[56]`},
+						"제주시": {
+							regex: `^63[0-3]`},
 					}},
+				"50": {
+					regex: `^30[01]\d`},
 			}},
 		Format:                     "%S %C%D%n%A%n%O%n%N%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%D%n%C%n%S%n%Z",
@@ -62550,70 +62550,70 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"NAY": {
-					regex: `^63`},
-				"DUR": {
-					regex: `^3[45]`},
-				"HID": {
-					regex: `^4[23]`},
-				"ROO": {
-					regex: `^77`},
-				"SON": {
-					regex: `^8[3-5]`},
-				"TAM": {
-					regex: `^8[7-9]`},
 				"AGU": {
 					regex: `^20`},
-				"JAL": {
-					regex: `^4[4-9]`},
-				"SIN": {
-					regex: `^8[0-2]`},
-				"TLA": {
-					regex: `^90`},
-				"CAM": {
-					regex: `^24`},
-				"CHP": {
-					regex: `^29|30`},
-				"MIC": {
-					regex: `^5[89]|6[01]`},
-				"OAX": {
-					regex: `^6[89]|7[01]`},
-				"ZAC": {
-					regex: `^9[89]`},
 				"BCN": {
 					regex: `^2[12]`},
-				"COA": {
-					regex: `^2[5-7]`},
-				"YUC": {
-					regex: `^97`},
-				"GUA": {
-					regex: `^3[6-8]`},
-				"GRO": {
-					regex: `^39|4[01]`},
-				"NLE": {
-					regex: `^6[4-7]`},
-				"QUE": {
-					regex: `^76`},
-				"VER": {
-					regex: `^9[1-6]`},
 				"BCS": {
 					regex: `^23`},
-				"CMX": {
-					regex: `^0|1[0-6]`},
-				"SLP": {
-					regex: `^7[89]`},
-				"COL": {
-					regex: `^28`},
-				"MEX": {
-					regex: `^5[0-7]`},
-				"PUE": {
-					regex: `^7[2-5]`},
-				"TAB": {
-					regex: `^86`},
+				"CAM": {
+					regex: `^24`},
 				"CHH": {
 					regex: `^3[1-3]`},
+				"CHP": {
+					regex: `^29|30`},
+				"CMX": {
+					regex: `^0|1[0-6]`},
+				"COA": {
+					regex: `^2[5-7]`},
+				"COL": {
+					regex: `^28`},
+				"DUR": {
+					regex: `^3[45]`},
+				"GRO": {
+					regex: `^39|4[01]`},
+				"GUA": {
+					regex: `^3[6-8]`},
+				"HID": {
+					regex: `^4[23]`},
+				"JAL": {
+					regex: `^4[4-9]`},
+				"MEX": {
+					regex: `^5[0-7]`},
+				"MIC": {
+					regex: `^5[89]|6[01]`},
 				"MOR": {
 					regex: `^62`},
+				"NAY": {
+					regex: `^63`},
+				"NLE": {
+					regex: `^6[4-7]`},
+				"OAX": {
+					regex: `^6[89]|7[01]`},
+				"PUE": {
+					regex: `^7[2-5]`},
+				"QUE": {
+					regex: `^76`},
+				"ROO": {
+					regex: `^77`},
+				"SIN": {
+					regex: `^8[0-2]`},
+				"SLP": {
+					regex: `^7[89]`},
+				"SON": {
+					regex: `^8[3-5]`},
+				"TAB": {
+					regex: `^86`},
+				"TAM": {
+					regex: `^8[7-9]`},
+				"TLA": {
+					regex: `^90`},
+				"VER": {
+					regex: `^9[1-6]`},
+				"YUC": {
+					regex: `^97`},
+				"ZAC": {
+					regex: `^9[89]`},
 			}},
 		Format: "%N%n%O%n%A%n%D%n%Z %C, %S",
 		AdministrativeAreaNameType: State,
@@ -62809,38 +62809,38 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"15": {
-					regex: `^87`},
-				"02": {
-					regex: `^0[5-9]|34950`},
-				"14": {
-					regex: `^5|60`},
-				"05": {
-					regex: `^7[0-4]`},
-				"13": {
-					regex: `^9[3-8]`},
-				"10": {
-					regex: `^4[0-8]|6[3-8]`},
 				"01": {
 					regex: `^79|8[0-6]`},
+				"02": {
+					regex: `^0[5-9]|34950`},
 				"03": {
 					regex: `^1[5-9]`},
-				"09": {
-					regex: `^0[12]`},
-				"07": {
-					regex: `^1[0-4]`},
-				"16": {
-					regex: `^62`},
-				"12": {
-					regex: `^8[89]|9[01]`},
-				"11": {
-					regex: `^2[0-4]`},
-				"06": {
-					regex: `^2[5-8]|[346]9`},
-				"08": {
-					regex: `^3[0-6]|39000`},
 				"04": {
 					regex: `^7[5-8]`},
+				"05": {
+					regex: `^7[0-4]`},
+				"06": {
+					regex: `^2[5-8]|[346]9`},
+				"07": {
+					regex: `^1[0-4]`},
+				"08": {
+					regex: `^3[0-6]|39000`},
+				"09": {
+					regex: `^0[12]`},
+				"10": {
+					regex: `^4[0-8]|6[3-8]`},
+				"11": {
+					regex: `^2[0-4]`},
+				"12": {
+					regex: `^8[89]|9[01]`},
+				"13": {
+					regex: `^9[3-8]`},
+				"14": {
+					regex: `^5|60`},
+				"15": {
+					regex: `^87`},
+				"16": {
+					regex: `^62`},
 			}},
 		Format: "%N%n%O%n%A%n%D%n%Z %C%n%S",
 		AdministrativeAreaNameType: State,
@@ -63307,38 +63307,38 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"JI": {
-					regex: `^6[56]`},
-				"NS": {
-					regex: `^3[7-9]`},
 				"AN": {
 					regex: `^7[12]`},
-				"MD": {
-					regex: `^3[45]`},
-				"MS": {
-					regex: `^4[12]`},
-				"CO": {
-					regex: `^5[56]`},
-				"GR": {
-					regex: `^4[34]`},
-				"LE": {
-					regex: `^2[12]`},
-				"MN": {
-					regex: `^1[0-6]`},
-				"MT": {
-					regex: `^6[1-3]`},
 				"AS": {
 					regex: `^8[1-3]`},
-				"RI": {
-					regex: `^4[78]`},
 				"BO": {
 					regex: `^5[12]`},
 				"CA": {
 					regex: `^4[56]`},
 				"CI": {
 					regex: `^2[5-7]`},
+				"CO": {
+					regex: `^5[56]`},
 				"ES": {
 					regex: `^3[12]`},
+				"GR": {
+					regex: `^4[34]`},
+				"JI": {
+					regex: `^6[56]`},
+				"LE": {
+					regex: `^2[12]`},
+				"MD": {
+					regex: `^3[45]`},
+				"MN": {
+					regex: `^1[0-6]`},
+				"MS": {
+					regex: `^4[12]`},
+				"MT": {
+					regex: `^6[1-3]`},
+				"NS": {
+					regex: `^3[7-9]`},
+				"RI": {
+					regex: `^4[78]`},
 				"SJ": {
 					regex: `^9[12]`},
 			}},
@@ -63722,162 +63722,162 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{4}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"BTN": {
-					regex: `^390`},
-				"CAV": {
-					regex: `^41[0-2]`},
-				"DAS": {
-					regex: `^80[01]`},
-				"NUE": {
-					regex: `^31[0-3]`},
-				"PLW": {
-					regex: `^53[0-2]`},
-				"SUK": {
-					regex: `^98[01]`},
 				"ABR": {
 					regex: `^28[0-2]`},
-				"CAG": {
-					regex: `^35[0-2]`},
-				"LAG": {
-					regex: `^40[0-3]`},
-				"MAD": {
-					regex: `^490`},
-				"NEC": {
-					regex: `^61[0-3]`},
-				"SUR": {
-					regex: `^83[01]`},
-				"TAW": {
-					regex: `^750`},
-				"ZMB": {
-					regex: `^22[01]`},
-				"ZAS": {
-					regex: `^70[0-4]`},
-				"BOH": {
-					regex: `^63[0-3]`},
-				"IFU": {
-					regex: `^36[01]`},
-				"LUN": {
-					regex: `^25[0-2]`},
-				"RIZ": {
-					regex: `^1[89]`},
-				"SUN": {
-					regex: `^84[02]`},
-				"CAT": {
-					regex: `^48[01]`},
-				"NCO": {
-					regex: `^94[01]`},
-				"MSC": {
-					regex: `^72[01]`},
-				"NSA": {
-					regex: `^64[0-2]`},
-				"ISA": {
-					regex: `^33[0-3]`},
-				"NER": {
-					regex: `^62[0-2]`},
-				"SAR": {
-					regex: `^8015`},
-				"SIG": {
-					regex: `^62(2[5-9]|30)`},
-				"SOR": {
-					regex: `^47[01]`},
-				"AUR": {
-					regex: `^320`},
-				"BUK": {
-					regex: `^87[0-2]`},
-				"CAS": {
-					regex: `^44[0-3]`},
-				"ILI": {
-					regex: `^50([0-3]|4[0-3])`},
-				"MOU": {
-					regex: `^26(1[6-9]|2[0-5])`},
-				"AKL": {
-					regex: `^56[01]`},
-				"ANT": {
-					regex: `^57[01]`},
-				"ILN": {
-					regex: `^29[0-2]`},
-				"EAS": {
-					regex: `^68[0-2]`},
-				"KAL": {
-					regex: `^38(0[79]|1[0-4])`},
-				"MAG": {
-					regex: `^96[01]`},
-				"SLU": {
-					regex: `^74[01]`},
-				"GUI": {
-					regex: `^504[4-6]`},
-				"DAO": {
-					regex: `^82[01]`},
+				"AGN": {
+					regex: `^86[01]`},
 				"AGS": {
 					regex: `^85[01]`},
+				"AKL": {
+					regex: `^56[01]`},
 				"ALB": {
 					regex: `^45[01]`},
+				"ANT": {
+					regex: `^57[01]`},
 				"APA": {
 					regex: `^380[0-68]`},
+				"AUR": {
+					regex: `^320`},
 				"BAN": {
 					regex: `^21[01]`},
-				"BUL": {
-					regex: `^30[0-2]`},
-				"ZSI": {
-					regex: `^70[0-4]`},
+				"BAS": {
+					regex: `^730`},
+				"BEN": {
+					regex: `^26(0|1[0-5])`},
 				"BIL": {
 					regex: `^65(4[3-9]|5)`},
+				"BOH": {
+					regex: `^63[0-3]`},
+				"BTG": {
+					regex: `^42[0-3]`},
+				"BTN": {
+					regex: `^390`},
+				"BUK": {
+					regex: `^87[0-2]`},
+				"BUL": {
+					regex: `^30[0-2]`},
+				"CAG": {
+					regex: `^35[0-2]`},
+				"CAM": {
+					regex: `^910`},
+				"CAN": {
+					regex: `^46[01]`},
+				"CAP": {
+					regex: `^58[01]`},
+				"CAS": {
+					regex: `^44[0-3]`},
+				"CAT": {
+					regex: `^48[01]`},
+				"CAV": {
+					regex: `^41[0-2]`},
+				"CEB": {
+					regex: `^60[0-5]`},
+				"COM": {
+					regex: `^88[01]`},
+				"DAO": {
+					regex: `^82[01]`},
+				"DAS": {
+					regex: `^80[01]`},
+				"DAV": {
+					regex: `^81[0-2]`},
+				"EAS": {
+					regex: `^68[0-2]`},
+				"GUI": {
+					regex: `^504[4-6]`},
+				"IFU": {
+					regex: `^36[01]`},
+				"ILI": {
+					regex: `^50([0-3]|4[0-3])`},
+				"ILN": {
+					regex: `^29[0-2]`},
+				"ILS": {
+					regex: `^27[0-3]`},
+				"ISA": {
+					regex: `^33[0-3]`},
+				"KAL": {
+					regex: `^38(0[79]|1[0-4])`},
+				"LAG": {
+					regex: `^40[0-3]`},
+				"LAN": {
+					regex: `^92[0-2]`},
 				"LAS": {
 					regex: `^9(3[0-2]|7[01])`},
 				"LEY": {
 					regex: `^65([0-3]|4[0-2])`},
-				"PAM": {
-					regex: `^20[0-2]`},
-				"SCO": {
-					regex: `^95[01]`},
-				"COM": {
-					regex: `^88[01]`},
-				"MDR": {
-					regex: `^52[01]`},
-				"QUE": {
-					regex: `^43[0-4]`},
-				"ZAN": {
-					regex: `^71[0-2]`},
-				"CAM": {
-					regex: `^910`},
-				"LAN": {
-					regex: `^92[0-2]`},
-				"NUV": {
-					regex: `^37[01]`},
-				"PAN": {
-					regex: `^24[0-4]`},
-				"WSA": {
-					regex: `^67[0-2]`},
-				"CAP": {
-					regex: `^58[01]`},
-				"ILS": {
-					regex: `^27[0-3]`},
+				"LUN": {
+					regex: `^25[0-2]`},
+				"MAD": {
+					regex: `^490`},
+				"MAG": {
+					regex: `^96[01]`},
 				"MAS": {
 					regex: `^54[0-2]`},
-				"MSR": {
-					regex: `^90[0-2]`},
-				"AGN": {
-					regex: `^86[01]`},
-				"BTG": {
-					regex: `^42[0-3]`},
-				"BEN": {
-					regex: `^26(0|1[0-5])`},
-				"QUI": {
-					regex: `^340`},
-				"ROM": {
-					regex: `^55[01]`},
-				"TAR": {
-					regex: `^23[01]`},
-				"BAS": {
-					regex: `^730`},
-				"CAN": {
-					regex: `^46[01]`},
-				"CEB": {
-					regex: `^60[0-5]`},
-				"DAV": {
-					regex: `^81[0-2]`},
 				"MDC": {
 					regex: `^51[01]`},
+				"MDR": {
+					regex: `^52[01]`},
+				"MOU": {
+					regex: `^26(1[6-9]|2[0-5])`},
+				"MSC": {
+					regex: `^72[01]`},
+				"MSR": {
+					regex: `^90[0-2]`},
+				"NCO": {
+					regex: `^94[01]`},
+				"NEC": {
+					regex: `^61[0-3]`},
+				"NER": {
+					regex: `^62[0-2]`},
+				"NSA": {
+					regex: `^64[0-2]`},
+				"NUE": {
+					regex: `^31[0-3]`},
+				"NUV": {
+					regex: `^37[01]`},
+				"PAM": {
+					regex: `^20[0-2]`},
+				"PAN": {
+					regex: `^24[0-4]`},
+				"PLW": {
+					regex: `^53[0-2]`},
+				"QUE": {
+					regex: `^43[0-4]`},
+				"QUI": {
+					regex: `^340`},
+				"RIZ": {
+					regex: `^1[89]`},
+				"ROM": {
+					regex: `^55[01]`},
+				"SAR": {
+					regex: `^8015`},
+				"SCO": {
+					regex: `^95[01]`},
+				"SIG": {
+					regex: `^62(2[5-9]|30)`},
+				"SLU": {
+					regex: `^74[01]`},
+				"SOR": {
+					regex: `^47[01]`},
+				"SUK": {
+					regex: `^98[01]`},
+				"SUN": {
+					regex: `^84[02]`},
+				"SUR": {
+					regex: `^83[01]`},
+				"TAR": {
+					regex: `^23[01]`},
+				"TAW": {
+					regex: `^750`},
+				"WSA": {
+					regex: `^67[0-2]`},
+				"ZAN": {
+					regex: `^71[0-2]`},
+				"ZAS": {
+					regex: `^70[0-4]`},
+				"ZMB": {
+					regex: `^22[01]`},
+				"ZSI": {
+					regex: `^70[0-4]`},
 			}},
 		Format: "%N%n%O%n%A%n%D, %C%n%Z %S",
 		AllowedFields: map[Field]struct{}{
@@ -64559,172 +64559,172 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{6}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"AMU": {
-					regex: `^67[56]`},
-				"MUR": {
-					regex: `^18[34]`},
-				"PER": {
-					regex: `^61[4-9]`},
-				"BU": {
-					regex: `^67[01]`},
-				"SA": {
-					regex: `^67[78]`},
-				"SAK": {
-					regex: `^69[34]`},
-				"KYA": {
-					regex: `^6(?:6[0-3]|4[78])`},
-				"OMS": {
-					regex: `^64[4-6]`},
-				"KO": {
-					regex: `^16[7-9]`},
-				"SAM": {
-					regex: `^44[3-6]`},
-				"LIP": {
-					regex: `^39[89]`},
-				"NEN": {
-					regex: `^166`},
-				"TUL": {
-					regex: `^30[01]`},
-				"CHU": {
-					regex: `^689`},
-				"YEV": {
-					regex: `^679`},
-				"KIR": {
-					regex: `^61[0-3]`},
-				"KRS": {
-					regex: `^30[5-7]`},
-				"DA": {
-					regex: `^36[78]`},
-				"KL": {
-					regex: `^35[89]`},
-				"KK": {
-					regex: `^655`},
-				"STA": {
-					regex: `^35[5-7]`},
-				"KLU": {
-					regex: `^24[89]`},
-				"MO": {
-					regex: `^43[01]`},
-				"KHA": {
-					regex: `^68[0-2]`},
-				"YAN": {
-					regex: `^629`},
-				"YAR": {
-					regex: `^15[0-2]`},
-				"IN": {
-					regex: `^386`},
-				"VLA": {
-					regex: `^60[0-2]`},
-				"PNZ": {
-					regex: `^44[0-2]`},
-				"SPE": {
-					regex: `^19`},
-				"SE": {
-					regex: `^36[23]`},
-				"AST": {
-					regex: `^41[4-6]`},
-				"KB": {
-					regex: `^36[01]`},
-				"KEM": {
-					regex: `^65[0-4]`},
-				"MAG": {
-					regex: `^68[56]`},
-				"MOW": {
-					regex: `^1(?:0[1-9]|1|2|3[0-5]|4[0-4])`},
-				"PSK": {
-					regex: `^18[0-2]`},
-				"ME": {
-					regex: `^42[45]`},
-				"TYU": {
-					regex: `^62[5-7]`},
-				"KHM": {
-					regex: `^628`},
-				"SAR": {
-					regex: `^41[0-3]`},
-				"VGG": {
-					regex: `^40[0-4]`},
-				"KGD": {
-					regex: `^23[6-8]`},
-				"KC": {
-					regex: `^369`},
-				"AL": {
-					regex: `^649`},
-				"BA": {
-					regex: `^45[0-3]`},
-				"KR": {
-					regex: `^18[56]`},
-				"TY": {
-					regex: `^66[78]`},
-				"SMO": {
-					regex: `^21[4-6]`},
-				"CHE": {
-					regex: `^45[4-7]`},
-				"VOR": {
-					regex: `^39[4-7]`},
-				"KDA": {
-					regex: `^35[0-4]`},
-				"NVS": {
-					regex: `^63[0-3]`},
-				"ROS": {
-					regex: `^34[4-7]`},
-				"SVE": {
-					regex: `^62[0-4]`},
-				"CE": {
-					regex: `^36[4-6]`},
-				"BEL": {
-					regex: `^30[89]`},
-				"ZAB": {
-					regex: `^6(?:7[2-4]|87)`},
-				"NGR": {
-					regex: `^17[3-5]`},
-				"ORE": {
-					regex: `^46[0-2]`},
 				"AD": {
 					regex: `^385`},
-				"BRY": {
-					regex: `^24[1-3]`},
-				"MOS": {
-					regex: `^14[0-4]`},
-				"RYA": {
-					regex: `^39[01]`},
+				"AL": {
+					regex: `^649`},
 				"ALT": {
 					regex: `^65[6-9]`},
+				"AMU": {
+					regex: `^67[56]`},
+				"ARK": {
+					regex: `^16[3-5]`},
+				"AST": {
+					regex: `^41[4-6]`},
+				"BA": {
+					regex: `^45[0-3]`},
+				"BEL": {
+					regex: `^30[89]`},
+				"BRY": {
+					regex: `^24[1-3]`},
+				"BU": {
+					regex: `^67[01]`},
+				"CE": {
+					regex: `^36[4-6]`},
+				"CHE": {
+					regex: `^45[4-7]`},
+				"CHU": {
+					regex: `^689`},
+				"CU": {
+					regex: `^42[89]`},
+				"DA": {
+					regex: `^36[78]`},
+				"IN": {
+					regex: `^386`},
+				"IRK": {
+					regex: `^66[4-9]`},
 				"IVA": {
 					regex: `^15[3-5]`},
 				"KAM": {
 					regex: `^68[348]`},
-				"ORL": {
-					regex: `^30[23]`},
-				"ARK": {
-					regex: `^16[3-5]`},
-				"VLG": {
-					regex: `^16[0-2]`},
-				"IRK": {
-					regex: `^66[4-9]`},
-				"PRI": {
-					regex: `^69[0-2]`},
-				"TAM": {
-					regex: `^39[23]`},
-				"CU": {
-					regex: `^42[89]`},
-				"NIZ": {
-					regex: `^60[3-7]`},
-				"TA": {
-					regex: `^42[0-3]`},
-				"TVE": {
-					regex: `^17[0-2]`},
-				"TOM": {
-					regex: `^63[4-6]`},
-				"ULY": {
-					regex: `^43[23]`},
-				"KOS": {
-					regex: `^15[67]`},
+				"KB": {
+					regex: `^36[01]`},
+				"KC": {
+					regex: `^369`},
+				"KDA": {
+					regex: `^35[0-4]`},
+				"KEM": {
+					regex: `^65[0-4]`},
+				"KGD": {
+					regex: `^23[6-8]`},
 				"KGN": {
 					regex: `^64[01]`},
+				"KHA": {
+					regex: `^68[0-2]`},
+				"KHM": {
+					regex: `^628`},
+				"KIR": {
+					regex: `^61[0-3]`},
+				"KK": {
+					regex: `^655`},
+				"KL": {
+					regex: `^35[89]`},
+				"KLU": {
+					regex: `^24[89]`},
+				"KO": {
+					regex: `^16[7-9]`},
+				"KOS": {
+					regex: `^15[67]`},
+				"KR": {
+					regex: `^18[56]`},
+				"KRS": {
+					regex: `^30[5-7]`},
+				"KYA": {
+					regex: `^6(?:6[0-3]|4[78])`},
 				"LEN": {
 					regex: `^18[78]`},
+				"LIP": {
+					regex: `^39[89]`},
+				"MAG": {
+					regex: `^68[56]`},
+				"ME": {
+					regex: `^42[45]`},
+				"MO": {
+					regex: `^43[01]`},
+				"MOS": {
+					regex: `^14[0-4]`},
+				"MOW": {
+					regex: `^1(?:0[1-9]|1|2|3[0-5]|4[0-4])`},
+				"MUR": {
+					regex: `^18[34]`},
+				"NEN": {
+					regex: `^166`},
+				"NGR": {
+					regex: `^17[3-5]`},
+				"NIZ": {
+					regex: `^60[3-7]`},
+				"NVS": {
+					regex: `^63[0-3]`},
+				"OMS": {
+					regex: `^64[4-6]`},
+				"ORE": {
+					regex: `^46[0-2]`},
+				"ORL": {
+					regex: `^30[23]`},
+				"PER": {
+					regex: `^61[4-9]`},
+				"PNZ": {
+					regex: `^44[0-2]`},
+				"PRI": {
+					regex: `^69[0-2]`},
+				"PSK": {
+					regex: `^18[0-2]`},
+				"ROS": {
+					regex: `^34[4-7]`},
+				"RYA": {
+					regex: `^39[01]`},
+				"SA": {
+					regex: `^67[78]`},
+				"SAK": {
+					regex: `^69[34]`},
+				"SAM": {
+					regex: `^44[3-6]`},
+				"SAR": {
+					regex: `^41[0-3]`},
+				"SE": {
+					regex: `^36[23]`},
+				"SMO": {
+					regex: `^21[4-6]`},
+				"SPE": {
+					regex: `^19`},
+				"STA": {
+					regex: `^35[5-7]`},
+				"SVE": {
+					regex: `^62[0-4]`},
+				"TA": {
+					regex: `^42[0-3]`},
+				"TAM": {
+					regex: `^39[23]`},
+				"TOM": {
+					regex: `^63[4-6]`},
+				"TUL": {
+					regex: `^30[01]`},
+				"TVE": {
+					regex: `^17[0-2]`},
+				"TY": {
+					regex: `^66[78]`},
+				"TYU": {
+					regex: `^62[5-7]`},
 				"UD": {
 					regex: `^42[67]`},
+				"ULY": {
+					regex: `^43[23]`},
+				"VGG": {
+					regex: `^40[0-4]`},
+				"VLA": {
+					regex: `^60[0-2]`},
+				"VLG": {
+					regex: `^16[0-2]`},
+				"VOR": {
+					regex: `^39[4-7]`},
+				"YAN": {
+					regex: `^629`},
+				"YAR": {
+					regex: `^15[0-2]`},
+				"YEV": {
+					regex: `^679`},
+				"ZAB": {
+					regex: `^6(?:7[2-4]|87)`},
 			}},
 		Format:                     "%N%n%O%n%A%n%C%n%S%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%C%n%S%n%Z",
@@ -66014,32 +66014,32 @@ var generated = data{
 			subdivisionRegex: map[string]postCodeRegex{
 				"AH": {
 					regex: `^CP 21`},
-				"PA": {
-					regex: `^CP 16`},
-				"MO": {
-					regex: `^CP 32`},
 				"CA": {
 					regex: `^CP 12`},
+				"CH": {
+					regex: `^CP 13`},
 				"CU": {
 					regex: `^CP 14`},
-				"UN": {
-					regex: `^CP 31`},
+				"LI": {
+					regex: `^CP 15`},
+				"MO": {
+					regex: `^CP 32`},
+				"PA": {
+					regex: `^CP 16`},
+				"SA": {
+					regex: `^CP 22`},
 				"SM": {
 					regex: `^CP 33`},
 				"SO": {
 					regex: `^CP 23`},
-				"CH": {
-					regex: `^CP 13`},
-				"LI": {
-					regex: `^CP 15`},
 				"SS": {
 					regex: `^CP 11`},
-				"US": {
-					regex: `^CP 34`},
 				"SV": {
 					regex: `^CP 17`},
-				"SA": {
-					regex: `^CP 22`},
+				"UN": {
+					regex: `^CP 31`},
+				"US": {
+					regex: `^CP 34`},
 			}},
 		Format: "%N%n%O%n%A%n%Z-%C%n%S",
 		AllowedFields: map[Field]struct{}{
@@ -66226,158 +66226,158 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"67": {
-					regex: `^67`},
-				"42": {
-					regex: `^42`},
-				"81": {
-					regex: `^81`},
-				"46": {
-					regex: `^46`},
-				"62": {
-					regex: `^62`},
-				"23": {
-					regex: `^23`},
-				"60": {
-					regex: `^60`},
-				"65": {
-					regex: `^65`},
-				"91": {
-					regex: `^91`},
-				"20": {
-					regex: `^20`},
-				"75": {
-					regex: `^75`},
-				"74": {
-					regex: `^74`},
-				"17": {
-					regex: `^16`},
-				"34": {
-					regex: `^34`},
-				"53": {
-					regex: `^53`},
-				"71": {
-					regex: `^71`},
-				"24": {
-					regex: `^24`},
-				"50": {
-					regex: `^50`},
-				"58": {
-					regex: `^58`},
-				"90": {
-					regex: `^90`},
-				"11": {
-					regex: `^10`},
-				"40": {
-					regex: `^40`},
-				"14": {
-					regex: `^13`},
-				"56": {
-					regex: `^56`},
-				"44": {
-					regex: `^44`},
-				"61": {
-					regex: `^61`},
-				"30": {
-					regex: `^30`},
-				"96": {
-					regex: `^96`},
-				"47": {
-					regex: `^47`},
-				"43": {
-					regex: `^43`},
-				"92": {
-					regex: `^92`},
-				"48": {
-					regex: `^48`},
-				"25": {
-					regex: `^25`},
-				"83": {
-					regex: `^83`},
-				"27": {
-					regex: `^27`},
-				"19": {
-					regex: `^18`},
-				"36": {
-					regex: `^36`},
-				"63": {
-					regex: `^63`},
-				"76": {
-					regex: `^76`},
-				"45": {
-					regex: `^45`},
-				"52": {
-					regex: `^52`},
-				"32": {
-					regex: `^32`},
-				"18": {
-					regex: `^17`},
-				"85": {
-					regex: `^85`},
-				"16": {
-					regex: `^15`},
-				"51": {
-					regex: `^51`},
-				"64": {
-					regex: `^64`},
-				"84": {
-					regex: `^84`},
-				"95": {
-					regex: `^95`},
-				"70": {
-					regex: `^70`},
-				"33": {
-					regex: `^33`},
-				"26": {
-					regex: `^26`},
-				"21": {
-					regex: `^21`},
-				"15": {
-					regex: `^14`},
-				"37": {
-					regex: `^37`},
-				"66": {
-					regex: `^66`},
-				"54": {
-					regex: `^54`},
-				"35": {
-					regex: `^35`},
-				"39": {
-					regex: `^39`},
-				"41": {
-					regex: `^41`},
-				"86": {
-					regex: `^86`},
-				"55": {
-					regex: `^55`},
-				"94": {
-					regex: `^94`},
-				"49": {
-					regex: `^49`},
-				"22": {
-					regex: `^22`},
-				"57": {
-					regex: `^57`},
-				"82": {
-					regex: `^82`},
-				"12": {
-					regex: `^11`},
-				"31": {
-					regex: `^31`},
-				"13": {
-					regex: `^12`},
-				"77": {
-					regex: `^77`},
 				"10": {
 					regex: `^10`},
-				"73": {
-					regex: `^73`},
-				"80": {
-					regex: `^80`},
-				"93": {
-					regex: `^93`},
+				"11": {
+					regex: `^10`},
+				"12": {
+					regex: `^11`},
+				"13": {
+					regex: `^12`},
+				"14": {
+					regex: `^13`},
+				"15": {
+					regex: `^14`},
+				"16": {
+					regex: `^15`},
+				"17": {
+					regex: `^16`},
+				"18": {
+					regex: `^17`},
+				"19": {
+					regex: `^18`},
+				"20": {
+					regex: `^20`},
+				"21": {
+					regex: `^21`},
+				"22": {
+					regex: `^22`},
+				"23": {
+					regex: `^23`},
+				"24": {
+					regex: `^24`},
+				"25": {
+					regex: `^25`},
+				"26": {
+					regex: `^26`},
+				"27": {
+					regex: `^27`},
+				"30": {
+					regex: `^30`},
+				"31": {
+					regex: `^31`},
+				"32": {
+					regex: `^32`},
+				"33": {
+					regex: `^33`},
+				"34": {
+					regex: `^34`},
+				"35": {
+					regex: `^35`},
+				"36": {
+					regex: `^36`},
+				"37": {
+					regex: `^37`},
+				"39": {
+					regex: `^39`},
+				"40": {
+					regex: `^40`},
+				"41": {
+					regex: `^41`},
+				"42": {
+					regex: `^42`},
+				"43": {
+					regex: `^43`},
+				"44": {
+					regex: `^44`},
+				"45": {
+					regex: `^45`},
+				"46": {
+					regex: `^46`},
+				"47": {
+					regex: `^47`},
+				"48": {
+					regex: `^48`},
+				"49": {
+					regex: `^49`},
+				"50": {
+					regex: `^50`},
+				"51": {
+					regex: `^51`},
+				"52": {
+					regex: `^52`},
+				"53": {
+					regex: `^53`},
+				"54": {
+					regex: `^54`},
+				"55": {
+					regex: `^55`},
+				"56": {
+					regex: `^56`},
+				"57": {
+					regex: `^57`},
+				"58": {
+					regex: `^58`},
+				"60": {
+					regex: `^60`},
+				"61": {
+					regex: `^61`},
+				"62": {
+					regex: `^62`},
+				"63": {
+					regex: `^63`},
+				"64": {
+					regex: `^64`},
+				"65": {
+					regex: `^65`},
+				"66": {
+					regex: `^66`},
+				"67": {
+					regex: `^67`},
+				"70": {
+					regex: `^70`},
+				"71": {
+					regex: `^71`},
 				"72": {
 					regex: `^72`},
+				"73": {
+					regex: `^73`},
+				"74": {
+					regex: `^74`},
+				"75": {
+					regex: `^75`},
+				"76": {
+					regex: `^76`},
+				"77": {
+					regex: `^77`},
+				"80": {
+					regex: `^80`},
+				"81": {
+					regex: `^81`},
+				"82": {
+					regex: `^82`},
+				"83": {
+					regex: `^83`},
+				"84": {
+					regex: `^84`},
+				"85": {
+					regex: `^85`},
+				"86": {
+					regex: `^86`},
+				"90": {
+					regex: `^90`},
+				"91": {
+					regex: `^91`},
+				"92": {
+					regex: `^92`},
+				"93": {
+					regex: `^93`},
+				"94": {
+					regex: `^94`},
+				"95": {
+					regex: `^95`},
+				"96": {
+					regex: `^96`},
 			}},
 		Format:          "%N%n%O%n%A%n%D %C%n%S %Z",
 		LatinizedFormat: "%N%n%O%n%A%n%D, %C%n%S %Z",
@@ -67237,168 +67237,168 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"18": {
-					regex: `^18`},
-				"48": {
-					regex: `^48`},
-				"49": {
-					regex: `^49`},
-				"54": {
-					regex: `^54`},
-				"77": {
-					regex: `^77`},
-				"03": {
-					regex: `^03`},
-				"74": {
-					regex: `^74`},
-				"31": {
-					regex: `^31`},
-				"51": {
-					regex: `^51`},
-				"53": {
-					regex: `^53`},
-				"67": {
-					regex: `^67`},
-				"12": {
-					regex: `^12`},
-				"19": {
-					regex: `^19`},
-				"65": {
-					regex: `^65`},
-				"69": {
-					regex: `^69`},
-				"23": {
-					regex: `^23`},
-				"35": {
-					regex: `^35`},
-				"36": {
-					regex: `^36`},
-				"59": {
-					regex: `^59`},
-				"72": {
-					regex: `^72`},
-				"29": {
-					regex: `^29`},
-				"76": {
-					regex: `^76`},
-				"37": {
-					regex: `^37`},
-				"42": {
-					regex: `^42`},
-				"44": {
-					regex: `^44`},
-				"50": {
-					regex: `^50`},
-				"60": {
-					regex: `^60`},
-				"61": {
-					regex: `^61`},
-				"06": {
-					regex: `^06`},
-				"22": {
-					regex: `^22`},
-				"25": {
-					regex: `^25`},
-				"62": {
-					regex: `^62`},
-				"24": {
-					regex: `^24`},
-				"27": {
-					regex: `^27`},
-				"79": {
-					regex: `^79`},
 				"01": {
 					regex: `^01`},
+				"02": {
+					regex: `^02`},
+				"03": {
+					regex: `^03`},
+				"04": {
+					regex: `^04`},
+				"05": {
+					regex: `^05`},
+				"06": {
+					regex: `^06`},
 				"07": {
 					regex: `^07`},
 				"08": {
 					regex: `^08`},
-				"16": {
-					regex: `^16`},
-				"55": {
-					regex: `^55`},
-				"02": {
-					regex: `^02`},
-				"05": {
-					regex: `^05`},
-				"75": {
-					regex: `^75`},
-				"81": {
-					regex: `^81`},
-				"30": {
-					regex: `^30`},
-				"70": {
-					regex: `^70`},
-				"68": {
-					regex: `^68`},
-				"20": {
-					regex: `^20`},
-				"26": {
-					regex: `^26`},
-				"28": {
-					regex: `^28`},
-				"34": {
-					regex: `^34`},
-				"33": {
-					regex: `^33`},
-				"04": {
-					regex: `^04`},
 				"09": {
 					regex: `^09`},
-				"13": {
-					regex: `^13`},
-				"38": {
-					regex: `^38`},
-				"71": {
-					regex: `^71`},
-				"41": {
-					regex: `^41`},
-				"43": {
-					regex: `^43`},
-				"80": {
-					regex: `^80`},
-				"57": {
-					regex: `^57`},
-				"73": {
-					regex: `^73`},
-				"58": {
-					regex: `^58`},
 				"10": {
 					regex: `^10`},
-				"14": {
-					regex: `^14`},
-				"32": {
-					regex: `^32`},
-				"39": {
-					regex: `^39`},
-				"45": {
-					regex: `^45`},
-				"56": {
-					regex: `^56`},
 				"11": {
 					regex: `^11`},
-				"21": {
-					regex: `^21`},
-				"52": {
-					regex: `^52`},
-				"66": {
-					regex: `^66`},
+				"12": {
+					regex: `^12`},
+				"13": {
+					regex: `^13`},
+				"14": {
+					regex: `^14`},
 				"15": {
 					regex: `^15`},
-				"46": {
-					regex: `^46`},
-				"78": {
-					regex: `^78`},
-				"40": {
-					regex: `^40`},
-				"64": {
-					regex: `^64`},
+				"16": {
+					regex: `^16`},
 				"17": {
 					regex: `^17`},
+				"18": {
+					regex: `^18`},
+				"19": {
+					regex: `^19`},
+				"20": {
+					regex: `^20`},
+				"21": {
+					regex: `^21`},
+				"22": {
+					regex: `^22`},
+				"23": {
+					regex: `^23`},
+				"24": {
+					regex: `^24`},
+				"25": {
+					regex: `^25`},
+				"26": {
+					regex: `^26`},
+				"27": {
+					regex: `^27`},
+				"28": {
+					regex: `^28`},
+				"29": {
+					regex: `^29`},
+				"30": {
+					regex: `^30`},
+				"31": {
+					regex: `^31`},
+				"32": {
+					regex: `^32`},
+				"33": {
+					regex: `^33`},
+				"34": {
+					regex: `^34`},
+				"35": {
+					regex: `^35`},
+				"36": {
+					regex: `^36`},
+				"37": {
+					regex: `^37`},
+				"38": {
+					regex: `^38`},
+				"39": {
+					regex: `^39`},
+				"40": {
+					regex: `^40`},
+				"41": {
+					regex: `^41`},
+				"42": {
+					regex: `^42`},
+				"43": {
+					regex: `^43`},
+				"44": {
+					regex: `^44`},
+				"45": {
+					regex: `^45`},
+				"46": {
+					regex: `^46`},
 				"47": {
 					regex: `^47`},
+				"48": {
+					regex: `^48`},
+				"49": {
+					regex: `^49`},
+				"50": {
+					regex: `^50`},
+				"51": {
+					regex: `^51`},
+				"52": {
+					regex: `^52`},
+				"53": {
+					regex: `^53`},
+				"54": {
+					regex: `^54`},
+				"55": {
+					regex: `^55`},
+				"56": {
+					regex: `^56`},
+				"57": {
+					regex: `^57`},
+				"58": {
+					regex: `^58`},
+				"59": {
+					regex: `^59`},
+				"60": {
+					regex: `^60`},
+				"61": {
+					regex: `^61`},
+				"62": {
+					regex: `^62`},
 				"63": {
 					regex: `^63`},
+				"64": {
+					regex: `^64`},
+				"65": {
+					regex: `^65`},
+				"66": {
+					regex: `^66`},
+				"67": {
+					regex: `^67`},
+				"68": {
+					regex: `^68`},
+				"69": {
+					regex: `^69`},
+				"70": {
+					regex: `^70`},
+				"71": {
+					regex: `^71`},
+				"72": {
+					regex: `^72`},
+				"73": {
+					regex: `^73`},
+				"74": {
+					regex: `^74`},
+				"75": {
+					regex: `^75`},
+				"76": {
+					regex: `^76`},
+				"77": {
+					regex: `^77`},
+				"78": {
+					regex: `^78`},
+				"79": {
+					regex: `^79`},
+				"80": {
+					regex: `^80`},
+				"81": {
+					regex: `^81`},
 			}},
 		Format:           "%N%n%O%n%A%n%Z %C/%S",
 		LocalityNameType: District,
@@ -67900,385 +67900,531 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{3}(?:\d{2})?`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"PEN": {
-					regex: `^88`,
+				"CHA": {
+					regex: `^5[0123]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"馬公市": {
-							regex: `^880`},
-						"望安鄉": {
-							regex: `^882`},
-						"湖西鄉": {
-							regex: `^885`},
-						"七美鄉": {
-							regex: `^883`},
-						"白沙鄉": {
-							regex: `^884`},
-						"西嶼鄉": {
-							regex: `^881`},
+						"二林鎮": {
+							regex: `^526`},
+						"二水鄉": {
+							regex: `^530`},
+						"伸港鄉": {
+							regex: `^509`},
+						"北斗鎮": {
+							regex: `^521`},
+						"和美鎮": {
+							regex: `^508`},
+						"員林市": {
+							regex: `^510`},
+						"埔心鄉": {
+							regex: `^513`},
+						"埔鹽鄉": {
+							regex: `^516`},
+						"埤頭鄉": {
+							regex: `^523`},
+						"大城鄉": {
+							regex: `^527`},
+						"大村鄉": {
+							regex: `^515`},
+						"彰化市": {
+							regex: `^500`},
+						"永靖鄉": {
+							regex: `^512`},
+						"溪州鄉": {
+							regex: `^524`},
+						"溪湖鎮": {
+							regex: `^514`},
+						"田中鎮": {
+							regex: `^520`},
+						"田尾鄉": {
+							regex: `^522`},
+						"社頭鄉": {
+							regex: `^511`},
+						"福興鄉": {
+							regex: `^506`},
+						"秀水鄉": {
+							regex: `^504`},
+						"竹塘鄉": {
+							regex: `^525`},
+						"線西鄉": {
+							regex: `^507`},
+						"芬園鄉": {
+							regex: `^502`},
+						"花壇鄉": {
+							regex: `^503`},
+						"芳苑鄉": {
+							regex: `^528`},
+						"鹿港鎮": {
+							regex: `^505`},
 					}},
-				"TNN": {
-					regex: `^7[0-4]`,
+				"CYI": {
+					regex: `^600`},
+				"CYQ": {
+					regex: `^60[1-9]|6[12]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"佳里區": {
-							regex: `^722`},
-						"南化區": {
-							regex: `^716`},
-						"新市區": {
-							regex: `^744`},
-						"下營區": {
-							regex: `^735`},
-						"仁德區": {
-							regex: `^717`},
-						"左鎮區": {
-							regex: `^713`},
-						"白河區": {
-							regex: `^732`},
-						"安平區": {
-							regex: `^708`},
-						"後壁區": {
-							regex: `^731`},
-						"新營區": {
-							regex: `^730`},
-						"關廟區": {
-							regex: `^718`},
-						"安定區": {
-							regex: `^745`},
-						"善化區": {
-							regex: `^741`},
-						"新化區": {
-							regex: `^712`},
-						"龍崎區": {
-							regex: `^719`},
-						"大內區": {
-							regex: `^742`},
-						"六甲區": {
-							regex: `^734`},
-						"學甲區": {
-							regex: `^726`},
-						"北門區": {
-							regex: `^727`},
-						"永康區": {
-							regex: `^710`},
-						"安南區": {
-							regex: `^709`},
-						"西港區": {
-							regex: `^723`},
-						"楠西區": {
-							regex: `^715`},
-						"歸仁區": {
-							regex: `^711`},
-						"七股區": {
-							regex: `^724`},
-						"東山區": {
-							regex: `^733`},
-						"南區": {
-							regex: `^702`},
-						"柳營區": {
-							regex: `^736`},
-						"將軍區": {
-							regex: `^725`},
-						"玉井區": {
-							regex: `^714`},
-						"官田區": {
-							regex: `^720`},
-						"鹽水區": {
-							regex: `^737`},
-						"山上區": {
-							regex: `^743`},
-						"中西區": {
-							regex: `^700`},
-						"北區": {
-							regex: `^704`},
-						"東區": {
-							regex: `^701`},
-						"麻豆區": {
-							regex: `^721`},
-					}},
-				"HUA": {
-					regex: `^9[78]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"卓溪鄉": {
-							regex: `^982`},
-						"花蓮市": {
-							regex: `^970`},
-						"富里鄉": {
-							regex: `^983`},
-						"新城鄉": {
-							regex: `^971`},
-						"瑞穗鄉": {
-							regex: `^978`},
-						"萬榮鄉": {
-							regex: `^979`},
-						"光復鄉": {
-							regex: `^976`},
-						"吉安鄉": {
-							regex: `^973`},
-						"壽豐鄉": {
-							regex: `^974`},
-						"豐濱鄉": {
-							regex: `^977`},
-						"鳳林鎮": {
-							regex: `^975`},
-						"玉里鎮": {
-							regex: `^981`},
-						"秀林鄉": {
-							regex: `^972`},
-					}},
-				"KEE": {
-					regex: `^20[0-6]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"仁愛區": {
-							regex: `^200`},
-						"安樂區": {
-							regex: `^204`},
-						"信義區": {
-							regex: `^201`},
-						"暖暖區": {
-							regex: `^205`},
-						"七堵區": {
-							regex: `^206`},
-						"中山區": {
-							regex: `^203`},
-						"中正區": {
-							regex: `^202`},
-					}},
-				"NWT": {
-					regex: `^20[78]|2[2345]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"石門區": {
-							regex: `^253`},
-						"汐止區": {
-							regex: `^221`},
-						"金山區": {
-							regex: `^208`},
-						"烏來區": {
-							regex: `^233`},
-						"蘆洲區": {
-							regex: `^247`},
-						"土城區": {
-							regex: `^236`},
-						"石碇區": {
-							regex: `^223`},
-						"板橋區": {
-							regex: `^220`},
-						"林口區": {
-							regex: `^244`},
-						"永和區": {
-							regex: `^234`},
-						"貢寮區": {
-							regex: `^228`},
-						"萬里區": {
-							regex: `^207`},
-						"樹林區": {
-							regex: `^238`},
-						"八里區": {
-							regex: `^249`},
-						"中和區": {
-							regex: `^235`},
-						"瑞芳區": {
-							regex: `^224`},
-						"三重區": {
-							regex: `^241`},
-						"坪林區": {
-							regex: `^232`},
-						"泰山區": {
-							regex: `^243`},
-						"淡水區": {
-							regex: `^251`},
-						"新店區": {
-							regex: `^231`},
-						"三峽區": {
-							regex: `^237`},
-						"平溪區": {
-							regex: `^226`},
-						"雙溪區": {
-							regex: `^227`},
-						"鶯歌區": {
-							regex: `^239`},
-						"三芝區": {
-							regex: `^252`},
-						"五股區": {
-							regex: `^248`},
-						"深坑區": {
-							regex: `^222`},
-						"新莊區": {
-							regex: `^242`},
+						"中埔鄉": {
+							regex: `^606`},
+						"六腳鄉": {
+							regex: `^615`},
+						"大埔鄉": {
+							regex: `^607`},
+						"大林鎮": {
+							regex: `^622`},
+						"太保市": {
+							regex: `^612`},
+						"布袋鎮": {
+							regex: `^625`},
+						"新港鄉": {
+							regex: `^616`},
+						"朴子市": {
+							regex: `^613`},
+						"東石鄉": {
+							regex: `^614`},
+						"梅山鄉": {
+							regex: `^603`},
+						"民雄鄉": {
+							regex: `^621`},
+						"水上鄉": {
+							regex: `^608`},
+						"溪口鄉": {
+							regex: `^623`},
+						"番路鄉": {
+							regex: `^602`},
+						"竹崎鄉": {
+							regex: `^604`},
+						"義竹鄉": {
+							regex: `^624`},
+						"阿里山鄉": {
+							regex: `^605`},
+						"鹿草鄉": {
+							regex: `^611`},
 					}},
 				"HSQ": {
 					regex: `^30[2-8]|31`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"新豐鄉": {
-							regex: `^304`},
-						"橫山鄉": {
-							regex: `^312`},
-						"關西鎮": {
-							regex: `^306`},
-						"寶山鄉": {
-							regex: `^308`},
-						"竹東鎮": {
-							regex: `^310`},
-						"峨眉鄉": {
-							regex: `^315`},
-						"湖口鄉": {
-							regex: `^303`},
-						"新埔鎮": {
-							regex: `^305`},
-						"芎林鄉": {
-							regex: `^307`},
 						"五峰鄉": {
 							regex: `^311`},
 						"北埔鄉": {
 							regex: `^314`},
+						"寶山鄉": {
+							regex: `^308`},
 						"尖石鄉": {
 							regex: `^313`},
+						"峨眉鄉": {
+							regex: `^315`},
+						"新埔鎮": {
+							regex: `^305`},
+						"新豐鄉": {
+							regex: `^304`},
+						"橫山鄉": {
+							regex: `^312`},
+						"湖口鄉": {
+							regex: `^303`},
 						"竹北市": {
 							regex: `^302`},
+						"竹東鎮": {
+							regex: `^310`},
+						"芎林鄉": {
+							regex: `^307`},
+						"關西鎮": {
+							regex: `^306`},
 					}},
 				"HSZ": {
 					regex: `^300`},
-				"TPE": {
-					regex: `^1[01]`,
+				"HUA": {
+					regex: `^9[78]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"北投區": {
-							regex: `^112`},
-						"萬華區": {
-							regex: `^108`},
-						"士林區": {
-							regex: `^111`},
-						"大安區": {
-							regex: `^106`},
-						"中山區": {
-							regex: `^104`},
-						"中正區": {
-							regex: `^100`},
-						"文山區": {
-							regex: `^116`},
-						"大同區": {
-							regex: `^103`},
-						"內湖區": {
-							regex: `^114`},
-						"松山區": {
-							regex: `^105`},
-						"信義區": {
-							regex: `^110`},
-						"南港區": {
-							regex: `^115`},
-					}},
-				"TTT": {
-					regex: `^9[56]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"池上鄉": {
-							regex: `^958`},
-						"鹿野鄉": {
-							regex: `^955`},
-						"太麻里鄉": {
-							regex: `^963`},
-						"東河鄉": {
-							regex: `^959`},
-						"卑南鄉": {
-							regex: `^954`},
-						"長濱鄉": {
-							regex: `^962`},
-						"達仁鄉": {
-							regex: `^966`},
-						"關山鎮": {
-							regex: `^956`},
-						"蘭嶼鄉": {
-							regex: `^952`},
-						"大武鄉": {
-							regex: `^965`},
-						"成功鎮": {
-							regex: `^961`},
-						"金峰鄉": {
-							regex: `^964`},
-						"海端鄉": {
-							regex: `^957`},
-						"綠島鄉": {
-							regex: `^951`},
-						"台東市": {
-							regex: `^950`},
-						"延平鄉": {
-							regex: `^953`},
+						"光復鄉": {
+							regex: `^976`},
+						"卓溪鄉": {
+							regex: `^982`},
+						"吉安鄉": {
+							regex: `^973`},
+						"壽豐鄉": {
+							regex: `^974`},
+						"富里鄉": {
+							regex: `^983`},
+						"新城鄉": {
+							regex: `^971`},
+						"玉里鎮": {
+							regex: `^981`},
+						"瑞穗鄉": {
+							regex: `^978`},
+						"秀林鄉": {
+							regex: `^972`},
+						"花蓮市": {
+							regex: `^970`},
+						"萬榮鄉": {
+							regex: `^979`},
+						"豐濱鄉": {
+							regex: `^977`},
+						"鳳林鎮": {
+							regex: `^975`},
 					}},
 				"ILA": {
 					regex: `^2[67]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"大同鄉": {
-							regex: `^267`},
-						"五結鄉": {
-							regex: `^268`},
-						"壯圍鄉": {
-							regex: `^263`},
-						"頭城鎮": {
-							regex: `^261`},
 						"三星鄉": {
 							regex: `^266`},
+						"五結鄉": {
+							regex: `^268`},
 						"冬山鄉": {
 							regex: `^269`},
-						"宜蘭市": {
-							regex: `^260`},
 						"南澳鄉": {
 							regex: `^272`},
 						"員山鄉": {
 							regex: `^264`},
+						"壯圍鄉": {
+							regex: `^263`},
+						"大同鄉": {
+							regex: `^267`},
+						"宜蘭市": {
+							regex: `^260`},
 						"礁溪鄉": {
 							regex: `^262`},
 						"羅東鎮": {
 							regex: `^265`},
 						"蘇澳鎮": {
 							regex: `^270`},
+						"頭城鎮": {
+							regex: `^261`},
+					}},
+				"KEE": {
+					regex: `^20[0-6]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"七堵區": {
+							regex: `^206`},
+						"中山區": {
+							regex: `^203`},
+						"中正區": {
+							regex: `^202`},
+						"仁愛區": {
+							regex: `^200`},
+						"信義區": {
+							regex: `^201`},
+						"安樂區": {
+							regex: `^204`},
+						"暖暖區": {
+							regex: `^205`},
+					}},
+				"KHH": {
+					regex: `^8[02-5]|81[1-579]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"三民區": {
+							regex: `^807`},
+						"仁武區": {
+							regex: `^814`},
+						"內門區": {
+							regex: `^845`},
+						"六龜區": {
+							regex: `^844`},
+						"前金區": {
+							regex: `^801`},
+						"前鎮區": {
+							regex: `^806`},
+						"南沙島": {
+							regex: `^819`},
+						"大寮區": {
+							regex: `^831`},
+						"大樹區": {
+							regex: `^840`},
+						"大社區": {
+							regex: `^815`},
+						"小港區": {
+							regex: `^812`},
+						"岡山區": {
+							regex: `^820`},
+						"左營區": {
+							regex: `^813`},
+						"彌陀區": {
+							regex: `^827`},
+						"新興區": {
+							regex: `^800`},
+						"旗山區": {
+							regex: `^842`},
+						"旗津區": {
+							regex: `^805`},
+						"杉林區": {
+							regex: `^846`},
+						"東沙島": {
+							regex: `^817`},
+						"林園區": {
+							regex: `^832`},
+						"桃源區": {
+							regex: `^848`},
+						"梓官區": {
+							regex: `^826`},
+						"楠梓區": {
+							regex: `^811`},
+						"橋頭區": {
+							regex: `^825`},
+						"永安區": {
+							regex: `^828`},
+						"湖內區": {
+							regex: `^829`},
+						"燕巢區": {
+							regex: `^824`},
+						"田寮區": {
+							regex: `^823`},
+						"甲仙區": {
+							regex: `^847`},
+						"美濃區": {
+							regex: `^843`},
+						"苓雅區": {
+							regex: `^802`},
+						"茂林區": {
+							regex: `^851`},
+						"茄萣區": {
+							regex: `^852`},
+						"路竹區": {
+							regex: `^821`},
+						"那瑪夏區": {
+							regex: `^849`},
+						"阿蓮區": {
+							regex: `^822`},
+						"鳥松區": {
+							regex: `^833`},
+						"鳳山區": {
+							regex: `^830`},
+						"鹽埕區": {
+							regex: `^803`},
+						"鼓山區": {
+							regex: `^804`},
+					}},
+				"MIA": {
+					regex: `^3[56]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"三灣鄉": {
+							regex: `^352`},
+						"三義鄉": {
+							regex: `^367`},
+						"公館鄉": {
+							regex: `^363`},
+						"卓蘭鎮": {
+							regex: `^369`},
+						"南庄鄉": {
+							regex: `^353`},
+						"大湖鄉": {
+							regex: `^364`},
+						"後龍鎮": {
+							regex: `^356`},
+						"泰安鄉": {
+							regex: `^365`},
+						"獅潭鄉": {
+							regex: `^354`},
+						"竹南鎮": {
+							regex: `^350`},
+						"苑裡鎮": {
+							regex: `^358`},
+						"苗栗市": {
+							regex: `^360`},
+						"西湖鄉": {
+							regex: `^368`},
+						"通霄鎮": {
+							regex: `^357`},
+						"造橋鄉": {
+							regex: `^361`},
+						"銅鑼鄉": {
+							regex: `^366`},
+						"頭份市": {
+							regex: `^351`},
+						"頭屋鄉": {
+							regex: `^362`},
 					}},
 				"NAN": {
 					regex: `^5[45]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"竹山鎮": {
-							regex: `^557`},
-						"草屯鎮": {
-							regex: `^542`},
-						"鹿谷鄉": {
-							regex: `^558`},
 						"中寮鄉": {
 							regex: `^541`},
-						"水里鄉": {
-							regex: `^553`},
-						"名間鄉": {
-							regex: `^551`},
-						"埔里鎮": {
-							regex: `^545`},
-						"國姓鄉": {
-							regex: `^544`},
-						"魚池鄉": {
-							regex: `^555`},
-						"集集鎮": {
-							regex: `^552`},
 						"仁愛鄉": {
 							regex: `^546`},
 						"信義鄉": {
 							regex: `^556`},
 						"南投市": {
 							regex: `^540`},
+						"名間鄉": {
+							regex: `^551`},
+						"國姓鄉": {
+							regex: `^544`},
+						"埔里鎮": {
+							regex: `^545`},
+						"水里鄉": {
+							regex: `^553`},
+						"竹山鎮": {
+							regex: `^557`},
+						"草屯鎮": {
+							regex: `^542`},
+						"集集鎮": {
+							regex: `^552`},
+						"魚池鄉": {
+							regex: `^555`},
+						"鹿谷鄉": {
+							regex: `^558`},
+					}},
+				"NWT": {
+					regex: `^20[78]|2[2345]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"三峽區": {
+							regex: `^237`},
+						"三芝區": {
+							regex: `^252`},
+						"三重區": {
+							regex: `^241`},
+						"中和區": {
+							regex: `^235`},
+						"五股區": {
+							regex: `^248`},
+						"八里區": {
+							regex: `^249`},
+						"土城區": {
+							regex: `^236`},
+						"坪林區": {
+							regex: `^232`},
+						"平溪區": {
+							regex: `^226`},
+						"新店區": {
+							regex: `^231`},
+						"新莊區": {
+							regex: `^242`},
+						"板橋區": {
+							regex: `^220`},
+						"林口區": {
+							regex: `^244`},
+						"樹林區": {
+							regex: `^238`},
+						"永和區": {
+							regex: `^234`},
+						"汐止區": {
+							regex: `^221`},
+						"泰山區": {
+							regex: `^243`},
+						"淡水區": {
+							regex: `^251`},
+						"深坑區": {
+							regex: `^222`},
+						"烏來區": {
+							regex: `^233`},
+						"瑞芳區": {
+							regex: `^224`},
+						"石碇區": {
+							regex: `^223`},
+						"石門區": {
+							regex: `^253`},
+						"萬里區": {
+							regex: `^207`},
+						"蘆洲區": {
+							regex: `^247`},
+						"貢寮區": {
+							regex: `^228`},
+						"金山區": {
+							regex: `^208`},
+						"雙溪區": {
+							regex: `^227`},
+						"鶯歌區": {
+							regex: `^239`},
+					}},
+				"PEN": {
+					regex: `^88`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"七美鄉": {
+							regex: `^883`},
+						"望安鄉": {
+							regex: `^882`},
+						"湖西鄉": {
+							regex: `^885`},
+						"白沙鄉": {
+							regex: `^884`},
+						"西嶼鄉": {
+							regex: `^881`},
+						"馬公市": {
+							regex: `^880`},
+					}},
+				"PIF": {
+					regex: `^9[0-4]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"三地門鄉": {
+							regex: `^901`},
+						"九如鄉": {
+							regex: `^904`},
+						"佳冬鄉": {
+							regex: `^931`},
+						"來義鄉": {
+							regex: `^922`},
+						"內埔鄉": {
+							regex: `^912`},
+						"南州鄉": {
+							regex: `^926`},
+						"屏東市": {
+							regex: `^900`},
+						"崁頂鄉": {
+							regex: `^924`},
+						"恆春鎮": {
+							regex: `^946`},
+						"新園鄉": {
+							regex: `^932`},
+						"新埤鄉": {
+							regex: `^925`},
+						"春日鄉": {
+							regex: `^942`},
+						"東港鎮": {
+							regex: `^928`},
+						"枋寮鄉": {
+							regex: `^940`},
+						"枋山鄉": {
+							regex: `^941`},
+						"林邊鄉": {
+							regex: `^927`},
+						"泰武鄉": {
+							regex: `^921`},
+						"滿洲鄉": {
+							regex: `^947`},
+						"潮州鎮": {
+							regex: `^920`},
+						"牡丹鄉": {
+							regex: `^945`},
+						"獅子鄉": {
+							regex: `^943`},
+						"琉球鄉": {
+							regex: `^929`},
+						"瑪家鄉": {
+							regex: `^903`},
+						"竹田鄉": {
+							regex: `^911`},
+						"萬丹鄉": {
+							regex: `^913`},
+						"萬巒鄉": {
+							regex: `^923`},
+						"車城鄉": {
+							regex: `^944`},
+						"里港鄉": {
+							regex: `^905`},
+						"長治鄉": {
+							regex: `^908`},
+						"霧台鄉": {
+							regex: `^902`},
+						"高樹鄉": {
+							regex: `^906`},
+						"鹽埔鄉": {
+							regex: `^907`},
+						"麟洛鄉": {
+							regex: `^909`},
 					}},
 				"TAO": {
 					regex: `^3[23]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"復興區": {
-							regex: `^336`},
-						"新屋區": {
-							regex: `^327`},
-						"龍潭區": {
-							regex: `^325`},
-						"龜山區": {
-							regex: `^333`},
+						"中壢區": {
+							regex: `^320`},
 						"八德區": {
 							regex: `^334`},
 						"大園區": {
 							regex: `^337`},
 						"大溪區": {
 							regex: `^335`},
-						"中壢區": {
-							regex: `^320`},
 						"平鎮區": {
 							regex: `^324`},
+						"復興區": {
+							regex: `^336`},
+						"新屋區": {
+							regex: `^327`},
 						"桃園區": {
 							regex: `^330`},
 						"楊梅區": {
@@ -68287,404 +68433,258 @@ var generated = data{
 							regex: `^338`},
 						"觀音區": {
 							regex: `^328`},
+						"龍潭區": {
+							regex: `^325`},
+						"龜山區": {
+							regex: `^333`},
 					}},
-				"CHA": {
-					regex: `^5[0123]`,
+				"TNN": {
+					regex: `^7[0-4]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"彰化市": {
-							regex: `^500`},
-						"田中鎮": {
-							regex: `^520`},
-						"秀水鄉": {
-							regex: `^504`},
-						"和美鎮": {
-							regex: `^508`},
-						"芬園鄉": {
-							regex: `^502`},
-						"埔心鄉": {
-							regex: `^513`},
-						"埔鹽鄉": {
-							regex: `^516`},
-						"溪湖鎮": {
-							regex: `^514`},
-						"二林鎮": {
-							regex: `^526`},
-						"田尾鄉": {
-							regex: `^522`},
-						"竹塘鄉": {
-							regex: `^525`},
-						"伸港鄉": {
-							regex: `^509`},
-						"埤頭鄉": {
-							regex: `^523`},
-						"鹿港鎮": {
-							regex: `^505`},
-						"二水鄉": {
-							regex: `^530`},
-						"大村鄉": {
-							regex: `^515`},
-						"永靖鄉": {
-							regex: `^512`},
-						"花壇鄉": {
-							regex: `^503`},
-						"芳苑鄉": {
-							regex: `^528`},
-						"員林市": {
-							regex: `^510`},
-						"大城鄉": {
-							regex: `^527`},
-						"北斗鎮": {
-							regex: `^521`},
-						"社頭鄉": {
-							regex: `^511`},
-						"溪州鄉": {
-							regex: `^524`},
-						"福興鄉": {
-							regex: `^506`},
-						"線西鄉": {
-							regex: `^507`},
+						"七股區": {
+							regex: `^724`},
+						"下營區": {
+							regex: `^735`},
+						"中西區": {
+							regex: `^700`},
+						"仁德區": {
+							regex: `^717`},
+						"佳里區": {
+							regex: `^722`},
+						"六甲區": {
+							regex: `^734`},
+						"北區": {
+							regex: `^704`},
+						"北門區": {
+							regex: `^727`},
+						"南化區": {
+							regex: `^716`},
+						"南區": {
+							regex: `^702`},
+						"善化區": {
+							regex: `^741`},
+						"大內區": {
+							regex: `^742`},
+						"學甲區": {
+							regex: `^726`},
+						"安南區": {
+							regex: `^709`},
+						"安定區": {
+							regex: `^745`},
+						"安平區": {
+							regex: `^708`},
+						"官田區": {
+							regex: `^720`},
+						"將軍區": {
+							regex: `^725`},
+						"山上區": {
+							regex: `^743`},
+						"左鎮區": {
+							regex: `^713`},
+						"後壁區": {
+							regex: `^731`},
+						"新化區": {
+							regex: `^712`},
+						"新市區": {
+							regex: `^744`},
+						"新營區": {
+							regex: `^730`},
+						"東區": {
+							regex: `^701`},
+						"東山區": {
+							regex: `^733`},
+						"柳營區": {
+							regex: `^736`},
+						"楠西區": {
+							regex: `^715`},
+						"歸仁區": {
+							regex: `^711`},
+						"永康區": {
+							regex: `^710`},
+						"玉井區": {
+							regex: `^714`},
+						"白河區": {
+							regex: `^732`},
+						"西港區": {
+							regex: `^723`},
+						"關廟區": {
+							regex: `^718`},
+						"鹽水區": {
+							regex: `^737`},
+						"麻豆區": {
+							regex: `^721`},
+						"龍崎區": {
+							regex: `^719`},
+					}},
+				"TPE": {
+					regex: `^1[01]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"中山區": {
+							regex: `^104`},
+						"中正區": {
+							regex: `^100`},
+						"信義區": {
+							regex: `^110`},
+						"內湖區": {
+							regex: `^114`},
+						"北投區": {
+							regex: `^112`},
+						"南港區": {
+							regex: `^115`},
+						"士林區": {
+							regex: `^111`},
+						"大同區": {
+							regex: `^103`},
+						"大安區": {
+							regex: `^106`},
+						"文山區": {
+							regex: `^116`},
+						"松山區": {
+							regex: `^105`},
+						"萬華區": {
+							regex: `^108`},
+					}},
+				"TTT": {
+					regex: `^9[56]`,
+					subdivisionRegex: map[string]postCodeRegex{
+						"卑南鄉": {
+							regex: `^954`},
+						"台東市": {
+							regex: `^950`},
+						"大武鄉": {
+							regex: `^965`},
+						"太麻里鄉": {
+							regex: `^963`},
+						"延平鄉": {
+							regex: `^953`},
+						"成功鎮": {
+							regex: `^961`},
+						"東河鄉": {
+							regex: `^959`},
+						"池上鄉": {
+							regex: `^958`},
+						"海端鄉": {
+							regex: `^957`},
+						"綠島鄉": {
+							regex: `^951`},
+						"蘭嶼鄉": {
+							regex: `^952`},
+						"達仁鄉": {
+							regex: `^966`},
+						"金峰鄉": {
+							regex: `^964`},
+						"長濱鄉": {
+							regex: `^962`},
+						"關山鎮": {
+							regex: `^956`},
+						"鹿野鄉": {
+							regex: `^955`},
 					}},
 				"TXG": {
 					regex: `^4[0-3]`,
 					subdivisionRegex: map[string]postCodeRegex{
+						"中區": {
+							regex: `^400`},
+						"北區": {
+							regex: `^404`},
 						"北屯區": {
 							regex: `^406`},
+						"南區": {
+							regex: `^402`},
+						"南屯區": {
+							regex: `^408`},
+						"后里區": {
+							regex: `^421`},
+						"和平區": {
+							regex: `^424`},
+						"外埔區": {
+							regex: `^438`},
+						"大安區": {
+							regex: `^439`},
+						"大甲區": {
+							regex: `^437`},
+						"大肚區": {
+							regex: `^432`},
+						"大里區": {
+							regex: `^412`},
+						"大雅區": {
+							regex: `^428`},
+						"太平區": {
+							regex: `^411`},
+						"新社區": {
+							regex: `^426`},
+						"東勢區": {
+							regex: `^423`},
+						"東區": {
+							regex: `^401`},
+						"梧棲區": {
+							regex: `^435`},
+						"沙鹿區": {
+							regex: `^433`},
 						"清水區": {
 							regex: `^436`},
 						"潭子區": {
 							regex: `^427`},
-						"大安區": {
-							regex: `^439`},
-						"大肚區": {
-							regex: `^432`},
-						"中區": {
-							regex: `^400`},
-						"太平區": {
-							regex: `^411`},
-						"石岡區": {
-							regex: `^422`},
-						"大雅區": {
-							regex: `^428`},
-						"東區": {
-							regex: `^401`},
-						"南區": {
-							regex: `^402`},
-						"大里區": {
-							regex: `^412`},
-						"北區": {
-							regex: `^404`},
-						"后里區": {
-							regex: `^421`},
-						"新社區": {
-							regex: `^426`},
-						"大甲區": {
-							regex: `^437`},
-						"和平區": {
-							regex: `^424`},
-						"東勢區": {
-							regex: `^423`},
-						"外埔區": {
-							regex: `^438`},
-						"南屯區": {
-							regex: `^408`},
-						"龍井區": {
-							regex: `^434`},
-						"神岡區": {
-							regex: `^429`},
-						"霧峰區": {
-							regex: `^413`},
-						"西屯區": {
-							regex: `^407`},
-						"西區": {
-							regex: `^403`},
-						"沙鹿區": {
-							regex: `^433`},
 						"烏日區": {
 							regex: `^414`},
-						"梧棲區": {
-							regex: `^435`},
+						"石岡區": {
+							regex: `^422`},
+						"神岡區": {
+							regex: `^429`},
+						"西區": {
+							regex: `^403`},
+						"西屯區": {
+							regex: `^407`},
 						"豐原區": {
 							regex: `^420`},
-					}},
-				"PIF": {
-					regex: `^9[0-4]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"九如鄉": {
-							regex: `^904`},
-						"崁頂鄉": {
-							regex: `^924`},
-						"恆春鎮": {
-							regex: `^946`},
-						"新埤鄉": {
-							regex: `^925`},
-						"瑪家鄉": {
-							regex: `^903`},
-						"麟洛鄉": {
-							regex: `^909`},
-						"里港鄉": {
-							regex: `^905`},
-						"枋山鄉": {
-							regex: `^941`},
-						"長治鄉": {
-							regex: `^908`},
-						"滿洲鄉": {
-							regex: `^947`},
-						"來義鄉": {
-							regex: `^922`},
-						"枋寮鄉": {
-							regex: `^940`},
-						"泰武鄉": {
-							regex: `^921`},
-						"霧台鄉": {
-							regex: `^902`},
-						"萬丹鄉": {
-							regex: `^913`},
-						"萬巒鄉": {
-							regex: `^923`},
-						"潮州鎮": {
-							regex: `^920`},
-						"牡丹鄉": {
-							regex: `^945`},
-						"佳冬鄉": {
-							regex: `^931`},
-						"琉球鄉": {
-							regex: `^929`},
-						"新園鄉": {
-							regex: `^932`},
-						"內埔鄉": {
-							regex: `^912`},
-						"林邊鄉": {
-							regex: `^927`},
-						"屏東市": {
-							regex: `^900`},
-						"獅子鄉": {
-							regex: `^943`},
-						"鹽埔鄉": {
-							regex: `^907`},
-						"三地門鄉": {
-							regex: `^901`},
-						"東港鎮": {
-							regex: `^928`},
-						"高樹鄉": {
-							regex: `^906`},
-						"春日鄉": {
-							regex: `^942`},
-						"竹田鄉": {
-							regex: `^911`},
-						"車城鄉": {
-							regex: `^944`},
-						"南州鄉": {
-							regex: `^926`},
-					}},
-				"KHH": {
-					regex: `^8[02-5]|81[1-579]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"前金區": {
-							regex: `^801`},
-						"鹽埕區": {
-							regex: `^803`},
-						"東沙島": {
-							regex: `^817`},
-						"前鎮區": {
-							regex: `^806`},
-						"苓雅區": {
-							regex: `^802`},
-						"阿蓮區": {
-							regex: `^822`},
-						"鼓山區": {
-							regex: `^804`},
-						"大社區": {
-							regex: `^815`},
-						"左營區": {
-							regex: `^813`},
-						"甲仙區": {
-							regex: `^847`},
-						"岡山區": {
-							regex: `^820`},
-						"林園區": {
-							regex: `^832`},
-						"內門區": {
-							regex: `^845`},
-						"旗津區": {
-							regex: `^805`},
-						"田寮區": {
-							regex: `^823`},
-						"茄萣區": {
-							regex: `^852`},
-						"路竹區": {
-							regex: `^821`},
-						"鳳山區": {
-							regex: `^830`},
-						"彌陀區": {
-							regex: `^827`},
-						"大寮區": {
-							regex: `^831`},
-						"大樹區": {
-							regex: `^840`},
-						"杉林區": {
-							regex: `^846`},
-						"南沙島": {
-							regex: `^819`},
-						"鳥松區": {
-							regex: `^833`},
-						"楠梓區": {
-							regex: `^811`},
-						"旗山區": {
-							regex: `^842`},
-						"橋頭區": {
-							regex: `^825`},
-						"仁武區": {
-							regex: `^814`},
-						"美濃區": {
-							regex: `^843`},
-						"茂林區": {
-							regex: `^851`},
-						"梓官區": {
-							regex: `^826`},
-						"新興區": {
-							regex: `^800`},
-						"桃源區": {
-							regex: `^848`},
-						"湖內區": {
-							regex: `^829`},
-						"燕巢區": {
-							regex: `^824`},
-						"三民區": {
-							regex: `^807`},
-						"小港區": {
-							regex: `^812`},
-						"六龜區": {
-							regex: `^844`},
-						"永安區": {
-							regex: `^828`},
-						"那瑪夏區": {
-							regex: `^849`},
-					}},
-				"CYI": {
-					regex: `^600`},
-				"CYQ": {
-					regex: `^60[1-9]|6[12]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"阿里山鄉": {
-							regex: `^605`},
-						"竹崎鄉": {
-							regex: `^604`},
-						"水上鄉": {
-							regex: `^608`},
-						"東石鄉": {
-							regex: `^614`},
-						"番路鄉": {
-							regex: `^602`},
-						"溪口鄉": {
-							regex: `^623`},
-						"六腳鄉": {
-							regex: `^615`},
-						"中埔鄉": {
-							regex: `^606`},
-						"民雄鄉": {
-							regex: `^621`},
-						"梅山鄉": {
-							regex: `^603`},
-						"鹿草鄉": {
-							regex: `^611`},
-						"大埔鄉": {
-							regex: `^607`},
-						"太保市": {
-							regex: `^612`},
-						"布袋鎮": {
-							regex: `^625`},
-						"朴子市": {
-							regex: `^613`},
-						"新港鄉": {
-							regex: `^616`},
-						"義竹鄉": {
-							regex: `^624`},
-						"大林鎮": {
-							regex: `^622`},
-					}},
-				"MIA": {
-					regex: `^3[56]`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"大湖鄉": {
-							regex: `^364`},
-						"後龍鎮": {
-							regex: `^356`},
-						"獅潭鄉": {
-							regex: `^354`},
-						"三義鄉": {
-							regex: `^367`},
-						"三灣鄉": {
-							regex: `^352`},
-						"苗栗市": {
-							regex: `^360`},
-						"造橋鄉": {
-							regex: `^361`},
-						"銅鑼鄉": {
-							regex: `^366`},
-						"西湖鄉": {
-							regex: `^368`},
-						"苑裡鎮": {
-							regex: `^358`},
-						"南庄鄉": {
-							regex: `^353`},
-						"泰安鄉": {
-							regex: `^365`},
-						"頭份市": {
-							regex: `^351`},
-						"公館鄉": {
-							regex: `^363`},
-						"竹南鎮": {
-							regex: `^350`},
-						"頭屋鄉": {
-							regex: `^362`},
-						"卓蘭鎮": {
-							regex: `^369`},
-						"通霄鎮": {
-							regex: `^357`},
+						"霧峰區": {
+							regex: `^413`},
+						"龍井區": {
+							regex: `^434`},
 					}},
 				"YUN": {
 					regex: `^6[3-5]`,
 					subdivisionRegex: map[string]postCodeRegex{
-						"莿桐鄉": {
-							regex: `^647`},
-						"褒忠鄉": {
-							regex: `^634`},
-						"土庫鎮": {
-							regex: `^633`},
-						"西螺鎮": {
-							regex: `^648`},
-						"麥寮鄉": {
-							regex: `^638`},
-						"虎尾鎮": {
-							regex: `^632`},
-						"崙背鄉": {
-							regex: `^637`},
+						"二崙鄉": {
+							regex: `^649`},
 						"元長鄉": {
 							regex: `^655`},
 						"北港鎮": {
 							regex: `^651`},
-						"古坑鄉": {
-							regex: `^646`},
-						"四湖鄉": {
-							regex: `^654`},
-						"林內鄉": {
-							regex: `^643`},
 						"口湖鄉": {
 							regex: `^653`},
-						"大埤鄉": {
-							regex: `^631`},
-						"斗南鎮": {
-							regex: `^630`},
+						"古坑鄉": {
+							regex: `^646`},
 						"台西鄉": {
 							regex: `^636`},
-						"東勢鄉": {
-							regex: `^635`},
-						"二崙鄉": {
-							regex: `^649`},
+						"四湖鄉": {
+							regex: `^654`},
+						"土庫鎮": {
+							regex: `^633`},
+						"大埤鄉": {
+							regex: `^631`},
+						"崙背鄉": {
+							regex: `^637`},
 						"斗六市": {
 							regex: `^640`},
+						"斗南鎮": {
+							regex: `^630`},
+						"東勢鄉": {
+							regex: `^635`},
+						"林內鄉": {
+							regex: `^643`},
 						"水林鄉": {
 							regex: `^652`},
+						"莿桐鄉": {
+							regex: `^647`},
+						"虎尾鎮": {
+							regex: `^632`},
+						"褒忠鄉": {
+							regex: `^634`},
+						"西螺鎮": {
+							regex: `^648`},
+						"麥寮鄉": {
+							regex: `^638`},
 					}},
 			}},
 		Format:                     "%Z%n%S%C%n%A%n%O%n%N",
@@ -69390,7 +69390,7 @@ var generated = data{
 				},
 				{
 					ID:        "NWT",
-					Name:      "NewValid Taipei City",
+					Name:      "New Taipei City",
 					PostalKey: "新北市",
 					Localities: []locality{
 						{
@@ -71893,60 +71893,60 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"12": {
-					regex: `^49|5[0-3]`},
-				"46": {
-					regex: `^79|8[0-2]`},
-				"26": {
-					regex: `^7[6-8]`},
-				"48": {
-					regex: `^5[4-7]`},
-				"63": {
-					regex: `^6[1-4]`},
-				"74": {
-					regex: `^1[4-7]`},
 				"05": {
 					regex: `^2[1-4]`},
+				"07": {
+					regex: `^4[3-5]`},
+				"09": {
+					regex: `^9[1-4]`},
+				"12": {
+					regex: `^49|5[0-3]`},
+				"14": {
+					regex: `^8[3-7]`},
 				"18": {
 					regex: `^1[0-3]`},
+				"21": {
+					regex: `^8[89]|90`},
+				"23": {
+					regex: `^69|7[0-2]`},
+				"26": {
+					regex: `^7[6-8]`},
+				"30": {
+					regex: `^0[1-6]`},
+				"32": {
+					regex: `^0[7-9]`},
 				"35": {
 					regex: `^2[5-8]`},
+				"40": {
+					regex: `^99`},
+				"43": {
+					regex: `^9[5-8]`},
+				"46": {
+					regex: `^79|8[0-2]`},
+				"48": {
+					regex: `^5[4-7]`},
+				"51": {
+					regex: `^6[5-8]`},
 				"53": {
 					regex: `^3[6-9]`},
 				"56": {
 					regex: `^3[3-5]`},
-				"61": {
-					regex: `^4[6-8]`},
-				"77": {
-					regex: `^5[89]|60`},
-				"51": {
-					regex: `^6[5-8]`},
-				"65": {
-					regex: `^7[3-5]`},
-				"07": {
-					regex: `^4[3-5]`},
-				"14": {
-					regex: `^8[3-7]`},
-				"21": {
-					regex: `^8[89]|90`},
-				"32": {
-					regex: `^0[7-9]`},
-				"30": {
-					regex: `^0[1-6]`},
-				"68": {
-					regex: `^29|3[0-2]`},
-				"43": {
-					regex: `^9[5-8]`},
-				"23": {
-					regex: `^69|7[0-2]`},
-				"09": {
-					regex: `^9[1-4]`},
-				"40": {
-					regex: `^99`},
 				"59": {
 					regex: `^4[0-2]`},
+				"61": {
+					regex: `^4[6-8]`},
+				"63": {
+					regex: `^6[1-4]`},
+				"65": {
+					regex: `^7[3-5]`},
+				"68": {
+					regex: `^29|3[0-2]`},
 				"71": {
 					regex: `^1[89]|20`},
+				"74": {
+					regex: `^1[4-7]`},
+				"77": {
+					regex: `^5[89]|60`},
 			}},
 		Format:                     "%N%n%O%n%A%n%C%n%S%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%C%n%S%n%Z",
@@ -72284,64 +72284,88 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `(\d{5})(?:[ \-](\d{4}))?`,
 			subdivisionRegex: map[string]postCodeRegex{
-				"OH": {
-					regex: `^4[3-5]`},
-				"OR": {
-					regex: `^97`},
 				"AK": {
 					regex: `^99[5-9]`},
-				"KS": {
-					regex: `^6[67]`},
-				"NV": {
-					regex: `^889|89`},
-				"NH": {
-					regex: `^03[0-8]`},
-				"NJ": {
-					regex: `^0[78]`},
-				"NY": {
-					regex: `^1[0-4]|06390|00501|00544`},
-				"VT": {
-					regex: `^05`},
-				"WA": {
-					regex: `^98|99[0-4]`},
-				"WY": {
-					regex: `^82|83[01]|83414`},
+				"AL": {
+					regex: `^3[56]`},
+				"AR": {
+					regex: `^71[6-9]|72`},
+				"AZ": {
+					regex: `^8[56]`},
+				"CA": {
+					regex: `^9[0-5]|96[01]`},
+				"CO": {
+					regex: `^8[01]`},
+				"CT": {
+					regex: `^06`},
+				"DC": {
+					regex: `^20[02-5]|569`},
 				"DE": {
 					regex: `^19[7-9]`},
 				"FL": {
 					regex: `^3[23]|34[1-9]`},
+				"GA": {
+					regex: `^3[01]|398|39901`},
 				"HI": {
 					regex: `^967[0-8]|9679[0-8]|968`},
-				"ID": {
-					regex: `^83[2-9]`},
-				"IN": {
-					regex: `^4[67]`},
-				"CO": {
-					regex: `^8[01]`},
-				"MI": {
-					regex: `^4[89]`},
-				"VA": {
-					regex: `^201|2[23]|24[0-6]`},
-				"DC": {
-					regex: `^20[02-5]|569`},
 				"IA": {
 					regex: `^5[0-2]`},
+				"ID": {
+					regex: `^83[2-9]`},
+				"IL": {
+					regex: `^6[0-2]`},
+				"IN": {
+					regex: `^4[67]`},
+				"KS": {
+					regex: `^6[67]`},
+				"KY": {
+					regex: `^4[01]|42[0-7]`},
+				"LA": {
+					regex: `^70|71[0-5]`},
+				"MA": {
+					regex: `^01|02[0-7]|05501|05544`},
+				"MD": {
+					regex: `^20[6-9]|21`},
+				"ME": {
+					regex: `^039|04`},
+				"MI": {
+					regex: `^4[89]`},
 				"MN": {
 					regex: `^55|56[0-7]`},
-				"WV": {
-					regex: `^24[7-9]|2[56]`},
-				"WI": {
-					regex: `^5[34]`},
-				"AR": {
-					regex: `^71[6-9]|72`},
-				"NE": {
-					regex: `^6[89]`},
-				"NM": {
-					regex: `^87|88[0-4]`},
+				"MO": {
+					regex: `^6[3-5]`},
+				"MS": {
+					regex: `^38[6-9]|39[0-7]`},
+				"MT": {
+					regex: `^59`},
 				"NC": {
 					regex: `^2[78]`},
+				"ND": {
+					regex: `^58`},
+				"NE": {
+					regex: `^6[89]`},
+				"NH": {
+					regex: `^03[0-8]`},
+				"NJ": {
+					regex: `^0[78]`},
+				"NM": {
+					regex: `^87|88[0-4]`},
+				"NV": {
+					regex: `^889|89`},
+				"NY": {
+					regex: `^1[0-4]|06390|00501|00544`},
+				"OH": {
+					regex: `^4[3-5]`},
 				"OK": {
 					regex: `^7[34]`},
+				"OR": {
+					regex: `^97`},
+				"PA": {
+					regex: `^1[5-8]|19[0-6]`},
+				"RI": {
+					regex: `^02[89]`},
+				"SC": {
+					regex: `^29`},
 				"SD": {
 					regex: `^57`},
 				"TN": {
@@ -72350,42 +72374,18 @@ var generated = data{
 					regex: `^7[5-9]|885|73301|73344`},
 				"UT": {
 					regex: `^84`},
-				"ND": {
-					regex: `^58`},
-				"PA": {
-					regex: `^1[5-8]|19[0-6]`},
-				"GA": {
-					regex: `^3[01]|398|39901`},
-				"IL": {
-					regex: `^6[0-2]`},
-				"KY": {
-					regex: `^4[01]|42[0-7]`},
-				"LA": {
-					regex: `^70|71[0-5]`},
-				"ME": {
-					regex: `^039|04`},
-				"MS": {
-					regex: `^38[6-9]|39[0-7]`},
-				"SC": {
-					regex: `^29`},
-				"MO": {
-					regex: `^6[3-5]`},
-				"MT": {
-					regex: `^59`},
-				"AL": {
-					regex: `^3[56]`},
-				"AZ": {
-					regex: `^8[56]`},
-				"CA": {
-					regex: `^9[0-5]|96[01]`},
-				"CT": {
-					regex: `^06`},
-				"MD": {
-					regex: `^20[6-9]|21`},
-				"MA": {
-					regex: `^01|02[0-7]|05501|05544`},
-				"RI": {
-					regex: `^02[89]`},
+				"VA": {
+					regex: `^201|2[23]|24[0-6]`},
+				"VT": {
+					regex: `^05`},
+				"WA": {
+					regex: `^98|99[0-4]`},
+				"WI": {
+					regex: `^5[34]`},
+				"WV": {
+					regex: `^24[7-9]|2[56]`},
+				"WY": {
+					regex: `^82|83[01]|83414`},
 			}},
 		Format: "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: State,
@@ -72557,22 +72557,22 @@ var generated = data{
 				},
 				{
 					ID:        "NH",
-					Name:      "NewValid Hampshire",
+					Name:      "New Hampshire",
 					PostalKey: "NH",
 				},
 				{
 					ID:        "NJ",
-					Name:      "NewValid Jersey",
+					Name:      "New Jersey",
 					PostalKey: "NJ",
 				},
 				{
 					ID:        "NM",
-					Name:      "NewValid Mexico",
+					Name:      "New Mexico",
 					PostalKey: "NM",
 				},
 				{
 					ID:        "NY",
-					Name:      "NewValid York",
+					Name:      "New York",
 					PostalKey: "NY",
 				},
 				{
@@ -72675,44 +72675,44 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`,
 			subdivisionRegex: map[string]postCodeRegex{
+				"AR": {
+					regex: `^55`},
+				"CA": {
+					regex: `^9[01]|1[456]`},
+				"CL": {
+					regex: `^37`},
+				"CO": {
+					regex: `^70|75204`},
+				"DU": {
+					regex: `^97`},
+				"FD": {
+					regex: `^94|9060|97005`},
+				"FS": {
+					regex: `^85`},
+				"LA": {
+					regex: `^30`},
 				"MA": {
 					regex: `^20`},
+				"MO": {
+					regex: `^1|91600`},
+				"PA": {
+					regex: `^60`},
 				"RN": {
 					regex: `^65|60002`},
+				"RO": {
+					regex: `^27`},
+				"RV": {
+					regex: `^40`},
+				"SA": {
+					regex: `^50`},
+				"SJ": {
+					regex: `^80`},
 				"SO": {
 					regex: `^75|70003`},
 				"TA": {
 					regex: `^45`},
 				"TT": {
 					regex: `^33|30203|30204|30302|37007`},
-				"AR": {
-					regex: `^55`},
-				"CA": {
-					regex: `^9[01]|1[456]`},
-				"DU": {
-					regex: `^97`},
-				"MO": {
-					regex: `^1|91600`},
-				"SA": {
-					regex: `^50`},
-				"CL": {
-					regex: `^37`},
-				"FD": {
-					regex: `^94|9060|97005`},
-				"PA": {
-					regex: `^60`},
-				"CO": {
-					regex: `^70|75204`},
-				"FS": {
-					regex: `^85`},
-				"LA": {
-					regex: `^30`},
-				"RV": {
-					regex: `^40`},
-				"RO": {
-					regex: `^27`},
-				"SJ": {
-					regex: `^80`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
