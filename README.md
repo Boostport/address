@@ -99,7 +99,7 @@ import (
 
 func main() {
 
-	addr, _ := address.New(
+	addr, _ := address.NewValid(
 		address.WithCountry("AU"),
 		address.WithName("John Citizen"),
 		address.WithOrganization("Some Company Pty Ltd"),
@@ -188,7 +188,7 @@ import (
 )
 
 func main() {
-	addr, _ := address.New(
+	addr, _ := address.NewValid(
 		address.WithCountry("AU"),
 		address.WithName("John Citizen"),
 		address.WithOrganization("Some Company Pty Ltd"),

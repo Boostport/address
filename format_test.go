@@ -109,7 +109,7 @@ func TestDefaultFormatter(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -181,7 +181,7 @@ func TestLatinization(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -252,7 +252,7 @@ func TestLanguage(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -349,7 +349,7 @@ func TestHTMLOutputter(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -390,7 +390,7 @@ func TestHTMLCollapseWhitespace(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -430,7 +430,7 @@ func TestHTMLCollapseWhitespace(t *testing.T) {
 
 	for i, testCase := range latinizedTestCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using latinized test case %d: %s", i, err)
@@ -472,7 +472,7 @@ func TestStringCollapseWhitespace(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -512,7 +512,7 @@ func TestStringCollapseWhitespace(t *testing.T) {
 
 	for i, testCase := range latinizedTestCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using latinized test case %d: %s", i, err)
@@ -592,7 +592,7 @@ func TestPostalLabelFormatter(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -671,7 +671,7 @@ func TestPostalLabelFormatterWithHTMLOutput(t *testing.T) {
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -751,7 +751,7 @@ func TestPostalLabelFormatterForInternationalMailWithoutValidOriginCountry(t *te
 
 	for i, testCase := range testCases {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
