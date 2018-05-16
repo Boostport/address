@@ -1,6 +1,7 @@
 package address
 
 import (
+	"fmt"
 	"reflect"
 	"testing"
 )
@@ -318,30 +319,22 @@ func TestGetCountry(t *testing.T) {
 		PostCodeRegex: PostCodeRegexData{
 			Regex: `\d{4}`,
 			SubdivisionRegex: map[string]PostCodeRegexData{
-				"QLD": {
-					Regex: `^[49]`,
-				},
-				"SA": {
-					Regex: `^5|0872`,
-				},
-				"TAS": {
-					Regex: `^7`,
-				},
-				"VIC": {
-					Regex: `^[38]`,
-				},
-				"WA": {
-					Regex: `^6|0872`,
-				},
 				"ACT": {
-					Regex: `^29|2540|260|261[0-8]|02|2620`,
-				},
+					Regex: `^29|2540|260|261[0-8]|02|2620`},
 				"NSW": {
-					Regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`,
-				},
+					Regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`},
 				"NT": {
-					Regex: `^0[89]`,
-				},
+					Regex: `^0[89]`},
+				"QLD": {
+					Regex: `^[49]`},
+				"SA": {
+					Regex: `^5|0872`},
+				"TAS": {
+					Regex: `^7`},
+				"VIC": {
+					Regex: `^[38]`},
+				"WA": {
+					Regex: `^6|0872`},
 			},
 		},
 		AdministrativeAreas: map[string][]AdministrativeAreaData{
@@ -352,7 +345,7 @@ func TestGetCountry(t *testing.T) {
 				},
 				{
 					ID:   "NSW",
-					Name: "NewValid South Wales",
+					Name: "New South Wales",
 				},
 				{
 					ID:   "NT",
@@ -381,7 +374,7 @@ func TestGetCountry(t *testing.T) {
 			},
 		},
 	}
-
+	fmt.Println(reflect.DeepEqual(country.AdministrativeAreas, expected.AdministrativeAreas))
 	if !reflect.DeepEqual(country, expected) {
 		t.Errorf("Country data for AU does not match expected country data")
 	}
