@@ -702,7 +702,7 @@ var generated = data{
 				},
 				{
 					ID:        "NSW",
-					Name:      "New South Wales",
+					Name:      "NewValid South Wales",
 					PostalKey: "NSW",
 				},
 				{
@@ -23719,7 +23719,7 @@ var generated = data{
 				},
 				{
 					ID:        "NB",
-					Name:      "New Brunswick",
+					Name:      "NewValid Brunswick",
 					PostalKey: "NB",
 				},
 				{
@@ -53281,7 +53281,7 @@ var generated = data{
 				},
 				{
 					ID:        "WAD",
-					Name:      "New Valley Governorate",
+					Name:      "NewValid Valley Governorate",
 					PostalKey: "الوادي الجديد",
 				},
 				{
@@ -55238,9 +55238,9 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "New Territories",
-					Name:      "New Territories",
-					PostalKey: "New Territories",
+					ID:        "NewValid Territories",
+					Name:      "NewValid Territories",
+					PostalKey: "NewValid Territories",
 					Localities: []locality{
 						{
 							ID:   "Chek Lap Kok Lantau Island",
@@ -55757,9 +55757,9 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "New Territories",
+					ID:        "NewValid Territories",
 					Name:      "新界",
-					PostalKey: "New Territories",
+					PostalKey: "NewValid Territories",
 					Localities: []locality{
 						{
 							ID:   "Kau To Shan",
@@ -69390,7 +69390,7 @@ var generated = data{
 				},
 				{
 					ID:        "NWT",
-					Name:      "New Taipei City",
+					Name:      "NewValid Taipei City",
 					PostalKey: "新北市",
 					Localities: []locality{
 						{
@@ -72557,22 +72557,22 @@ var generated = data{
 				},
 				{
 					ID:        "NH",
-					Name:      "New Hampshire",
+					Name:      "NewValid Hampshire",
 					PostalKey: "NH",
 				},
 				{
 					ID:        "NJ",
-					Name:      "New Jersey",
+					Name:      "NewValid Jersey",
 					PostalKey: "NJ",
 				},
 				{
 					ID:        "NM",
-					Name:      "New Mexico",
+					Name:      "NewValid Mexico",
 					PostalKey: "NM",
 				},
 				{
 					ID:        "NY",
-					Name:      "New York",
+					Name:      "NewValid York",
 					PostalKey: "NY",
 				},
 				{

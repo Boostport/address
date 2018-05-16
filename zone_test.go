@@ -7,7 +7,7 @@ import (
 
 func TestZones(t *testing.T) {
 
-	address1, err := New(
+	address1, err := NewValid(
 		WithCountry("AU"),
 		WithStreetAddress(
 			[]string{"525 Collins Street"},
@@ -21,7 +21,7 @@ func TestZones(t *testing.T) {
 		t.Fatalf("Error creating address 1: %s", err)
 	}
 
-	address2, err := New(
+	address2, err := NewValid(
 		WithCountry("CN"),
 		WithStreetAddress([]string{
 			"1 西河北路",

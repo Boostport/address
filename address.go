@@ -99,10 +99,25 @@ func (a Address) toFormatData(countryData country, language string) formatData {
 	return f
 }
 
-// New creates a new Address. If the address is invalid, an error is returned.
+// NewValid creates a new Address. If the address is invalid, an error is returned.
 // In the case where an error is returned, the error is a hashicorp/go-multierror (https://github.com/hashicorp/go-multierror).
 // You can use a type switch to get a list of validation errors for the address.
-func New(fields ...func(*Address)) (Address, error) {
+func NewValid(fields ...func(*Address)) (Address, error) {
+
+	address := New(fields...)
+
+	err := Validate(address)
+
+	if err != nil {
+		return address, fmt.Errorf("invalid address: %s", err)
+	}
+
+	return address, nil
+}
+
+// New creates a new unvalidated address. The validity of the address should be checked
+// using the validator.
+func New(fields ...func(*Address)) Address {
 
 	address := Address{}
 
@@ -110,13 +125,7 @@ func New(fields ...func(*Address)) (Address, error) {
 		field(&address)
 	}
 
-	err := validate(address)
-
-	if err != nil {
-		return address, fmt.Errorf("invalid address: %s", err)
-	}
-
-	return address, nil
+	return address
 }
 
 // WithCountry sets the country code of an address.
@@ -210,7 +219,7 @@ type CountryData struct {
 
 // PostCodeRegexData contains regular expressions for validating post codes for a given country.
 // If the country has subdivisions (administrative areas, localities and dependent localities), the SubdivisionRegex
-// field may contain further regular expressions to validate the post code.
+// field may contain further regular expressions to Validate the post code.
 type PostCodeRegexData struct {
 	Regex            string
 	SubdivisionRegex map[string]PostCodeRegexData

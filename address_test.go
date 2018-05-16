@@ -141,7 +141,7 @@ func TestValidAddresses(t *testing.T) {
 
 	for i, testCase := range tests {
 
-		address, err := New(testCase.Address...)
+		address, err := NewValid(testCase.Address...)
 
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
@@ -249,7 +249,7 @@ func TestInvalidAddresses(t *testing.T) {
 	}
 
 	for i, testCase := range tests {
-		_, err := New(testCase.Address...)
+		_, err := NewValid(testCase.Address...)
 
 		if err == nil {
 			t.Errorf("Expected an error when creating an address using test case %d, but there was no error", i)
@@ -352,7 +352,7 @@ func TestGetCountry(t *testing.T) {
 				},
 				{
 					ID:   "NSW",
-					Name: "New South Wales",
+					Name: "NewValid South Wales",
 				},
 				{
 					ID:   "NT",

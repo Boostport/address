@@ -7,7 +7,9 @@ import (
 	"github.com/hashicorp/go-multierror"
 )
 
-func validate(address Address) error {
+// Validate checks and address to determine if it is valid.
+// If you want to create valid addresses, the `address.NewValid()` function does it in one call.
+func Validate(address Address) error {
 
 	var result *multierror.Error
 
