@@ -1313,7 +1313,7 @@ func checkPostalCodeRegex(regex string, postalCodes []string) error {
 
 	for _, postCode := range postalCodes {
 		if !postCodeRegex.MatchString(postCode) {
-			return fmt.Errorf("sample postcode %s could not be valided by post code regex", postCode)
+			return fmt.Errorf("sample postcode %s could not be validated by post code regex", postCode)
 		}
 	}
 
