@@ -123,6 +123,15 @@ type postCodeRegex struct {
 
 func (p postCodeRegex) toCode() string {
 
+	// Generate postcode regex in order to avoid huge diffs when updating the data
+	var ids []string
+
+	for id := range p.subdivisionRegex {
+		ids = append(ids, id)
+	}
+
+	sort.Strings(ids)
+
 	str := fmt.Sprintf(`{
 		regex: `+"`%s`,", p.regex)
 
@@ -131,9 +140,9 @@ func (p postCodeRegex) toCode() string {
 subdivisionRegex: map[string]postCodeRegex{
 `
 
-		for id, postCodeRegex := range p.subdivisionRegex {
+		for _, id := range ids {
 			str += fmt.Sprintf(`"%s": %s,
-`, id, postCodeRegex.toCode())
+`, id, p.subdivisionRegex[id].toCode())
 		}
 
 		str += `}`
