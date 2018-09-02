@@ -1,15 +1,15 @@
 dev:
-  image: golang:1.10-alpine
+  image: golang:1.11-alpine
 
   steps:
     - type: script
-      name: Set up workspace
+      name: Install build tools and git
       options:
-        command: mkdir -p "$GOPATH/src/github.com/Boostport" && ln -s /source $GOPATH/src/github.com/Boostport/address
+        command: apk --no-cache --no-progress add build-base git
 
   reload:
     - type: script
       name: Run tests
-      cwd: $GOPATH/src/github.com/Boostport/address
+      cwd: /source
       options:
-        command: go test -cover -coverprofile cover.out -v ./... && go tool cover -func=cover.out
+        command: go test -cover -coverprofile cover.out -v ./...

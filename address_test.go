@@ -1,7 +1,6 @@
 package address
 
 import (
-	"fmt"
 	"reflect"
 	"testing"
 )
@@ -374,7 +373,7 @@ func TestGetCountry(t *testing.T) {
 			},
 		},
 	}
-	fmt.Println(reflect.DeepEqual(country.AdministrativeAreas, expected.AdministrativeAreas))
+
 	if !reflect.DeepEqual(country, expected) {
 		t.Errorf("Country data for AU does not match expected country data")
 	}

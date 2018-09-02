@@ -1,5 +1,5 @@
 box:
-  id: golang:1.10-alpine
+  id: golang:1.11-alpine
   cmd: /bin/sh
 
 no-response-timeout: 20
@@ -16,14 +16,13 @@ build:
           chmod +x ./cc-test-reporter
           ./cc-test-reporter before-build
 
-    # Get the dependencies
+    # Get the tools and setup environment
     - script:
       name: get dependencies
       code: |
+        export GO111MODULE=on
         apk update
-        apk add git
-        go get -u github.com/golang/dep/cmd/dep
-        dep ensure -v
+        apk add build-base git
 
     # Test the project and upload
     - script:
