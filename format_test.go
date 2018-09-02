@@ -1,7 +1,6 @@
 package address
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -760,7 +759,6 @@ func TestPostalLabelFormatterForInternationalMailWithoutValidOriginCountry(t *te
 		formatted := f.Format(address, "")
 
 		if formatted != testCase.Expected {
-			fmt.Println(formatted)
 			t.Errorf("Formatted address for test case %d does not match the expected result", i)
 		}
 	}
