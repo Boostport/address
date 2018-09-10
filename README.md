@@ -6,7 +6,7 @@
 Address is a Go library that validates and formats addresses using data generated from [Google's Address Data Service](https://chromium-i18n.appspot.com/ssl-address).
 
 ## Installation
-Install the library using [dep](https://github.com/golang/dep). For example: `dep ensure -add github.com/Boostport/address`.
+Install the library using Go modules. For example: `go get -u github.com/Boostport/address`.
 
 ## Creating Addresses
 To create a new address, use `New()`. If the address is invalid, an error will be returned.
