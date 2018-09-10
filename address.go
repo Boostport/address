@@ -6,9 +6,8 @@ package address
 
 import (
 	"fmt"
-	"strings"
-
 	"sort"
+	"strings"
 
 	"golang.org/x/text/collate"
 	textLanguage "golang.org/x/text/language"
