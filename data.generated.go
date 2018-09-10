@@ -603,7 +603,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(96799)(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -672,7 +672,7 @@ var generated = data{
 				"WA": {
 					regex: `^6|0872`},
 			}},
-		Format: "%O%n%N%n%A%n%C %S %Z",
+		Format:                     "%O%n%N%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		LocalityNameType:           Suburb,
 		AllowedFields: map[Field]struct{}{
@@ -799,7 +799,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `BB\d{5}`},
-		Format: "%N%n%O%n%A%n%C, %S %Z",
+		Format:                     "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: Parish,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -1034,7 +1034,7 @@ var generated = data{
 				"TO": {
 					regex: `^77`},
 			}},
-		Format: "%O%n%N%n%A%n%D%n%C-%S%n%Z",
+		Format:                     "%O%n%N%n%A%n%D%n%C-%S%n%Z",
 		AdministrativeAreaNameType: State,
 		DependentLocalityNameType:  Neighborhood,
 		AllowedFields: map[Field]struct{}{
@@ -23515,10 +23515,10 @@ var generated = data{
 		},
 	},
 	"BS": {
-		ID:              "BS",
-		Name:            "BAHAMAS",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%C, %S",
+		ID:                         "BS",
+		Name:                       "BAHAMAS",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%C, %S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -25939,6 +25939,10 @@ var generated = data{
 								{
 									ID:   "芜湖县",
 									Name: "Wuhu Xian",
+								},
+								{
+									ID:   "无为县",
+									Name: "Wuwei Xian",
 								},
 								{
 									ID:   "弋江区",
@@ -33536,10 +33540,6 @@ var generated = data{
 									Name: "Dadong Qu",
 								},
 								{
-									ID:   "东陵区",
-									Name: "Dongling Qu",
-								},
-								{
 									ID:   "法库县",
 									Name: "Faku Xian",
 								},
@@ -33550,6 +33550,10 @@ var generated = data{
 								{
 									ID:   "皇姑区",
 									Name: "Huanggu Qu",
+								},
+								{
+									ID:   "东陵区",
+									Name: "Hunnan Qu",
 								},
 								{
 									ID:   "康平县",
@@ -39558,6 +39562,10 @@ var generated = data{
 								{
 									ID:   "三山区",
 									Name: "三山区",
+								},
+								{
+									ID:   "无为县",
+									Name: "无为县",
 								},
 								{
 									ID:   "芜湖县",
@@ -47163,10 +47171,6 @@ var generated = data{
 									Name: "大东区",
 								},
 								{
-									ID:   "东陵区",
-									Name: "东陵区",
-								},
-								{
 									ID:   "法库县",
 									Name: "法库县",
 								},
@@ -47177,6 +47181,10 @@ var generated = data{
 								{
 									ID:   "皇姑区",
 									Name: "皇姑区",
+								},
+								{
+									ID:   "东陵区",
+									Name: "浑南区",
 								},
 								{
 									ID:   "康平县",
@@ -52706,7 +52714,7 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{6}`},
-		Format: "%N%n%O%n%A%n%C, %S, %Z",
+		Format:                     "%N%n%O%n%A%n%C, %S, %Z",
 		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -52764,7 +52772,7 @@ var generated = data{
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{4}`},
-		Format: "%N%n%O%n%A%n%Z %C%n%S",
+		Format:                     "%N%n%O%n%A%n%Z %C%n%S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -54599,7 +54607,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(9694[1-4])(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -56323,7 +56331,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `[\dA-Z]{3} ?[\dA-Z]{4}`},
-		Format: "%N%n%O%n%A%n%D%n%C%n%S %Z",
+		Format:                     "%N%n%O%n%A%n%D%n%C%n%S %Z",
 		AdministrativeAreaNameType: County,
 		DependentLocalityNameType:  Townland,
 		PostCodeNameType:           Eircode,
@@ -56590,7 +56598,7 @@ var generated = data{
 				"WB": {
 					regex: `^7[0-4]`},
 			}},
-		Format: "%N%n%O%n%A%n%C %Z%n%S",
+		Format:                     "%N%n%O%n%A%n%C %Z%n%S",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           PINCode,
 		AllowedFields: map[Field]struct{}{
@@ -57029,7 +57037,7 @@ var generated = data{
 		DefaultLanguage: "fa",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}-?\d{5}`},
-		Format: "%O%n%N%n%S%n%C, %D%n%A%n%Z",
+		Format:                    "%O%n%N%n%S%n%C, %D%n%A%n%Z",
 		DependentLocalityNameType: Neighborhood,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -57039,6 +57047,322 @@ var generated = data{
 			Organization:       {},
 			PostCode:           {},
 			StreetAddress:      {},
+		},
+		AdministrativeAreas: map[string][]administrativeArea{
+			"en": {
+				{
+					ID:        "32",
+					Name:      "Alborz Province",
+					PostalKey: "استان البرز",
+				},
+				{
+					ID:        "03",
+					Name:      "Ardabil Province",
+					PostalKey: "استان اردبیل",
+				},
+				{
+					ID:        "06",
+					Name:      "Bushehr Province",
+					PostalKey: "استان بوشهر",
+				},
+				{
+					ID:        "08",
+					Name:      "Chaharmahal and Bakhtiari Province",
+					PostalKey: "استان چهارمحال و بختیاری",
+				},
+				{
+					ID:        "01",
+					Name:      "East Azerbaijan Province",
+					PostalKey: "استان آذربایجان شرقی",
+				},
+				{
+					ID:        "14",
+					Name:      "Fars Province",
+					PostalKey: "استان فارس",
+				},
+				{
+					ID:        "19",
+					Name:      "Gilan Province",
+					PostalKey: "استان گیلان",
+				},
+				{
+					ID:        "27",
+					Name:      "Golestan Province",
+					PostalKey: "استان گلستان",
+				},
+				{
+					ID:        "24",
+					Name:      "Hamadan Province",
+					PostalKey: "استان همدان",
+				},
+				{
+					ID:        "23",
+					Name:      "Hormozgan Province",
+					PostalKey: "استان هرمزگان",
+				},
+				{
+					ID:        "05",
+					Name:      "Ilam Province",
+					PostalKey: "استان ایلام",
+				},
+				{
+					ID:        "04",
+					Name:      "Isfahan Province",
+					PostalKey: "استان اصفهان",
+				},
+				{
+					ID:        "15",
+					Name:      "Kerman Province",
+					PostalKey: "استان کرمان",
+				},
+				{
+					ID:        "17",
+					Name:      "Kermanshah Province",
+					PostalKey: "استان کرمانشاه",
+				},
+				{
+					ID:        "10",
+					Name:      "Khuzestan Province",
+					PostalKey: "استان خوزستان",
+				},
+				{
+					ID:        "18",
+					Name:      "Kohgiluyeh and Boyer-Ahmad Province",
+					PostalKey: "استان کهگیلویه و بویراحمد",
+				},
+				{
+					ID:        "16",
+					Name:      "Kurdistan Province",
+					PostalKey: "استان کردستان",
+				},
+				{
+					ID:        "20",
+					Name:      "Lorestan Province",
+					PostalKey: "استان لرستان",
+				},
+				{
+					ID:        "22",
+					Name:      "Markazi Province",
+					PostalKey: "استان مرکزی",
+				},
+				{
+					ID:        "21",
+					Name:      "Mazandaran Province",
+					PostalKey: "استان مازندران",
+				},
+				{
+					ID:        "31",
+					Name:      "North Khorasan Province",
+					PostalKey: "استان خراسان شمالی",
+				},
+				{
+					ID:        "28",
+					Name:      "Qazvin Province",
+					PostalKey: "استان قزوین",
+				},
+				{
+					ID:        "26",
+					Name:      "Qom Province",
+					PostalKey: "استان قم",
+				},
+				{
+					ID:        "30",
+					Name:      "Razavi Khorasan Province",
+					PostalKey: "استان خراسان رضوی",
+				},
+				{
+					ID:        "12",
+					Name:      "Semnan Province",
+					PostalKey: "استان سمنان",
+				},
+				{
+					ID:        "13",
+					Name:      "Sistan and Baluchestan Province",
+					PostalKey: "استان سیستان و بلوچستان",
+				},
+				{
+					ID:        "29",
+					Name:      "South Khorasan Province",
+					PostalKey: "استان خراسان جنوبی",
+				},
+				{
+					ID:        "07",
+					Name:      "Tehran Province",
+					PostalKey: "استان تهران",
+				},
+				{
+					ID:        "02",
+					Name:      "West Azerbaijan Province",
+					PostalKey: "استان آذربایجان غربی",
+				},
+				{
+					ID:        "25",
+					Name:      "Yazd Province",
+					PostalKey: "استان یزد",
+				},
+				{
+					ID:        "11",
+					Name:      "Zanjan Province",
+					PostalKey: "استان زنجان",
+				},
+			},
+			"fa": {
+				{
+					ID:        "01",
+					Name:      "استان آذربایجان شرقی",
+					PostalKey: "استان آذربایجان شرقی",
+				},
+				{
+					ID:        "02",
+					Name:      "استان آذربایجان غربی",
+					PostalKey: "استان آذربایجان غربی",
+				},
+				{
+					ID:        "03",
+					Name:      "استان اردبیل",
+					PostalKey: "استان اردبیل",
+				},
+				{
+					ID:        "04",
+					Name:      "استان اصفهان",
+					PostalKey: "استان اصفهان",
+				},
+				{
+					ID:        "32",
+					Name:      "استان البرز",
+					PostalKey: "استان البرز",
+				},
+				{
+					ID:        "05",
+					Name:      "استان ایلام",
+					PostalKey: "استان ایلام",
+				},
+				{
+					ID:        "06",
+					Name:      "استان بوشهر",
+					PostalKey: "استان بوشهر",
+				},
+				{
+					ID:        "07",
+					Name:      "استان تهران",
+					PostalKey: "استان تهران",
+				},
+				{
+					ID:        "08",
+					Name:      "استان چهارمحال و بختیاری",
+					PostalKey: "استان چهارمحال و بختیاری",
+				},
+				{
+					ID:        "29",
+					Name:      "استان خراسان جنوبی",
+					PostalKey: "استان خراسان جنوبی",
+				},
+				{
+					ID:        "30",
+					Name:      "استان خراسان رضوی",
+					PostalKey: "استان خراسان رضوی",
+				},
+				{
+					ID:        "31",
+					Name:      "استان خراسان شمالی",
+					PostalKey: "استان خراسان شمالی",
+				},
+				{
+					ID:        "10",
+					Name:      "استان خوزستان",
+					PostalKey: "استان خوزستان",
+				},
+				{
+					ID:        "11",
+					Name:      "استان زنجان",
+					PostalKey: "استان زنجان",
+				},
+				{
+					ID:        "12",
+					Name:      "استان سمنان",
+					PostalKey: "استان سمنان",
+				},
+				{
+					ID:        "13",
+					Name:      "استان سیستان و بلوچستان",
+					PostalKey: "استان سیستان و بلوچستان",
+				},
+				{
+					ID:        "14",
+					Name:      "استان فارس",
+					PostalKey: "استان فارس",
+				},
+				{
+					ID:        "28",
+					Name:      "استان قزوین",
+					PostalKey: "استان قزوین",
+				},
+				{
+					ID:        "26",
+					Name:      "استان قم",
+					PostalKey: "استان قم",
+				},
+				{
+					ID:        "16",
+					Name:      "استان کردستان",
+					PostalKey: "استان کردستان",
+				},
+				{
+					ID:        "15",
+					Name:      "استان کرمان",
+					PostalKey: "استان کرمان",
+				},
+				{
+					ID:        "17",
+					Name:      "استان کرمانشاه",
+					PostalKey: "استان کرمانشاه",
+				},
+				{
+					ID:        "18",
+					Name:      "استان کهگیلویه و بویراحمد",
+					PostalKey: "استان کهگیلویه و بویراحمد",
+				},
+				{
+					ID:        "27",
+					Name:      "استان گلستان",
+					PostalKey: "استان گلستان",
+				},
+				{
+					ID:        "19",
+					Name:      "استان گیلان",
+					PostalKey: "استان گیلان",
+				},
+				{
+					ID:        "20",
+					Name:      "استان لرستان",
+					PostalKey: "استان لرستان",
+				},
+				{
+					ID:        "21",
+					Name:      "استان مازندران",
+					PostalKey: "استان مازندران",
+				},
+				{
+					ID:        "22",
+					Name:      "استان مرکزی",
+					PostalKey: "استان مرکزی",
+				},
+				{
+					ID:        "23",
+					Name:      "استان هرمزگان",
+					PostalKey: "استان هرمزگان",
+				},
+				{
+					ID:        "24",
+					Name:      "استان همدان",
+					PostalKey: "استان همدان",
+				},
+				{
+					ID:        "25",
+					Name:      "استان یزد",
+					PostalKey: "استان یزد",
+				},
+			},
 		},
 	},
 	"IS": {
@@ -57883,10 +58207,10 @@ var generated = data{
 		},
 	},
 	"JM": {
-		ID:              "JM",
-		Name:            "JAMAICA",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%C%n%S %X",
+		ID:                         "JM",
+		Name:                       "JAMAICA",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%C%n%S %X",
 		AdministrativeAreaNameType: Parish,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -58634,10 +58958,10 @@ var generated = data{
 		},
 	},
 	"KI": {
-		ID:              "KI",
-		Name:            "KIRIBATI",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%S%n%C",
+		ID:                         "KI",
+		Name:                       "KIRIBATI",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%S%n%C",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -58664,10 +58988,10 @@ var generated = data{
 		},
 	},
 	"KN": {
-		ID:              "KN",
-		Name:            "SAINT KITTS AND NEVIS",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%C, %S",
+		ID:                         "KN",
+		Name:                       "SAINT KITTS AND NEVIS",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%C, %S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -62003,7 +62327,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `KY\d-\d{4}`},
-		Format: "%N%n%O%n%A%n%S %Z",
+		Format:                     "%N%n%O%n%A%n%S %Z",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -62315,7 +62639,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(969[67]\d)(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -62412,7 +62736,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(9695[012])(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -62615,7 +62939,7 @@ var generated = data{
 				"ZAC": {
 					regex: `^9[89]`},
 			}},
-		Format: "%N%n%O%n%A%n%D%n%Z %C, %S",
+		Format:                     "%N%n%O%n%A%n%D%n%Z %C, %S",
 		AdministrativeAreaNameType: State,
 		DependentLocalityNameType:  Neighborhood,
 		AllowedFields: map[Field]struct{}{
@@ -62842,7 +63166,7 @@ var generated = data{
 				"16": {
 					regex: `^62`},
 			}},
-		Format: "%N%n%O%n%A%n%D%n%Z %C%n%S",
+		Format:                     "%N%n%O%n%A%n%D%n%Z %C%n%S",
 		AdministrativeAreaNameType: State,
 		DependentLocalityNameType:  VillageTownship,
 		AllowedFields: map[Field]struct{}{
@@ -63095,7 +63419,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{6}`},
-		Format: "%N%n%O%n%A%n%D%n%C %Z%n%S",
+		Format:                     "%N%n%O%n%A%n%D%n%C %Z%n%S",
 		AdministrativeAreaNameType: State,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -63342,7 +63666,7 @@ var generated = data{
 				"SJ": {
 					regex: `^9[12]`},
 			}},
-		Format: "%N%n%O%n%A%n%Z%n%C, %S",
+		Format:                     "%N%n%O%n%A%n%Z%n%C, %S",
 		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -63503,10 +63827,10 @@ var generated = data{
 		},
 	},
 	"NR": {
-		ID:              "NR",
-		Name:            "NAURU CENTRAL PACIFIC",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%S",
+		ID:                         "NR",
+		Name:                       "NAURU CENTRAL PACIFIC",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%S",
 		AdministrativeAreaNameType: District,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -63673,7 +63997,7 @@ var generated = data{
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
 			regex: `987\d{2}`},
-		Format: "%N%n%O%n%A%n%Z %C %S",
+		Format:                     "%N%n%O%n%A%n%Z %C %S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -64443,7 +64767,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(969(?:39|40))(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -65614,10 +65938,10 @@ var generated = data{
 		DefaultLanguage: "en",
 	},
 	"SC": {
-		ID:              "SC",
-		Name:            "SEYCHELLES",
-		DefaultLanguage: "fr",
-		Format:          "%N%n%O%n%A%n%C%n%S",
+		ID:                         "SC",
+		Name:                       "SEYCHELLES",
+		DefaultLanguage:            "fr",
+		Format:                     "%N%n%O%n%A%n%C%n%S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -66141,9 +66465,10 @@ var generated = data{
 		DefaultLanguage: "en",
 	},
 	"SY": {
-		ID:              "SY",
-		Name:            "SYRIA",
-		DefaultLanguage: "ar",
+		ID:               "SY",
+		Name:             "SYRIA",
+		DefaultLanguage:  "ar",
+		LocalityNameType: District,
 	},
 	"SZ": {
 		ID:              "SZ",
@@ -67831,10 +68156,10 @@ var generated = data{
 		DefaultLanguage: "en",
 	},
 	"TV": {
-		ID:              "TV",
-		Name:            "TUVALU",
-		DefaultLanguage: "tyv",
-		Format:          "%N%n%O%n%A%n%C%n%S",
+		ID:                         "TV",
+		Name:                       "TUVALU",
+		DefaultLanguage:            "tyv",
+		Format:                     "%N%n%O%n%A%n%C%n%S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -72253,7 +72578,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `96898`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -72387,7 +72712,7 @@ var generated = data{
 				"WY": {
 					regex: `^82|83[01]|83414`},
 			}},
-		Format: "%N%n%O%n%A%n%C, %S %Z",
+		Format:                     "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -72883,7 +73208,7 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{4}`},
-		Format: "%N%n%O%n%A%n%C %Z, %S",
+		Format:                     "%N%n%O%n%A%n%C %Z, %S",
 		AdministrativeAreaNameType: State,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -73056,7 +73381,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `(008(?:(?:[0-4]\d)|(?:5[01])))(?:[ \-](\d{4}))?`},
-		Format: "%N%n%O%n%A%n%C %S %Z",
+		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -73858,10 +74183,10 @@ var generated = data{
 		DefaultLanguage: "sn",
 	},
 	"ZZ": {
-		ID:              "ZZ",
-		Name:            "",
-		DefaultLanguage: "en",
-		Format:          "%N%n%O%n%A%n%C",
+		ID:                         "ZZ",
+		Name:                       "",
+		DefaultLanguage:            "en",
+		Format:                     "%N%n%O%n%A%n%C",
 		AdministrativeAreaNameType: Province,
 		LocalityNameType:           City,
 		DependentLocalityNameType:  Suburb,
