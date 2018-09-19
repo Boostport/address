@@ -7,8 +7,6 @@ no-response-timeout: 20
 build:
   steps:
 
-    - setup-go-workspace
-
     - script:
         name: install code climate
         code: |
@@ -18,9 +16,8 @@ build:
 
     # Get the tools and setup environment
     - script:
-      name: get dependencies
+      name: set up build tools
       code: |
-        export GO111MODULE=on
         apk update
         apk add build-base git
 
@@ -34,4 +31,4 @@ build:
     - script:
         name: send results to code climate
         code: |
-          ./cc-test-reporter after-build --exit-code $GO_TEST_EXIT_CODE
+          ./cc-test-reporter after-build -d --exit-code $GO_TEST_EXIT_CODE
