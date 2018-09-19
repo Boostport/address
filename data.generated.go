@@ -52756,7 +52756,7 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`},
-		Format: "%N%n%O%n%A%n%S%C%n%Z",
+		Format: "%N%n%O%n%A%n%C %S%n%Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
@@ -52764,6 +52764,90 @@ var generated = data{
 			Organization:       {},
 			PostCode:           {},
 			StreetAddress:      {},
+		},
+		AdministrativeAreas: map[string][]administrativeArea{
+			"es": {
+				{
+					ID:        "15",
+					Name:      "Artemisa",
+					PostalKey: "Artemisa",
+				},
+				{
+					ID:        "09",
+					Name:      "Camagüey",
+					PostalKey: "Camagüey",
+				},
+				{
+					ID:        "08",
+					Name:      "Ciego de Ávila",
+					PostalKey: "Ciego de Ávila",
+				},
+				{
+					ID:        "06",
+					Name:      "Cienfuegos",
+					PostalKey: "Cienfuegos",
+				},
+				{
+					ID:        "12",
+					Name:      "Granma",
+					PostalKey: "Granma",
+				},
+				{
+					ID:        "14",
+					Name:      "Guantánamo",
+					PostalKey: "Guantánamo",
+				},
+				{
+					ID:        "11",
+					Name:      "Holguín",
+					PostalKey: "Holguín",
+				},
+				{
+					ID:        "99",
+					Name:      "Isla de la Juventud",
+					PostalKey: "Isla de la Juventud",
+				},
+				{
+					ID:        "03",
+					Name:      "La Habana",
+					PostalKey: "La Habana",
+				},
+				{
+					ID:        "10",
+					Name:      "Las Tunas",
+					PostalKey: "Las Tunas",
+				},
+				{
+					ID:        "04",
+					Name:      "Matanzas",
+					PostalKey: "Matanzas",
+				},
+				{
+					ID:        "16",
+					Name:      "Mayabeque",
+					PostalKey: "Mayabeque",
+				},
+				{
+					ID:        "01",
+					Name:      "Pinar del Río",
+					PostalKey: "Pinar del Río",
+				},
+				{
+					ID:        "07",
+					Name:      "Sancti Spíritus",
+					PostalKey: "Sancti Spíritus",
+				},
+				{
+					ID:        "13",
+					Name:      "Santiago de Cuba",
+					PostalKey: "Santiago de Cuba",
+				},
+				{
+					ID:        "05",
+					Name:      "Villa Clara",
+					PostalKey: "Villa Clara",
+				},
+			},
 		},
 	},
 	"CV": {
@@ -62966,32 +63050,32 @@ var generated = data{
 				{
 					ID:        "AGU",
 					Name:      "Aguascalientes",
-					PostalKey: "AGS",
+					PostalKey: "Ags.",
 				},
 				{
 					ID:        "BCN",
 					Name:      "Baja California",
-					PostalKey: "BC",
+					PostalKey: "B.C.",
 				},
 				{
 					ID:        "BCS",
 					Name:      "Baja California Sur",
-					PostalKey: "BCS",
+					PostalKey: "B.C.S.",
 				},
 				{
 					ID:        "CAM",
 					Name:      "Campeche",
-					PostalKey: "CAMP",
+					PostalKey: "Camp.",
 				},
 				{
 					ID:        "CHP",
 					Name:      "Chiapas",
-					PostalKey: "CHIS",
+					PostalKey: "Chis.",
 				},
 				{
 					ID:        "CHH",
 					Name:      "Chihuahua",
-					PostalKey: "CHIH",
+					PostalKey: "Chih.",
 				},
 				{
 					ID:        "CMX",
@@ -63000,128 +63084,128 @@ var generated = data{
 				},
 				{
 					ID:        "COA",
-					Name:      "Coahuila",
-					PostalKey: "COAH",
+					Name:      "Coahuila de Zaragoza",
+					PostalKey: "Coah.",
 				},
 				{
 					ID:        "COL",
 					Name:      "Colima",
-					PostalKey: "COL",
+					PostalKey: "Col.",
 				},
 				{
 					ID:        "DUR",
 					Name:      "Durango",
-					PostalKey: "DGO",
+					PostalKey: "Dgo.",
 				},
 				{
 					ID:        "MEX",
 					Name:      "Estado de México",
-					PostalKey: "MEX",
+					PostalKey: "Méx.",
 				},
 				{
 					ID:        "GUA",
 					Name:      "Guanajuato",
-					PostalKey: "GTO",
+					PostalKey: "Gto.",
 				},
 				{
 					ID:        "GRO",
 					Name:      "Guerrero",
-					PostalKey: "GRO",
+					PostalKey: "Gro.",
 				},
 				{
 					ID:        "HID",
 					Name:      "Hidalgo",
-					PostalKey: "HGO",
+					PostalKey: "Hgo.",
 				},
 				{
 					ID:        "JAL",
 					Name:      "Jalisco",
-					PostalKey: "JAL",
+					PostalKey: "Jal.",
 				},
 				{
 					ID:        "MIC",
 					Name:      "Michoacán",
-					PostalKey: "MICH",
+					PostalKey: "Mich.",
 				},
 				{
 					ID:        "MOR",
 					Name:      "Morelos",
-					PostalKey: "MOR",
+					PostalKey: "Mor.",
 				},
 				{
 					ID:        "NAY",
 					Name:      "Nayarit",
-					PostalKey: "NAY",
+					PostalKey: "Nay.",
 				},
 				{
 					ID:        "NLE",
 					Name:      "Nuevo León",
-					PostalKey: "NL",
+					PostalKey: "N.L.",
 				},
 				{
 					ID:        "OAX",
 					Name:      "Oaxaca",
-					PostalKey: "OAX",
+					PostalKey: "Oax.",
 				},
 				{
 					ID:        "PUE",
 					Name:      "Puebla",
-					PostalKey: "PUE",
+					PostalKey: "Pue.",
 				},
 				{
 					ID:        "QUE",
 					Name:      "Querétaro",
-					PostalKey: "QRO",
+					PostalKey: "Qro.",
 				},
 				{
 					ID:        "ROO",
 					Name:      "Quintana Roo",
-					PostalKey: "QROO",
+					PostalKey: "Q.R.",
 				},
 				{
 					ID:        "SLP",
 					Name:      "San Luis Potosí",
-					PostalKey: "SLP",
+					PostalKey: "S.L.P.",
 				},
 				{
 					ID:        "SIN",
 					Name:      "Sinaloa",
-					PostalKey: "SIN",
+					PostalKey: "Sin.",
 				},
 				{
 					ID:        "SON",
 					Name:      "Sonora",
-					PostalKey: "SON",
+					PostalKey: "Son.",
 				},
 				{
 					ID:        "TAB",
 					Name:      "Tabasco",
-					PostalKey: "TAB",
+					PostalKey: "Tab.",
 				},
 				{
 					ID:        "TAM",
 					Name:      "Tamaulipas",
-					PostalKey: "TAMPS",
+					PostalKey: "Tamps.",
 				},
 				{
 					ID:        "TLA",
 					Name:      "Tlaxcala",
-					PostalKey: "TLAX",
+					PostalKey: "Tlax.",
 				},
 				{
 					ID:        "VER",
 					Name:      "Veracruz",
-					PostalKey: "VER",
+					PostalKey: "Ver.",
 				},
 				{
 					ID:        "YUC",
 					Name:      "Yucatán",
-					PostalKey: "YUC",
+					PostalKey: "Yuc.",
 				},
 				{
 					ID:        "ZAC",
 					Name:      "Zacatecas",
-					PostalKey: "ZAC",
+					PostalKey: "Zac.",
 				},
 			},
 		},
@@ -63981,7 +64065,8 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `(?:LIMA \d{1,2}|CALLAO 0?\d)|[0-2]\d{4}`},
-		Format: "%N%n%O%n%A%n%C %Z%n%S",
+		Format:           "%N%n%O%n%A%n%C %Z%n%S",
+		LocalityNameType: District,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
@@ -63989,6 +64074,140 @@ var generated = data{
 			Organization:       {},
 			PostCode:           {},
 			StreetAddress:      {},
+		},
+		AdministrativeAreas: map[string][]administrativeArea{
+			"es": {
+				{
+					ID:        "AMA",
+					Name:      "Amazonas",
+					PostalKey: "Amazonas",
+				},
+				{
+					ID:        "ANC",
+					Name:      "Áncash",
+					PostalKey: "Áncash",
+				},
+				{
+					ID:        "APU",
+					Name:      "Apurímac",
+					PostalKey: "Apurímac",
+				},
+				{
+					ID:        "ARE",
+					Name:      "Arequipa",
+					PostalKey: "Arequipa",
+				},
+				{
+					ID:        "AYA",
+					Name:      "Ayacucho",
+					PostalKey: "Ayacucho",
+				},
+				{
+					ID:        "CAJ",
+					Name:      "Cajamarca",
+					PostalKey: "Cajamarca",
+				},
+				{
+					ID:        "CAL",
+					Name:      "Callao",
+					PostalKey: "Callao",
+				},
+				{
+					ID:        "CUS",
+					Name:      "Cuzco",
+					PostalKey: "Cuzco",
+				},
+				{
+					ID:        "LIM",
+					Name:      "Gobierno Regional de Lima",
+					PostalKey: "Gobierno Regional de Lima",
+				},
+				{
+					ID:        "HUV",
+					Name:      "Huancavelica",
+					PostalKey: "Huancavelica",
+				},
+				{
+					ID:        "HUC",
+					Name:      "Huánuco",
+					PostalKey: "Huánuco",
+				},
+				{
+					ID:        "ICA",
+					Name:      "Ica",
+					PostalKey: "Ica",
+				},
+				{
+					ID:        "JUN",
+					Name:      "Junín",
+					PostalKey: "Junín",
+				},
+				{
+					ID:        "LAL",
+					Name:      "La Libertad",
+					PostalKey: "La Libertad",
+				},
+				{
+					ID:        "LAM",
+					Name:      "Lambayeque",
+					PostalKey: "Lambayeque",
+				},
+				{
+					ID:        "LOR",
+					Name:      "Loreto",
+					PostalKey: "Loreto",
+				},
+				{
+					ID:        "MDD",
+					Name:      "Madre de Dios",
+					PostalKey: "Madre de Dios",
+				},
+				{
+					ID:        "MOQ",
+					Name:      "Moquegua",
+					PostalKey: "Moquegua",
+				},
+				{
+					ID:        "LMA",
+					Name:      "Municipalidad Metropolitana de Lima",
+					PostalKey: "Municipalidad Metropolitana de Lima",
+				},
+				{
+					ID:        "PAS",
+					Name:      "Pasco",
+					PostalKey: "Pasco",
+				},
+				{
+					ID:        "PIU",
+					Name:      "Piura",
+					PostalKey: "Piura",
+				},
+				{
+					ID:        "PUN",
+					Name:      "Puno",
+					PostalKey: "Puno",
+				},
+				{
+					ID:        "SAM",
+					Name:      "San Martín",
+					PostalKey: "San Martín",
+				},
+				{
+					ID:        "TAC",
+					Name:      "Tacna",
+					PostalKey: "Tacna",
+				},
+				{
+					ID:        "TUM",
+					Name:      "Tumbes",
+					PostalKey: "Tumbes",
+				},
+				{
+					ID:        "UCA",
+					Name:      "Ucayali",
+					PostalKey: "Ucayali",
+				},
+			},
 		},
 	},
 	"PF": {
@@ -64104,6 +64323,10 @@ var generated = data{
 					regex: `^80[01]`},
 				"DAV": {
 					regex: `^81[0-2]`},
+				"DIN": {
+					regex: `^84[12]`},
+				"DVO": {
+					regex: `^801[1-5]`},
 				"EAS": {
 					regex: `^68[0-2]`},
 				"GUI": {
@@ -64178,6 +64401,8 @@ var generated = data{
 					regex: `^95[01]`},
 				"SIG": {
 					regex: `^62(2[5-9]|30)`},
+				"SLE": {
+					regex: `^66[10]`},
 				"SLU": {
 					regex: `^74[01]`},
 				"SOR": {
@@ -64185,7 +64410,7 @@ var generated = data{
 				"SUK": {
 					regex: `^98[01]`},
 				"SUN": {
-					regex: `^84[02]`},
+					regex: `^84[0-2]`},
 				"SUR": {
 					regex: `^83[01]`},
 				"TAR": {
@@ -64359,6 +64584,11 @@ var generated = data{
 					ID:        "DAS",
 					Name:      "Davao del Sur",
 					PostalKey: "Davao del Sur",
+				},
+				{
+					ID:        "DVO",
+					Name:      "Davao Occidental",
+					PostalKey: "Davao Occidental",
 				},
 				{
 					ID:        "DAO",
