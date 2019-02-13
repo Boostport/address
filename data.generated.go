@@ -54737,13 +54737,12 @@ var generated = data{
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{2} ?\d{3}`},
-		Format: "%O%n%N%n%A%n%Z %C %X",
+		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
 			Name:          {},
 			Organization:  {},
 			PostCode:      {},
-			SortingCode:   {},
 			StreetAddress: {},
 		},
 		RequiredFields: map[Field]struct{}{
@@ -63788,8 +63787,8 @@ var generated = data{
 				},
 				{
 					ID:        "ES",
-					Name:      "Esteli",
-					PostalKey: "Esteli",
+					Name:      "Estelí",
+					PostalKey: "Estelí",
 				},
 				{
 					ID:        "GR",
@@ -63803,8 +63802,8 @@ var generated = data{
 				},
 				{
 					ID:        "LE",
-					Name:      "Leon",
-					PostalKey: "Leon",
+					Name:      "León",
+					PostalKey: "León",
 				},
 				{
 					ID:        "MD",
@@ -63833,18 +63832,18 @@ var generated = data{
 				},
 				{
 					ID:        "AN",
-					Name:      "Raan",
-					PostalKey: "Raan",
+					Name:      "Región Autónoma de la Costa Caribe Norte",
+					PostalKey: "Región Autónoma de la Costa Caribe Norte",
 				},
 				{
 					ID:        "AS",
-					Name:      "Raas",
-					PostalKey: "Raas",
+					Name:      "Región Autónoma de la Costa Caribe Sur",
+					PostalKey: "Región Autónoma de la Costa Caribe Sur",
 				},
 				{
 					ID:        "SJ",
-					Name:      "Rio San Juan",
-					PostalKey: "Rio San Juan",
+					Name:      "Río San Juan",
+					PostalKey: "Río San Juan",
 				},
 				{
 					ID:        "RI",
