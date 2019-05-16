@@ -1,11 +1,11 @@
 dev:
-  image: golang:1.11-alpine
+  image: golang:1.12-alpine
 
   steps:
     - type: script
       name: Install build tools and git
       options:
-        command: apk --no-cache --no-progress add build-base git
+        command: apk --no-cache --no-progress add gcc git musl-dev
 
   reload:
     - type: script

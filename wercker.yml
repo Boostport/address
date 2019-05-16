@@ -1,5 +1,5 @@
 box:
-  id: golang:1.11-alpine
+  id: golang:1.12-alpine
   cmd: /bin/sh
 
 no-response-timeout: 20
@@ -18,7 +18,7 @@ build:
       name: get dependencies
       code: |
         apk update
-        apk add build-base git
+        apk add gcc git musl-dev
 
     # Test the project and upload
     - script:
