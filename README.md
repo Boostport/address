@@ -276,10 +276,14 @@ locality or dependent locality. These are keyed using the appropriate ID from th
 
 
 ## Generating Data
+### Directly in your environment
 Install stringer: `go get -u golang.org/x/tools/cmd/stringer`.
 
 To generate the data and generate the `String()` functions for the constants, simply run `go generate` from the root of the project.
 This will run stringer and the generator which will download the data from Google and convert the data into Go code.
+
+### Using docker
+Run `docker-compose run generate`
 
 ## License
 This library is licensed under the Apache 2 License.
