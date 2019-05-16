@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  dev:
+    image: golang:1.12-alpine
+    command: >
+      sh -c "apk --no-cache --no-progress add gcc git musl-dev;
+             go get github.com/unchartedsoftware/witch;
+             cd /source;
+             witch --cmd=\"go test -v -p 1 ./...\" --watch=\"*.mod,**/*.go\""
+    volumes:
+      - .:/source
+      - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
+
+  generate:
+    image: golang:1.12-alpine
+    working_dir: /source
+    command: >
+      sh -c "apk --no-cache --no-progress add gcc git musl-dev;
+             go install golang.org/x/tools/cmd/stringer;
+             go generate;
+             echo \"Address data and strings generated.\""
+    volumes:
+      - .:/source
+      - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
