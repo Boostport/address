@@ -53069,6 +53069,11 @@ var generated = data{
 			PostCode:      {},
 			StreetAddress: {},
 		},
+		RequiredFields: map[Field]struct{}{
+			Locality:      {},
+			PostCode:      {},
+			StreetAddress: {},
+		},
 	},
 	"EG": {
 		ID:              "EG",
@@ -54737,13 +54742,12 @@ var generated = data{
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{2} ?\d{3}`},
-		Format: "%O%n%N%n%A%n%Z %C %X",
+		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
 			Name:          {},
 			Organization:  {},
 			PostCode:      {},
-			SortingCode:   {},
 			StreetAddress: {},
 		},
 		RequiredFields: map[Field]struct{}{
@@ -56624,7 +56628,7 @@ var generated = data{
 				"CT": {
 					regex: `^49`},
 				"DD": {
-					regex: `^396`},
+					regex: `^396|362`},
 				"DL": {
 					regex: `^11`},
 				"DN": {
@@ -60947,8 +60951,16 @@ var generated = data{
 							Name: "Areum-dong",
 						},
 						{
+							ID:   "보람동",
+							Name: "Boram-dong",
+						},
+						{
 							ID:   "부강면",
 							Name: "Bugang-myeon",
+						},
+						{
+							ID:   "대평동",
+							Name: "Daepyeong-dong",
 						},
 						{
 							ID:   "도담동",
@@ -60957,6 +60969,10 @@ var generated = data{
 						{
 							ID:   "금남면",
 							Name: "Geumnam-myeon",
+						},
+						{
+							ID:   "고운동",
+							Name: "Goun-dong",
 						},
 						{
 							ID:   "한솔동",
@@ -60981,6 +60997,14 @@ var generated = data{
 						{
 							ID:   "종촌동",
 							Name: "Jongchon-dong",
+						},
+						{
+							ID:   "새롬동",
+							Name: "Saerom-dong",
+						},
+						{
+							ID:   "소담동",
+							Name: "Sodam-dong",
 						},
 						{
 							ID:   "소정면",
@@ -61927,16 +61951,36 @@ var generated = data{
 					PostalKey: "세종특별자치시",
 					Localities: []locality{
 						{
+							ID:   "고운동",
+							Name: "고운동",
+						},
+						{
 							ID:   "금남면",
 							Name: "금남면",
+						},
+						{
+							ID:   "대평동",
+							Name: "대평동",
 						},
 						{
 							ID:   "도담동",
 							Name: "도담동",
 						},
 						{
+							ID:   "보람동",
+							Name: "보람동",
+						},
+						{
 							ID:   "부강면",
 							Name: "부강면",
+						},
+						{
+							ID:   "새롬동",
+							Name: "새롬동",
+						},
+						{
+							ID:   "소담동",
+							Name: "소담동",
 						},
 						{
 							ID:   "소정면",
@@ -62574,6 +62618,11 @@ var generated = data{
 			PostCode:      {},
 			StreetAddress: {},
 		},
+		RequiredFields: map[Field]struct{}{
+			Locality:      {},
+			PostCode:      {},
+			StreetAddress: {},
+		},
 	},
 	"LU": {
 		ID:              "LU",
@@ -62606,6 +62655,11 @@ var generated = data{
 			Locality:      {},
 			Name:          {},
 			Organization:  {},
+			PostCode:      {},
+			StreetAddress: {},
+		},
+		RequiredFields: map[Field]struct{}{
+			Locality:      {},
 			PostCode:      {},
 			StreetAddress: {},
 		},
@@ -63435,6 +63489,16 @@ var generated = data{
 		ID:              "NA",
 		Name:            "NAMIBIA",
 		DefaultLanguage: "af",
+		PostCodeRegex: postCodeRegex{
+			regex: `\d{5}`},
+		Format: "%N%n%O%n%A%n%Cn%Z",
+		AllowedFields: map[Field]struct{}{
+			Locality:      {},
+			Name:          {},
+			Organization:  {},
+			PostCode:      {},
+			StreetAddress: {},
+		},
 	},
 	"NC": {
 		ID:              "NC",
@@ -63788,8 +63852,8 @@ var generated = data{
 				},
 				{
 					ID:        "ES",
-					Name:      "Esteli",
-					PostalKey: "Esteli",
+					Name:      "Estelí",
+					PostalKey: "Estelí",
 				},
 				{
 					ID:        "GR",
@@ -63803,8 +63867,8 @@ var generated = data{
 				},
 				{
 					ID:        "LE",
-					Name:      "Leon",
-					PostalKey: "Leon",
+					Name:      "León",
+					PostalKey: "León",
 				},
 				{
 					ID:        "MD",
@@ -63833,18 +63897,18 @@ var generated = data{
 				},
 				{
 					ID:        "AN",
-					Name:      "Raan",
-					PostalKey: "Raan",
+					Name:      "Región Autónoma de la Costa Caribe Norte",
+					PostalKey: "Región Autónoma de la Costa Caribe Norte",
 				},
 				{
 					ID:        "AS",
-					Name:      "Raas",
-					PostalKey: "Raas",
+					Name:      "Región Autónoma de la Costa Caribe Sur",
+					PostalKey: "Región Autónoma de la Costa Caribe Sur",
 				},
 				{
 					ID:        "SJ",
-					Name:      "Rio San Juan",
-					PostalKey: "Rio San Juan",
+					Name:      "Río San Juan",
+					PostalKey: "Río San Juan",
 				},
 				{
 					ID:        "RI",
@@ -65083,6 +65147,11 @@ var generated = data{
 			Locality:      {},
 			Name:          {},
 			Organization:  {},
+			PostCode:      {},
+			StreetAddress: {},
+		},
+		RequiredFields: map[Field]struct{}{
+			Locality:      {},
 			PostCode:      {},
 			StreetAddress: {},
 		},

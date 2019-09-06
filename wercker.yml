@@ -1,5 +1,5 @@
 box:
-  id: golang:1.12-alpine
+  id: golang:1.13-alpine
   cmd: /bin/sh
 
 no-response-timeout: 20
