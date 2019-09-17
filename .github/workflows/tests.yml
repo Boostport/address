@@ -1,0 +1,33 @@
+on: [push, pull_request]
+name: Tests
+jobs:
+  test:
+    strategy:
+      matrix:
+        go:
+          - version: 1.13
+            report: true
+          - version: 1.12
+    runs-on: ubuntu-latest
+    container:
+      image: golang:${{ matrix.go.version }}
+
+    steps:
+      - name: Install code climate
+        if: matrix.go.report == true
+        run: |
+          wget -O /tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
+          chmod +x /tmp/cc-test-reporter
+          /tmp/cc-test-reporter before-build
+      - name: Checkout code
+        uses: actions/checkout@v1
+      - name: Run tests
+        run: |
+          go test -coverprofile c.out -v ./...
+          echo $? > /tmp/GO_EXIT_CODE
+      - name: Send results to code climate
+        if: matrix.go.report == true
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
+        run: |
+          /tmp/cc-test-reporter after-build --prefix github.com/$GITHUB_REPOSITORY --exit-code `cat /tmp/GO_EXIT_CODE`
