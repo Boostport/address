@@ -3,10 +3,10 @@ version: '3'
 services:
   dev:
     image: golang:1.13-alpine
+    working_dir: /source
     command: >
       sh -c "apk --no-cache --no-progress add gcc git musl-dev;
-             go get github.com/unchartedsoftware/witch;
-             cd /source;
+             go install github.com/unchartedsoftware/witch;
              witch --cmd=\"go test -v -p 1 ./...\" --watch=\"*.mod,**/*.go\""
     volumes:
       - .:/source
