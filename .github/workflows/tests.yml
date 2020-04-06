@@ -5,16 +5,16 @@ jobs:
     strategy:
       matrix:
         go:
-          - version: 1.13
+          - version: 1.14
             report: true
-          - version: 1.12
+          - version: 1.13
     runs-on: ubuntu-latest
     container:
       image: golang:${{ matrix.go.version }}
 
     steps:
       - name: Install code climate
-        if: matrix.go.report == true
+        if: matrix.go.report == true && github.ref == 'master'
         run: |
           wget -O /tmp/cc-test-reporter https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64
           chmod +x /tmp/cc-test-reporter
@@ -26,7 +26,7 @@ jobs:
           go test -coverprofile c.out -v ./...
           echo $? > /tmp/GO_EXIT_CODE
       - name: Send results to code climate
-        if: matrix.go.report == true
+        if: matrix.go.report == true && github.ref == 'master'
         env:
           CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         run: |
