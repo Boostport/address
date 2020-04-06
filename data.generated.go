@@ -4365,8 +4365,8 @@ var generated = data{
 							Name: "Aracruz",
 						},
 						{
-							ID:   "Atilio Vivaqua",
-							Name: "Atilio Vivaqua",
+							ID:   "Atílio Vivácqua",
+							Name: "Atílio Vivácqua",
 						},
 						{
 							ID:   "Baixo Guandu",
@@ -10859,6 +10859,10 @@ var generated = data{
 							Name: "Altamira",
 						},
 						{
+							ID:   "Alter do Chão",
+							Name: "Alter do Chão",
+						},
+						{
 							ID:   "Anajás",
 							Name: "Anajás",
 						},
@@ -15578,6 +15582,10 @@ var generated = data{
 							Name: "Arraial do Cabo",
 						},
 						{
+							ID:   "Bacaxá",
+							Name: "Bacaxá",
+						},
+						{
 							ID:   "Barra do Piraí",
 							Name: "Barra do Piraí",
 						},
@@ -15762,8 +15770,8 @@ var generated = data{
 							Name: "Paraíba do Sul",
 						},
 						{
-							ID:   "Parati",
-							Name: "Parati",
+							ID:   "Paraty",
+							Name: "Paraty",
 						},
 						{
 							ID:   "Paty do Alferes",
@@ -15973,8 +15981,8 @@ var generated = data{
 							Name: "Areia Branca",
 						},
 						{
-							ID:   "Ares",
-							Name: "Ares",
+							ID:   "Arês",
+							Name: "Arês",
 						},
 						{
 							ID:   "Augusto Severo",
@@ -19649,6 +19657,10 @@ var generated = data{
 							Name: "Peritiba",
 						},
 						{
+							ID:   "Pescaria Brava",
+							Name: "Pescaria Brava",
+						},
+						{
 							ID:   "Petrolândia",
 							Name: "Petrolândia",
 						},
@@ -19881,8 +19893,8 @@ var generated = data{
 							Name: "São José do Cerrito",
 						},
 						{
-							ID:   "São Lourenço d'Oeste",
-							Name: "São Lourenço d'Oeste",
+							ID:   "São Lourenço do Oeste",
+							Name: "São Lourenço do Oeste",
 						},
 						{
 							ID:   "São Ludgero",
@@ -20732,8 +20744,8 @@ var generated = data{
 							Name: "Embaúba",
 						},
 						{
-							ID:   "Embu",
-							Name: "Embu",
+							ID:   "Embu das Artes",
+							Name: "Embu das Artes",
 						},
 						{
 							ID:   "Embu-Guaçu",
@@ -21448,8 +21460,8 @@ var generated = data{
 							Name: "Mogi Guaçu",
 						},
 						{
-							ID:   "Moji-Mirim",
-							Name: "Moji-Mirim",
+							ID:   "Mogi Mirim",
+							Name: "Mogi Mirim",
 						},
 						{
 							ID:   "Mombuca",
@@ -32219,8 +32231,16 @@ var generated = data{
 									Name: "Jiangyin Shi",
 								},
 								{
+									ID:   "梁溪区",
+									Name: "Liangxi Qu",
+								},
+								{
 									ID:   "南长区",
 									Name: "Nanchang Qu",
+								},
+								{
+									ID:   "新吴区",
+									Name: "Xinwu Qu",
 								},
 								{
 									ID:   "锡山区",
@@ -46147,12 +46167,20 @@ var generated = data{
 									Name: "江阴市",
 								},
 								{
+									ID:   "梁溪区",
+									Name: "梁溪区",
+								},
+								{
 									ID:   "南长区",
 									Name: "南长区",
 								},
 								{
 									ID:   "锡山区",
 									Name: "锡山区",
+								},
+								{
+									ID:   "新吴区",
+									Name: "新吴区",
 								},
 								{
 									ID:   "宜兴市",
@@ -57647,6 +57675,8 @@ var generated = data{
 					regex: `^45`},
 				"SA": {
 					regex: `^84`},
+				"SD": {
+					regex: `^090[1-5][0-9]|0906[0-6]`},
 				"SI": {
 					regex: `^53`},
 				"SO": {
@@ -58181,6 +58211,11 @@ var generated = data{
 					ID:        "SO",
 					Name:      "Sondrio",
 					PostalKey: "SO",
+				},
+				{
+					ID:        "SD",
+					Name:      "Sud Sardegna",
+					PostalKey: "SD",
 				},
 				{
 					ID:        "TA",
@@ -63090,9 +63125,10 @@ var generated = data{
 			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
-			Locality:      {},
-			PostCode:      {},
-			StreetAddress: {},
+			AdministrativeArea: {},
+			Locality:           {},
+			PostCode:           {},
+			StreetAddress:      {},
 		},
 		Upper: map[Field]struct{}{
 			AdministrativeArea: {},
