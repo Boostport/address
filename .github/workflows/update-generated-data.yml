@@ -1,0 +1,27 @@
+on:
+  schedule:
+    - cron: '* * */1 * *'
+name: Update Generated Data
+jobs:
+  update-generated-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Generate data
+        run: docker-compose run generate
+      - name: Diff generated file
+        run: |
+          git diff --exit-code --quiet data.generated.go
+          echo "::set-env name=HAS_CHANGES::$?"
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v2
+        if: env.HAS_CHANGES == '1'
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Update generated data
+          title: 'Update generated data'
+          body: |
+            Automated update for `data.generated.go`
+          labels: automated pr
+
