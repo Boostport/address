@@ -2,7 +2,7 @@ version: '3'
 
 services:
   dev:
-    image: golang:1.13-alpine
+    image: golang:1.14-alpine
     working_dir: /source
     command: >
       sh -c "apk --no-cache --no-progress add gcc git musl-dev;
@@ -13,7 +13,7 @@ services:
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
 
   generate:
-    image: golang:1.13-alpine
+    image: golang:1.14-alpine
     working_dir: /source
     command: >
       sh -c "apk --no-cache --no-progress add gcc git musl-dev;
