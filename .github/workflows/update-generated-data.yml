@@ -18,7 +18,7 @@ jobs:
         uses: peter-evans/create-pull-request@v2
         if: env.HAS_CHANGES == '1'
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           commit-message: Update generated data
           title: 'Update generated data'
           body: |
