@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '* * */1 * *'
+    - cron: '0 0 * * *'
 name: Update Generated Data
 jobs:
   update-generated-data:
