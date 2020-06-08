@@ -14,6 +14,7 @@ jobs:
         run: |
           git diff --exit-code --quiet data.generated.go
           echo "::set-env name=HAS_CHANGES::$?"
+          exit 0
       - name: Open PR
         uses: peter-evans/create-pull-request@v2
         if: env.HAS_CHANGES == '1'
