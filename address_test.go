@@ -510,7 +510,7 @@ func TestGetCountry(t *testing.T) {
 							Regex: `^48[01]`},
 					}},
 				"27": {
-					Regex: `^4[12]\d{2}`,
+					Regex: `^4[123]\d{2}`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"남구": {
 							Regex: `^42[45]`},
