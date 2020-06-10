@@ -56176,7 +56176,8 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `\d{5}`},
-		Format: "%N%n%O%n%A%n%C, %S%n%Z",
+		Format:                     "%N%n%O%n%A%n%C, %S%n%Z",
+		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
@@ -56478,7 +56479,7 @@ var generated = data{
 					PostalKey: "Co. Clare",
 				},
 				{
-					ID:        "C",
+					ID:        "CO",
 					Name:      "Co. Cork",
 					PostalKey: "Co. Cork",
 				},
@@ -57549,8 +57550,6 @@ var generated = data{
 					regex: `^81`},
 				"CH": {
 					regex: `^66`},
-				"CI": {
-					regex: `^0901[013-7]`},
 				"CL": {
 					regex: `^93`},
 				"CN": {
@@ -57624,13 +57623,9 @@ var generated = data{
 				"NO": {
 					regex: `^28[01]`},
 				"NU": {
-					regex: `^080[1-3]|08100`},
-				"OG": {
-					regex: `^08037|0804[024-9]`},
+					regex: `^080[1-4]|08100`},
 				"OR": {
 					regex: `^090[7-9]|09170|0801[039]|0803[04]`},
-				"OT": {
-					regex: `^08020|0702|0703[08]`},
 				"PA": {
 					regex: `^90`},
 				"PC": {
@@ -57686,7 +57681,7 @@ var generated = data{
 				"SR": {
 					regex: `^96`},
 				"SS": {
-					regex: `^070[14]|0703[0-79]|07100`},
+					regex: `^07[01]`},
 				"SV": {
 					regex: `^17|12071`},
 				"TA": {
@@ -57719,8 +57714,6 @@ var generated = data{
 					regex: `^36`},
 				"VR": {
 					regex: `^37`},
-				"VS": {
-					regex: `^0902[012579]|0903[015-9]|09040`},
 				"VT": {
 					regex: `^01`},
 				"VV": {
@@ -57851,11 +57844,6 @@ var generated = data{
 					ID:        "CB",
 					Name:      "Campobasso",
 					PostalKey: "CB",
-				},
-				{
-					ID:        "CI",
-					Name:      "Carbonia-Iglesias",
-					PostalKey: "CI",
 				},
 				{
 					ID:        "CE",
@@ -58023,11 +58011,6 @@ var generated = data{
 					PostalKey: "MT",
 				},
 				{
-					ID:        "VS",
-					Name:      "Medio Campidano",
-					PostalKey: "VS",
-				},
-				{
 					ID:        "ME",
 					Name:      "Messina",
 					PostalKey: "ME",
@@ -58061,16 +58044,6 @@ var generated = data{
 					ID:        "NU",
 					Name:      "Nuoro",
 					PostalKey: "NU",
-				},
-				{
-					ID:        "OG",
-					Name:      "Ogliastra",
-					PostalKey: "OG",
-				},
-				{
-					ID:        "OT",
-					Name:      "Olbia-Tempio",
-					PostalKey: "OT",
 				},
 				{
 					ID:        "OR",
@@ -59372,7 +59345,7 @@ var generated = data{
 							regex: `^48[01]`},
 					}},
 				"27": {
-					regex: `^4[12]\d{2}`,
+					regex: `^4[123]\d{2}`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"남구": {
 							regex: `^42[45]`},
@@ -68558,7 +68531,7 @@ var generated = data{
 		Name:            "TAIWAN",
 		DefaultLanguage: "zh-Hant",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}(?:\d{2})?`,
+			regex: `\d{3}(?:\d{2,3})?`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"CHA": {
 					regex: `^5[0123]`,
@@ -72620,10 +72593,9 @@ var generated = data{
 			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
-			AdministrativeArea: {},
-			Locality:           {},
-			PostCode:           {},
-			StreetAddress:      {},
+			Locality:      {},
+			PostCode:      {},
+			StreetAddress: {},
 		},
 		AdministrativeAreas: map[string][]administrativeArea{
 			"en": {
