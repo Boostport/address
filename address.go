@@ -41,6 +41,11 @@ type Address struct {
 	SortingCode        string
 }
 
+// IsZero reports whether a represents a zero/uninitialized address
+func (a Address) IsZero() bool {
+	return a.Country == "" && a.Name == "" && a.Organization == "" && len(a.StreetAddress) <= 0 && a.DependentLocality == "" && a.Locality == "" && a.AdministrativeArea == "" && a.PostCode == "" && a.SortingCode == ""
+}
+
 func (a Address) toFormatData(countryData country, language string) formatData {
 
 	f := formatData{

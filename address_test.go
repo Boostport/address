@@ -5,6 +5,98 @@ import (
 	"testing"
 )
 
+func TestAddressIsZero(t *testing.T) {
+
+	tests := []struct {
+		Address Address
+		IsZero  bool
+	}{
+		{
+			Address: Address{},
+			IsZero:  true,
+		},
+		{
+			Address: Address{
+				Name: "John Smith",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				Organization: "Company Pty Ltd",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				StreetAddress: []string{
+					"525 Collins Street",
+				},
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				DependentLocality: "test",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				Locality: "Melbourne",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				AdministrativeArea: "VIC",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				PostCode: "3000",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				Country: "AU",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				SortingCode: "1234",
+			},
+			IsZero: false,
+		},
+		{
+			Address: Address{
+				Name:         "John Smith",
+				Organization: "Company Pty Ltd",
+				StreetAddress: []string{
+					"525 Collins Street",
+				},
+				Locality:           "Melbourne",
+				AdministrativeArea: "VIC",
+				PostCode:           "3000",
+				Country:            "AU",
+			},
+			IsZero: false,
+		},
+	}
+
+	for i, testCase := range tests {
+
+		isZero := testCase.Address.IsZero()
+
+		if isZero != testCase.IsZero {
+			t.Errorf("Result for IsZero() in test case %d does not match expected result", i)
+		}
+	}
+}
+
 func TestValidAddresses(t *testing.T) {
 
 	tests := []struct {
