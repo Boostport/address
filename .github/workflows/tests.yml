@@ -5,9 +5,9 @@ jobs:
     strategy:
       matrix:
         go:
-          - version: 1.14
+          - version: 1.15
             report: true
-          - version: 1.13
+          - version: 1.14
     runs-on: ubuntu-latest
     container:
       image: golang:${{ matrix.go.version }}
