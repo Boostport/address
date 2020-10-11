@@ -56448,7 +56448,7 @@ var generated = data{
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
 			regex: `[\dA-Z]{3} ?[\dA-Z]{4}`},
-		Format:                     "%N%n%O%n%A%n%D%n%C%n%S %Z",
+		Format:                     "%N%n%O%n%A%n%D%n%C%n%S%n%Z",
 		AdministrativeAreaNameType: County,
 		DependentLocalityNameType:  Townland,
 		PostCodeNameType:           Eircode,
@@ -57671,7 +57671,7 @@ var generated = data{
 				"SA": {
 					regex: `^84`},
 				"SD": {
-					regex: `^090[1-5][0-9]|0906[0-6]`},
+					regex: `^090[1-5][0-9]|0906[0-6]|080[1-4]`},
 				"SI": {
 					regex: `^53`},
 				"SO": {
