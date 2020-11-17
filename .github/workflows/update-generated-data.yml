@@ -14,7 +14,7 @@ jobs:
         shell: bash {0}
         run: |
           git diff --exit-code --quiet data.generated.go
-          echo "::set-env name=HAS_CHANGES::$?"
+          echo "HAS_CHANGES=$?" >> $GITHUB_ENV
           exit 0
       - name: Open PR
         uses: peter-evans/create-pull-request@v2
