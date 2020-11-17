@@ -17,7 +17,7 @@ jobs:
           echo "HAS_CHANGES=$?" >> $GITHUB_ENV
           exit 0
       - name: Open PR
-        uses: peter-evans/create-pull-request@v2
+        uses: peter-evans/create-pull-request@v3
         if: env.HAS_CHANGES == '1'
         with:
           token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
