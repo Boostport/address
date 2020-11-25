@@ -57670,8 +57670,6 @@ var generated = data{
 					regex: `^45`},
 				"SA": {
 					regex: `^84`},
-				"SD": {
-					regex: `^090[1-5][0-9]|0906[0-6]|080[1-4]`},
 				"SI": {
 					regex: `^53`},
 				"SO": {
@@ -57682,6 +57680,8 @@ var generated = data{
 					regex: `^96`},
 				"SS": {
 					regex: `^07[01]`},
+				"SU": {
+					regex: `^090[1-5][0-9]|0906[0-6]|080[1-4]`},
 				"SV": {
 					regex: `^17|12071`},
 				"TA": {
@@ -58186,9 +58186,9 @@ var generated = data{
 					PostalKey: "SO",
 				},
 				{
-					ID:        "SD",
+					ID:        "SU",
 					Name:      "Sud Sardegna",
-					PostalKey: "SD",
+					PostalKey: "SU",
 				},
 				{
 					ID:        "TA",
