@@ -27502,12 +27502,20 @@ var generated = data{
 									Name: "Longgang Qu",
 								},
 								{
+									ID:   "龙华区",
+									Name: "Longhua Qu",
+								},
+								{
 									ID:   "罗湖区",
 									Name: "Luohu Qu",
 								},
 								{
 									ID:   "南山区",
 									Name: "Nanshan Qu",
+								},
+								{
+									ID:   "坪山新区",
+									Name: "Pingshan Qu",
 								},
 								{
 									ID:   "盐田区",
@@ -41137,12 +41145,20 @@ var generated = data{
 									Name: "龙岗区",
 								},
 								{
+									ID:   "龙华区",
+									Name: "龙华区",
+								},
+								{
 									ID:   "罗湖区",
 									Name: "罗湖区",
 								},
 								{
 									ID:   "南山区",
 									Name: "南山区",
+								},
+								{
+									ID:   "坪山新区",
+									Name: "坪山新区",
 								},
 								{
 									ID:   "盐田区",
@@ -59043,7 +59059,7 @@ var generated = data{
 		Name:            "CAMBODIA",
 		DefaultLanguage: "km",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `\d{5,6}`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
