@@ -263,6 +263,45 @@ func TestInvalidAddresses(t *testing.T) {
 		},
 		{
 			Address: []func(*Address){
+				WithName("John Smith"),
+				WithOrganization("Company Pty Ltd"),
+				WithStreetAddress([]string{
+					"525 Collins Street",
+				}),
+				WithLocality("Melbourne"),
+				WithAdministrativeArea("VIC"),
+				WithPostCode("VIC 3000"), // Invalid post code
+				WithCountry("AU"),
+			},
+		},
+		{
+			Address: []func(*Address){
+				WithName("John Smith"),
+				WithOrganization("Company Pty Ltd"),
+				WithStreetAddress([]string{
+					"525 Collins Street",
+				}),
+				WithLocality("Melbourne"),
+				WithAdministrativeArea("VIC"),
+				WithPostCode("3000 VIC"), // Invalid post code
+				WithCountry("AU"),
+			},
+		},
+		{
+			Address: []func(*Address){
+				WithName("John Smith"),
+				WithOrganization("Company Pty Ltd"),
+				WithStreetAddress([]string{
+					"525 Collins Street",
+				}),
+				WithLocality("Melbourne"),
+				WithAdministrativeArea("VIC"),
+				WithPostCode("VIC 3000 VIC"), // Invalid post code
+				WithCountry("AU"),
+			},
+		},
+		{
+			Address: []func(*Address){
 				WithLocality("Melbourne"), // Missing street address
 				WithAdministrativeArea("VIC"),
 				WithPostCode("3000"),
@@ -406,7 +445,7 @@ func TestGetCountry(t *testing.T) {
 		DependentLocalityNameType:  Suburb,
 		PostCodeNameType:           PostalCode,
 		PostCodeRegex: PostCodeRegexData{
-			Regex: `\d{4}`,
+			Regex: `^(\d{4})$`,
 			SubdivisionRegex: map[string]PostCodeRegexData{
 				"ACT": {
 					Regex: `^29|2540|260|261[0-8]|02|2620`},
@@ -484,7 +523,7 @@ func TestGetCountry(t *testing.T) {
 		DependentLocalityNameType:  Suburb,
 		PostCodeNameType:           PostalCode,
 		PostCodeRegex: PostCodeRegexData{
-			Regex: `ASCN 1ZZ`,
+			Regex: `^(ASCN 1ZZ)$`,
 		},
 	}
 
@@ -509,7 +548,7 @@ func TestGetCountry(t *testing.T) {
 		DependentLocalityNameType:  District,
 		PostCodeNameType:           PostalCode,
 		PostCodeRegex: PostCodeRegexData{
-			Regex: `\d{5}`,
+			Regex: `^(\d{5})$`,
 			SubdivisionRegex: map[string]PostCodeRegexData{
 				"11": {
 					Regex: `^0[1-8]\d{2}`,

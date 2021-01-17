@@ -8,7 +8,7 @@ var generated = data{
 		Name:            "ASCENSION ISLAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `ASCN 1ZZ`},
+			regex: `^(ASCN 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -23,7 +23,7 @@ var generated = data{
 		Name:            "ANDORRA",
 		DefaultLanguage: "ca",
 		PostCodeRegex: postCodeRegex{
-			regex: `AD[1-7]0\d`,
+			regex: `^(AD[1-7]0\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"02": {
 					regex: `^AD10[01]`},
@@ -187,7 +187,7 @@ var generated = data{
 		Name:            "AFGHANISTAN",
 		DefaultLanguage: "fa",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -210,7 +210,7 @@ var generated = data{
 		Name:            "ANGUILLA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:AI-)?2640`},
+			regex: `^((?:AI-)?2640)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -225,7 +225,7 @@ var generated = data{
 		Name:            "ALBANIA",
 		DefaultLanguage: "sq",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z%n%C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -240,7 +240,7 @@ var generated = data{
 		Name:            "ARMENIA",
 		DefaultLanguage: "hy",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:37)?\d{4}`,
+			regex: `^((?:37)?\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AG": {
 					regex: `^0[2-5]`},
@@ -407,7 +407,7 @@ var generated = data{
 		Name:            "ARGENTINA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `((?:[A-HJ-NP-Z])?\d{4})([A-Z]{3})?`,
+			regex: `^(((?:[A-HJ-NP-Z])?\d{4})([A-Z]{3})?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"A": {
 					regex: `^A?[34]`},
@@ -602,7 +602,7 @@ var generated = data{
 		Name:            "AMERICAN SAMOA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(96799)(?:[ \-](\d{4}))?`},
+			regex: `^((96799)(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -633,7 +633,7 @@ var generated = data{
 		Name:            "AUSTRIA",
 		DefaultLanguage: "de",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -653,7 +653,7 @@ var generated = data{
 		Name:            "AUSTRALIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`,
+			regex: `^(\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"ACT": {
 					regex: `^29|2540|260|261[0-8]|02|2620`},
@@ -748,7 +748,7 @@ var generated = data{
 		Name:            "FINLAND",
 		DefaultLanguage: "sv",
 		PostCodeRegex: postCodeRegex{
-			regex: `22\d{3}`},
+			regex: `^(22\d{3})$`},
 		Format: "%O%n%N%n%A%nAX-%Z %C%nÅLAND",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -768,7 +768,7 @@ var generated = data{
 		Name:            "AZERBAIJAN",
 		DefaultLanguage: "az",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%nAZ %Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -783,7 +783,7 @@ var generated = data{
 		Name:            "BOSNIA AND HERZEGOVINA",
 		DefaultLanguage: "bs",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -798,7 +798,7 @@ var generated = data{
 		Name:            "BARBADOS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `BB\d{5}`},
+			regex: `^(BB\d{5})$`},
 		Format:                     "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: Parish,
 		AllowedFields: map[Field]struct{}{
@@ -815,7 +815,7 @@ var generated = data{
 		Name:            "BANGLADESH",
 		DefaultLanguage: "bn",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%C - %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -830,7 +830,7 @@ var generated = data{
 		Name:            "BELGIUM",
 		DefaultLanguage: "nl",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -863,7 +863,7 @@ var generated = data{
 		Name:            "BULGARIA (REP.)",
 		DefaultLanguage: "bg",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -878,7 +878,7 @@ var generated = data{
 		Name:            "BAHRAIN",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:\d|1[0-2])\d{2}`},
+			regex: `^((?:\d|1[0-2])\d{2})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -907,7 +907,7 @@ var generated = data{
 		Name:            "SAINT BARTHELEMY",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78][01]\d{2}`},
+			regex: `^(9[78][01]\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -933,7 +933,7 @@ var generated = data{
 		Name:            "BERMUDA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `[A-Z]{2} ?[A-Z0-9]{2}`},
+			regex: `^([A-Z]{2} ?[A-Z0-9]{2})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -948,7 +948,7 @@ var generated = data{
 		Name:            "BRUNEI DARUSSALAM",
 		DefaultLanguage: "ms",
 		PostCodeRegex: postCodeRegex{
-			regex: `[A-Z]{2} ?\d{4}`},
+			regex: `^([A-Z]{2} ?\d{4})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -977,7 +977,7 @@ var generated = data{
 		Name:            "BRAZIL",
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}-?\d{3}`,
+			regex: `^(\d{5}-?\d{3})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AC": {
 					regex: `^699`},
@@ -23614,7 +23614,7 @@ var generated = data{
 		Name:            "BHUTAN",
 		DefaultLanguage: "dz",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -23639,7 +23639,7 @@ var generated = data{
 		Name:            "BELARUS",
 		DefaultLanguage: "be",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%S%n%Z %C%n%A%n%O%n%N",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -23660,7 +23660,7 @@ var generated = data{
 		Name:            "CANADA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d`,
+			regex: `^([ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AB": {
 					regex: `^T`},
@@ -23854,7 +23854,7 @@ var generated = data{
 		Name:            "COCOS (KEELING) ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `6799`},
+			regex: `^(6799)$`},
 		Format: "%O%n%N%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -23889,7 +23889,7 @@ var generated = data{
 		Name:            "SWITZERLAND",
 		DefaultLanguage: "de",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%O%n%N%n%A%nCH-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -23927,7 +23927,7 @@ var generated = data{
 		Name:            "CHILE",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{7}`},
+			regex: `^(\d{7})$`},
 		Format: "%N%n%O%n%A%n%Z %C%n%S",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -25441,7 +25441,7 @@ var generated = data{
 		Name:            "CHINA",
 		DefaultLanguage: "zh",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format:                    "%Z%n%S%C%D%n%A%n%O%n%N",
 		LatinizedFormat:           "%N%n%O%n%A%n%D%n%C%n%S, %Z",
 		DependentLocalityNameType: District,
@@ -52757,7 +52757,7 @@ var generated = data{
 		Name:            "COLOMBIA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format:                     "%N%n%O%n%A%n%C, %S, %Z",
 		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
@@ -52778,7 +52778,7 @@ var generated = data{
 		Name:            "COSTA RICA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4,5}|\d{3}-\d{4}`},
+			regex: `^(\d{4,5}|\d{3}-\d{4})$`},
 		Format: "%N%n%O%n%A%n%S, %C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -52799,7 +52799,7 @@ var generated = data{
 		Name:            "CUBA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %S%n%Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -52899,7 +52899,7 @@ var generated = data{
 		Name:            "CAPE VERDE",
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format:                     "%N%n%O%n%A%n%Z %C%n%S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
@@ -52950,7 +52950,7 @@ var generated = data{
 		Name:            "CHRISTMAS ISLAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `6798`},
+			regex: `^(6798)$`},
 		Format: "%O%n%N%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -52970,7 +52970,7 @@ var generated = data{
 		Name:            "CYPRUS",
 		DefaultLanguage: "el",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -52985,7 +52985,7 @@ var generated = data{
 		Name:            "CZECH REP.",
 		DefaultLanguage: "cs",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3} ?\d{2}`},
+			regex: `^(\d{3} ?\d{2})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53005,7 +53005,7 @@ var generated = data{
 		Name:            "GERMANY",
 		DefaultLanguage: "de",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53030,7 +53030,7 @@ var generated = data{
 		Name:            "DENMARK",
 		DefaultLanguage: "da",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53055,7 +53055,7 @@ var generated = data{
 		Name:            "DOMINICAN REP.",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53070,7 +53070,7 @@ var generated = data{
 		Name:            "ALGERIA",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53085,7 +53085,7 @@ var generated = data{
 		Name:            "ECUADOR",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z%n%C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53104,7 +53104,7 @@ var generated = data{
 		Name:            "ESTONIA",
 		DefaultLanguage: "et",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53124,7 +53124,7 @@ var generated = data{
 		Name:            "EGYPT",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"ALX": {
 					regex: `^2[13]`},
@@ -53473,7 +53473,7 @@ var generated = data{
 		Name:            "WESTERN SAHARA",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -53493,7 +53493,7 @@ var generated = data{
 		Name:            "SPAIN",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"A": {
 					regex: `^03`},
@@ -54675,7 +54675,7 @@ var generated = data{
 		Name:            "ETHIOPIA",
 		DefaultLanguage: "am",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54690,7 +54690,7 @@ var generated = data{
 		Name:            "FINLAND",
 		DefaultLanguage: "fi",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%O%n%N%n%A%nFI-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54715,7 +54715,7 @@ var generated = data{
 		Name:            "FALKLAND ISLANDS (MALVINAS)",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `FIQQ 1ZZ`},
+			regex: `^(FIQQ 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54739,7 +54739,7 @@ var generated = data{
 		Name:            "MICRONESIA (Federated State of)",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(9694[1-4])(?:[ \-](\d{4}))?`},
+			regex: `^((9694[1-4])(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -54770,7 +54770,7 @@ var generated = data{
 		Name:            "FAROE ISLANDS",
 		DefaultLanguage: "fo",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%A%nFO%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54785,7 +54785,7 @@ var generated = data{
 		Name:            "FRANCE",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{2} ?\d{3}`},
+			regex: `^(\d{2} ?\d{3})$`},
 		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54814,7 +54814,7 @@ var generated = data{
 		Name:            "UNITED KINGDOM",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `GIR ?0AA|(?:(?:AB|AL|B|BA|BB|BD|BF|BH|BL|BN|BR|BS|BT|BX|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(?:\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2}))|BFPO ?\d{1,4}`},
+			regex: `^(GIR ?0AA|(?:(?:AB|AL|B|BA|BB|BD|BF|BH|BL|BN|BR|BS|BT|BX|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(?:\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2}))|BFPO ?\d{1,4})$`},
 		Format:           "%N%n%O%n%A%n%C%n%Z",
 		LocalityNameType: PostTown,
 		AllowedFields: map[Field]struct{}{
@@ -54844,7 +54844,7 @@ var generated = data{
 		Name:            "GEORGIA",
 		DefaultLanguage: "ka",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54859,7 +54859,7 @@ var generated = data{
 		Name:            "FRENCH GUIANA",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78]3\d{2}`},
+			regex: `^(9[78]3\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54885,7 +54885,7 @@ var generated = data{
 		Name:            "CHANNEL ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `GY\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2}`},
+			regex: `^(GY\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2})$`},
 		Format: "%N%n%O%n%A%n%C%nGUERNSEY%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54914,7 +54914,7 @@ var generated = data{
 		Name:            "GIBRALTAR",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `GX11 1AA`},
+			regex: `^(GX11 1AA)$`},
 		Format: "%N%n%O%n%A%nGIBRALTAR%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Name:          {},
@@ -54931,7 +54931,7 @@ var generated = data{
 		Name:            "GREENLAND",
 		DefaultLanguage: "kl",
 		PostCodeRegex: postCodeRegex{
-			regex: `39\d{2}`},
+			regex: `^(39\d{2})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54956,7 +54956,7 @@ var generated = data{
 		Name:            "GUINEA",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%Z %A %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -54971,7 +54971,7 @@ var generated = data{
 		Name:            "GUADELOUPE",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78][01]\d{2}`},
+			regex: `^(9[78][01]\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -55002,7 +55002,7 @@ var generated = data{
 		Name:            "GREECE",
 		DefaultLanguage: "el",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3} ?\d{2}`},
+			regex: `^(\d{3} ?\d{2})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -55022,7 +55022,7 @@ var generated = data{
 		Name:            "SOUTH GEORGIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `SIQQ 1ZZ`},
+			regex: `^(SIQQ 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -55046,7 +55046,7 @@ var generated = data{
 		Name:            "GUATEMALA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z- %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -55061,7 +55061,7 @@ var generated = data{
 		Name:            "GUAM",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(969(?:[12]\d|3[12]))(?:[ \-](\d{4}))?`},
+			regex: `^((969(?:[12]\d|3[12]))(?:[ \-](\d{4}))?)$`},
 		Format:           "%N%n%O%n%A%n%C %Z",
 		PostCodeNameType: ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -55088,7 +55088,7 @@ var generated = data{
 		Name:            "GUINEA-BISSAU",
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56171,7 +56171,7 @@ var generated = data{
 		Name:            "HEARD AND MCDONALD ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%O%n%N%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -56191,7 +56191,7 @@ var generated = data{
 		Name:            "HONDURAS",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format:                     "%N%n%O%n%A%n%C, %S%n%Z",
 		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
@@ -56213,7 +56213,7 @@ var generated = data{
 		Name:            "CROATIA",
 		DefaultLanguage: "hr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%nHR-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56228,7 +56228,7 @@ var generated = data{
 		Name:            "HAITI",
 		DefaultLanguage: "ht",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%nHT%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56243,7 +56243,7 @@ var generated = data{
 		Name:            "HUNGARY (Rep.)",
 		DefaultLanguage: "hu",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%C%n%A%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56269,7 +56269,7 @@ var generated = data{
 		Name:            "INDONESIA",
 		DefaultLanguage: "id",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C%n%S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -56463,7 +56463,7 @@ var generated = data{
 		Name:            "IRELAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `[\dA-Z]{3} ?[\dA-Z]{4}`},
+			regex: `^([\dA-Z]{3} ?[\dA-Z]{4})$`},
 		Format:                     "%N%n%O%n%A%n%D%n%C%n%S%n%Z",
 		AdministrativeAreaNameType: County,
 		DependentLocalityNameType:  Townland,
@@ -56617,7 +56617,7 @@ var generated = data{
 		Name:            "ISRAEL",
 		DefaultLanguage: "he",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}(?:\d{2})?`},
+			regex: `^(\d{5}(?:\d{2})?)$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56632,7 +56632,7 @@ var generated = data{
 		Name:            "ISLE OF MAN",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `IM\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2}`},
+			regex: `^(IM\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -56656,7 +56656,7 @@ var generated = data{
 		Name:            "INDIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`,
+			regex: `^(\d{6})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AN": {
 					regex: `^744`},
@@ -57120,7 +57120,7 @@ var generated = data{
 		Name:            "BRITISH INDIAN OCEAN TERRITORY",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `BBND 1ZZ`},
+			regex: `^(BBND 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -57144,7 +57144,7 @@ var generated = data{
 		Name:            "IRAQ",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%O%n%N%n%A%n%C, %S%n%Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -57169,7 +57169,7 @@ var generated = data{
 		Name:            "IRAN",
 		DefaultLanguage: "fa",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}-?\d{5}`},
+			regex: `^(\d{5}-?\d{5})$`},
 		Format:                    "%O%n%N%n%S%n%C, %D%n%A%n%Z",
 		DependentLocalityNameType: Neighborhood,
 		AllowedFields: map[Field]struct{}{
@@ -57503,7 +57503,7 @@ var generated = data{
 		Name:            "ICELAND",
 		DefaultLanguage: "is",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -57518,7 +57518,7 @@ var generated = data{
 		Name:            "ITALY",
 		DefaultLanguage: "it",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AG": {
 					regex: `^92`},
@@ -58299,7 +58299,7 @@ var generated = data{
 		Name:            "CHANNEL ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `JE\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2}`},
+			regex: `^(JE\d[\dA-Z]? ?\d[ABD-HJLN-UW-Z]{2})$`},
 		Format: "%N%n%O%n%A%n%C%nJERSEY%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -58417,7 +58417,7 @@ var generated = data{
 		Name:            "JORDAN",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -58432,7 +58432,7 @@ var generated = data{
 		Name:            "JAPAN",
 		DefaultLanguage: "ja",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}-?\d{4}`,
+			regex: `^(\d{3}-?\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
 					regex: `^0[4-9]|00[1-7]`},
@@ -59029,7 +59029,7 @@ var generated = data{
 		Name:            "KENYA",
 		DefaultLanguage: "sw",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -59044,7 +59044,7 @@ var generated = data{
 		Name:            "KYRGYZSTAN",
 		DefaultLanguage: "ky",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -59059,7 +59059,7 @@ var generated = data{
 		Name:            "CAMBODIA",
 		DefaultLanguage: "km",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5,6}`},
+			regex: `^(\d{5,6})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -59268,7 +59268,7 @@ var generated = data{
 		Name:            "SOUTH KOREA",
 		DefaultLanguage: "ko",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"11": {
 					regex: `^0[1-8]\d{2}`,
@@ -62463,7 +62463,7 @@ var generated = data{
 		Name:            "KUWAIT",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62478,7 +62478,7 @@ var generated = data{
 		Name:            "CAYMAN ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `KY\d-\d{4}`},
+			regex: `^(KY\d-\d{4})$`},
 		Format:                     "%N%n%O%n%A%n%S %Z",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
@@ -62517,7 +62517,7 @@ var generated = data{
 		Name:            "KAZAKHSTAN",
 		DefaultLanguage: "ru",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%Z%n%S%n%C%n%A%n%O%n%N",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -62533,7 +62533,7 @@ var generated = data{
 		Name:            "LAO (PEOPLE'S DEM. REP.)",
 		DefaultLanguage: "lo",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62548,7 +62548,7 @@ var generated = data{
 		Name:            "LEBANON",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:\d{4})(?: ?(?:\d{4}))?`},
+			regex: `^((?:\d{4})(?: ?(?:\d{4}))?)$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62568,7 +62568,7 @@ var generated = data{
 		Name:            "LIECHTENSTEIN",
 		DefaultLanguage: "de",
 		PostCodeRegex: postCodeRegex{
-			regex: `948[5-9]|949[0-8]`},
+			regex: `^(948[5-9]|949[0-8])$`},
 		Format: "%O%n%N%n%A%nFL-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62588,7 +62588,7 @@ var generated = data{
 		Name:            "SRI LANKA",
 		DefaultLanguage: "si",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62603,7 +62603,7 @@ var generated = data{
 		Name:            "LIBERIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62618,7 +62618,7 @@ var generated = data{
 		Name:            "LESOTHO",
 		DefaultLanguage: "st",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62633,7 +62633,7 @@ var generated = data{
 		Name:            "LITHUANIA",
 		DefaultLanguage: "lt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%O%n%N%n%A%nLT-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62653,7 +62653,7 @@ var generated = data{
 		Name:            "LUXEMBOURG",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%O%n%N%n%A%nL-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62673,7 +62673,7 @@ var generated = data{
 		Name:            "LATVIA",
 		DefaultLanguage: "lv",
 		PostCodeRegex: postCodeRegex{
-			regex: `LV-\d{4}`},
+			regex: `^(LV-\d{4})$`},
 		Format: "%N%n%O%n%A%n%C, %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62698,7 +62698,7 @@ var generated = data{
 		Name:            "MOROCCO",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62713,7 +62713,7 @@ var generated = data{
 		Name:            "MONACO",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `980\d{2}`},
+			regex: `^(980\d{2})$`},
 		Format: "%N%n%O%n%A%nMC-%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62729,7 +62729,7 @@ var generated = data{
 		Name:            "Rep. MOLDOVA",
 		DefaultLanguage: "ro",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%nMD-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62744,7 +62744,7 @@ var generated = data{
 		Name:            "MONTENEGRO",
 		DefaultLanguage: "sr",
 		PostCodeRegex: postCodeRegex{
-			regex: `8\d{4}`},
+			regex: `^(8\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62759,7 +62759,7 @@ var generated = data{
 		Name:            "SAINT MARTIN",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78][01]\d{2}`},
+			regex: `^(9[78][01]\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62785,7 +62785,7 @@ var generated = data{
 		Name:            "MADAGASCAR",
 		DefaultLanguage: "mg",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62800,7 +62800,7 @@ var generated = data{
 		Name:            "MARSHALL ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(969[67]\d)(?:[ \-](\d{4}))?`},
+			regex: `^((969[67]\d)(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -62831,7 +62831,7 @@ var generated = data{
 		Name:            "MACEDONIA",
 		DefaultLanguage: "mk",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62851,7 +62851,7 @@ var generated = data{
 		Name:            "MYANMAR",
 		DefaultLanguage: "my",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C, %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62866,7 +62866,7 @@ var generated = data{
 		Name:            "MONGOLIA",
 		DefaultLanguage: "mn",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C%n%S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -62897,7 +62897,7 @@ var generated = data{
 		Name:            "NORTHERN MARIANA ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(9695[012])(?:[ \-](\d{4}))?`},
+			regex: `^((9695[012])(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -62928,7 +62928,7 @@ var generated = data{
 		Name:            "MARTINIQUE",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78]2\d{2}`},
+			regex: `^(9[78]2\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62968,7 +62968,7 @@ var generated = data{
 		Name:            "MALTA",
 		DefaultLanguage: "mt",
 		PostCodeRegex: postCodeRegex{
-			regex: `[A-Z]{3} ?\d{2,4}`},
+			regex: `^([A-Z]{3} ?\d{2,4})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -62987,7 +62987,7 @@ var generated = data{
 		Name:            "MAURITIUS",
 		DefaultLanguage: "mfe",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}(?:\d{2}|[A-Z]{2}\d{3})`},
+			regex: `^(\d{3}(?:\d{2}|[A-Z]{2}\d{3}))$`},
 		Format: "%N%n%O%n%A%n%Z%n%C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63006,7 +63006,7 @@ var generated = data{
 		Name:            "MALDIVES",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63034,7 +63034,7 @@ var generated = data{
 		Name:            "MEXICO",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AGU": {
 					regex: `^20`},
@@ -63294,7 +63294,7 @@ var generated = data{
 		Name:            "MALAYSIA",
 		DefaultLanguage: "ms",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
 					regex: `^79|8[0-6]`},
@@ -63440,7 +63440,7 @@ var generated = data{
 		Name:            "MOZAMBIQUE",
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C%S",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -63515,7 +63515,7 @@ var generated = data{
 		Name:            "NAMIBIA",
 		DefaultLanguage: "af",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Cn%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63530,7 +63530,7 @@ var generated = data{
 		Name:            "NEW CALEDONIA",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `988\d{2}`},
+			regex: `^(988\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63556,7 +63556,7 @@ var generated = data{
 		Name:            "NIGER",
 		DefaultLanguage: "ha",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63571,7 +63571,7 @@ var generated = data{
 		Name:            "NORFOLK ISLAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `2899`},
+			regex: `^(2899)$`},
 		Format: "%O%n%N%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -63591,7 +63591,7 @@ var generated = data{
 		Name:            "NIGERIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format:                     "%N%n%O%n%A%n%D%n%C %Z%n%S",
 		AdministrativeAreaNameType: State,
 		AllowedFields: map[Field]struct{}{
@@ -63802,7 +63802,7 @@ var generated = data{
 		Name:            "NICARAGUA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AN": {
 					regex: `^7[12]`},
@@ -63948,7 +63948,7 @@ var generated = data{
 		Name:            "NETHERLANDS",
 		DefaultLanguage: "nl",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4} ?[A-Z]{2}`},
+			regex: `^(\d{4} ?[A-Z]{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -63968,7 +63968,7 @@ var generated = data{
 		Name:            "NORWAY",
 		DefaultLanguage: "nb",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format:           "%N%n%O%n%A%n%Z %C",
 		LocalityNameType: PostTown,
 		AllowedFields: map[Field]struct{}{
@@ -63989,7 +63989,7 @@ var generated = data{
 		Name:            "NEPAL",
 		DefaultLanguage: "ne",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -64100,7 +64100,7 @@ var generated = data{
 		Name:            "NEW ZEALAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%D%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			DependentLocality: {},
@@ -64121,7 +64121,7 @@ var generated = data{
 		Name:            "OMAN",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:PC )?\d{3}`},
+			regex: `^((?:PC )?\d{3})$`},
 		Format: "%N%n%O%n%A%n%Z%n%C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -64153,7 +64153,7 @@ var generated = data{
 		Name:            "PERU",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:LIMA \d{1,2}|CALLAO 0?\d)|[0-2]\d{4}`},
+			regex: `^((?:LIMA \d{1,2}|CALLAO 0?\d)|[0-2]\d{4})$`},
 		Format:           "%N%n%O%n%A%n%C %Z%n%S",
 		LocalityNameType: District,
 		AllowedFields: map[Field]struct{}{
@@ -64304,7 +64304,7 @@ var generated = data{
 		Name:            "FRENCH POLYNESIA",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `987\d{2}`},
+			regex: `^(987\d{2})$`},
 		Format:                     "%N%n%O%n%A%n%Z %C %S",
 		AdministrativeAreaNameType: Island,
 		AllowedFields: map[Field]struct{}{
@@ -64331,7 +64331,7 @@ var generated = data{
 		Name:            "PAPUA NEW GUINEA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}`},
+			regex: `^(\d{3})$`},
 		Format: "%N%n%O%n%A%n%C %Z %S",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -64352,7 +64352,7 @@ var generated = data{
 		Name:            "PHILIPPINES",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`,
+			regex: `^(\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"ABR": {
 					regex: `^28[0-2]`},
@@ -64947,7 +64947,7 @@ var generated = data{
 		Name:            "PAKISTAN",
 		DefaultLanguage: "ur",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C-%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -64962,7 +64962,7 @@ var generated = data{
 		Name:            "POLAND",
 		DefaultLanguage: "pl",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{2}-\d{3}`},
+			regex: `^(\d{2}-\d{3})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -64982,7 +64982,7 @@ var generated = data{
 		Name:            "ST. PIERRE AND MIQUELON",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78]5\d{2}`},
+			regex: `^(9[78]5\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65008,7 +65008,7 @@ var generated = data{
 		Name:            "PITCAIRN",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `PCRN 1ZZ`},
+			regex: `^(PCRN 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65033,7 +65033,7 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodePrefix:  "PR ",
 		PostCodeRegex: postCodeRegex{
-			regex: `(00[679]\d{2})(?:[ \-](\d{4}))?`},
+			regex: `^((00[679]\d{2})(?:[ \-](\d{4}))?)$`},
 		Format:           "%N%n%O%n%A%n%C PR %Z",
 		PostCodeNameType: ZipCode,
 		AllowedFields: map[Field]struct{}{
@@ -65065,7 +65065,7 @@ var generated = data{
 		Name:            "PORTUGAL",
 		DefaultLanguage: "pt",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}-\d{3}`},
+			regex: `^(\d{4}-\d{3})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65085,7 +65085,7 @@ var generated = data{
 		Name:            "PALAU",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(969(?:39|40))(?:[ \-](\d{4}))?`},
+			regex: `^((969(?:39|40))(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -65116,7 +65116,7 @@ var generated = data{
 		Name:            "PARAGUAY",
 		DefaultLanguage: "gn",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65140,7 +65140,7 @@ var generated = data{
 		Name:            "REUNION",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `9[78]4\d{2}`},
+			regex: `^(9[78]4\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65166,7 +65166,7 @@ var generated = data{
 		Name:            "ROMANIA",
 		DefaultLanguage: "ro",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65190,7 +65190,7 @@ var generated = data{
 		Name:            "REPUBLIC OF SERBIA",
 		DefaultLanguage: "sr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5,6}`},
+			regex: `^(\d{5,6})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65205,7 +65205,7 @@ var generated = data{
 		Name:            "RUSSIAN FEDERATION",
 		DefaultLanguage: "ru",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`,
+			regex: `^(\d{6})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AD": {
 					regex: `^385`},
@@ -66246,7 +66246,7 @@ var generated = data{
 		Name:            "SAUDI ARABIA",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66283,7 +66283,7 @@ var generated = data{
 		Name:            "SUDAN",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format:           "%N%n%O%n%A%n%C%n%Z",
 		LocalityNameType: District,
 		AllowedFields: map[Field]struct{}{
@@ -66299,7 +66299,7 @@ var generated = data{
 		Name:            "SWEDEN",
 		DefaultLanguage: "sv",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3} ?\d{2}`},
+			regex: `^(\d{3} ?\d{2})$`},
 		Format:           "%O%n%N%n%A%nSE-%Z %C",
 		LocalityNameType: PostTown,
 		AllowedFields: map[Field]struct{}{
@@ -66320,7 +66320,7 @@ var generated = data{
 		Name:            "REP. OF SINGAPORE",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%nSINGAPORE %Z",
 		AllowedFields: map[Field]struct{}{
 			Name:          {},
@@ -66338,7 +66338,7 @@ var generated = data{
 		Name:            "SAINT HELENA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(?:ASCN|STHL) 1ZZ`},
+			regex: `^((?:ASCN|STHL) 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66362,7 +66362,7 @@ var generated = data{
 		Name:            "SLOVENIA",
 		DefaultLanguage: "sl",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%nSI-%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66377,7 +66377,7 @@ var generated = data{
 		Name:            "SVALBARD AND JAN MAYEN ISLANDS",
 		DefaultLanguage: "nb",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format:           "%N%n%O%n%A%n%Z %C",
 		LocalityNameType: PostTown,
 		AllowedFields: map[Field]struct{}{
@@ -66398,7 +66398,7 @@ var generated = data{
 		Name:            "SLOVAKIA",
 		DefaultLanguage: "sk",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3} ?\d{2}`},
+			regex: `^(\d{3} ?\d{2})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66423,7 +66423,7 @@ var generated = data{
 		Name:            "SAN MARINO",
 		DefaultLanguage: "it",
 		PostCodeRegex: postCodeRegex{
-			regex: `4789\d`},
+			regex: `^(4789\d)$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66442,7 +66442,7 @@ var generated = data{
 		Name:            "SENEGAL",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66457,7 +66457,7 @@ var generated = data{
 		Name:            "SOMALIA",
 		DefaultLanguage: "so",
 		PostCodeRegex: postCodeRegex{
-			regex: `[A-Z]{2} ?\d{5}`},
+			regex: `^([A-Z]{2} ?\d{5})$`},
 		Format: "%N%n%O%n%A%n%C, %S %Z",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -66658,7 +66658,7 @@ var generated = data{
 		Name:            "EL SALVADOR",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `CP [1-3][1-7][0-2]\d`,
+			regex: `^(CP [1-3][1-7][0-2]\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AH": {
 					regex: `^CP 21`},
@@ -66799,7 +66799,7 @@ var generated = data{
 		Name:            "SWAZILAND",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `[HLMS]\d{3}`},
+			regex: `^([HLMS]\d{3})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66819,7 +66819,7 @@ var generated = data{
 		Name:            "TRISTAN DA CUNHA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `TDCU 1ZZ`},
+			regex: `^(TDCU 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66834,7 +66834,7 @@ var generated = data{
 		Name:            "TURKS AND CAICOS ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `TKCA 1ZZ`},
+			regex: `^(TKCA 1ZZ)$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -66873,7 +66873,7 @@ var generated = data{
 		Name:            "THAILAND",
 		DefaultLanguage: "th",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"10": {
 					regex: `^10`},
@@ -67824,7 +67824,7 @@ var generated = data{
 		Name:            "TAJIKISTAN",
 		DefaultLanguage: "tg",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -67849,7 +67849,7 @@ var generated = data{
 		Name:            "TURKMENISTAN",
 		DefaultLanguage: "tk",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -67864,7 +67864,7 @@ var generated = data{
 		Name:            "TUNISIA",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -67884,7 +67884,7 @@ var generated = data{
 		Name:            "TURKEY",
 		DefaultLanguage: "tr",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
 					regex: `^01`},
@@ -68547,7 +68547,7 @@ var generated = data{
 		Name:            "TAIWAN",
 		DefaultLanguage: "zh-Hant",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{3}(?:\d{2,3})?`,
+			regex: `^(\d{3}(?:\d{2,3})?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"CHA": {
 					regex: `^5[0123]`,
@@ -72525,7 +72525,7 @@ var generated = data{
 		Name:            "TANZANIA (UNITED REP.)",
 		DefaultLanguage: "sw",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4,5}`},
+			regex: `^(\d{4,5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -72540,7 +72540,7 @@ var generated = data{
 		Name:            "UKRAINE",
 		DefaultLanguage: "uk",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"05": {
 					regex: `^2[1-4]`},
@@ -72900,7 +72900,7 @@ var generated = data{
 		Name:            "UNITED STATES MINOR OUTLYING ISLANDS",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `96898`},
+			regex: `^(96898)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -72930,7 +72930,7 @@ var generated = data{
 		Name:            "UNITED STATES",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(\d{5})(?:[ \-](\d{4}))?`,
+			regex: `^((\d{5})(?:[ \-](\d{4}))?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AK": {
 					regex: `^99[5-9]`},
@@ -73321,7 +73321,7 @@ var generated = data{
 		Name:            "URUGUAY",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`,
+			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AR": {
 					regex: `^55`},
@@ -73480,7 +73480,7 @@ var generated = data{
 		Name:            "UZBEKISTAN",
 		DefaultLanguage: "uz",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{6}`},
+			regex: `^(\d{6})$`},
 		Format: "%N%n%O%n%A%n%Z %C%n%S",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -73500,7 +73500,7 @@ var generated = data{
 		Name:            "VATICAN",
 		DefaultLanguage: "it",
 		PostCodeRegex: postCodeRegex{
-			regex: `00120`},
+			regex: `^(00120)$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -73515,7 +73515,7 @@ var generated = data{
 		Name:            "SAINT VINCENT AND THE GRENADINES (ANTILLES)",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `VC\d{4}`},
+			regex: `^(VC\d{4})$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -73530,7 +73530,7 @@ var generated = data{
 		Name:            "VENEZUELA",
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format:                     "%N%n%O%n%A%n%C %Z, %S",
 		AdministrativeAreaNameType: State,
 		AllowedFields: map[Field]struct{}{
@@ -73685,7 +73685,7 @@ var generated = data{
 		Name:            "VIRGIN ISLANDS (BRITISH)",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `VG\d{4}`},
+			regex: `^(VG\d{4})$`},
 		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -73703,7 +73703,7 @@ var generated = data{
 		Name:            "VIRGIN ISLANDS (U.S.)",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `(008(?:(?:[0-4]\d)|(?:5[01])))(?:[ \-](\d{4}))?`},
+			regex: `^((008(?:(?:[0-4]\d)|(?:5[01])))(?:[ \-](\d{4}))?)$`},
 		Format:                     "%N%n%O%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
 		PostCodeNameType:           ZipCode,
@@ -73734,7 +73734,7 @@ var generated = data{
 		Name:            "VIET NAM",
 		DefaultLanguage: "vi",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}\d?`},
+			regex: `^(\d{5}\d?)$`},
 		Format:          "%N%n%O%n%A%n%C%n%S %Z",
 		LatinizedFormat: "%N%n%O%n%A%n%C%n%S %Z",
 		AllowedFields: map[Field]struct{}{
@@ -74392,7 +74392,7 @@ var generated = data{
 		Name:            "WALLIS AND FUTUNA ISLANDS",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `986\d{2}`},
+			regex: `^(986\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -74423,7 +74423,7 @@ var generated = data{
 		Name:            "KOSOVO",
 		DefaultLanguage: "sq",
 		PostCodeRegex: postCodeRegex{
-			regex: `[1-7]\d{4}`},
+			regex: `^([1-7]\d{4})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -74443,7 +74443,7 @@ var generated = data{
 		Name:            "MAYOTTE",
 		DefaultLanguage: "fr",
 		PostCodeRegex: postCodeRegex{
-			regex: `976\d{2}`},
+			regex: `^(976\d{2})$`},
 		Format: "%O%n%N%n%A%n%Z %C %X",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -74469,7 +74469,7 @@ var generated = data{
 		Name:            "SOUTH AFRICA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{4}`},
+			regex: `^(\d{4})$`},
 		Format: "%N%n%O%n%A%n%D%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			DependentLocality: {},
@@ -74490,7 +74490,7 @@ var generated = data{
 		Name:            "ZAMBIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `\d{5}`},
+			regex: `^(\d{5})$`},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
