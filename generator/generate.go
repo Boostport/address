@@ -583,7 +583,7 @@ func (w *worker) start() {
 
 				// Sanity check post code regex
 				if countryJSON.Zip != "" {
-					err = checkPostalCodeRegex(countryJSON.Zip, strings.Split(countryJSON.Zipex, ","))
+					err = checkPostalCodeRegex("^("+countryJSON.Zip+")$", strings.Split(countryJSON.Zipex, ","))
 
 					if err != nil {
 						w.result <- workerResult{
@@ -598,16 +598,16 @@ func (w *worker) start() {
 					ID:   countryCode,
 					Name: countryJSON.Name,
 
-					PostCodeRegex: postCodeRegex{
-						regex: countryJSON.Zip,
-					},
-
 					Format:          countryJSON.Fmt,
 					LatinizedFormat: countryJSON.Lfmt,
 
 					AllowedFields:  getAllowedFields(countryJSON.Fmt),
 					RequiredFields: getFields(countryJSON.Require),
 					Upper:          getFields(countryJSON.Upper),
+				}
+
+				if countryJSON.Zip != "" {
+					country.PostCodeRegex.regex = "^(" + countryJSON.Zip + ")$"
 				}
 
 				if countryJSON.Lang != "" {
