@@ -22,7 +22,7 @@ import (
 )
 
 func main() {
-	addr := address.New(
+	addr, err := address.NewValid(
 		address.WithCountry("AU"), // Must be an ISO 3166-1 country code
 		address.WithName("John Citizen"),
 		address.WithOrganization("Some Company Pty Ltd"),
