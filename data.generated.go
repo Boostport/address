@@ -12913,8 +12913,8 @@ var generated = data{
 							Name: "Ipiranga",
 						},
 						{
-							ID:   "Iporá",
-							Name: "Iporá",
+							ID:   "Iporã",
+							Name: "Iporã",
 						},
 						{
 							ID:   "Iracema do Oeste",
@@ -23640,7 +23640,7 @@ var generated = data{
 		DefaultLanguage: "be",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{6})$`},
-		Format: "%S%n%Z %C%n%A%n%O%n%N",
+		Format: "%O%n%N%n%A%n%Z, %C%n%S",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
@@ -25233,6 +25233,11 @@ var generated = data{
 							Name: "Vitacura",
 						},
 					},
+				},
+				{
+					ID:        "NB",
+					Name:      "Ñuble",
+					PostalKey: "Ñuble",
 				},
 				{
 					ID:        "TA",
@@ -57184,37 +57189,37 @@ var generated = data{
 		AdministrativeAreas: map[string][]administrativeArea{
 			"en": {
 				{
-					ID:        "32",
+					ID:        "30",
 					Name:      "Alborz Province",
 					PostalKey: "استان البرز",
 				},
 				{
-					ID:        "03",
+					ID:        "24",
 					Name:      "Ardabil Province",
 					PostalKey: "استان اردبیل",
 				},
 				{
-					ID:        "06",
+					ID:        "18",
 					Name:      "Bushehr Province",
 					PostalKey: "استان بوشهر",
 				},
 				{
-					ID:        "08",
+					ID:        "14",
 					Name:      "Chaharmahal and Bakhtiari Province",
 					PostalKey: "استان چهارمحال و بختیاری",
 				},
 				{
-					ID:        "01",
+					ID:        "03",
 					Name:      "East Azerbaijan Province",
 					PostalKey: "استان آذربایجان شرقی",
 				},
 				{
-					ID:        "14",
+					ID:        "07",
 					Name:      "Fars Province",
 					PostalKey: "استان فارس",
 				},
 				{
-					ID:        "19",
+					ID:        "01",
 					Name:      "Gilan Province",
 					PostalKey: "استان گیلان",
 				},
@@ -57224,92 +57229,92 @@ var generated = data{
 					PostalKey: "استان گلستان",
 				},
 				{
-					ID:        "24",
+					ID:        "13",
 					Name:      "Hamadan Province",
 					PostalKey: "استان همدان",
 				},
 				{
-					ID:        "23",
+					ID:        "22",
 					Name:      "Hormozgan Province",
 					PostalKey: "استان هرمزگان",
 				},
 				{
-					ID:        "05",
+					ID:        "16",
 					Name:      "Ilam Province",
 					PostalKey: "استان ایلام",
 				},
 				{
-					ID:        "04",
+					ID:        "10",
 					Name:      "Isfahan Province",
 					PostalKey: "استان اصفهان",
 				},
 				{
-					ID:        "15",
+					ID:        "08",
 					Name:      "Kerman Province",
 					PostalKey: "استان کرمان",
 				},
 				{
-					ID:        "17",
+					ID:        "05",
 					Name:      "Kermanshah Province",
 					PostalKey: "استان کرمانشاه",
 				},
 				{
-					ID:        "10",
+					ID:        "06",
 					Name:      "Khuzestan Province",
 					PostalKey: "استان خوزستان",
 				},
 				{
-					ID:        "18",
+					ID:        "17",
 					Name:      "Kohgiluyeh and Boyer-Ahmad Province",
 					PostalKey: "استان کهگیلویه و بویراحمد",
 				},
 				{
-					ID:        "16",
+					ID:        "12",
 					Name:      "Kurdistan Province",
 					PostalKey: "استان کردستان",
 				},
 				{
-					ID:        "20",
+					ID:        "15",
 					Name:      "Lorestan Province",
 					PostalKey: "استان لرستان",
 				},
 				{
-					ID:        "22",
+					ID:        "00",
 					Name:      "Markazi Province",
 					PostalKey: "استان مرکزی",
 				},
 				{
-					ID:        "21",
+					ID:        "02",
 					Name:      "Mazandaran Province",
 					PostalKey: "استان مازندران",
 				},
 				{
-					ID:        "31",
+					ID:        "28",
 					Name:      "North Khorasan Province",
 					PostalKey: "استان خراسان شمالی",
 				},
 				{
-					ID:        "28",
+					ID:        "26",
 					Name:      "Qazvin Province",
 					PostalKey: "استان قزوین",
 				},
 				{
-					ID:        "26",
+					ID:        "25",
 					Name:      "Qom Province",
 					PostalKey: "استان قم",
 				},
 				{
-					ID:        "30",
+					ID:        "09",
 					Name:      "Razavi Khorasan Province",
 					PostalKey: "استان خراسان رضوی",
 				},
 				{
-					ID:        "12",
+					ID:        "20",
 					Name:      "Semnan Province",
 					PostalKey: "استان سمنان",
 				},
 				{
-					ID:        "13",
+					ID:        "11",
 					Name:      "Sistan and Baluchestan Province",
 					PostalKey: "استان سیستان و بلوچستان",
 				},
@@ -57319,69 +57324,69 @@ var generated = data{
 					PostalKey: "استان خراسان جنوبی",
 				},
 				{
-					ID:        "07",
+					ID:        "23",
 					Name:      "Tehran Province",
 					PostalKey: "استان تهران",
 				},
 				{
-					ID:        "02",
+					ID:        "04",
 					Name:      "West Azerbaijan Province",
 					PostalKey: "استان آذربایجان غربی",
 				},
 				{
-					ID:        "25",
+					ID:        "21",
 					Name:      "Yazd Province",
 					PostalKey: "استان یزد",
 				},
 				{
-					ID:        "11",
+					ID:        "19",
 					Name:      "Zanjan Province",
 					PostalKey: "استان زنجان",
 				},
 			},
 			"fa": {
 				{
-					ID:        "01",
+					ID:        "03",
 					Name:      "استان آذربایجان شرقی",
 					PostalKey: "استان آذربایجان شرقی",
 				},
 				{
-					ID:        "02",
+					ID:        "04",
 					Name:      "استان آذربایجان غربی",
 					PostalKey: "استان آذربایجان غربی",
 				},
 				{
-					ID:        "03",
+					ID:        "24",
 					Name:      "استان اردبیل",
 					PostalKey: "استان اردبیل",
 				},
 				{
-					ID:        "04",
+					ID:        "10",
 					Name:      "استان اصفهان",
 					PostalKey: "استان اصفهان",
 				},
 				{
-					ID:        "32",
+					ID:        "30",
 					Name:      "استان البرز",
 					PostalKey: "استان البرز",
 				},
 				{
-					ID:        "05",
+					ID:        "16",
 					Name:      "استان ایلام",
 					PostalKey: "استان ایلام",
 				},
 				{
-					ID:        "06",
+					ID:        "18",
 					Name:      "استان بوشهر",
 					PostalKey: "استان بوشهر",
 				},
 				{
-					ID:        "07",
+					ID:        "23",
 					Name:      "استان تهران",
 					PostalKey: "استان تهران",
 				},
 				{
-					ID:        "08",
+					ID:        "14",
 					Name:      "استان چهارمحال و بختیاری",
 					PostalKey: "استان چهارمحال و بختیاری",
 				},
@@ -57391,67 +57396,67 @@ var generated = data{
 					PostalKey: "استان خراسان جنوبی",
 				},
 				{
-					ID:        "30",
+					ID:        "09",
 					Name:      "استان خراسان رضوی",
 					PostalKey: "استان خراسان رضوی",
 				},
 				{
-					ID:        "31",
+					ID:        "28",
 					Name:      "استان خراسان شمالی",
 					PostalKey: "استان خراسان شمالی",
 				},
 				{
-					ID:        "10",
+					ID:        "06",
 					Name:      "استان خوزستان",
 					PostalKey: "استان خوزستان",
 				},
 				{
-					ID:        "11",
+					ID:        "19",
 					Name:      "استان زنجان",
 					PostalKey: "استان زنجان",
 				},
 				{
-					ID:        "12",
+					ID:        "20",
 					Name:      "استان سمنان",
 					PostalKey: "استان سمنان",
 				},
 				{
-					ID:        "13",
+					ID:        "11",
 					Name:      "استان سیستان و بلوچستان",
 					PostalKey: "استان سیستان و بلوچستان",
 				},
 				{
-					ID:        "14",
+					ID:        "07",
 					Name:      "استان فارس",
 					PostalKey: "استان فارس",
 				},
 				{
-					ID:        "28",
+					ID:        "26",
 					Name:      "استان قزوین",
 					PostalKey: "استان قزوین",
 				},
 				{
-					ID:        "26",
+					ID:        "25",
 					Name:      "استان قم",
 					PostalKey: "استان قم",
 				},
 				{
-					ID:        "16",
+					ID:        "12",
 					Name:      "استان کردستان",
 					PostalKey: "استان کردستان",
 				},
 				{
-					ID:        "15",
+					ID:        "08",
 					Name:      "استان کرمان",
 					PostalKey: "استان کرمان",
 				},
 				{
-					ID:        "17",
+					ID:        "05",
 					Name:      "استان کرمانشاه",
 					PostalKey: "استان کرمانشاه",
 				},
 				{
-					ID:        "18",
+					ID:        "17",
 					Name:      "استان کهگیلویه و بویراحمد",
 					PostalKey: "استان کهگیلویه و بویراحمد",
 				},
@@ -57461,37 +57466,37 @@ var generated = data{
 					PostalKey: "استان گلستان",
 				},
 				{
-					ID:        "19",
+					ID:        "01",
 					Name:      "استان گیلان",
 					PostalKey: "استان گیلان",
 				},
 				{
-					ID:        "20",
+					ID:        "15",
 					Name:      "استان لرستان",
 					PostalKey: "استان لرستان",
 				},
 				{
-					ID:        "21",
+					ID:        "02",
 					Name:      "استان مازندران",
 					PostalKey: "استان مازندران",
 				},
 				{
-					ID:        "22",
+					ID:        "00",
 					Name:      "استان مرکزی",
 					PostalKey: "استان مرکزی",
 				},
 				{
-					ID:        "23",
+					ID:        "22",
 					Name:      "استان هرمزگان",
 					PostalKey: "استان هرمزگان",
 				},
 				{
-					ID:        "24",
+					ID:        "13",
 					Name:      "استان همدان",
 					PostalKey: "استان همدان",
 				},
 				{
-					ID:        "25",
+					ID:        "21",
 					Name:      "استان یزد",
 					PostalKey: "استان یزد",
 				},
@@ -60987,6 +60992,10 @@ var generated = data{
 							Name: "Daepyeong-dong",
 						},
 						{
+							ID:   "다정동",
+							Name: "Dajeong-dong",
+						},
+						{
 							ID:   "도담동",
 							Name: "Dodam-dong",
 						},
@@ -61981,6 +61990,10 @@ var generated = data{
 						{
 							ID:   "금남면",
 							Name: "금남면",
+						},
+						{
+							ID:   "다정동",
+							Name: "다정동",
 						},
 						{
 							ID:   "대평동",
@@ -63516,7 +63529,7 @@ var generated = data{
 		DefaultLanguage: "af",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{5})$`},
-		Format: "%N%n%O%n%A%n%Cn%Z",
+		Format: "%N%n%O%n%A%n%C%n%Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
 			Name:          {},
@@ -65688,11 +65701,6 @@ var generated = data{
 					PostalKey: "Республика Татарстан",
 				},
 				{
-					ID:        "UD",
-					Name:      "Respublika Udmurtiya",
-					PostalKey: "Республика Удмуртия",
-				},
-				{
 					ID:        "ROS",
 					Name:      "Rostovskaya oblast'",
 					PostalKey: "Ростовская область",
@@ -65771,6 +65779,11 @@ var generated = data{
 					ID:        "TY",
 					Name:      "Tyva Republits",
 					PostalKey: "Республика Тыва",
+				},
+				{
+					ID:        "UD",
+					Name:      "Udmurtskaja Respublika",
+					PostalKey: "Республика Удмуртия",
 				},
 				{
 					ID:        "ULY",

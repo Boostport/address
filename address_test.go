@@ -2231,6 +2231,10 @@ func TestGetCountry(t *testing.T) {
 							Name: "Daepyeong-dong",
 						},
 						{
+							ID:   "다정동",
+							Name: "Dajeong-dong",
+						},
+						{
 							ID:   "도담동",
 							Name: "Dodam-dong",
 						},
@@ -3213,6 +3217,10 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "금남면",
 							Name: "금남면",
+						},
+						{
+							ID:   "다정동",
+							Name: "다정동",
 						},
 						{
 							ID:   "대평동",
