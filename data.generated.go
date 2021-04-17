@@ -56677,12 +56677,10 @@ var generated = data{
 					regex: `^16|1440[3-9]`},
 				"CT": {
 					regex: `^49`},
-				"DD": {
+				"DH": {
 					regex: `^396|362`},
 				"DL": {
 					regex: `^11`},
-				"DN": {
-					regex: `^396`},
 				"GA": {
 					regex: `^403`},
 				"GJ": {
@@ -56699,6 +56697,8 @@ var generated = data{
 					regex: `^5[4-9]|53[7-9]`},
 				"KL": {
 					regex: `^6[7-9]|6010|607008|777`},
+				"LA": {
+					regex: `^194`},
 				"LD": {
 					regex: `^682`},
 				"MH": {
@@ -56791,14 +56791,9 @@ var generated = data{
 					PostalKey: "Chhattisgarh",
 				},
 				{
-					ID:        "DN",
-					Name:      "Dadra & Nagar Haveli",
-					PostalKey: "Dadra and Nagar Haveli",
-				},
-				{
-					ID:        "DD",
-					Name:      "Daman & Diu",
-					PostalKey: "Daman and Diu",
+					ID:        "DH",
+					Name:      "Dadra & Nagar Haveli & Daman & Diu",
+					PostalKey: "Dadra and Nagar Haveli and Daman and Diu",
 				},
 				{
 					ID:        "DL",
@@ -56844,6 +56839,11 @@ var generated = data{
 					ID:        "KL",
 					Name:      "Kerala",
 					PostalKey: "Kerala",
+				},
+				{
+					ID:        "LA",
+					Name:      "Ladakh",
+					PostalKey: "Ladakh",
 				},
 				{
 					ID:        "LD",
@@ -57028,14 +57028,9 @@ var generated = data{
 					PostalKey: "Tripura",
 				},
 				{
-					ID:        "DD",
-					Name:      "दमन और दीव",
-					PostalKey: "Daman & Diu",
-				},
-				{
-					ID:        "DN",
-					Name:      "दादरा और नगर हवेली",
-					PostalKey: "Dadra & Nagar Haveli",
+					ID:        "DH",
+					Name:      "दादरा और नगर हवेली और दमन और दिउ",
+					PostalKey: "Dadra & Nagar Haveli & Daman & Diu",
 				},
 				{
 					ID:        "DL",
@@ -57101,6 +57096,11 @@ var generated = data{
 					ID:        "LD",
 					Name:      "लक्षद्वीप",
 					PostalKey: "Lakshadweep",
+				},
+				{
+					ID:        "LA",
+					Name:      "लद्दाख़",
+					PostalKey: "Ladakh",
 				},
 				{
 					ID:        "SK",
@@ -57700,7 +57700,7 @@ var generated = data{
 				"SR": {
 					regex: `^96`},
 				"SS": {
-					regex: `^07[01]`},
+					regex: `^07[01]|08020`},
 				"SU": {
 					regex: `^090[1-5][0-9]|0906[0-6]|080[1-4]`},
 				"SV": {
