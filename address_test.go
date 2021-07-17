@@ -970,7 +970,7 @@ func TestGetCountry(t *testing.T) {
 						"군산시": {
 							Regex: `^54[01]`},
 						"김제시": {
-							Regex: `^543`},
+							Regex: `^54[34]`},
 						"남원시": {
 							Regex: `^55[78]`},
 						"무주군": {

@@ -56289,6 +56289,178 @@ var generated = data{
 			StreetAddress:      {},
 		},
 		AdministrativeAreas: map[string][]administrativeArea{
+			"en": {
+				{
+					ID:        "AC",
+					Name:      "Aceh",
+					PostalKey: "Aceh",
+				},
+				{
+					ID:        "BA",
+					Name:      "Bali",
+					PostalKey: "Bali",
+				},
+				{
+					ID:        "BB",
+					Name:      "Bangka Belitung Islands",
+					PostalKey: "Kepulauan Bangka Belitung",
+				},
+				{
+					ID:        "BT",
+					Name:      "Banten",
+					PostalKey: "Banten",
+				},
+				{
+					ID:        "BE",
+					Name:      "Bengkulu",
+					PostalKey: "Bengkulu",
+				},
+				{
+					ID:        "JT",
+					Name:      "Central Java",
+					PostalKey: "Jawa Tengah",
+				},
+				{
+					ID:        "KT",
+					Name:      "Central Kalimantan",
+					PostalKey: "Kalimantan Tengah",
+				},
+				{
+					ID:        "ST",
+					Name:      "Central Sulawesi",
+					PostalKey: "Sulawesi Tengah",
+				},
+				{
+					ID:        "JI",
+					Name:      "East Java",
+					PostalKey: "Jawa Timur",
+				},
+				{
+					ID:        "KI",
+					Name:      "East Kalimantan",
+					PostalKey: "Kalimantan Timur",
+				},
+				{
+					ID:        "NT",
+					Name:      "East Nusa Tenggara",
+					PostalKey: "Nusa Tenggara Timur",
+				},
+				{
+					ID:        "GO",
+					Name:      "Gorontalo",
+					PostalKey: "Gorontalo",
+				},
+				{
+					ID:        "JK",
+					Name:      "Jakarta",
+					PostalKey: "DKI Jakarta",
+				},
+				{
+					ID:        "JA",
+					Name:      "Jambi",
+					PostalKey: "Jambi",
+				},
+				{
+					ID:        "LA",
+					Name:      "Lampung",
+					PostalKey: "Lampung",
+				},
+				{
+					ID:        "MA",
+					Name:      "Maluku",
+					PostalKey: "Maluku",
+				},
+				{
+					ID:        "KU",
+					Name:      "North Kalimantan",
+					PostalKey: "Kalimantan Utara",
+				},
+				{
+					ID:        "MU",
+					Name:      "North Maluku",
+					PostalKey: "Maluku Utara",
+				},
+				{
+					ID:        "SA",
+					Name:      "North Sulawesi",
+					PostalKey: "Sulawesi Utara",
+				},
+				{
+					ID:        "SU",
+					Name:      "North Sumatra",
+					PostalKey: "Sumatera Utara",
+				},
+				{
+					ID:        "PA",
+					Name:      "Papua",
+					PostalKey: "Papua",
+				},
+				{
+					ID:        "RI",
+					Name:      "Riau",
+					PostalKey: "Riau",
+				},
+				{
+					ID:        "KR",
+					Name:      "Riau Islands",
+					PostalKey: "Kepulauan Riau",
+				},
+				{
+					ID:        "SG",
+					Name:      "South East Sulawesi",
+					PostalKey: "Sulawesi Tenggara",
+				},
+				{
+					ID:        "KS",
+					Name:      "South Kalimantan",
+					PostalKey: "Kalimantan Selatan",
+				},
+				{
+					ID:        "SN",
+					Name:      "South Sulawesi",
+					PostalKey: "Sulawesi Selatan",
+				},
+				{
+					ID:        "SS",
+					Name:      "South Sumatra",
+					PostalKey: "Sumatera Selatan",
+				},
+				{
+					ID:        "YO",
+					Name:      "Special Region of Yogyakarta",
+					PostalKey: "Daerah Istimewa Yogyakarta",
+				},
+				{
+					ID:        "JB",
+					Name:      "West Java",
+					PostalKey: "Jawa Barat",
+				},
+				{
+					ID:        "KB",
+					Name:      "West Kalimantan",
+					PostalKey: "Kalimantan Barat",
+				},
+				{
+					ID:        "NB",
+					Name:      "West Nusa Tenggara",
+					PostalKey: "Nusa Tenggara Barat",
+				},
+				{
+					ID:        "PB",
+					Name:      "West Papua",
+					PostalKey: "Papua Barat",
+				},
+				{
+					ID:        "SR",
+					Name:      "West Sulawesi",
+					PostalKey: "Sulawesi Barat",
+				},
+				{
+					ID:        "SB",
+					Name:      "West Sumatra",
+					PostalKey: "Sumatera Barat",
+				},
+			},
 			"id": {
 				{
 					ID:        "AC",
@@ -59695,7 +59867,7 @@ var generated = data{
 						"군산시": {
 							regex: `^54[01]`},
 						"김제시": {
-							regex: `^543`},
+							regex: `^54[34]`},
 						"남원시": {
 							regex: `^55[78]`},
 						"무주군": {
