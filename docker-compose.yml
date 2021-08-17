@@ -2,22 +2,20 @@ version: '3'
 
 services:
   dev:
-    image: golang:1.16-alpine
+    image: golang:1.17
     working_dir: /source
     command: >
-      sh -c "apk --no-cache --no-progress add gcc git musl-dev;
-             go install github.com/unchartedsoftware/witch;
+      sh -c "go install github.com/unchartedsoftware/witch;
              witch --cmd=\"go test -v -p 1 ./...\" --watch=\"*.mod,**/*.go\""
     volumes:
       - .:/source
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
 
   generate:
-    image: golang:1.16-alpine
+    image: golang:1.17
     working_dir: /source
     command: >
-      sh -c "apk --no-cache --no-progress add gcc git musl-dev;
-             go install golang.org/x/tools/cmd/stringer;
+      sh -c "go install golang.org/x/tools/cmd/stringer;
              go generate;
              echo \"Address data and strings generated.\""
     volumes:
