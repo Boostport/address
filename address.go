@@ -113,7 +113,7 @@ func NewValid(fields ...func(*Address)) (Address, error) {
 	err := Validate(address)
 
 	if err != nil {
-		return address, fmt.Errorf("invalid address: %s", err)
+		return address, fmt.Errorf("invalid address: %w", err)
 	}
 
 	return address, nil
