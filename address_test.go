@@ -1,8 +1,11 @@
 package address
 
 import (
+	"errors"
 	"reflect"
 	"testing"
+
+	"github.com/hashicorp/go-multierror"
 )
 
 func TestAddressIsZero(t *testing.T) {
@@ -3694,5 +3697,27 @@ func TestGetCountry(t *testing.T) {
 
 	if !reflect.DeepEqual(country, expected) {
 		t.Errorf("Country data for KR does not match expected country data")
+	}
+}
+func TestValidErr(t *testing.T) {
+	_, err := NewValid(
+		WithCountry("AasdgasdgU"), // Must be an ISO 3166-1 country code
+		WithName("John Citizen"),
+		WithOrganization("Some Company Pty Ltd"),
+		WithStreetAddress([]string{
+			"525 Collins Street",
+		}),
+		WithLocality("Melbourasdafsdgne"),
+		WithAdministrativeArea("VIC"), // If the country has a pre-defined list of admin areas (like here), you must use the key and not the name
+		WithPostCode("3000"),
+	)
+	if err != nil {
+		// If there was an error and you want to find out which validations failed,
+		// type switch it as a *multierror.Error to access the list of errors
+		err = errors.Unwrap(err)
+		_, ok := err.(*multierror.Error)
+		if !ok {
+			t.Errorf("Expected a *multierror.Error, got %T", err)
+		}
 	}
 }
