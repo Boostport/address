@@ -283,7 +283,7 @@ To generate the data and generate the `String()` functions for the constants, si
 This will run stringer and the generator which will download the data from Google and convert the data into Go code.
 
 ### Using docker
-Run `docker-compose run generate`
+Run `docker compose run generate`
 
 ## License
 This library is licensed under the Apache 2 License.
