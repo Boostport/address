@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Generate data
-        run: docker-compose run generate
+        run: docker compose run generate
       - name: Diff generated file
         shell: bash {0}
         run: |
