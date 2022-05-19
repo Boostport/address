@@ -73117,12 +73117,20 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `^((\d{5})(?:[ \-](\d{4}))?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
+				"AA": {
+					regex: `^340`},
+				"AE": {
+					regex: `^09`},
 				"AK": {
 					regex: `^99[5-9]`},
 				"AL": {
 					regex: `^3[56]`},
+				"AP": {
+					regex: `^96[2-6]`},
 				"AR": {
 					regex: `^71[6-9]|72`},
+				"AS": {
+					regex: `^96799`},
 				"AZ": {
 					regex: `^8[56]`},
 				"CA": {
@@ -73137,8 +73145,12 @@ var generated = data{
 					regex: `^19[7-9]`},
 				"FL": {
 					regex: `^3[23]|34[1-9]`},
+				"FM": {
+					regex: `^9694[1-4]`},
 				"GA": {
 					regex: `^3[01]|398|39901`},
+				"GU": {
+					regex: `^969([1-2]\d|3[12])`},
 				"HI": {
 					regex: `^967[0-8]|9679[0-8]|968`},
 				"IA": {
@@ -73161,12 +73173,16 @@ var generated = data{
 					regex: `^20[6-9]|21`},
 				"ME": {
 					regex: `^039|04`},
+				"MH": {
+					regex: `^969[67]`},
 				"MI": {
 					regex: `^4[89]`},
 				"MN": {
 					regex: `^55|56[0-7]`},
 				"MO": {
 					regex: `^6[3-5]`},
+				"MP": {
+					regex: `^9695[0-2]`},
 				"MS": {
 					regex: `^38[6-9]|39[0-7]`},
 				"MT": {
@@ -73195,6 +73211,10 @@ var generated = data{
 					regex: `^97`},
 				"PA": {
 					regex: `^1[5-8]|19[0-6]`},
+				"PR": {
+					regex: `^00[679]`},
+				"PW": {
+					regex: `^969(39|40)`},
 				"RI": {
 					regex: `^02[89]`},
 				"SC": {
@@ -73209,6 +73229,8 @@ var generated = data{
 					regex: `^84`},
 				"VA": {
 					regex: `^201|2[23]|24[0-6]`},
+				"VI": {
+					regex: `^008`},
 				"VT": {
 					regex: `^05`},
 				"WA": {
@@ -73254,6 +73276,11 @@ var generated = data{
 					PostalKey: "AK",
 				},
 				{
+					ID:        "AS",
+					Name:      "American Samoa",
+					PostalKey: "AS",
+				},
+				{
 					ID:        "AZ",
 					Name:      "Arizona",
 					PostalKey: "AZ",
@@ -73262,6 +73289,21 @@ var generated = data{
 					ID:        "AR",
 					Name:      "Arkansas",
 					PostalKey: "AR",
+				},
+				{
+					ID:        "AA",
+					Name:      "Armed Forces (AA)",
+					PostalKey: "AA",
+				},
+				{
+					ID:        "AE",
+					Name:      "Armed Forces (AE)",
+					PostalKey: "AE",
+				},
+				{
+					ID:        "AP",
+					Name:      "Armed Forces (AP)",
+					PostalKey: "AP",
 				},
 				{
 					ID:        "CA",
@@ -73297,6 +73339,11 @@ var generated = data{
 					ID:        "GA",
 					Name:      "Georgia",
 					PostalKey: "GA",
+				},
+				{
+					ID:        "GU",
+					Name:      "Guam",
+					PostalKey: "GU",
 				},
 				{
 					ID:        "HI",
@@ -73344,6 +73391,11 @@ var generated = data{
 					PostalKey: "ME",
 				},
 				{
+					ID:        "MH",
+					Name:      "Marshall Islands",
+					PostalKey: "MH",
+				},
+				{
 					ID:        "MD",
 					Name:      "Maryland",
 					PostalKey: "MD",
@@ -73357,6 +73409,11 @@ var generated = data{
 					ID:        "MI",
 					Name:      "Michigan",
 					PostalKey: "MI",
+				},
+				{
+					ID:        "FM",
+					Name:      "Micronesia",
+					PostalKey: "FM",
 				},
 				{
 					ID:        "MN",
@@ -73419,6 +73476,11 @@ var generated = data{
 					PostalKey: "ND",
 				},
 				{
+					ID:        "MP",
+					Name:      "Northern Mariana Islands",
+					PostalKey: "MP",
+				},
+				{
 					ID:        "OH",
 					Name:      "Ohio",
 					PostalKey: "OH",
@@ -73434,9 +73496,19 @@ var generated = data{
 					PostalKey: "OR",
 				},
 				{
+					ID:        "PW",
+					Name:      "Palau",
+					PostalKey: "PW",
+				},
+				{
 					ID:        "PA",
 					Name:      "Pennsylvania",
 					PostalKey: "PA",
+				},
+				{
+					ID:        "PR",
+					Name:      "Puerto Rico",
+					PostalKey: "PR",
 				},
 				{
 					ID:        "RI",
@@ -73472,6 +73544,11 @@ var generated = data{
 					ID:        "VT",
 					Name:      "Vermont",
 					PostalKey: "VT",
+				},
+				{
+					ID:        "VI",
+					Name:      "Virgin Islands",
+					PostalKey: "VI",
 				},
 				{
 					ID:        "VA",
