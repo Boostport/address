@@ -826,17 +826,26 @@ func processAdministrativeAreas(countryJSON countryJSON, language string) (map[s
 	var ids []string
 
 	// Deal with the case where a country has sub keys, but the list of ISO ids is blank (ex: ES)
-	if countryJSON.SubISOIDs != "" {
-		ids = subISOIDs
-	} else if countryJSON.SubKeys != "" {
+	// Also, prefer sub-keys and treat them as authoritative when valid addresses can include
+	// administrative areas that don't have an ISO code, e.g. United States addresses can include military addresses
+	// with AA, AE, AP.
+	useSubKeys := countryJSON.SubISOIDs == "" || countryJSON.Key == "US"
+	if useSubKeys {
 		ids = subKeys
+	} else if countryJSON.SubKeys != "" {
+		ids = subISOIDs
 	}
 
 	for i, isoID := range ids {
 
-		// Skip administrative ares without iso ids due to regions being contested or not recognized. (ex: Crimea and Sevastopol in Russia)
 		if isoID == "" {
-			continue
+			if useSubKeys {
+				isoID = subKeys[i]
+			} else {
+				// Skip administrative ares without iso ids due to regions being contested or
+				// not recognized. (ex: Crimea and Sevastopol in Russia)
+				continue
+			}
 		}
 
 		if _, ok := subdivisionsToSkip[isoID]; ok {

@@ -188,6 +188,28 @@ func TestValidAddresses(t *testing.T) {
 		},
 		{
 			Address: []func(*Address){
+				WithName("PFC John Smith"),
+				WithStreetAddress([]string{
+					"PSC 1234, Box 12345",
+				}),
+				WithLocality("APO"),
+				WithAdministrativeArea("AE"),
+				WithPostCode("09204-1234"),
+				WithCountry("US"),
+			},
+			Expected: Address{
+				Country: "US",
+				Name:    "PFC John Smith",
+				StreetAddress: []string{
+					"PSC 1234, Box 12345",
+				},
+				Locality:           "APO",
+				AdministrativeArea: "AE",
+				PostCode:           "09204-1234",
+			},
+		},
+		{
+			Address: []func(*Address){
 				WithStreetAddress([]string{
 					"No.1 Jianguomenwai Avenue",
 				}),
