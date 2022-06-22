@@ -43791,10 +43791,6 @@ var generated = data{
 							Name: "周口市",
 							DependentLocalities: []dependentLocality{
 								{
-									ID:   "沈丘县",
-									Name: "沈丘县",
-								},
-								{
 									ID:   "川汇区",
 									Name: "川汇区",
 								},
@@ -43817,6 +43813,10 @@ var generated = data{
 								{
 									ID:   "商水县",
 									Name: "商水县",
+								},
+								{
+									ID:   "沈丘县",
+									Name: "沈丘县",
 								},
 								{
 									ID:   "太康县",
@@ -45729,16 +45729,16 @@ var generated = data{
 									Name: "扶余县",
 								},
 								{
-									ID:   "乾安县",
-									Name: "乾安县",
-								},
-								{
 									ID:   "宁江区",
 									Name: "宁江区",
 								},
 								{
 									ID:   "前郭尔罗斯蒙古族自治县",
 									Name: "前郭尔罗斯县",
+								},
+								{
+									ID:   "乾安县",
+									Name: "乾安县",
 								},
 								{
 									ID:   "长岭县",
@@ -47208,14 +47208,6 @@ var generated = data{
 							Name: "沈阳市",
 							DependentLocalities: []dependentLocality{
 								{
-									ID:   "沈北新区",
-									Name: "沈北新区",
-								},
-								{
-									ID:   "沈河区",
-									Name: "沈河区",
-								},
-								{
 									ID:   "大东区",
 									Name: "大东区",
 								},
@@ -47242,6 +47234,14 @@ var generated = data{
 								{
 									ID:   "辽中县",
 									Name: "辽中县",
+								},
+								{
+									ID:   "沈北新区",
+									Name: "沈北新区",
+								},
+								{
+									ID:   "沈河区",
+									Name: "沈河区",
 								},
 								{
 									ID:   "苏家屯区",
@@ -49708,16 +49708,16 @@ var generated = data{
 									Name: "淳化县",
 								},
 								{
-									ID:   "乾县",
-									Name: "乾县",
-								},
-								{
 									ID:   "泾阳县",
 									Name: "泾阳县",
 								},
 								{
 									ID:   "礼泉县",
 									Name: "礼泉县",
+								},
+								{
+									ID:   "乾县",
+									Name: "乾县",
 								},
 								{
 									ID:   "秦都区",
@@ -53551,7 +53551,7 @@ var generated = data{
 				"LE": {
 					regex: `^24`},
 				"LO": {
-					regex: `^26`},
+					regex: `^26(?!.*127)`},
 				"LU": {
 					regex: `^27`},
 				"M": {
@@ -53583,7 +53583,7 @@ var generated = data{
 				"SG": {
 					regex: `^40`},
 				"SO": {
-					regex: `^42`},
+					regex: `^26127|42`},
 				"SS": {
 					regex: `^20`},
 				"T": {
@@ -59814,7 +59814,7 @@ var generated = data{
 								"청원구": {
 									regex: `^28[13-5]`},
 								"흥덕구": {
-									regex: `^28[13-6]`},
+									regex: `^28[1-6]`},
 							}},
 						"충주시": {
 							regex: `^27[3-5]`},
@@ -69118,7 +69118,7 @@ var generated = data{
 						"新店區": {
 							regex: `^231`},
 						"新莊區": {
-							regex: `^242`},
+							regex: `^24[28]`},
 						"板橋區": {
 							regex: `^220`},
 						"林口區": {
