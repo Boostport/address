@@ -942,7 +942,7 @@ func TestGetCountry(t *testing.T) {
 								"청원구": {
 									Regex: `^28[13-5]`},
 								"흥덕구": {
-									Regex: `^28[13-6]`},
+									Regex: `^28[1-6]`},
 							}},
 						"충주시": {
 							Regex: `^27[3-5]`},
