@@ -8,6 +8,5 @@ import (
 	// the library.
 	// This should be migrated directly to go.mod when the following is complete:
 	// https://github.com/golang/go/issues/48429
-	_ "github.com/unchartedsoftware/witch"
 	_ "golang.org/x/tools/cmd/stringer"
 )
