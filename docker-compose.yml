@@ -1,12 +1,10 @@
 version: '3'
 
 services:
-  dev:
-    image: golang:1.18
+  test:
+    image: golang:${GO_VERSION:-1.18}
     working_dir: /source
-    command: >
-      sh -c "go install github.com/unchartedsoftware/witch;
-             witch --cmd=\"go test -v -p 1 ./...\" --watch=\"*.mod,**/*.go\""
+    command: go test -coverprofile c.out -v ./...
     volumes:
       - .:/source
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache

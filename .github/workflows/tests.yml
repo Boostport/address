@@ -13,9 +13,6 @@ jobs:
             report: true
           - version: 1.17
     runs-on: ubuntu-latest
-    container:
-      image: golang:${{ matrix.go.version }}
-
     steps:
       - name: Install code climate
         if: matrix.go.report == true && github.ref == 'refs/heads/main'
@@ -26,8 +23,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Run tests
+        env:
+          GO_VERSION: ${{ matrix.go.version }}
         run: |
-          go test -coverprofile c.out -v ./...
+          docker compose run test
           echo $? > /tmp/GO_EXIT_CODE
       - name: Send results to code climate
         if: matrix.go.report == true && github.ref == 'refs/heads/main'
