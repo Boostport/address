@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"go/format"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -521,7 +520,7 @@ var generated = data{
 		log.Fatalf("Error formatting generated source: %s", err)
 	}
 
-	err = ioutil.WriteFile("data.generated.go", formatted, os.ModePerm)
+	err = os.WriteFile("data.generated.go", formatted, os.ModePerm)
 
 	if err != nil {
 		log.Fatalf("Error writing data.go: %s", err)
