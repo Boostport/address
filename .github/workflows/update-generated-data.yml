@@ -10,17 +10,12 @@ jobs:
         uses: actions/checkout@v3
       - name: Generate data
         run: docker compose run generate
-      - name: Diff generated file
-        shell: bash {0}
-        run: |
-          git diff --exit-code --quiet data.generated.go
-          echo "HAS_CHANGES=$?" >> $GITHUB_ENV
-          exit 0
       - name: Open PR
         uses: peter-evans/create-pull-request@v4
-        if: env.HAS_CHANGES == '1'
         with:
           branch: update-generated-data
+          author: GitHub <noreply@github.com>
+          committer: GitHub <noreply@github.com>
           commit-message: Update generated data
           title: 'Update generated data'
           body: |
