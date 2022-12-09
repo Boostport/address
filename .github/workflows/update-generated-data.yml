@@ -20,8 +20,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         if: env.HAS_CHANGES == '1'
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-          author: boostport-bot <boostport-bot@users.noreply.github.com>
           branch: update-generated-data
           commit-message: Update generated data
           title: 'Update generated data'
