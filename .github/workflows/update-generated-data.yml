@@ -8,11 +8,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Generate data
         run: docker compose run generate
       - name: Open PR
         uses: peter-evans/create-pull-request@v4
         with:
+          token: ${{ steps.generate-token.outputs.token }}
           branch: update-generated-data
           author: GitHub <noreply@github.com>
           committer: GitHub <noreply@github.com>
