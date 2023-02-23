@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/hashicorp/go-multierror v1.1.1
-	golang.org/x/text v0.3.7
+	golang.org/x/text v0.3.8
 	golang.org/x/tools v0.1.12
 )
 
