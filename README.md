@@ -36,8 +36,8 @@ func main() {
 
 	if err != nil {
 		// If there was an error and you want to find out which validations failed,
-		// type switch it as a *multierror.Error to access the list of errors
-		if merr, ok := err.(*multierror.Error); ok {
+		// type switch the nested error as a *multierror.Error to access the list of errors
+		if merr, ok := errors.Unwrap(err).(*multierror.Error); ok {
 			for _, subErr := range merr.Errors {
 				if subErr == address.ErrInvalidCountryCode {
 					log.Fatalf(subErr)
@@ -283,7 +283,7 @@ To generate the data and generate the `String()` functions for the constants, si
 This will run stringer and the generator which will download the data from Google and convert the data into Go code.
 
 ### Using docker
-Run `docker-compose run generate`
+Run `docker compose run generate`
 
 ## License
 This library is licensed under the Apache 2 License.

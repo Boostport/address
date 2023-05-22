@@ -878,7 +878,7 @@ var generated = data{
 		Name:            "BAHRAIN",
 		DefaultLanguage: "ar",
 		PostCodeRegex: postCodeRegex{
-			regex: `^((?:\d|1[0-2])\d{2})$`},
+			regex: `^((?:^|\b)(?:1[0-2]|[1-9])\d{2}(?:$|\b))$`},
 		Format: "%N%n%O%n%A%n%C %Z",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -25238,6 +25238,40 @@ var generated = data{
 					ID:        "NB",
 					Name:      "Ñuble",
 					PostalKey: "Ñuble",
+					Localities: []locality{
+						{
+							ID:   "Bulnes",
+							Name: "Bulnes",
+						},
+						{
+							ID:   "Chillán",
+							Name: "Chillán",
+						},
+						{
+							ID:   "Coelemu",
+							Name: "Coelemu",
+						},
+						{
+							ID:   "Coihueco",
+							Name: "Coihueco",
+						},
+						{
+							ID:   "Quillón",
+							Name: "Quillón",
+						},
+						{
+							ID:   "Quirihue",
+							Name: "Quirihue",
+						},
+						{
+							ID:   "San Carlos",
+							Name: "San Carlos",
+						},
+						{
+							ID:   "Yungay",
+							Name: "Yungay",
+						},
+					},
 				},
 				{
 					ID:        "TA",
@@ -27501,6 +27535,10 @@ var generated = data{
 								{
 									ID:   "福田区",
 									Name: "Futian Qu",
+								},
+								{
+									ID:   "光明区",
+									Name: "Guangming Qu",
 								},
 								{
 									ID:   "龙岗区",
@@ -41146,6 +41184,10 @@ var generated = data{
 									Name: "福田区",
 								},
 								{
+									ID:   "光明区",
+									Name: "光明区",
+								},
+								{
 									ID:   "龙岗区",
 									Name: "龙岗区",
 								},
@@ -43791,10 +43833,6 @@ var generated = data{
 							Name: "周口市",
 							DependentLocalities: []dependentLocality{
 								{
-									ID:   "沈丘县",
-									Name: "沈丘县",
-								},
-								{
 									ID:   "川汇区",
 									Name: "川汇区",
 								},
@@ -43817,6 +43855,10 @@ var generated = data{
 								{
 									ID:   "商水县",
 									Name: "商水县",
+								},
+								{
+									ID:   "沈丘县",
+									Name: "沈丘县",
 								},
 								{
 									ID:   "太康县",
@@ -45729,16 +45771,16 @@ var generated = data{
 									Name: "扶余县",
 								},
 								{
-									ID:   "乾安县",
-									Name: "乾安县",
-								},
-								{
 									ID:   "宁江区",
 									Name: "宁江区",
 								},
 								{
 									ID:   "前郭尔罗斯蒙古族自治县",
 									Name: "前郭尔罗斯县",
+								},
+								{
+									ID:   "乾安县",
+									Name: "乾安县",
 								},
 								{
 									ID:   "长岭县",
@@ -47208,14 +47250,6 @@ var generated = data{
 							Name: "沈阳市",
 							DependentLocalities: []dependentLocality{
 								{
-									ID:   "沈北新区",
-									Name: "沈北新区",
-								},
-								{
-									ID:   "沈河区",
-									Name: "沈河区",
-								},
-								{
 									ID:   "大东区",
 									Name: "大东区",
 								},
@@ -47242,6 +47276,14 @@ var generated = data{
 								{
 									ID:   "辽中县",
 									Name: "辽中县",
+								},
+								{
+									ID:   "沈北新区",
+									Name: "沈北新区",
+								},
+								{
+									ID:   "沈河区",
+									Name: "沈河区",
 								},
 								{
 									ID:   "苏家屯区",
@@ -49708,16 +49750,16 @@ var generated = data{
 									Name: "淳化县",
 								},
 								{
-									ID:   "乾县",
-									Name: "乾县",
-								},
-								{
 									ID:   "泾阳县",
 									Name: "泾阳县",
 								},
 								{
 									ID:   "礼泉县",
 									Name: "礼泉县",
+								},
+								{
+									ID:   "乾县",
+									Name: "乾县",
 								},
 								{
 									ID:   "秦都区",
@@ -52763,10 +52805,11 @@ var generated = data{
 		DefaultLanguage: "es",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{6})$`},
-		Format:                     "%N%n%O%n%A%n%C, %S, %Z",
+		Format:                     "%N%n%O%n%A%n%D%n%C, %S, %Z",
 		AdministrativeAreaNameType: Department,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
+			DependentLocality:  {},
 			Locality:           {},
 			Name:               {},
 			Organization:       {},
@@ -52776,6 +52819,175 @@ var generated = data{
 		RequiredFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			StreetAddress:      {},
+		},
+		AdministrativeAreas: map[string][]administrativeArea{
+			"es": {
+				{
+					ID:        "AMA",
+					Name:      "Amazonas",
+					PostalKey: "Amazonas",
+				},
+				{
+					ID:        "ANT",
+					Name:      "Antioquia",
+					PostalKey: "Antioquia",
+				},
+				{
+					ID:        "ARA",
+					Name:      "Arauca",
+					PostalKey: "Arauca",
+				},
+				{
+					ID:        "ATL",
+					Name:      "Atlántico",
+					PostalKey: "Atlántico",
+				},
+				{
+					ID:        "DC",
+					Name:      "Bogotá",
+					PostalKey: "Bogotá",
+				},
+				{
+					ID:        "BOL",
+					Name:      "Bolívar",
+					PostalKey: "Bolívar",
+				},
+				{
+					ID:        "BOY",
+					Name:      "Boyacá",
+					PostalKey: "Boyacá",
+				},
+				{
+					ID:        "CAL",
+					Name:      "Caldas",
+					PostalKey: "Caldas",
+				},
+				{
+					ID:        "CAQ",
+					Name:      "Caquetá",
+					PostalKey: "Caquetá",
+				},
+				{
+					ID:        "CAS",
+					Name:      "Casanare",
+					PostalKey: "Casanare",
+				},
+				{
+					ID:        "CAU",
+					Name:      "Cauca",
+					PostalKey: "Cauca",
+				},
+				{
+					ID:        "CES",
+					Name:      "Cesar",
+					PostalKey: "Cesar",
+				},
+				{
+					ID:        "CHO",
+					Name:      "Chocó",
+					PostalKey: "Chocó",
+				},
+				{
+					ID:        "COR",
+					Name:      "Córdoba",
+					PostalKey: "Córdoba",
+				},
+				{
+					ID:        "CUN",
+					Name:      "Cundinamarca",
+					PostalKey: "Cundinamarca",
+				},
+				{
+					ID:        "GUA",
+					Name:      "Guainía",
+					PostalKey: "Guainía",
+				},
+				{
+					ID:        "GUV",
+					Name:      "Guaviare",
+					PostalKey: "Guaviare",
+				},
+				{
+					ID:        "HUI",
+					Name:      "Huila",
+					PostalKey: "Huila",
+				},
+				{
+					ID:        "LAG",
+					Name:      "La Guajira",
+					PostalKey: "La Guajira",
+				},
+				{
+					ID:        "MAG",
+					Name:      "Magdalena",
+					PostalKey: "Magdalena",
+				},
+				{
+					ID:        "MET",
+					Name:      "Meta",
+					PostalKey: "Meta",
+				},
+				{
+					ID:        "NAR",
+					Name:      "Nariño",
+					PostalKey: "Nariño",
+				},
+				{
+					ID:        "NSA",
+					Name:      "Norte de Santander",
+					PostalKey: "Norte de Santander",
+				},
+				{
+					ID:        "PUT",
+					Name:      "Putumayo",
+					PostalKey: "Putumayo",
+				},
+				{
+					ID:        "QUI",
+					Name:      "Quindío",
+					PostalKey: "Quindío",
+				},
+				{
+					ID:        "RIS",
+					Name:      "Risaralda",
+					PostalKey: "Risaralda",
+				},
+				{
+					ID:        "SAP",
+					Name:      "San Andrés y Providencia",
+					PostalKey: "San Andrés y Providencia",
+				},
+				{
+					ID:        "SAN",
+					Name:      "Santander",
+					PostalKey: "Santander",
+				},
+				{
+					ID:        "SUC",
+					Name:      "Sucre",
+					PostalKey: "Sucre",
+				},
+				{
+					ID:        "TOL",
+					Name:      "Tolima",
+					PostalKey: "Tolima",
+				},
+				{
+					ID:        "VAC",
+					Name:      "Valle del Cauca",
+					PostalKey: "Valle del Cauca",
+				},
+				{
+					ID:        "VAU",
+					Name:      "Vaupés",
+					PostalKey: "Vaupés",
+				},
+				{
+					ID:        "VID",
+					Name:      "Vichada",
+					PostalKey: "Vichada",
+				},
+			},
 		},
 	},
 	"CR": {
@@ -53110,13 +53322,14 @@ var generated = data{
 		DefaultLanguage: "et",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{5})$`},
-		Format: "%N%n%O%n%A%n%Z %C",
+		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
-			Locality:      {},
-			Name:          {},
-			Organization:  {},
-			PostCode:      {},
-			StreetAddress: {},
+			AdministrativeArea: {},
+			Locality:           {},
+			Name:               {},
+			Organization:       {},
+			PostCode:           {},
+			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
 			Locality:      {},
@@ -53583,7 +53796,7 @@ var generated = data{
 				"SG": {
 					regex: `^40`},
 				"SO": {
-					regex: `^42`},
+					regex: `^26127|42`},
 				"SS": {
 					regex: `^20`},
 				"T": {
@@ -59579,7 +59792,7 @@ var generated = data{
 						"옹진군": {
 							regex: `^231`},
 						"중구": {
-							regex: `^223`},
+							regex: `^22[34]`},
 					}},
 				"29": {
 					regex: `^6[12]\d{2}`,
@@ -59814,7 +60027,7 @@ var generated = data{
 								"청원구": {
 									regex: `^28[13-5]`},
 								"흥덕구": {
-									regex: `^28[13-6]`},
+									regex: `^28[1-6]`},
 							}},
 						"충주시": {
 							regex: `^27[3-5]`},
@@ -62819,13 +63032,14 @@ var generated = data{
 		DefaultLanguage: "lt",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{5})$`},
-		Format: "%O%n%N%n%A%nLT-%Z %C",
+		Format: "%O%n%N%n%A%nLT-%Z %C %S",
 		AllowedFields: map[Field]struct{}{
-			Locality:      {},
-			Name:          {},
-			Organization:  {},
-			PostCode:      {},
-			StreetAddress: {},
+			AdministrativeArea: {},
+			Locality:           {},
+			Name:               {},
+			Organization:       {},
+			PostCode:           {},
+			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
 			Locality:      {},
@@ -62859,13 +63073,14 @@ var generated = data{
 		DefaultLanguage: "lv",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(LV-\d{4})$`},
-		Format: "%N%n%O%n%A%n%C, %Z",
+		Format: "%N%n%O%n%A%n%S%n%C, %Z",
 		AllowedFields: map[Field]struct{}{
-			Locality:      {},
-			Name:          {},
-			Organization:  {},
-			PostCode:      {},
-			StreetAddress: {},
+			AdministrativeArea: {},
+			Locality:           {},
+			Name:               {},
+			Organization:       {},
+			PostCode:           {},
+			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
 			Locality:      {},
@@ -64133,7 +64348,7 @@ var generated = data{
 		Name:            "NETHERLANDS",
 		DefaultLanguage: "nl",
 		PostCodeRegex: postCodeRegex{
-			regex: `^(\d{4} ?[A-Z]{2})$`},
+			regex: `^([1-9]\d{3} ?(?:[A-RT-Z][A-Z]|S[BCE-RT-Z]))$`},
 		Format: "%O%n%N%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
 			Locality:      {},
@@ -65133,13 +65348,14 @@ var generated = data{
 		DefaultLanguage: "ur",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{5})$`},
-		Format: "%N%n%O%n%A%n%C-%Z",
+		Format: "%N%n%O%n%A%n%D%n%C-%Z",
 		AllowedFields: map[Field]struct{}{
-			Locality:      {},
-			Name:          {},
-			Organization:  {},
-			PostCode:      {},
-			StreetAddress: {},
+			DependentLocality: {},
+			Locality:          {},
+			Name:              {},
+			Organization:      {},
+			PostCode:          {},
+			StreetAddress:     {},
 		},
 	},
 	"PL": {
@@ -65352,13 +65568,14 @@ var generated = data{
 		DefaultLanguage: "ro",
 		PostCodeRegex: postCodeRegex{
 			regex: `^(\d{6})$`},
-		Format: "%N%n%O%n%A%n%Z %C",
+		Format: "%N%n%O%n%A%n%Z %S %C",
 		AllowedFields: map[Field]struct{}{
-			Locality:      {},
-			Name:          {},
-			Organization:  {},
-			PostCode:      {},
-			StreetAddress: {},
+			AdministrativeArea: {},
+			Locality:           {},
+			Name:               {},
+			Organization:       {},
+			PostCode:           {},
+			StreetAddress:      {},
 		},
 		RequiredFields: map[Field]struct{}{
 			Locality:      {},
@@ -69118,7 +69335,7 @@ var generated = data{
 						"新店區": {
 							regex: `^231`},
 						"新莊區": {
-							regex: `^242`},
+							regex: `^24[28]`},
 						"板橋區": {
 							regex: `^220`},
 						"林口區": {
@@ -69524,6 +69741,7 @@ var generated = data{
 		Format:                     "%Z%n%S%C%n%A%n%O%n%N",
 		LatinizedFormat:            "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: County,
+		LocalityNameType:           District,
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
@@ -73117,12 +73335,20 @@ var generated = data{
 		PostCodeRegex: postCodeRegex{
 			regex: `^((\d{5})(?:[ \-](\d{4}))?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
+				"AA": {
+					regex: `^340`},
+				"AE": {
+					regex: `^09`},
 				"AK": {
 					regex: `^99[5-9]`},
 				"AL": {
 					regex: `^3[56]`},
+				"AP": {
+					regex: `^96[2-6]`},
 				"AR": {
 					regex: `^71[6-9]|72`},
+				"AS": {
+					regex: `^96799`},
 				"AZ": {
 					regex: `^8[56]`},
 				"CA": {
@@ -73137,8 +73363,12 @@ var generated = data{
 					regex: `^19[7-9]`},
 				"FL": {
 					regex: `^3[23]|34[1-9]`},
+				"FM": {
+					regex: `^9694[1-4]`},
 				"GA": {
 					regex: `^3[01]|398|39901`},
+				"GU": {
+					regex: `^969([1-2]\d|3[12])`},
 				"HI": {
 					regex: `^967[0-8]|9679[0-8]|968`},
 				"IA": {
@@ -73161,12 +73391,16 @@ var generated = data{
 					regex: `^20[6-9]|21`},
 				"ME": {
 					regex: `^039|04`},
+				"MH": {
+					regex: `^969[67]`},
 				"MI": {
 					regex: `^4[89]`},
 				"MN": {
 					regex: `^55|56[0-7]`},
 				"MO": {
 					regex: `^6[3-5]`},
+				"MP": {
+					regex: `^9695[0-2]`},
 				"MS": {
 					regex: `^38[6-9]|39[0-7]`},
 				"MT": {
@@ -73195,6 +73429,10 @@ var generated = data{
 					regex: `^97`},
 				"PA": {
 					regex: `^1[5-8]|19[0-6]`},
+				"PR": {
+					regex: `^00[679]`},
+				"PW": {
+					regex: `^969(39|40)`},
 				"RI": {
 					regex: `^02[89]`},
 				"SC": {
@@ -73209,6 +73447,8 @@ var generated = data{
 					regex: `^84`},
 				"VA": {
 					regex: `^201|2[23]|24[0-6]`},
+				"VI": {
+					regex: `^008`},
 				"VT": {
 					regex: `^05`},
 				"WA": {
@@ -73254,6 +73494,11 @@ var generated = data{
 					PostalKey: "AK",
 				},
 				{
+					ID:        "AS",
+					Name:      "American Samoa",
+					PostalKey: "AS",
+				},
+				{
 					ID:        "AZ",
 					Name:      "Arizona",
 					PostalKey: "AZ",
@@ -73262,6 +73507,21 @@ var generated = data{
 					ID:        "AR",
 					Name:      "Arkansas",
 					PostalKey: "AR",
+				},
+				{
+					ID:        "AA",
+					Name:      "Armed Forces (AA)",
+					PostalKey: "AA",
+				},
+				{
+					ID:        "AE",
+					Name:      "Armed Forces (AE)",
+					PostalKey: "AE",
+				},
+				{
+					ID:        "AP",
+					Name:      "Armed Forces (AP)",
+					PostalKey: "AP",
 				},
 				{
 					ID:        "CA",
@@ -73297,6 +73557,11 @@ var generated = data{
 					ID:        "GA",
 					Name:      "Georgia",
 					PostalKey: "GA",
+				},
+				{
+					ID:        "GU",
+					Name:      "Guam",
+					PostalKey: "GU",
 				},
 				{
 					ID:        "HI",
@@ -73344,6 +73609,11 @@ var generated = data{
 					PostalKey: "ME",
 				},
 				{
+					ID:        "MH",
+					Name:      "Marshall Islands",
+					PostalKey: "MH",
+				},
+				{
 					ID:        "MD",
 					Name:      "Maryland",
 					PostalKey: "MD",
@@ -73357,6 +73627,11 @@ var generated = data{
 					ID:        "MI",
 					Name:      "Michigan",
 					PostalKey: "MI",
+				},
+				{
+					ID:        "FM",
+					Name:      "Micronesia",
+					PostalKey: "FM",
 				},
 				{
 					ID:        "MN",
@@ -73419,6 +73694,11 @@ var generated = data{
 					PostalKey: "ND",
 				},
 				{
+					ID:        "MP",
+					Name:      "Northern Mariana Islands",
+					PostalKey: "MP",
+				},
+				{
 					ID:        "OH",
 					Name:      "Ohio",
 					PostalKey: "OH",
@@ -73434,9 +73714,19 @@ var generated = data{
 					PostalKey: "OR",
 				},
 				{
+					ID:        "PW",
+					Name:      "Palau",
+					PostalKey: "PW",
+				},
+				{
 					ID:        "PA",
 					Name:      "Pennsylvania",
 					PostalKey: "PA",
+				},
+				{
+					ID:        "PR",
+					Name:      "Puerto Rico",
+					PostalKey: "PR",
 				},
 				{
 					ID:        "RI",
@@ -73472,6 +73762,11 @@ var generated = data{
 					ID:        "VT",
 					Name:      "Vermont",
 					PostalKey: "VT",
+				},
+				{
+					ID:        "VI",
+					Name:      "Virgin Islands",
+					PostalKey: "VI",
 				},
 				{
 					ID:        "VA",

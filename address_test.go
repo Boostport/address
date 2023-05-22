@@ -188,6 +188,28 @@ func TestValidAddresses(t *testing.T) {
 		},
 		{
 			Address: []func(*Address){
+				WithName("PFC John Smith"),
+				WithStreetAddress([]string{
+					"PSC 1234, Box 12345",
+				}),
+				WithLocality("APO"),
+				WithAdministrativeArea("AE"),
+				WithPostCode("09204-1234"),
+				WithCountry("US"),
+			},
+			Expected: Address{
+				Country: "US",
+				Name:    "PFC John Smith",
+				StreetAddress: []string{
+					"PSC 1234, Box 12345",
+				},
+				Locality:           "APO",
+				AdministrativeArea: "AE",
+				PostCode:           "09204-1234",
+			},
+		},
+		{
+			Address: []func(*Address){
 				WithStreetAddress([]string{
 					"No.1 Jianguomenwai Avenue",
 				}),
@@ -685,7 +707,7 @@ func TestGetCountry(t *testing.T) {
 						"옹진군": {
 							Regex: `^231`},
 						"중구": {
-							Regex: `^223`},
+							Regex: `^22[34]`},
 					}},
 				"29": {
 					Regex: `^6[12]\d{2}`,
@@ -920,7 +942,7 @@ func TestGetCountry(t *testing.T) {
 								"청원구": {
 									Regex: `^28[13-5]`},
 								"흥덕구": {
-									Regex: `^28[13-6]`},
+									Regex: `^28[1-6]`},
 							}},
 						"충주시": {
 							Regex: `^27[3-5]`},

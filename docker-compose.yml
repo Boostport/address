@@ -1,18 +1,16 @@
 version: '3'
 
 services:
-  dev:
-    image: golang:1.17
+  test:
+    image: golang:${GO_VERSION:-1.19}
     working_dir: /source
-    command: >
-      sh -c "go install github.com/unchartedsoftware/witch;
-             witch --cmd=\"go test -v -p 1 ./...\" --watch=\"*.mod,**/*.go\""
+    command: go test -coverprofile c.out -v ./...
     volumes:
       - .:/source
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
 
   generate:
-    image: golang:1.17
+    image: golang:1.19
     working_dir: /source
     command: >
       sh -c "go install golang.org/x/tools/cmd/stringer;

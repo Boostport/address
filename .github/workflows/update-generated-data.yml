@@ -7,20 +7,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Generate data
-        run: docker-compose run generate
-      - name: Diff generated file
-        shell: bash {0}
-        run: |
-          git diff --exit-code --quiet data.generated.go
-          echo "HAS_CHANGES=$?" >> $GITHUB_ENV
-          exit 0
-      - name: Open PR
-        uses: peter-evans/create-pull-request@v3
-        if: env.HAS_CHANGES == '1'
+        uses: actions/checkout@v3
+      - uses: tibdex/github-app-token@v1
+        id: generate-token
         with:
-          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Generate data
+        run: docker compose run generate
+      - name: Open PR
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          branch: update-generated-data
+          author: GitHub <noreply@github.com>
+          committer: GitHub <noreply@github.com>
           commit-message: Update generated data
           title: 'Update generated data'
           body: |
