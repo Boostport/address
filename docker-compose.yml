@@ -2,7 +2,7 @@ version: '3'
 
 services:
   test:
-    image: golang:${GO_VERSION:-1.19}
+    image: golang:${GO_VERSION:-1.22}
     working_dir: /source
     command: go test -coverprofile c.out -v ./...
     volumes:
@@ -10,7 +10,7 @@ services:
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
 
   generate:
-    image: golang:1.19
+    image: golang:1.22
     working_dir: /source
     command: >
       sh -c "go install golang.org/x/tools/cmd/stringer;
