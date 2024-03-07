@@ -27,7 +27,7 @@ jobs:
           body: |
             Automated update for `data.generated.go`
           labels: automated pr
-          reviewers: F21
+          team-reviewers: open-source
   workflow-keepalive:
     if: github.event_name == 'schedule'
     runs-on: ubuntu-latest
