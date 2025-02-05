@@ -15,10 +15,10 @@ To create a new address, use `New()`. If the address is invalid, an error will b
 package main
 
 import (
+	"errors"
 	"log"
 
 	"github.com/Boostport/address"
-	"github.com/hashicorp/go-multierror"
 )
 
 func main() {
@@ -35,15 +35,10 @@ func main() {
 	)
 
 	if err != nil {
-		// If there was an error and you want to find out which validations failed,
-		// type switch the nested error as a *multierror.Error to access the list of errors
-		if merr, ok := errors.Unwrap(err).(*multierror.Error); ok {
-			for _, subErr := range merr.Errors {
-				if subErr == address.ErrInvalidCountryCode {
-					log.Fatalf(subErr)
-				}
-			}
-		}
+		// If there was an error and you want to find out which validations failed, use errors.Is()
+		if errors.Is(err, address.ErrInvalidCountryCode) {
+            log.Fatalf("Invalid country code")
+        }
 	}
 
 	// Use addr here
