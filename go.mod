@@ -1,10 +1,12 @@
 module github.com/Boostport/address
 
-go 1.18
+go 1.22.0
+
+toolchain go1.23.6
 
 require (
-	golang.org/x/text v0.14.0
-	golang.org/x/tools v0.19.0
+	golang.org/x/text v0.22.0
+	golang.org/x/tools v0.29.0
 )
 
-require golang.org/x/mod v0.16.0 // indirect
+require golang.org/x/mod v0.22.0 // indirect
