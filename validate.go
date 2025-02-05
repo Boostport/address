@@ -1,31 +1,30 @@
 package address
 
 import (
+	"errors"
 	"regexp"
 	"strings"
-
-	"github.com/hashicorp/go-multierror"
 )
 
 // Validate checks and address to determine if it is valid.
 // If you want to create valid addresses, the `address.NewValid()` function does it in one call.
 func Validate(address Address) error {
 
-	var result *multierror.Error
+	var errs []error
 
 	if !generated.hasCountry(address.Country) {
-		result = multierror.Append(result, ErrInvalidCountryCode)
-		return result
+		errs = append(errs, ErrInvalidCountryCode)
+		return errors.Join(errs...)
 	}
 
 	countryData := generated.getCountry(address.Country)
 
 	if err := checkRequiredFields(address, countryData.RequiredFields); err != nil {
-		result = multierror.Append(result, err)
+		errs = append(errs, err)
 	}
 
 	if err := checkAllowedFields(address, countryData.AllowedFields); err != nil {
-		result = multierror.Append(result, err)
+		errs = append(errs, err)
 	}
 
 	if len(countryData.AdministrativeAreas) > 0 {
@@ -34,7 +33,7 @@ func Validate(address Address) error {
 			err := checkSubdivisions(address, administrativeAreaData)
 
 			if err != nil {
-				result = multierror.Append(result, err.(*multierror.Error).Errors...)
+				errs = append(errs, err)
 			}
 		}
 	}
@@ -43,11 +42,11 @@ func Validate(address Address) error {
 		err := checkPostCode(address, countryData.PostCodeRegex)
 
 		if err != nil {
-			result = multierror.Append(result, err.(*multierror.Error).Errors...)
+			errs = append(errs, err)
 		}
 	}
 
-	return result.ErrorOrNil()
+	return errors.Join(errs...)
 }
 
 func checkRequiredFields(address Address, requiredFields map[Field]struct{}) error {
@@ -165,7 +164,7 @@ func checkAllowedFields(address Address, allowedFields map[Field]struct{}) error
 
 func checkSubdivisions(address Address, administrativeAreaData []administrativeArea) error {
 
-	var err *multierror.Error
+	var errs []error
 
 	if address.AdministrativeArea != "" {
 
@@ -178,8 +177,8 @@ func checkSubdivisions(address Address, administrativeAreaData []administrativeA
 		}
 
 		if adminAreaIdx == -1 {
-			err = multierror.Append(err, ErrInvalidAdministrativeArea)
-			return err.ErrorOrNil()
+			errs = append(errs, ErrInvalidAdministrativeArea)
+			return errors.Join(errs...)
 		}
 
 		localities := administrativeAreaData[adminAreaIdx].Localities
@@ -187,7 +186,7 @@ func checkSubdivisions(address Address, administrativeAreaData []administrativeA
 		localityIdx := -1
 
 		if address.Locality == "" || len(localities) <= 0 {
-			return err.ErrorOrNil()
+			return errors.Join(errs...)
 		}
 
 		for i, locality := range localities {
@@ -197,8 +196,8 @@ func checkSubdivisions(address Address, administrativeAreaData []administrativeA
 		}
 
 		if localityIdx == -1 {
-			err = multierror.Append(err, ErrInvalidLocality)
-			return err.ErrorOrNil()
+			errs = append(errs, ErrInvalidLocality)
+			return errors.Join(errs...)
 		}
 
 		dependentLocalities := localities[localityIdx].DependentLocalities
@@ -206,7 +205,7 @@ func checkSubdivisions(address Address, administrativeAreaData []administrativeA
 		dependentLocalitiesIdx := -1
 
 		if address.DependentLocality == "" || len(dependentLocalities) <= 0 {
-			return err.ErrorOrNil()
+			return errors.Join(errs...)
 		}
 
 		for i, dl := range dependentLocalities {
@@ -216,17 +215,17 @@ func checkSubdivisions(address Address, administrativeAreaData []administrativeA
 		}
 
 		if dependentLocalitiesIdx == -1 {
-			err = multierror.Append(err, ErrInvalidDependentLocality)
-			return err.ErrorOrNil()
+			errs = append(errs, ErrInvalidDependentLocality)
+			return errors.Join(errs...)
 		}
 	}
 
-	return err.ErrorOrNil()
+	return errors.Join(errs...)
 }
 
 func checkPostCode(address Address, regex postCodeRegex) error {
 
-	var err *multierror.Error
+	var errs []error
 
 	if address.PostCode != "" && regex.regex != "" {
 
@@ -235,8 +234,8 @@ func checkPostCode(address Address, regex postCodeRegex) error {
 		countryRegex := regexp.MustCompile(country.regex)
 
 		if !countryRegex.MatchString(address.PostCode) {
-			err = multierror.Append(err, ErrInvalidPostCode)
-			return err.ErrorOrNil()
+			errs = append(errs, ErrInvalidPostCode)
+			return errors.Join(errs...)
 		}
 
 		if adminArea, ok := country.subdivisionRegex[address.AdministrativeArea]; ok {
@@ -244,8 +243,8 @@ func checkPostCode(address Address, regex postCodeRegex) error {
 			adminAreaRegex := regexp.MustCompile(adminArea.regex)
 
 			if !adminAreaRegex.MatchString(address.PostCode) {
-				err = multierror.Append(err, ErrInvalidPostCode)
-				return err.ErrorOrNil()
+				errs = append(errs, ErrInvalidPostCode)
+				return errors.Join(errs...)
 			}
 
 			if locality, ok := adminArea.subdivisionRegex[address.Locality]; ok {
@@ -253,8 +252,8 @@ func checkPostCode(address Address, regex postCodeRegex) error {
 				localityRegex := regexp.MustCompile(locality.regex)
 
 				if !localityRegex.MatchString(address.PostCode) {
-					err = multierror.Append(err, ErrInvalidPostCode)
-					return err.ErrorOrNil()
+					errs = append(errs, ErrInvalidPostCode)
+					return errors.Join(errs...)
 				}
 
 				if dependentLocality, ok := locality.subdivisionRegex[address.DependentLocality]; ok {
@@ -262,13 +261,13 @@ func checkPostCode(address Address, regex postCodeRegex) error {
 					dependentLocalityRegex := regexp.MustCompile(dependentLocality.regex)
 
 					if !dependentLocalityRegex.MatchString(address.PostCode) {
-						err = multierror.Append(err, ErrInvalidPostCode)
-						return err.ErrorOrNil()
+						errs = append(errs, ErrInvalidPostCode)
+						return errors.Join(errs...)
 					}
 				}
 			}
 		}
 	}
 
-	return err.ErrorOrNil()
+	return errors.Join(errs...)
 }
