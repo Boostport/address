@@ -37,8 +37,8 @@ func main() {
 	if err != nil {
 		// If there was an error and you want to find out which validations failed, use errors.Is()
 		if errors.Is(err, address.ErrInvalidCountryCode) {
-            log.Fatalf("Invalid country code")
-        }
+		    log.Fatalf("Invalid country code")
+		}
 	}
 
 	// Use addr here
