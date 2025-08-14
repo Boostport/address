@@ -8,11 +8,10 @@ services:
       - $GOPATH/pkg/mod/cache:/go/pkg/mod/cache
 
   generate:
-    image: golang:1.25
+    image: golang:${GO_VERSION:-1.25}
     working_dir: /source
     command: >
-      sh -c "go install golang.org/x/tools/cmd/stringer;
-             go generate;
+      sh -c "go generate;
              echo \"Address data and strings generated.\""
     volumes:
       - .:/source

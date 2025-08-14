@@ -1,4 +1,4 @@
-//go:generate stringer -type=Field,FieldName -output=constant_string.go
+//go:generate go tool stringer -type=Field,FieldName -output=constant_string.go
 package address
 
 // Field is an address field type.
