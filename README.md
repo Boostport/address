@@ -1,7 +1,7 @@
 # Address
 [![GoDoc](https://godoc.org/github.com/Boostport/address?status.png)](https://godoc.org/github.com/Boostport/address)
 [![Tests Status](https://github.com/Boostport/address/workflows/Tests/badge.svg)](https://github.com/Boostport/address)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/66b4554d26c85121a829/test_coverage)](https://codeclimate.com/github/Boostport/address/test_coverage)
+[![Code Coverage](https://qlty.sh/gh/Boostport/projects/address/coverage.svg)](https://qlty.sh/gh/Boostport/projects/address)
 
 Address is a Go library that validates and formats addresses using data generated from [Google's Address Data Service](https://chromium-i18n.appspot.com/ssl-address).
 
