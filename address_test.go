@@ -213,7 +213,7 @@ func TestValidAddresses(t *testing.T) {
 				}),
 				WithDependentLocality("临翔区"),
 				WithLocality("临沧市"),
-				WithAdministrativeArea("53"),
+				WithAdministrativeArea("YN"),
 				WithPostCode("677000"),
 				WithCountry("CN"),
 			},
@@ -224,7 +224,7 @@ func TestValidAddresses(t *testing.T) {
 				},
 				DependentLocality:  "临翔区",
 				Locality:           "临沧市",
-				AdministrativeArea: "53",
+				AdministrativeArea: "YN",
 				PostCode:           "677000",
 			},
 		},
@@ -253,9 +253,7 @@ func TestValidAddresses(t *testing.T) {
 	}
 
 	for i, testCase := range tests {
-
 		address, err := NewValid(testCase.Address...)
-
 		if err != nil {
 			t.Fatalf("Error creating valid address using test case %d: %s", i, err)
 		}
@@ -666,6 +664,8 @@ func TestGetCountry(t *testing.T) {
 				"27": {
 					Regex: `^4[123]\d{2}`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
+						"군위군": {
+							Regex: `^431`},
 						"남구": {
 							Regex: `^42[45]`},
 						"달서구": {
@@ -690,12 +690,12 @@ func TestGetCountry(t *testing.T) {
 							Regex: `^230`},
 						"계양구": {
 							Regex: `^21[01]`},
-						"남구": {
-							Regex: `^22[12]`},
 						"남동구": {
 							Regex: `^21[5-7]`},
 						"동구": {
 							Regex: `^225`},
+						"미추홀구": {
+							Regex: `^22[12]`},
 						"부평구": {
 							Regex: `^21[34]`},
 						"서구": {
@@ -1014,7 +1014,7 @@ func TestGetCountry(t *testing.T) {
 							Regex: `^5(?:4[89]|5[01])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"덕진구": {
-									Regex: `^5(?:4[89]|50)`},
+									Regex: `^5(?:4[89]|5[01])`},
 								"완산구": {
 									Regex: `^5(?:4[89]|5[01])`},
 							}},
@@ -1082,8 +1082,6 @@ func TestGetCountry(t *testing.T) {
 							Regex: `^401`},
 						"구미시": {
 							Regex: `^39[1-4]`},
-						"군위군": {
-							Regex: `^390`},
 						"김천시": {
 							Regex: `^39[56]`},
 						"문경시": {
@@ -1155,7 +1153,7 @@ func TestGetCountry(t *testing.T) {
 						"창녕군": {
 							Regex: `^503`},
 						"창원시": {
-							Regex: `^51[2-7]`,
+							Regex: `^51[1-7]`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"마산합포구": {
 									Regex: `^51[237]`},
@@ -1426,6 +1424,10 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "동구",
 							Name: "Dong-gu",
+						},
+						{
+							ID:   "군위군",
+							Name: "Gunwi-gun",
 						},
 						{
 							ID:   "중구",
@@ -1836,10 +1838,6 @@ func TestGetCountry(t *testing.T) {
 							Name: "Gumi-si",
 						},
 						{
-							ID:   "군위군",
-							Name: "Gunwi-gun",
-						},
-						{
 							ID:   "경주시",
 							Name: "Gyeongju-si",
 						},
@@ -2032,8 +2030,8 @@ func TestGetCountry(t *testing.T) {
 							Name: "Jung-gu",
 						},
 						{
-							ID:   "남구",
-							Name: "Nam-gu",
+							ID:   "미추홀구",
+							Name: "Michuhol-gu",
 						},
 						{
 							ID:   "남동구",
@@ -2242,6 +2240,10 @@ func TestGetCountry(t *testing.T) {
 							Name: "Areum-dong",
 						},
 						{
+							ID:   "반곡동",
+							Name: "Bangok-dong",
+						},
+						{
 							ID:   "보람동",
 							Name: "Boram-dong",
 						},
@@ -2262,12 +2264,20 @@ func TestGetCountry(t *testing.T) {
 							Name: "Dodam-dong",
 						},
 						{
+							ID:   "어진동",
+							Name: "Eojin-dong",
+						},
+						{
 							ID:   "금남면",
 							Name: "Geumnam-myeon",
 						},
 						{
 							ID:   "고운동",
 							Name: "Goun-dong",
+						},
+						{
+							ID:   "해밀동",
+							Name: "Haemil-dong",
 						},
 						{
 							ID:   "한솔동",
@@ -2294,8 +2304,16 @@ func TestGetCountry(t *testing.T) {
 							Name: "Jongchon-dong",
 						},
 						{
+							ID:   "나성동",
+							Name: "Naseong-dong",
+						},
+						{
 							ID:   "새롬동",
 							Name: "Saerom-dong",
+						},
+						{
+							ID:   "산울동",
+							Name: "Sanul-dong",
 						},
 						{
 							ID:   "소담동",
@@ -2876,10 +2894,6 @@ func TestGetCountry(t *testing.T) {
 							Name: "구미시",
 						},
 						{
-							ID:   "군위군",
-							Name: "군위군",
-						},
-						{
 							ID:   "김천시",
 							Name: "김천시",
 						},
@@ -2993,6 +3007,10 @@ func TestGetCountry(t *testing.T) {
 					ID:   "27",
 					Name: "대구",
 					Localities: []LocalityData{
+						{
+							ID:   "군위군",
+							Name: "군위군",
+						},
 						{
 							ID:   "남구",
 							Name: "남구",
@@ -3242,6 +3260,10 @@ func TestGetCountry(t *testing.T) {
 							Name: "금남면",
 						},
 						{
+							ID:   "나성동",
+							Name: "나성동",
+						},
+						{
 							ID:   "다정동",
 							Name: "다정동",
 						},
@@ -3254,12 +3276,20 @@ func TestGetCountry(t *testing.T) {
 							Name: "도담동",
 						},
 						{
+							ID:   "반곡동",
+							Name: "반곡동",
+						},
+						{
 							ID:   "보람동",
 							Name: "보람동",
 						},
 						{
 							ID:   "부강면",
 							Name: "부강면",
+						},
+						{
+							ID:   "산울동",
+							Name: "산울동",
 						},
 						{
 							ID:   "새롬동",
@@ -3276,6 +3306,10 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "아름동",
 							Name: "아름동",
+						},
+						{
+							ID:   "어진동",
+							Name: "어진동",
 						},
 						{
 							ID:   "연기면",
@@ -3312,6 +3346,10 @@ func TestGetCountry(t *testing.T) {
 						{
 							ID:   "한솔동",
 							Name: "한솔동",
+						},
+						{
+							ID:   "해밀동",
+							Name: "해밀동",
 						},
 					},
 				},
@@ -3354,16 +3392,16 @@ func TestGetCountry(t *testing.T) {
 							Name: "계양구",
 						},
 						{
-							ID:   "남구",
-							Name: "남구",
-						},
-						{
 							ID:   "남동구",
 							Name: "남동구",
 						},
 						{
 							ID:   "동구",
 							Name: "동구",
+						},
+						{
+							ID:   "미추홀구",
+							Name: "미추홀구",
 						},
 						{
 							ID:   "부평구",

@@ -28,7 +28,7 @@ func TestZones(t *testing.T) {
 		}),
 		WithDependentLocality("临翔区"),
 		WithLocality("临沧市"),
-		WithAdministrativeArea("53"),
+		WithAdministrativeArea("YN"),
 		WithPostCode("677000"),
 	)
 
@@ -235,7 +235,7 @@ func TestZones(t *testing.T) {
 			Zone: Zone{
 				{
 					Country:            "CN",
-					AdministrativeArea: "53",
+					AdministrativeArea: "YN",
 				},
 			},
 
@@ -246,7 +246,7 @@ func TestZones(t *testing.T) {
 			Zone: Zone{
 				{
 					Country:            "CN",
-					AdministrativeArea: "53",
+					AdministrativeArea: "YN",
 					Locality:           "临沧市",
 				},
 			},
@@ -258,7 +258,7 @@ func TestZones(t *testing.T) {
 			Zone: Zone{
 				{
 					Country:            "CN",
-					AdministrativeArea: "53",
+					AdministrativeArea: "YN",
 					Locality:           "临沧市",
 					DependentLocality:  "临翔区",
 				},
