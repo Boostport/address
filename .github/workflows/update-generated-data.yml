@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
-      - uses: actions/create-github-app-token@v2
+        uses: actions/checkout@v7
+      - uses: actions/create-github-app-token@v3
         id: generate-token
         with:
           app-id: ${{ secrets.BOOSTPORT_AUTOMATION_APP_ID }}
@@ -16,7 +16,7 @@ jobs:
       - name: Generate data
         run: docker compose run generate
       - name: Open PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.generate-token.outputs.token }}
           branch: update-generated-data
