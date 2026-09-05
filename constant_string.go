@@ -24,11 +24,11 @@ const _Field_name = "CountryNameOrganizationStreetAddressDependentLocalityLocali
 var _Field_index = [...]uint8{0, 7, 11, 23, 36, 53, 61, 79, 87, 98}
 
 func (i Field) String() string {
-	i -= 1
-	if i < 0 || i >= Field(len(_Field_index)-1) {
-		return "Field(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_Field_index)-1 {
+		return "Field(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _Field_name[_Field_index[i]:_Field_index[i+1]]
+	return _Field_name[_Field_index[idx]:_Field_index[idx+1]]
 }
 func _() {
 	// An "invalid array index" compiler error signifies that the constant values have changed.
@@ -63,9 +63,9 @@ const _FieldName_name = "AreaCityCountyDepartmentDistrictDoSiEircodeEmirateIslan
 var _FieldName_index = [...]uint8{0, 4, 8, 14, 24, 32, 36, 43, 50, 56, 68, 74, 81, 87, 95, 105, 115, 123, 128, 134, 142, 157, 164}
 
 func (i FieldName) String() string {
-	i -= 1
-	if i < 0 || i >= FieldName(len(_FieldName_index)-1) {
-		return "FieldName(" + strconv.FormatInt(int64(i+1), 10) + ")"
+	idx := int(i) - 1
+	if i < 1 || idx >= len(_FieldName_index)-1 {
+		return "FieldName(" + strconv.FormatInt(int64(i), 10) + ")"
 	}
-	return _FieldName_name[_FieldName_index[i]:_FieldName_index[i+1]]
+	return _FieldName_name[_FieldName_index[idx]:_FieldName_index[idx+1]]
 }
