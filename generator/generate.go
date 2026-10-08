@@ -873,7 +873,7 @@ func processAdministrativeAreas(countryJSON countryJSON, language string) (map[s
 
 		if countryJSON.SubZips != "" && subZips[i] != "" {
 			postCodeResult[isoID] = postCodeRegex{
-				regex: "^" + subZips[i],
+				regex: "^(?:" + subZips[i] + ")",
 			}
 		}
 
@@ -1005,7 +1005,7 @@ func processLocalities(administrativeAreaJSON subdivisionJSON, language string) 
 
 		if administrativeAreaJSON.SubZips != "" && subZips[i] != "" {
 			postCodeResult[key] = postCodeRegex{
-				regex: "^" + subZips[i],
+				regex: "^(?:" + subZips[i] + ")",
 			}
 		}
 
@@ -1132,7 +1132,7 @@ func processDependentLocalities(localityJSON subdivisionJSON) (map[string][]depe
 
 		if localityJSON.SubZips != "" && subZips[i] != "" {
 			postCodeReg[key] = postCodeRegex{
-				regex: "^" + subZips[i],
+				regex: "^(?:" + subZips[i] + ")",
 			}
 		}
 
