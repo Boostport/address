@@ -853,7 +853,7 @@ func processAdministrativeAreas(countryJSON countryJSON, language string) (map[s
 
 		// Sanity check
 		if countryJSON.SubZips != "" && countryJSON.SubZipExs != "" && subZips[i] != "" && subZipExs[i] != "" {
-			err := checkPostalCodeRegex("^"+subZips[i], strings.Split(subZipExs[i], ","))
+			err := checkPostalCodeRegex("^(?:"+subZips[i]+")", strings.Split(subZipExs[i], ","))
 
 			if err != nil {
 				return result, postCodeResult, fmt.Errorf("error checking administrative area post code regex for %s / %s against sample: %s", isoID, countryJSON.Key, err)
@@ -986,7 +986,7 @@ func processLocalities(administrativeAreaJSON subdivisionJSON, language string) 
 
 		// Sanity check
 		if administrativeAreaJSON.SubZips != "" && administrativeAreaJSON.SubZipExs != "" && subZips[i] != "" && subZipExs[i] != "" {
-			err := checkPostalCodeRegex("^"+subZips[i], strings.Split(subZipExs[i], ","))
+			err := checkPostalCodeRegex("^(?:"+subZips[i]+")", strings.Split(subZipExs[i], ","))
 
 			if err != nil {
 				return result, postCodeResult, fmt.Errorf("error checking default locality post code regex for %s against sample: %s", administrativeAreaJSON.ID, err)
@@ -1113,7 +1113,7 @@ func processDependentLocalities(localityJSON subdivisionJSON) (map[string][]depe
 
 		// Sanity check
 		if localityJSON.SubZips != "" && localityJSON.SubZipExs != "" && subZips[i] != "" && subZipExs[i] != "" {
-			err := checkPostalCodeRegex("^"+subZips[i], strings.Split(subZipExs[i], ","))
+			err := checkPostalCodeRegex("^(?:"+subZips[i]+")", strings.Split(subZipExs[i], ","))
 
 			if err != nil {
 				return result, postCodeReg, fmt.Errorf("error checking dependent locality post code regex for %s against sample: %s", localityJSON.ID, err)
