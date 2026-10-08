@@ -26,19 +26,19 @@ var generated = data{
 			regex: `^(AD[1-7]0\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"02": {
-					regex: `^AD10[01]`},
+					regex: `^(?:AD10[01])`},
 				"03": {
-					regex: `^AD20[01]`},
+					regex: `^(?:AD20[01])`},
 				"04": {
-					regex: `^AD40[01]`},
+					regex: `^(?:AD40[01])`},
 				"05": {
-					regex: `^AD30[01]`},
+					regex: `^(?:AD30[01])`},
 				"06": {
-					regex: `^AD60[01]`},
+					regex: `^(?:AD60[01])`},
 				"07": {
-					regex: `^AD50[01]`},
+					regex: `^(?:AD50[01])`},
 				"08": {
-					regex: `^AD70[01]`},
+					regex: `^(?:AD70[01])`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C",
 		AllowedFields: map[Field]struct{}{
@@ -243,27 +243,27 @@ var generated = data{
 			regex: `^((?:37)?\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AG": {
-					regex: `^0[2-5]`},
+					regex: `^(?:0[2-5])`},
 				"AR": {
-					regex: `^0[6-8]`},
+					regex: `^(?:0[6-8])`},
 				"AV": {
-					regex: `^09|1[01]`},
+					regex: `^(?:09|1[01])`},
 				"ER": {
-					regex: `^00`},
+					regex: `^(?:00)`},
 				"GR": {
-					regex: `^1[2-6]`},
+					regex: `^(?:1[2-6])`},
 				"KT": {
-					regex: `^2[2-5]`},
+					regex: `^(?:2[2-5])`},
 				"LO": {
-					regex: `^1[7-9]|2[01]`},
+					regex: `^(?:1[7-9]|2[01])`},
 				"SH": {
-					regex: `^2[6-9]|3[01]`},
+					regex: `^(?:2[6-9]|3[01])`},
 				"SU": {
-					regex: `^3[2-5]`},
+					regex: `^(?:3[2-5])`},
 				"TV": {
-					regex: `^39|4[0-2]`},
+					regex: `^(?:39|4[0-2])`},
 				"VD": {
-					regex: `^3[6-8]`},
+					regex: `^(?:3[6-8])`},
 			}},
 		Format:          "%N%n%O%n%A%n%Z%n%C%n%S",
 		LatinizedFormat: "%N%n%O%n%A%n%Z%n%C%n%S",
@@ -410,53 +410,53 @@ var generated = data{
 			regex: `^([A-HJ-NP-Z]\d{4}[A-Z]{3})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"A": {
-					regex: `^A?[34]`},
+					regex: `^(?:A?[34])`},
 				"B": {
-					regex: `^B?[1-36-8]`},
+					regex: `^(?:B?[1-36-8])`},
 				"C": {
-					regex: `^C?1`},
+					regex: `^(?:C?1)`},
 				"D": {
-					regex: `^D?[4-6]`},
+					regex: `^(?:D?[4-6])`},
 				"E": {
-					regex: `^E?[1-3]`},
+					regex: `^(?:E?[1-3])`},
 				"F": {
-					regex: `^F?5`},
+					regex: `^(?:F?5)`},
 				"G": {
-					regex: `^G?[2-5]`},
+					regex: `^(?:G?[2-5])`},
 				"H": {
-					regex: `^H?3`},
+					regex: `^(?:H?3)`},
 				"J": {
-					regex: `^J?5`},
+					regex: `^(?:J?5)`},
 				"K": {
-					regex: `^K?[45]`},
+					regex: `^(?:K?[45])`},
 				"L": {
-					regex: `^L?[3568]`},
+					regex: `^(?:L?[3568])`},
 				"M": {
-					regex: `^M?[56]`},
+					regex: `^(?:M?[56])`},
 				"N": {
-					regex: `^N?3`},
+					regex: `^(?:N?3)`},
 				"P": {
-					regex: `^P?[37]`},
+					regex: `^(?:P?[37])`},
 				"Q": {
-					regex: `^Q?[38]`},
+					regex: `^(?:Q?[38])`},
 				"R": {
-					regex: `^R?[89]`},
+					regex: `^(?:R?[89])`},
 				"S": {
-					regex: `^S?[2368]`},
+					regex: `^(?:S?[2368])`},
 				"T": {
-					regex: `^T?[45]`},
+					regex: `^(?:T?[45])`},
 				"U": {
-					regex: `^U?[89]`},
+					regex: `^(?:U?[89])`},
 				"V": {
-					regex: `^V?9`},
+					regex: `^(?:V?9)`},
 				"W": {
-					regex: `^W?3`},
+					regex: `^(?:W?3)`},
 				"X": {
-					regex: `^X?[235-8]`},
+					regex: `^(?:X?[235-8])`},
 				"Y": {
-					regex: `^Y?4`},
+					regex: `^(?:Y?4)`},
 				"Z": {
-					regex: `^Z?[89]`},
+					regex: `^(?:Z?[89])`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C%n%S",
 		AllowedFields: map[Field]struct{}{
@@ -656,21 +656,21 @@ var generated = data{
 			regex: `^(\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"ACT": {
-					regex: `^29|2540|260|261[0-8]|02|2620`},
+					regex: `^(?:29|2540|260|261[0-8]|02|2620)`},
 				"NSW": {
-					regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`},
+					regex: `^(?:1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707)`},
 				"NT": {
-					regex: `^0[89]`},
+					regex: `^(?:0[89])`},
 				"QLD": {
-					regex: `^[49]`},
+					regex: `^(?:[49])`},
 				"SA": {
-					regex: `^5|0872`},
+					regex: `^(?:5|0872)`},
 				"TAS": {
-					regex: `^7`},
+					regex: `^(?:7)`},
 				"VIC": {
-					regex: `^[38]`},
+					regex: `^(?:[38])`},
 				"WA": {
-					regex: `^6|0872`},
+					regex: `^(?:6|0872)`},
 			}},
 		Format:                     "%O%n%N%n%A%n%C %S %Z",
 		AdministrativeAreaNameType: State,
@@ -1039,10932 +1039,10932 @@ var generated = data{
 			regex: `^(\d{5}-?\d{3})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AC": {
-					regex: `^699`,
+					regex: `^(?:699)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Acrelândia": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Assis Brasil": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Brasiléia": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Bujari": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Capixaba": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Cruzeiro do Sul": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Epitaciolândia": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Feijó": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Jordão": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Manoel Urbano": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Marechal Thaumaturgo": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Mâncio Lima": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Plácido de Castro": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Porto Acre": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Porto Walter": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Rio Branco": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Rodrigues Alves": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Santa Rosa do Purus": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Sena Madureira": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Senador Guiomard": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Tarauacá": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 						"Xapuri": {
-							regex: `^699`},
+							regex: `^(?:699)`},
 					}},
 				"AL": {
-					regex: `^57`,
+					regex: `^(?:57)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Anadia": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Arapiraca": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Atalaia": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Barra de Santo Antônio": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Barra de São Miguel": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Batalha": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Belo Monte": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Belém": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Boca da Mata": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Branquinha": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"Cacimbinhas": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Cajueiro": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Campestre": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Campo Alegre": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Campo Grande": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Canapi": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Capela": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Carneiros": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Chã Preta": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Coité do Nóia": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Colônia Leopoldina": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Coqueiro Seco": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Coruripe": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Craíbas": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Delmiro Gouveia": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Dois Riachos": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Estrela de Alagoas": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Feira Grande": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Feliz Deserto": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Flexeiras": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Girau do Ponciano": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Ibateguara": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"Igaci": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Igreja Nova": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Inhapi": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Jacaré dos Homens": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Jacuípe": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Japaratinga": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Jaramataia": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Joaquim Gomes": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Jundiá": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Junqueiro": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Lagoa da Canoa": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Limoeiro de Anadia": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Major Isidoro": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Mar Vermelho": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Maragogi": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Maravilha": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Marechal Deodoro": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Maribondo": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Mata Grande": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Matriz de Camaragibe": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Messias": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Minador do Negrão": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Monteirópolis": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Murici": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"Novo Lino": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Olho d'Água Grande": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"Olho d'Água das Flores": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Olho d'Água do Casado": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Olivença": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Ouro Branco": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Palestina": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Palmeira dos Índios": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Pariconha": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Paripueira": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Passo de Camaragibe": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Paulo Jacinto": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Penedo": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Piaçabuçu": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Pilar": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Pindoba": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Piranhas": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Porto Calvo": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Porto Real do Colégio": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Porto de Pedras": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"Poço das Trincheiras": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Pão de Açúcar": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"Quebrangulo": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Rio Largo": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Roteiro": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Santa Luzia do Norte": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Santana do Ipanema": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"Santana do Mundaú": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"Satuba": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"Senador Rui Palmeira": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"São Brás": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"São José da Laje": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"São José da Tapera": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 						"São Luís do Quitunde": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"São Miguel dos Campos": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"São Miguel dos Milagres": {
-							regex: `^579`},
+							regex: `^(?:579)`},
 						"São Sebastião": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Tanque d'Arca": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Taquarana": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"Teotônio Vilela": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"Traipu": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"União dos Palmares": {
-							regex: `^578`},
+							regex: `^(?:578)`},
 						"Viçosa": {
-							regex: `^577`},
+							regex: `^(?:577)`},
 						"Água Branca": {
-							regex: `^574`},
+							regex: `^(?:574)`},
 					}},
 				"AM": {
-					regex: `^69[0-24-8]`,
+					regex: `^(?:69[0-24-8])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Alvarães": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Amaturá": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Anamã": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Anorí": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Apuí": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Atalaia do Norte": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Autazes": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Barcelos": {
-							regex: `^697`},
+							regex: `^(?:697)`},
 						"Barreirinha": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Benjamin Constant": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Beruri": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Boa Vista do Ramos": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Boca do Acre": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Borba": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Caapiranga": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Canutama": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Carauari": {
-							regex: `^695`},
+							regex: `^(?:695)`},
 						"Careiro": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Careiro da Várzea": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Coari": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Codajás": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Eirunepé": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Envira": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Fonte Boa": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Guajará": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Humaitá": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Ipixuna": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Iranduba": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Itacoatiara": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Itamarati": {
-							regex: `^695`},
+							regex: `^(?:695)`},
 						"Itapiranga": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Japurá": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Jurua": {
-							regex: `^695`},
+							regex: `^(?:695)`},
 						"Jutaí": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Lábrea": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Manacapuru": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Manaquiri": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Manicoré": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Maraã": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Maués": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Nhamundá": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Nova Olinda do Norte": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Novo Airão": {
-							regex: `^697`},
+							regex: `^(?:697)`},
 						"Novo Aripuanã": {
-							regex: `^692`},
+							regex: `^(?:692)`},
 						"Parintins": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Pauini": {
-							regex: `^698`},
+							regex: `^(?:698)`},
 						"Presidente Figueiredo": {
-							regex: `^697`},
+							regex: `^(?:697)`},
 						"Rio Preto da Eva": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Santa Isabel do Rio Negro": {
-							regex: `^697`},
+							regex: `^(?:697)`},
 						"Santo Antônio do Içá": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Silves": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"São Gabriel da Cachoeira": {
-							regex: `^697`},
+							regex: `^(?:697)`},
 						"São Paulo de Olivença": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"São Sebastião do Uatumã": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Tabatinga": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Tapauá": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Tefé": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Tonantins": {
-							regex: `^696`},
+							regex: `^(?:696)`},
 						"Uarini": {
-							regex: `^694`},
+							regex: `^(?:694)`},
 						"Urucará": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 						"Urucurituba": {
-							regex: `^691`},
+							regex: `^(?:691)`},
 					}},
 				"AP": {
-					regex: `^689`,
+					regex: `^(?:689)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Amapá": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Calçoene": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Cutias": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Ferreira Gomes": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Itaubal": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Laranjal do Jari": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Macapá": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Mazagão": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Oiapoque": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Pedra Branca do Amapari": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Porto Grande": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Pracuúba": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Santana": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Tartarugalzinho": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 						"Vitória do Jari": {
-							regex: `^689`},
+							regex: `^(?:689)`},
 					}},
 				"BA": {
-					regex: `^4[0-8]`,
+					regex: `^(?:4[0-8])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abaré": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Abaíra": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Acajutiba": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Adustina": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Aiquara": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Alcobaça": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Almadina": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Amargosa": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Amélia Rodrigues": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"América Dourada": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Anagé": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Andaraí": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Andorinha": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Angical": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Anguera": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Antas": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Antônio Cardoso": {
-							regex: `^441`},
+							regex: `^(?:441)`},
 						"Antônio Gonçalves": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Aporá": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Apuarema": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Aracatu": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Araci": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Aramari": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Arataca": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Aratuípe": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Araças": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Aurelino Leal": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Baianópolis": {
-							regex: `^478`},
+							regex: `^(?:478)`},
 						"Baixa Grande": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Banzaê": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Barra": {
-							regex: `^471`},
+							regex: `^(?:471)`},
 						"Barra da Estiva": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Barra do Choça": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Barra do Mendes": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Barra do Rocha": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Barreiras": {
-							regex: `^478`},
+							regex: `^(?:478)`},
 						"Barro Alto": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Barro Preto": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Belmonte": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Belo Campo": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Biritinga": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Boa Nova": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Boa Vista do Tupim": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Bom Jesus da Lapa": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Bom Jesus da Serra": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Boninal": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Bonito": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Boquira": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Botuporã": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Brejolândia": {
-							regex: `^477`},
+							regex: `^(?:477)`},
 						"Brejões": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Brotas de Macaúbas": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Brumado": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Buerarema": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Buritirama": {
-							regex: `^471`},
+							regex: `^(?:471)`},
 						"Caatiba": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Cabaceiras do Paraguaçu": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Cachoeira": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Caculé": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Caetanos": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Caetité": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Cafarnaum": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Cairu": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Caldeirão Grande": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Camacan": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Camamu": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Camaçari": {
-							regex: `^428`},
+							regex: `^(?:428)`},
 						"Campo Alegre de Lourdes": {
-							regex: `^472`},
+							regex: `^(?:472)`},
 						"Campo Formoso": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"CanDeal": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Canarana": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Canavieiras": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Candeias": {
-							regex: `^438`},
+							regex: `^(?:438)`},
 						"Candiba": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Cansanção": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Canudos": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Canápolis": {
-							regex: `^477`},
+							regex: `^(?:477)`},
 						"Capela do Alto Alegre": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Capim Grosso": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Caravelas": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Caraíbas": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Cardeal da Silva": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Carinhanha": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Casa Nova": {
-							regex: `^473`},
+							regex: `^(?:473)`},
 						"Castro Alves": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Catolândia": {
-							regex: `^478`},
+							regex: `^(?:478)`},
 						"Catu": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Caturama": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Caém": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Central": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Chorrochó": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Cipó": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Coaraci": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Cocos": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Conceição da Feira": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Conceição do Almeida": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Conceição do Coité": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Conceição do Jacuípe": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Conde": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Condeúba": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Contendas do Sincorá": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Coração de Maria": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Cordeiros": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Coribe": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Coronel João Sá": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Correntina": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Cotegipe": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Cravolândia": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Cristópolis": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Crisópolis": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Cruz das Almas": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Curaçá": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Cândido Sales": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Cícero Dantas": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Dias d'Ávila": {
-							regex: `^428`},
+							regex: `^(?:428)`},
 						"Dom Basílio": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Dom Macedo Costa": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Dário Meira": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Elísio Medrado": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Encruzilhada": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Entre Rios": {
-							regex: `^48[1-2]`},
+							regex: `^(?:48[1-2])`},
 						"Esplanada": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Euclides da Cunha": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Eunápolis": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Fatima": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Feira da Mata": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Filadelfia": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Firmino Alves": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Floresta Azul": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Formosa do Rio Preto": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Gandu": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Gavião": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Gentio do Ouro": {
-							regex: `^474`},
+							regex: `^(?:474)`},
 						"Glória": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Gongogi": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Governador Mangabeira": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Guajeru": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Guanambi": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Guaratinga": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Heliopolis": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Iaçu": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Ibiassucê": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Ibicaraí": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Ibicoara": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Ibicuí": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Ibipeba": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Ibipitanga": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Ibiquera": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Ibirapitanga": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Ibirapuã": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Ibirataia": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Ibitiara": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Ibititá": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Ibotirama": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Ichu": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Igaporã": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Igrapiúna": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Iguaí": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Ilhéus": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Inhambupe": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Ipecaetá": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Ipiaú": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Ipirá": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Ipupiara": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Irajuba": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Iramaia": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Iraquara": {
-							regex: `^469`},
+							regex: `^(?:469)`},
 						"Irará": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Irecê": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Itabela": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Itaberaba": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Itabuna": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Itacare": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Itaeté": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Itagi": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Itagibá": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Itagimirim": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Itaguaçu da Bahia": {
-							regex: `^474`},
+							regex: `^(?:474)`},
 						"Itaju do Colônia": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Itajuípe": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Itamaraju": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Itamari": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Itambé": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Itanagra": {
-							regex: `^482`},
+							regex: `^(?:482)`},
 						"Itanhém": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Itaparica": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Itapebi": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Itapetinga": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Itapicuru": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Itapitanga": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Itapé": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Itaquara": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Itarantim": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Itatim": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Itiruçu": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Itiúba": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Itororó": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Ituaçu": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Ituberá": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Iuiú": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Jaborandi": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Jacaraci": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Jacobina": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Jaguaquara": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Jaguarari": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Jaguaripe": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Jandaíra": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Jequié": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Jeremoabo": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Jiquiriçá": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Jitaúna": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"João Dourado": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Juazeiro": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Jucuruçu": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Jussara": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Jussari": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Jussiape": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Lafaiete Coutinho": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Lagoa Real": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Laje": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Lajedinho": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Lajedo do Tabocal": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Lajedão": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Lamarão": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Lapão": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Lauro de Freitas": {
-							regex: `^427`},
+							regex: `^(?:427)`},
 						"Lençóis": {
-							regex: `^469`},
+							regex: `^(?:469)`},
 						"Licínio de Almeida": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Macajuba": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Macarani": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Macaúbas": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Macururé": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Madre de Deus": {
-							regex: `^426`},
+							regex: `^(?:426)`},
 						"Maetinga": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Maiquinique": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Mairi": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Malhada": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Malhada de Pedras": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Manoel Vitorino": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Mansidão": {
-							regex: `^471`},
+							regex: `^(?:471)`},
 						"Maracas": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Maragogipe": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Maraú": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Marcionílio Souza": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Mascote": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Mata de São João": {
-							regex: `^482`},
+							regex: `^(?:482)`},
 						"Matina": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Medeiros Neto": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Miguel Calmon": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Milagres": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Mirangaba": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Mirante": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Monte Santo": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Morpará": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Morro do Chapéu": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Mortugaba": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Mucugê": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Mucuri": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Mulungu do Morro": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Mundo Novo": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Muniz Ferreira": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Muquém de São Francisco": {
-							regex: `^471`},
+							regex: `^(?:471)`},
 						"Muritiba": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"Mutuípe": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Nazaré": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Nilo Peçanha": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Nordestina": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Nova Canaã": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Nova Fátima": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Nova Ibiá": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Nova Itarana": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Nova Redenção": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Nova Soure": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Nova Viçosa": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Novo Horizonte": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Novo Triunfo": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Olindina": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Oliveira dos Brejinhos": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Ouriçangas": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Ourolândia": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Palmas de Monte Alto": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Palmeiras": {
-							regex: `^469`},
+							regex: `^(?:469)`},
 						"Paramirim": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Paratinga": {
-							regex: `^475`},
+							regex: `^(?:475)`},
 						"Paripiranga": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Pau Brasil": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Paulo Afonso": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Pedro Alexandre": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Pedrão": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Piatã": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"Pilão Arcado": {
-							regex: `^472`},
+							regex: `^(?:472)`},
 						"Pindaí": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Pindobaçu": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Pintadas": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Piraí do Norte": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Piripá": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Piritiba": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Planaltino": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Planalto": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Pojuca": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Ponto Novo": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Porto Seguro": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Potiraguá": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Poções": {
-							regex: `^452`},
+							regex: `^(?:452)`},
 						"Prado": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Presidente Dutra": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Presidente Jânio Quadros": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Presidente Tancredo Neves": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Pé de Serra": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Queimadas": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Quijingue": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Quixabeira": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Rafael Jambeiro": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Remanso": {
-							regex: `^472`},
+							regex: `^(?:472)`},
 						"Retirolândia": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Riacho de Santana": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Riachão das Neves": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Riachão do Jacuípe": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Ribeira do Amparo": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Ribeira do Pombal": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"Ribeirão do Largo": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Rio Real": {
-							regex: `^483`},
+							regex: `^(?:483)`},
 						"Rio de Contas": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 						"Rio do Antônio": {
-							regex: `^462`},
+							regex: `^(?:462)`},
 						"Rio do Pires": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Rodelas": {
-							regex: `^486`},
+							regex: `^(?:486)`},
 						"Ruy Barbosa": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Salinas da Margarida": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Santa Brigida": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Santa Bárbara": {
-							regex: `^441`},
+							regex: `^(?:441)`},
 						"Santa Cruz Cabrália": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Santa Cruz da Vitória": {
-							regex: `^457`},
+							regex: `^(?:457)`},
 						"Santa Inês": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Santa Luzia": {
-							regex: `^458`},
+							regex: `^(?:458)`},
 						"Santa Maria da Vitória": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Santa Rita de Cássia": {
-							regex: `^471`},
+							regex: `^(?:471)`},
 						"Santa Teresinha": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Santaluz": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Santana": {
-							regex: `^477`},
+							regex: `^(?:477)`},
 						"Santanópolis": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Santo Amaro": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Santo Antônio de Jesus": {
-							regex: `^438|444|445|456`},
+							regex: `^(?:438|444|445|456)`},
 						"Santo Estêvão": {
-							regex: `^441`},
+							regex: `^(?:441)`},
 						"Sapeaçu": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Saubara": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Saúde": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Seabra": {
-							regex: `^469`},
+							regex: `^(?:469)`},
 						"Sebastião Laranjeiras": {
-							regex: `^464`},
+							regex: `^(?:464)`},
 						"Senhor do Bonfim": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Sento Sé": {
-							regex: `^473`},
+							regex: `^(?:473)`},
 						"Serra Dourada": {
-							regex: `^477`},
+							regex: `^(?:477)`},
 						"Serra do Ramalho": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Serra preta": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Serrinha": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Serrolândia": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Simões Filho": {
-							regex: `^437`},
+							regex: `^(?:437)`},
 						"Sobradinho": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Souto Soares": {
-							regex: `^469|470`},
+							regex: `^(?:469|470)`},
 						"Sátiro Dias": {
-							regex: `^484`},
+							regex: `^(?:484)`},
 						"São Desidério": {
-							regex: `^478`},
+							regex: `^(?:478)`},
 						"São Domingos": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"São Felipe": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"São Francisco do Conde": {
-							regex: `^439`},
+							regex: `^(?:439)`},
 						"São Félix": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"São Félix do Coribe": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"São Gabriel": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"São Gonçalo dos Campos": {
-							regex: `^443`},
+							regex: `^(?:443)`},
 						"São José da Vitória": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"São José do Jacuípe": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"São Miguel das Matas": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"São Sebastião do Passé": {
-							regex: `^438`},
+							regex: `^(?:438)`},
 						"Sítio do Mato": {
-							regex: `^476`},
+							regex: `^(?:476)`},
 						"Sítio do Quinto": {
-							regex: `^485`},
+							regex: `^(?:485)`},
 						"Tabocas do Brejo Velho": {
-							regex: `^477`},
+							regex: `^(?:477)`},
 						"Tanhaçu": {
-							regex: `^466`},
+							regex: `^(?:466)`},
 						"Tanque Novo": {
-							regex: `^465`},
+							regex: `^(?:465)`},
 						"Tanquinho": {
-							regex: `^441`},
+							regex: `^(?:441)`},
 						"Taperoá": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Tapiramutá": {
-							regex: `^448`},
+							regex: `^(?:448)`},
 						"Teixeira de Freitas": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Teodoro Sampaio": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Teofilândia": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Teolândia": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Terra Nova": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"Tremedal": {
-							regex: `^451`},
+							regex: `^(?:451)`},
 						"Tucano": {
-							regex: `^487`},
+							regex: `^(?:487)`},
 						"Uauá": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"Ubaitaba": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Ubatã": {
-							regex: `^455`},
+							regex: `^(?:455)`},
 						"Ubaíra": {
-							regex: `^453`},
+							regex: `^(?:453)`},
 						"Uibaí": {
-							regex: `^449`},
+							regex: `^(?:449)`},
 						"Umburanas": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Una": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Urandi": {
-							regex: `^463`},
+							regex: `^(?:463)`},
 						"Uruçuca": {
-							regex: `^456`},
+							regex: `^(?:456)`},
 						"Utinga": {
-							regex: `^468`},
+							regex: `^(?:468)`},
 						"Valente": {
-							regex: `^488`},
+							regex: `^(?:488)`},
 						"Valença": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Varzedo": {
-							regex: `^445`},
+							regex: `^(?:445)`},
 						"Vera Cruz": {
-							regex: `^444`},
+							regex: `^(?:444)`},
 						"Vereda": {
-							regex: `^459`},
+							regex: `^(?:459)`},
 						"Várzea Nova": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Várzea da Roça": {
-							regex: `^446`},
+							regex: `^(?:446)`},
 						"Várzea do Poço": {
-							regex: `^447`},
+							regex: `^(?:447)`},
 						"Wagner": {
-							regex: `^469`},
+							regex: `^(?:469)`},
 						"Wanderley": {
-							regex: `^479`},
+							regex: `^(?:479)`},
 						"Wenceslau Guimarães": {
-							regex: `^454`},
+							regex: `^(?:454)`},
 						"Xique-Xique": {
-							regex: `^474`},
+							regex: `^(?:474)`},
 						"Água Fria": {
-							regex: `^481`},
+							regex: `^(?:481)`},
 						"Érico Cardoso": {
-							regex: `^461`},
+							regex: `^(?:461)`},
 					}},
 				"CE": {
-					regex: `^6[0-3]`,
+					regex: `^(?:6[0-3])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abaiara": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Acarape": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Acaraú": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Acopiara": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Aiuaba": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Alcântaras": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Altaneira": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Alto Santo": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Amontada": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Antonina do Norte": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Apuiarés": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Aquiraz": {
-							regex: `^617`},
+							regex: `^(?:617)`},
 						"Aracati": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Aracoiaba": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Ararendá": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Araripe": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Aratuba": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Arneiroz": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Assaré": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Aurora": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Baixio": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Banabuiú": {
-							regex: `^639`},
+							regex: `^(?:639)`},
 						"Barbalha": {
-							regex: `^63[01]`},
+							regex: `^(?:63[01])`},
 						"Barreira": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Barro": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Barroquinha": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Baturité": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Beberibe": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Bela Cruz": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Boa Viagem": {
-							regex: `^638`},
+							regex: `^(?:638)`},
 						"Brejo Santo": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Camocim": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Campos Sales": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Canindé": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Capistrano": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Caridade": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Caririaçú": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Cariré": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Cariús": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Carnaubal": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Cascavel": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Catarina": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Catunda": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Caucaia": {
-							regex: `^616`},
+							regex: `^(?:616)`},
 						"Cedro": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Chaval": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Choro": {
-							regex: `^639`},
+							regex: `^(?:639)`},
 						"Chorozinho": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Coreaú": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Crateús": {
-							regex: `^637`},
+							regex: `^(?:637)`},
 						"Crato": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Croatá": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Cruz": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Deputado Irapuan Pinheiro": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Ererê": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Eusébio": {
-							regex: `^617`},
+							regex: `^(?:617)`},
 						"Farias Brito": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Forquilha": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Fortim": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Frecheirinha": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"General Sampaio": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Granja": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Granjeiro": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Graça": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Groaíras": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Guaiúba": {
-							regex: `^618`},
+							regex: `^(?:618)`},
 						"Guaraciaba do Norte": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Guaramiranga": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Hidrolândia": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Horizonte": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Ibaretama": {
-							regex: `^639`},
+							regex: `^(?:639)`},
 						"Ibiapina": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Ibicuitinga": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Icapuí": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Ico": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Iguatu": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Independencia": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Ipaporanga": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Ipaumirim": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Ipueiras": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Ipú": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Iracema": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Irauçuba": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Itaitinga": {
-							regex: `^618`},
+							regex: `^(?:618)`},
 						"Itaiçaba": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Itapagé": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Itapipoca": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Itapiúna": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Itarema": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Itatira": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Jaguaretama": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Jaguaribara": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Jaguaribe": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Jaguaruana": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Jardim": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Jati": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Jijoca de Jericoacoara": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Jucás": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Lavras da Mangabeira": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Limoeiro do Norte": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Madalena": {
-							regex: `^638`},
+							regex: `^(?:638)`},
 						"Maracanaú": {
-							regex: `^619`},
+							regex: `^(?:619)`},
 						"Maranguape": {
-							regex: `^619`},
+							regex: `^(?:619)`},
 						"Marco": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Martinópole": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Massapê": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Mauriti": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Meruoca": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Milagres": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Milhã": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Miraíma": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Missão Velha": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Mombaça": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Monsenhor Tabosa": {
-							regex: `^637`},
+							regex: `^(?:637)`},
 						"Morada Nova": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Moraújo": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Morrinhos": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"Mucambo": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Mulungú": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Nova Olinda": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Nova Russas": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Novo Oriente": {
-							regex: `^637`},
+							regex: `^(?:637)`},
 						"Ocara": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Orós": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Pacajús": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Pacatuba": {
-							regex: `^618`},
+							regex: `^(?:618)`},
 						"Pacoti": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Pacujá": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Palhano": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Palmácia": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Paracuru": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Paraipaba": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Parambu": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Paramoti": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Pedra Branca": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Penaforte": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Pentecoste": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Pereiro": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"Pindoretama": {
-							regex: `^628`},
+							regex: `^(?:628)`},
 						"Piquet Carneiro": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Pires Ferreira": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Poranga": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Porteiras": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"Potengi": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Potiretama": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Quiterianópolis": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Quixadá": {
-							regex: `^639`},
+							regex: `^(?:639)`},
 						"Quixelô": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Quixeramobim": {
-							regex: `^638`},
+							regex: `^(?:638)`},
 						"Quixeré": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Redenção": {
-							regex: `^627`},
+							regex: `^(?:627)`},
 						"Reriutaba": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Russas": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Saboeiro": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"Salitre": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Santa Quitéria": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Santana do Acaraú": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"Santana do Cariri": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Senador Pompeu": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Senador Sá": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Solonópole": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"São Benedito": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"São Gonçalo do Amarante": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"São João do Jaguaribe": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"São Luís do Curu": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Tabuleiro do Norte": {
-							regex: `^629`},
+							regex: `^(?:629)`},
 						"Tamboril": {
-							regex: `^637`},
+							regex: `^(?:637)`},
 						"Tarrafas": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"Tauá": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"Tejuçuoca": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Tianguá": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Trairi": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Tururu": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Ubajara": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Umari": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"Umirim": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Uruburetama": {
-							regex: `^626`},
+							regex: `^(?:626)`},
 						"Uruoca": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"Varjota": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"Viçosa do Ceará": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"Várzea Alegre": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 					}},
 				"DF": {
-					regex: `^7[0-1]|72[0-7]|73[0-6]`},
+					regex: `^(?:7[0-1]|72[0-7]|73[0-6])`},
 				"ES": {
-					regex: `^29`,
+					regex: `^(?:29)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Afonso Claudio": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Alegre": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"Alfredo Chaves": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Alto Rio Novo": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Anchieta": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Apiacá": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"Aracruz": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Atílio Vivácqua": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"Baixo Guandu": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Barra de São Francisco": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Boa Esperança": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Bom Jesus do Norte": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"Brejetuba": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Cachoeiro de Itapemirim": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Cariacica": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Castelo": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Colatina": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Conceição da Barra": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Conceição do Castelo": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Divino de São Lourenço": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"Domingos Martins": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Dores do Rio Preto": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"Ecoporanga": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Fundão": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Guarapari": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Guaçuí": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"Ibatiba": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Ibiraçu": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Ibitirama": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"Iconha": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Irupi": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Itaguaçu": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Itapemirim": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Itarana": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Iúna": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Jaguaré": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Jerônimo Monteiro": {
-							regex: `^295`},
+							regex: `^(?:295)`},
 						"João Neiva": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Laranja da Terra": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Linhares": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Mantenópolis": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Marataízes": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Marechal Floriano": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Marilândia": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Mimoso do Sul": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"Montanha": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Mucurici": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Muniz Freire": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Muqui": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"Nova Venécia": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Pancas": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Pedro Canário": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Pinheiros": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Piúma": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Ponto Belo": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Presidente Kennedy": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Rio Bananal": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"Rio Novo do Sul": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Santa Leopoldina": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Santa Maria de Jetibá": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Santa Teresa": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Serra": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Sooretama": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"São Domingos do Norte": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"São Gabriel da Palha": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"São José do Calçado": {
-							regex: `^294`},
+							regex: `^(?:294)`},
 						"São Mateus": {
-							regex: `^299`},
+							regex: `^(?:299)`},
 						"São Roque do Canaã": {
-							regex: `^296`},
+							regex: `^(?:296)`},
 						"Vargem Alta": {
-							regex: `^292`},
+							regex: `^(?:292)`},
 						"Venda Nova do Imigrante": {
-							regex: `^293`},
+							regex: `^(?:293)`},
 						"Viana": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Vila Pavão": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Vila Valério": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 						"Vila Velha": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"Água Doce do Norte": {
-							regex: `^298`},
+							regex: `^(?:298)`},
 						"Águia Branca": {
-							regex: `^297`},
+							regex: `^(?:297)`},
 					}},
 				"GO": {
-					regex: `^72[89]|73[7-9]|7[4-6]`,
+					regex: `^(?:72[89]|73[7-9]|7[4-6])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abadia de Goiás": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Abadiânia": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Acreúna": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Adelândia": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Alexânia": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Aloândia": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Alto Horizonte": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Alto Paraíso de Goiás": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Alvorada do Norte": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Amaralina": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Americano do Brasil": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Amorinópolis": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Anhanguera": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Anicuns": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Aparecida de Goiânia": {
-							regex: `^749`},
+							regex: `^(?:749)`},
 						"Aparecida do Rio Doce": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Aporé": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Aragarças": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Aragoiânia": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Araguapaz": {
-							regex: `^767`},
+							regex: `^(?:767)`},
 						"Araçu": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Arenópolis": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Aruanã": {
-							regex: `^767`},
+							regex: `^(?:767)`},
 						"Aurilândia": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Avelinópolis": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Baliza": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Barro Alto": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Bela Vista de Goiás": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Bom Jardim de Goiás": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Bom Jesus de Goiás": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Bonfinópolis": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Bonópolis": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Brazabrantes": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Britânia": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Buriti Alegre": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Buriti de Goiás": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Buritinópolis": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Cabeceiras": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Cachoeira Alta": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Cachoeira Dourada": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Cachoeira de Goiás": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Caiapônia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Caldas Novas": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Caldazinha": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Campestre de Goiás": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Campinaçu": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Campinorte": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Campo Alegre de Goiás": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Campos Belos": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Campos Verdes": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Carmo do Rio Verde": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Castelândia": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Catalão": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Caturaí": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Cavalcante": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Caçu": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Ceres": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Cezarina": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Chapadão do Céu": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Cidade Ocidental": {
-							regex: `^728`},
+							regex: `^(?:728)`},
 						"Cocalzinho de Goiás": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Colinas do Sul": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Corumbaíba": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Corumbá de Goiás": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Cristalina": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Cristianópolis": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Crixás": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Cromínia": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Cumari": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Córrego do Ouro": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Damianópolis": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Damolândia": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Davinópolis": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Diorama": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Divinópolis de Goiás": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Doverlândia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Edealina": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Edéia": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Estrela do Norte": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Faina": {
-							regex: `^767`},
+							regex: `^(?:767)`},
 						"Fazenda Nova": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Firminópolis": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Flores de Goiás": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Formosa": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Formoso": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Goiandira": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Goianira": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Goianápolis": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Goianésia": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Goiatuba": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Goiás": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Gouvelândia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Guapó": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Guarani de Goiás": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Guaraíta": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Guarinos": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Heitoraí": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Hidrolina": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Hidrolândia": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Iaciara": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Inaciolândia": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Indiara": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Inhumas": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Ipameri": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Iporá": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Israelândia": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Itaberaí": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Itaguari": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Itaguaru": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Itajá": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Itapaci": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Itapirapuã": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Itapuranga": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Itarumã": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Itauçu": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Itumbiara": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Ivolândia": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Jandaia": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Jaraguá": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Jataí": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Jaupaci": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Jesúpolis": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Joviânia": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Jussara": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Leopoldo de Bulhões": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Luziânia": {
-							regex: `^728`},
+							regex: `^(?:728)`},
 						"Mairipotaba": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Mambaí": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Mara Rosa": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Marzagão": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Matrinchã": {
-							regex: `^767`},
+							regex: `^(?:767)`},
 						"Maurilândia": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Mimoso de Goiás": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Minaçu": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Mineiros": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Moiporá": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Monte Alegre de Goiás": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Montes Claros de Goiás": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Montividiu": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Montividiu do Norte": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Morrinhos": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Morro Agudo de Goiás": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Mossâmedes": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Mozarlândia": {
-							regex: `^767`},
+							regex: `^(?:767)`},
 						"Mundo Novo": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Mutunópolis": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Nazário": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Nerópolis": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Niquelândia": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Nova América": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Nova Aurora": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Nova Crixás": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Nova Glória": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Nova Iguaçu de Goiás": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Nova Roma": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Nova Veneza": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Novo Brasil": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Novo Gama": {
-							regex: `^728`},
+							regex: `^(?:728)`},
 						"Novo Planalto": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Orizona": {
-							regex: `^75[2-3]`},
+							regex: `^(?:75[2-3])`},
 						"Ouro Verde de Goiás": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Ouvidor": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Padre Bernardo": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Palestina de Goiás": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Palmeiras de Goiás": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Palmelo": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Palminópolis": {
-							regex: `^759|760`},
+							regex: `^(?:759|760)`},
 						"Panama": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Paranaiguara": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Paraúna": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Perolândia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Petrolina de Goiás": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Pilar de Goiás": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Piracanjuba": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Piranhas": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Pirenópolis": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Pires do Rio": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Planaltina": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Pontalina": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Porangatu": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Porteirão": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Portelândia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Posse": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Professor Jamil": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Quirinópolis": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Rialma": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Rianápolis": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Rio Quente": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Rubiataba": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Río Verde": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Sanclerlândia": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Santa Bárbara de Goiás": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Santa Cruz de Goiás": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Santa Fé de Goiás": {
-							regex: `^762`},
+							regex: `^(?:762)`},
 						"Santa Helena de Goiás": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Santa Isabel": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Santa Rita do Araguaia": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Santa Rita do Novo Destino": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Santa Rosa de Goiás": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"Santa Tereza de Goiás": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Santa Terezinha de Goiás": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Santo Antônio da Barra": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Santo Antônio de Goiás": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Santo Antônio do Descoberto": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Senador Canedo": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Serranópolis": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Silvania": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Simolândia": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"São Domingos": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"São Francisco de Goiás": {
-							regex: `^754`},
+							regex: `^(?:754)`},
 						"São João d'Aliança": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"São João da Paraúna": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"São Luís de Montes Belos": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"São Luíz do Norte": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"São Miguel do Araguaia": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"São Miguel do Passa Quatro": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"São Patrício": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"São Simão": {
-							regex: `^758`},
+							regex: `^(?:758)`},
 						"Sítio d'Abadia": {
-							regex: `^739`},
+							regex: `^(?:739)`},
 						"Taquaral de Goiás": {
-							regex: `^766`},
+							regex: `^(?:766)`},
 						"Teresina de Goiás": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Terezópolis de Goiás": {
-							regex: `^751`},
+							regex: `^(?:751)`},
 						"Trindade": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Trombas": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Três Ranchos": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Turvelândia": {
-							regex: `^759`},
+							regex: `^(?:759)`},
 						"Turvânia": {
-							regex: `^761`},
+							regex: `^(?:761)`},
 						"Uirapuru": {
-							regex: `^765`},
+							regex: `^(?:765)`},
 						"Uruana": {
-							regex: `^763`},
+							regex: `^(?:763)`},
 						"Uruaçu": {
-							regex: `^764`},
+							regex: `^(?:764)`},
 						"Urutaí": {
-							regex: `^757`},
+							regex: `^(?:757)`},
 						"Valparaíso de Goiás": {
-							regex: `^728`},
+							regex: `^(?:728)`},
 						"Varjão": {
-							regex: `^753`},
+							regex: `^(?:753)`},
 						"Vianópolis": {
-							regex: `^752`},
+							regex: `^(?:752)`},
 						"Vicentinópolis": {
-							regex: `^755`},
+							regex: `^(?:755)`},
 						"Vila Boa": {
-							regex: `^738`},
+							regex: `^(?:738)`},
 						"Vila Propício": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 						"Água Fria de Goiás": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"Água Limpa": {
-							regex: `^756`},
+							regex: `^(?:756)`},
 						"Águas Lindas de Goiás": {
-							regex: `^729`},
+							regex: `^(?:729)`},
 					}},
 				"MA": {
-					regex: `^65`,
+					regex: `^(?:65)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Afonso Cunha": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Alcântara": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Aldeias Altas": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Altamira do Maranhão": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Alto Alegre do Maranhão": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Alto Alegre do Pindaré": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Alto Parnaíba": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Amapá do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Amarante do Maranhão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Anajatuba": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Anapurus": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Apicum-Açu": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Araguanã": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Araioses": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Arame": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Arari": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Axixá": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Açailândia": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Bacabal": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Bacabeira": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Bacuri": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Bacurituba": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Balsas": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Barra do Corda": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Barreirinhas": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Barão de Grajaú": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Bela Vista do Maranhão": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Belágua": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Benedito Leite": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Bequimão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Bernardo do Mearim": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Boa Vista do Gurupi": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Bom Jardim": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Bom Jesus das Selvas": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Bom Lugar": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Brejo": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Brejo de Areia": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Buriti": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Buriti Bravo": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Buriticupu": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Cachoeira Grande": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Cajapió": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Cajari": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Campestre do Maranhão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Cantanhede": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Capinzal do Norte": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Carolina": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Carutapera": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Caxias": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Cedral": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Central do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Centro Novo do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Centro do Guilherme": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Chapadinha": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Cidelândia": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Codó": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Coelho Neto": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Colinas": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Conceição do Lago-Açu": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Coroatá": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Cururupu": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Cândido Mendes": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Davinópolis": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Dom Pedro": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Duque Bacelar": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Esperantinópolis": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Estreito": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Feira Nova do Maranhão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Fernando Falcão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Formosa da Serra Negra": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Fortaleza dos Nogueiras": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Fortuna": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Godofredo Viana": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Gonçalves Dias": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Governador Archer": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Governador Edison Lobão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Governador Eugênio Barros": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Governador Luiz Rocha": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Governador Newton Bello": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Governador Nunes Freire": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Grajaú": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Graça Aranha": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Guimarães": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Humberto de Campos": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Icatu": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Igarapé Grande": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Igarapé do Meio": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Imperatriz": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Itaipava do Grajaú": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Itapecuru Mirim": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Itinga do Maranhão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Jatobá": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Jenipapo dos Vieiras": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Joselândia": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"João Lisboa": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Junco do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Lago Verde": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Lago da Pedra": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Lago do Junco": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Lago dos Rodrigues": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Lagoa Grande do Maranhão": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Lagoa do Mato": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Lajeado Novo": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Lima Campos": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Loreto": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Luís Domingues": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Magalhães de Almeida": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Maracaçumé": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Marajá do Sena": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Maranhãozinho": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Mata Roma": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Matinha": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Matões": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Matões do Norte": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Milagres do Maranhão": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Mirador": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Miranda do Norte": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Mirinzal": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Montes Altos": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Monção": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Morros": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Nina Rodrigues": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Nova Colinas": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Nova Iorque": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Nova Olinda do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Olho d'Água das Cunhãs": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Olinda Nova do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Palmeirândia": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Paraibano": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Parnarama": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Passagem Franca": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Pastos Bons": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Paulino Neves": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Paulo Ramos": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Paço do Lumiar": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Pedreiras": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Pedro do Rosário": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Penalva": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Peri Mirim": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Peritoró": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Pinheiro": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Pio XII": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Pirapemas": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Porto Franco": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Porto Rico do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Poção de Pedras": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Presidente Dutra": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Presidente Juscelino": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Presidente Médici": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Presidente Sarney": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Presidente Vargas": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Primeira Cruz": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Raposa": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Riachão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Ribamar Fiquene": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Rosario": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Sambaíba": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Santa Filomena do Maranhão": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Santa Helena": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Santa Inês": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Santa Luzia": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Santa Luzia do Paruá": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Santa Quitéria do Maranhão": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Santa Rita": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Santana do Maranhão": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Santo Amaro do Maranhão": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"Santo Antônio dos Lopes": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Satubinha": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Senador Alexandre Costa": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Senador La Rocque": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Serrano do Maranhão": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Sucupira do Norte": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Sucupira do Riachão": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"São Benedito do Rio Preto": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"São Bento": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"São Bernardo": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"São Domingos do Azeitão": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"São Domingos do Maranhão": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"São Francisco do Brejão": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"São Francisco do Maranhão": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"São Félix de Balsas": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"São José de Ribamar": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"São José dos Basílios": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"São João Batista": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"São João do Carú": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"São João do Paraíso": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"São João do Soter": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"São João dos Patos": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"São Luís Gonzaga do Maranhão": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"São Mateus do Maranhão": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"São Pedro da Água Branca": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"São Pedro dos Crentes": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"São Raimundo das Mangabeiras": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"São Raimundo do Doca Bezerra": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"São Roberto": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"São Vicente Ferrer": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Sítio Novo": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Tasso Fragoso": {
-							regex: `^658`},
+							regex: `^(?:658)`},
 						"Timbiras": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Timon": {
-							regex: `^656`},
+							regex: `^(?:656)`},
 						"Trizidela do Vale": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Tufilândia": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Tuntum": {
-							regex: `^657`},
+							regex: `^(?:657)`},
 						"Turiaçu": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Turilândia": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Tutóia": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Urbano Santos": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"Vargem Grande": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"Viana": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"Vila Nova dos Martírios": {
-							regex: `^659`},
+							regex: `^(?:659)`},
 						"Vitorino Freire": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Vitória do Mearim": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Zé Doca": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"Água Doce do Maranhão": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 					}},
 				"MG": {
-					regex: `^3`,
+					regex: `^(?:3)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abadia dos Dourados": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Abaeté": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Abre Campo": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Acaiaca": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Aguanil": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Aimorés": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Aiuruoca": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Alagoa": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Albertina": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Alfenas": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Alfredo Vasconcelos": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Almenara": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Alpercata": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Alpinópolis": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Alterosa": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Alto Caparaó": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Alto Jequitibá": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Alto Rio Doce": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Alvarenga": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Alvinópolis": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Alvorada de Minas": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Além Paraíba": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Amparo do Serra": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Andradas": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Andrelândia": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Angelândia": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Antônio Carlos": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Antônio Dias": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Antônio Prado de Minas": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Aracitaba": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Araguari": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Arantina": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Araponga": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Araporã": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Arapuá": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Araxá": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Araçaí": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Araçuaí": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Araújos": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Arceburgo": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Arcos": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Areado": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Argirita": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Aricanduva": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Arinos": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Astolfo Dutra": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Ataléia": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Augusto de Lima": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Açucena": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Baependi": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Baldim": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Bambuí": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Bandeira": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Bandeira do Sul": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Barbacena": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Barra Longa": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Barroso": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Barão de Cocais": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Barão de Monte Alto": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Bela Vista de Minas": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Belmiro Braga": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Belo Oriente": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Belo Vale": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Berilo": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Berizal": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Bertópolis": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Betim": {
-							regex: `^325|326`},
+							regex: `^(?:325|326)`},
 						"Bias Fortes": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Bicas": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Biquinhas": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Boa Esperança": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Bocaina de Minas": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Bocaiúva": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Bom Despacho": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Bom Jardim de Minas": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Bom Jesus da Penha": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Bom Jesus do Amparo": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Bom Jesus do Galho": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Bom Repouso": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Bom Sucesso": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Bonfim": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Bonfinópolis de Minas": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Bonito de Minas": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Borda da Mata": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Botelhos": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Botumirim": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Brasilândia de Minas": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Brasopolis": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Brasília de Minas": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Braúnas": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Brumadinho": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Brás Pires": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Bueno Brandão": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Buenópolis": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Bugre": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Buritis": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Buritizeiro": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Cabeceira Grande": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Cabo Verde": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Cachoeira Dourada": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Cachoeira da Prata": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Cachoeira de Minas": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Cachoeira de Pajeú": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Caetanópolis": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Caeté": {
-							regex: `^34[8-9]`},
+							regex: `^(?:34[8-9])`},
 						"Caiana": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Cajuri": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Caldas": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Camacho": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Camanducaia": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Cambuquira": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Cambuí": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Campanhã": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Campanário": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Campestre": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Campina Verde": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Campo Azul": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Campo Belo": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Campo Florido": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Campo do Meio": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Campos Altos": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Campos Gerais": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Cana Verde": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Canaã": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Candeias": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Cantagalo": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Canápolis": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Caparaó": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Capela Nova": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Capelinha": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Capetinga": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Capim Branco": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Capinópolis": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Capitão Andrade": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Capitão Enéas": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Capitólio": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Caputira": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Caranaíba": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Carandaí": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Carangola": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Caratinga": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Caraí": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Carbonita": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Careaçu": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Carlos Chagas": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Carmo da Cachoeira": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Carmo da Mata": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Carmo de Minas": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Carmo do Cajuru": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Carmo do Paranaíba": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Carmo do Rio Claro": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Carmésia": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Carmópolis de Minas": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Carneirinho": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Carrancas": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Carvalhos": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Carvalhópolis": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Casa Grande": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Cascalho Rico": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Cassia": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Cataguases": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Catas Altas": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Catas Altas da Noruega": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Catuji": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Catuti": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Caxambu": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Cedro do Abaeté": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Central de Minas": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Centralina": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Chalé": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Chapada Gaúcha": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Chapada do Norte": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Chiador": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Chácara": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Cipotânea": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Claraval": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Claro dos Poções": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Cláudio": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Coimbra": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Coluna": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Comendador Gomes": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Comercinho": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Conceição da Aparecida": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Conceição da Barra de Minas": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Conceição das Alagoas": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Conceição das Pedras": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Conceição de Ipanema": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Conceição do Mato Dentro": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Conceição do Pará": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Conceição do Rio Verde": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Conceição dos Ouros": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Confins": {
-							regex: `^335`},
+							regex: `^(?:335)`},
 						"Congonhal": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Congonhas": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Congonhas do Norte": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Conquista": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Conselheiro Lafaiete": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Conselheiro Pena": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Consolação": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Coqueiral": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Coração de Jesus": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Cordisburgo": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Cordislândia": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Corinto": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Coroaci": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Coromandel": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Coronel Fabriciano": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Coronel Murta": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Coronel Pacheco": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Coronel Xavier Chaves": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Couto de Magalhães de Minas": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Cristais": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Cristiano Otoni": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Cristina": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Cristália": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Crisólita": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Crucilândia": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Cruzeiro da Fortaleza": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Cruzília": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Cuparaque": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Curral de Dentro": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Curvelo": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Córrego Danta": {
-							regex: `^389|390`},
+							regex: `^(?:389|390)`},
 						"Córrego Fundo": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Córrego Novo": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Córrego do Bom Jesus": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Cônego Marinho": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Datas": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Delfim Moreira": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Delfinópolis": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Delta": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Descoberto": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Desterro de Entre Rios": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Desterro do Melo": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Diamantina": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Diogo de Vasconcelos": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Dionísio": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Divino": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Divino das Laranjeiras": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Divinolândia de Minas": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Divinésia": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Divinópolis": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Divisa Alegre": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Divisa Nova": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Divisópolis": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Dom Bosco": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Dom Cavati": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Dom Joaquim": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Dom Silvério": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Dom Viçoso": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Dona Eusébia": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Dores de Campos": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Dores de Guanhães": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Dores do Indaiá": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Dores do Turvo": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Doresópolis": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Douradoquara": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Durandé": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Elói Mendes": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Engenheiro Caldas": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Engenheiro Navarro": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Entre Folhas": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Entre Rios de Minas": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Ervália": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Esmeraldas": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Espera feliz": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Espinosa": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Espírito Santo do Dourado": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Estiva": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Estrela Dalva": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Estrela do Indaiá": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Estrela do Sul": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Eugenópolis": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Ewbank da Câmara": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Extrema": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Fama": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Faria Lemos": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Felisburgo": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Felixlândia": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Felício dos Santos": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Fernandes Tourinho": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Ferros": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Fervedouro": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Florestal": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Formiga": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Formoso": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Fortaleza de Minas": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Fortuna de Minas": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Francisco Badaró": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Francisco Dumont": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Francisco Sá": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Franciscópolis": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Frei Gaspar": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Frei Inocêncio": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Frei Lagonegro": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Fronteira": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Fronteira dos Vales": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Fruta de Leite": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Frutal": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Funilândia": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Galiléia": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Gameleiras": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Glaucilândia": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Goiabeira": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Goiana": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Gonzaga": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Gonçalves": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Gouveia": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Grupiara": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Grão Mogol": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Guanhães": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Guapé": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Guaraciaba": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Guaraciama": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Guarani": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Guaranésia": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Guarará": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Guarda-Mor": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Guaxupé": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Guidoval": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Guimarânia": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Guiricema": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Gurinhatã": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Heliodora": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Iapu": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Ibertioga": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Ibiaí": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Ibiracatu": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Ibiraci": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Ibirité": {
-							regex: `^324`},
+							regex: `^(?:324)`},
 						"Ibitiúra de Minas": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Ibituruna": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Ibiá": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Icaraí de Minas": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Igarapé": {
-							regex: `^329`},
+							regex: `^(?:329)`},
 						"Igaratinga": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Iguatama": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Ijaci": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Ilicínea": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Imbé de Minas": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Inconfidentes": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Indaiabira": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Indianópolis": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Ingaí": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Inhapim": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Inhaúma": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Inimutaba": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Ipaba": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Ipanema": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Ipatinga": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Ipiaçu": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Ipuiúna": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Iraí de Minas": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Itabira": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Itabirito": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Itacambira": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Itacarambi": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Itaguara": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Itaipé": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Itajubá": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Itamarandiba": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Itamarati de Minas": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Itambacuri": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Itambé do Mato Dentro": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Itamogi": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Itamonte": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Itanhandu": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Itanhomi": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Itaobim": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Itapagipe": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Itapecerica": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Itapeva": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Itatiaiuçu": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Itaverava": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Itaú de Minas": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Itaúna": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Itinga": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Itueta": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Ituiutaba": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Itumirim": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Iturama": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Itutinga": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Jaboticatubas": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Jacinto": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Jacutinga": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Jacuí": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Jaguaraçu": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Jampruca": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Janaúba": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Januária": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Japaraíba": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Japonvar": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Jaíba": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Jeceaba": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Jenipapo de Minas": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Jequeri": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Jequitaí": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Jequitibá": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Jequitinhonha": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Jesuânia": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Joanésia": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Joaquim Felício": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Joaíma": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Jordânia": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Josenópolis": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"José Gonçalves de Minas": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"José Raydan": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"João Monlevade": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"João Pinheiro": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Juatuba": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Juramento": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Juruaia": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Juvenilia": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Ladainha": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Lagamar": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Lagoa Dourada": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Lagoa Formosa": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Lagoa Grande": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Lagoa Santa": {
-							regex: `^315|33[024]`},
+							regex: `^(?:315|33[024])`},
 						"Lagoa da Prata": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Lagoa dos Patos": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Lajinha": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Lambari": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Lamim": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Laranjal": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Lassance": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Lavras": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Leandro Ferreira": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Leme do Prado": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Leopoldina": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Liberdade": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Lima Duarte": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Limeira do Oeste": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Lontra": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Luisburgo": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Luislândia": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Luminárias": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Luz": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Machacalis": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Machado": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Madre de Deus de Minas": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Malacacheta": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Mamonas": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Manga": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Manhuaçu": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Manhumirim": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Mantena": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Mar de Espanha": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Maravilhas": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Maria da Fé": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Mariana": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Marilac": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Maripá de Minas": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Marliéria": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Marmelópolis": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Martinho Campos": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Martins Soares": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Mata Verde": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Materlândia": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Mateus Leme": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Mathias Lobato": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Matias Barbosa": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Matias Cardoso": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Matipo": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Mato Verde": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Matozinhos": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Matutina": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Medeiros": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Medina": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Mendes Pimentel": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Mercês": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Mesquita": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Minas Novas": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Minduri": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Mirabela": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Miradouro": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Miravânia": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Miraí": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Moeda": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Moema": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Monjolos": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Monsenhor Paulo": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Montalvânia": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Monte Alegre de Minas": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Monte Azul": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Monte Belo": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Monte Carmelo": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Monte Formoso": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Monte Santo de Minas": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Monte Sião": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Montes Claros": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Montezuma": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Morada Nova de Minas": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Morro da Garça": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Morro do Pilar": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Munhoz": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Muriaé": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Mutum": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Muzambinho": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Mário Campos": {
-							regex: `^324`},
+							regex: `^(?:324)`},
 						"Nacip Raydan": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Nanuque": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Naque": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Natalândia": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Natércia": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Nazareno": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Nepomuceno": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Ninheira": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Nova Belém": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Nova Era": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Nova Módica": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Nova Ponte": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Nova Porteirinha": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Nova Resende": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"Nova Serrana": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Nova União": {
-							regex: `^349`},
+							regex: `^(?:349)`},
 						"Novo Cruzeiro": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Novo Oriente de Minas": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Novorizonte": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Olaria": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Olhos-d'Água": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Oliveira": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Oliveira Fortes": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Olímpio Noronha": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Onça de Pitangui": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Oratórios": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Orizânia": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Ouro Branco": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Ouro Fino": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Ouro Preto": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Ouro Verde de Minas": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Padre Carvalho": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Padre Paraíso": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Pai Pedro": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Paineiras": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Pains": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Paiva": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Palma": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Palmópolis": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Papagaios": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Paracatu": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Paraguaçu": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Paraisópolis": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Paraopeba": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Pará de Minas": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Passa Quatro": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Passa Tempo": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Passabém": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Passos": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Patis": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Patos de Minas": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Patrocínio": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Patrocínio do Muriaé": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Paula Cândido": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Paulistas": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Pavão": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Pedra Azul": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Pedra Bonita": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Pedra Dourada": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Pedra do Anta": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Pedra do Indaiá": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Pedralva": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Pedras de Maria da Cruz": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Pedrinópolis": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Pedro Leopoldo": {
-							regex: `^33[6-7]`},
+							regex: `^(?:33[6-7])`},
 						"Pedro Teixeira": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Pequeri": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Pequi": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Perdigão": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Perdizes": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Perdões": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Periquito": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Pescador": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Peçanha": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Piau": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Piedade de Caratinga": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Piedade de Ponte Nova": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Piedade do Rio Grande": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Piedade dos Gerais": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Pimenta": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Pintópolis": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Piracema": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Pirajuba": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Piranga": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Piranguinho": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Piranguçu": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Pirapetinga": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Pirapora": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Piraúba": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Pitangui": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Piumhi": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Planura": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Pocrane": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Pompéu": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Ponte Nova": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Ponto Chique": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Ponto dos Volantes": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Porteirinha": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Porto Firme": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Poté": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Pouso Alegre": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Pouso Alto": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Poço Fundo": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Poços de Caldas": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Prados": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Prata": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Pratinha": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Pratápolis": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Presidente Bernardes": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Presidente Juscelino": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Presidente Kubitschek": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Presidente Olegário": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Prudente de Morais": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Quartel Geral": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Queluzito": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Raposos": {
-							regex: `^344`},
+							regex: `^(?:344)`},
 						"Raul Soares": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Recreio": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Reduto": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Resende Costa": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Resplendor": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Ressaquinha": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Riachinho": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Riacho dos Machados": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Ribeirão Vermelho": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Ribeirão das Neves": {
-							regex: `^33[8-9]`},
+							regex: `^(?:33[8-9])`},
 						"Rio Acima": {
-							regex: `^343`},
+							regex: `^(?:343)`},
 						"Rio Casca": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Rio Doce": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Rio Espera": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Rio Manso": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Rio Novo": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Rio Paranaíba": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Rio Pardo de Minas": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Rio Piracicaba": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Rio Pomba": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Rio Preto": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Rio Vermelho": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Rio do Prado": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Ritápolis": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Rochedo de Minas": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Rodeiro": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Romaria": {
-							regex: `^385`},
+							regex: `^(?:385)`},
 						"Rosário da Limeira": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Rubelita": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Rubim": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Sabará": {
-							regex: `^34[5-7]`},
+							regex: `^(?:34[5-7])`},
 						"Sabinópolis": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Sacramento": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Salinas": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Salto da Divisa": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Santa Barbara": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Santa Bárbara do Leste": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Santa Bárbara do Monte Verde": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Santa Bárbara do Tugúrio": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Santa Cruz de Minas": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Santa Cruz de Salinas": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Santa Cruz do Escalvado": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Santa Efigênia de Minas": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Santa Fé de Minas": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Santa Helena de Minas": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Santa Juliana": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Santa Margarida": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Santa Maria de Itabira": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"Santa Maria do Salto": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Santa Maria do Suaçuí": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Santa Rita de Caldas": {
-							regex: `^377`},
+							regex: `^(?:377)`},
 						"Santa Rita de Ibitipoca": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Santa Rita de Jacutinga": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Santa Rita de Minas": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Santa Rita do Itueto": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"Santa Rita do Sapucaí": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Santa Rosa da Serra": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Santa Vitória": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"Santana da Vargem": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Santana de Cataguases": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Santana de Pirapama": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Santana do Deserto": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Santana do Garambéu": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Santana do Jacaré": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Santana do Manhuaçu": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Santana do Paraíso": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Santana do Riacho": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Santana dos Montes": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Santo Antônio do Amparo": {
-							regex: `^372`},
+							regex: `^(?:372)`},
 						"Santo Antônio do Aventureiro": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Santo Antônio do Grama": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Santo Antônio do Itambé": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Santo Antônio do Jacinto": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 						"Santo Antônio do Monte": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"Santo Antônio do Retiro": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Santo Antônio do Rio Abaixo": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"Santo Hipólito": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Santos Dumont": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Sapucaí-Mirim": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Sardoá": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Sarzedo": {
-							regex: `^324`},
+							regex: `^(?:324)`},
 						"Sem-Peixe": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"Senador Amaral": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Senador Cortes": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"Senador Firmino": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Senador José Bento": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Senador Modestino Gonçalves": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Senhora de Oliveira": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"Senhora do Porto": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Senhora dos Remédios": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"Sericita": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Seritinga": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Serra Azul de Minas": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Serra da Saudade": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"Serra do Salitre": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Serra dos Aimorés": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Serrania": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Serranos": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Serranópolis de Minas": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Serro": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"Sete Lagoas": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"Setubinha": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Silveirânia": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Silvianópolis": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Simonésia": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Simão Pereira": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Sobrália": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Soledade de Minas": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Bento Abade": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Brás do Suaçuí": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"São Domingos das Dores": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"São Domingos do Prata": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"São Francisco": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"São Francisco de Paula": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"São Francisco de Sales": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"São Francisco do Glória": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"São Félix de Minas": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"São Geraldo": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"São Geraldo da Piedade": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São Geraldo do Baixio": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"São Gonçalo do Abaeté": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"São Gonçalo do Pará": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"São Gonçalo do Rio Abaixo": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"São Gonçalo do Rio Preto": {
-							regex: `^391`},
+							regex: `^(?:391)`},
 						"São Gonçalo do Sapucaí": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Gotardo": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"São Joaquim de Bicas": {
-							regex: `^329`},
+							regex: `^(?:329)`},
 						"São José da Barra": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"São José da Lapa": {
-							regex: `^333`},
+							regex: `^(?:333)`},
 						"São José da Safira": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São José da Varginha": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"São José do Alegre": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"São José do Divino": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"São José do Goiabal": {
-							regex: `^359`},
+							regex: `^(?:359)`},
 						"São José do Jacuri": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São José do Mantimento": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"São João Batista do Glória": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"São João Evangelista": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São João Nepomuceno": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"São João da Lagoa": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"São João da Mata": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"São João da Ponte": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"São João das Missões": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"São João del Rei": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"São João do Manhuaçu": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"São João do Manteninha": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"São João do Oriente": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"São João do Pacuí": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"São João do Paraíso": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"São Lourenço": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Miguel do Anta": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"São Pedro da União": {
-							regex: `^378`},
+							regex: `^(?:378)`},
 						"São Pedro do Suaçuí": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São Pedro dos Ferros": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"São Romão": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"São Roque de Minas": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"São Sebastião da Bela Vista": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"São Sebastião da Vargem Alegre": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"São Sebastião do Anta": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"São Sebastião do Maranhão": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"São Sebastião do Oeste": {
-							regex: `^355`},
+							regex: `^(?:355)`},
 						"São Sebastião do Paraíso": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"São Sebastião do Rio Preto": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"São Sebastião do Rio Verde": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Thomé das Letras": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"São Tiago": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"São Tomás de Aquino": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"São Vicente de Minas": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"Tabuleiro": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"Taiobeiras": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Taparuba": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"Tapira": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Tapiraí": {
-							regex: `^389`},
+							regex: `^(?:389)`},
 						"Taquaraçu de Minas": {
-							regex: `^339`},
+							regex: `^(?:339)`},
 						"Tarumirim": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Teixeiras": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Teófilo Otoni": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Timóteo": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Tiradentes": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"Tiros": {
-							regex: `^388`},
+							regex: `^(?:388)`},
 						"Tocantins": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Tocos do Moji": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Toledo": {
-							regex: `^376`},
+							regex: `^(?:376)`},
 						"Tombos": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Três Corações": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Três Marias": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Três Pontas": {
-							regex: `^371`},
+							regex: `^(?:371)`},
 						"Tumiritinga": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Tupaciguara": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Turmalina": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Turvolândia": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Ubaporanga": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Ubaí": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Uberlândia": {
-							regex: `^384`},
+							regex: `^(?:384)`},
 						"Ubá": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Umburatiba": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Unaí": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"União de Minas": {
-							regex: `^382`},
+							regex: `^(?:382)`},
 						"Uruana de Minas": {
-							regex: `^386`},
+							regex: `^(?:386)`},
 						"Urucuia": {
-							regex: `^393`},
+							regex: `^(?:393)`},
 						"Urucânia": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Vargem Alegre": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"Vargem Bonita": {
-							regex: `^379`},
+							regex: `^(?:379)`},
 						"Vargem Grande do Rio Pardo": {
-							regex: `^395`},
+							regex: `^(?:395)`},
 						"Varjão de Minas": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Varzelândia": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Vazante": {
-							regex: `^387`},
+							regex: `^(?:387)`},
 						"Verdelândia": {
-							regex: `^394`},
+							regex: `^(?:394)`},
 						"Veredinha": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Vermelho Novo": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"Veríssimo": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Vespasiano": {
-							regex: `^33[2-3]`},
+							regex: `^(?:33[2-3])`},
 						"Vieiras": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"Virgem da Lapa": {
-							regex: `^396`},
+							regex: `^(?:396)`},
 						"Virginia": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"Virginópolis": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Virgolândia": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Visconde do Rio Branco": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Viçosa": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"Volta Grande": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"Várzea da Palma": {
-							regex: `^392`},
+							regex: `^(?:392)`},
 						"Wenceslau Braz": {
-							regex: `^375`},
+							regex: `^(?:375)`},
 						"Água Boa": {
-							regex: `^397`},
+							regex: `^(?:397)`},
 						"Água Comprida": {
-							regex: `^381`},
+							regex: `^(?:381)`},
 						"Águas Formosas": {
-							regex: `^398`},
+							regex: `^(?:398)`},
 						"Águas Vermelhas": {
-							regex: `^399`},
+							regex: `^(?:399)`},
 					}},
 				"MS": {
-					regex: `^79`,
+					regex: `^(?:79)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Alcinópolis": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Amambai": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Anastácio": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Anaurilândia": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Angelica": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Antônio João": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Aparecida do Taboado": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Aquidauana": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Aral Moreira": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Bandeirantes": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Bataguassu": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Bela Vista": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Bodoquena": {
-							regex: `^793`},
+							regex: `^(?:793)`},
 						"Bonito": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Brasilândia": {
-							regex: `^796`},
+							regex: `^(?:796)`},
 						"Caarapó": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Camapuã": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Caracol": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Cassilândia": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Chapadão do Sul": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Corguinho": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Coronel Sapucaia": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Corumbá": {
-							regex: `^793`},
+							regex: `^(?:793)`},
 						"Costa Rica": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Coxim": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Deodápolis": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Dois Irmãos do Buriti": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Douradina": {
-							regex: `^798`},
+							regex: `^(?:798)`},
 						"Dourados": {
-							regex: `^798`},
+							regex: `^(?:798)`},
 						"Eldorado": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Fátima do Sul": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Glória de Dourados": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Guia Lopes da Laguna": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Iguatemi": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Inocencia": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Itaporã": {
-							regex: `^798`},
+							regex: `^(?:798)`},
 						"Itaquiraí": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Ivinhema": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Japorã": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Jaraguari": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Jardim": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Jateí": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Juti": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Ladário": {
-							regex: `^793`},
+							regex: `^(?:793)`},
 						"Laguna Carapã": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Maracaju": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Miranda": {
-							regex: `^793`},
+							regex: `^(?:793)`},
 						"Mundo Novo": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Naviraí": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Nioaque": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Nova Alvorada do Sul": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Nova Andradina": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Novo Horizonte do Sul": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Paranaíba": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Paranhos": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Pedro Gomes": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Ponta Porã": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Porto Murtinho": {
-							regex: `^792`},
+							regex: `^(?:792)`},
 						"Ribas do Rio Pardo": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Rio Brilhante": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Rio Negro": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Rio Verde de Mato Grosso": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Rochedo": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Santa Rita do Pardo": {
-							regex: `^796`},
+							regex: `^(?:796)`},
 						"Selvíria": {
-							regex: `^795`},
+							regex: `^(?:795)`},
 						"Sete Quedas": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Sidrolândia": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Sonora": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"São Gabriel do Oeste": {
-							regex: `^794`},
+							regex: `^(?:794)`},
 						"Tacuru": {
-							regex: `^799`},
+							regex: `^(?:799)`},
 						"Taquarussu": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Terenos": {
-							regex: `^791`},
+							regex: `^(?:791)`},
 						"Três Lagoas": {
-							regex: `^796`},
+							regex: `^(?:796)`},
 						"Vicentina": {
-							regex: `^797`},
+							regex: `^(?:797)`},
 						"Água Clara": {
-							regex: `^796`},
+							regex: `^(?:796)`},
 					}},
 				"MT": {
-					regex: `^78[0-8]`,
+					regex: `^(?:78[0-8])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Acorizal": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Alta Floresta": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Alto Araguaia": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Alto Boa Vista": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Alto Garças": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Alto Paraguai": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Alto Taquari": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Apiacás": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Araguaiana": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Araguainha": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Araputanga": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Arenápolis": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Aripuana": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Barra do Bugres": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Barra do Garças": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Barão de Melgaço": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Brasnorte": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Campinápolis": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Campo Novo do Parecis": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Campo Verde": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Campos de Júlio": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Canabrava do Norte": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Canarana": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Carlinda": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Castanheira": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Chapada dos Guimarães": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Claudia": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Cocalinho": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Colíder": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Comodoro": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Confresa": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Cotriguaçu": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Cáceres": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Denise": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Diamantino": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Dom Aquino": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Feliz Natal": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Figueirópolis d'Oeste": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Gaúcha do Norte": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"General Carneiro": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Glória d'Oeste": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Guaranta do Norte": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Guiratinga": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Indiavaí": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Itaúba": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Itiquira": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Jaciara": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Jangada": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Jauru": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Juara": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Juruena": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Juscimeira": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Juína": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Lambari d'Oeste": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Lucas do Rio Verde": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Luciára": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Marcelândia": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Matupá": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Mirassol d'Oeste": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Nobres": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Nortelândia": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Nossa Senhora do Livramento": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Nova Bandeirantes": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Nova Brasilândia": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Nova Canaã do Norte": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Nova Guarita": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Nova Lacerda": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Nova Marilândia": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Nova Maringá": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Nova Monte Verde": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Nova Mutum": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Nova Olímpia": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Nova Ubiratã": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Nova Xavantina": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Novo Horizonte do Norte": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Novo Mundo": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Novo São Joaquim": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Paranatinga": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Paranaíta": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Pedra Preta": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Peixoto de Azevedo": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Planalto da Serra": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Poconé": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Pontal do Araguaia": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Ponte Branca": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Pontes e Lacerda": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Porto Alegre do Norte": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Porto Esperidião": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Porto Estrela": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Porto dos Gaúchos": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Poxoréo": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Primavera do Leste": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Querência": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Reserva do Cabaçal": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Ribeirão Cascalheira": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Ribeirãozinho": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Rio Branco": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Rondonópolis": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Rosário Oeste": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Salto do Céu": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Santa Carmem": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Santa Terezinha": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Santo Afonso": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"Santo Antônio do Leverger": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Sapezal": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Sinop": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Sorriso": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"São Félix do Araguaia": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"São José do Povo": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"São José do Rio Claro": {
-							regex: `^784`},
+							regex: `^(?:784)`},
 						"São José do Xingu": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"São José dos Quatro Marcos": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"São Pedro da Cipa": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Tabaporã": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Tangará da Serra": {
-							regex: `^783`},
+							regex: `^(?:783)`},
 						"Tapurah": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Terra Nova do Norte": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Tesouro": {
-							regex: `^787`},
+							regex: `^(?:787)`},
 						"Torixoréu": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"União do Sul": {
-							regex: `^785`},
+							regex: `^(?:785)`},
 						"Vera": {
-							regex: `^788`},
+							regex: `^(?:788)`},
 						"Vila Bela da Santíssima Trindade": {
-							regex: `^782`},
+							regex: `^(?:782)`},
 						"Vila Rica": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 						"Várzea Grande": {
-							regex: `^781`},
+							regex: `^(?:781)`},
 						"Água Boa": {
-							regex: `^786`},
+							regex: `^(?:786)`},
 					}},
 				"PA": {
-					regex: `^6[6-7]|68[0-8]`,
+					regex: `^(?:6[6-7]|68[0-8])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abaetetuba": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Abel Figueiredo": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Acará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Afuá": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Alenquer": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Almeirim": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Altamira": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Anajás": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Anapu": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Augusto Corrêa": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Aurora do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Aveiro": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Bagre": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Baião": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Bannach": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Barcarena": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Belterra": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Benevides": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Bom Jesus do Tocantins": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Bonito": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Bragança": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Brasil Novo": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Brejo Grande do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Breu Branco": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Breves": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Bujaru": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Cachoeira do Arari": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Cachoeira do Piriá": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Cameta": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Canaã dos Carajás": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Capanema": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Capitão Poço": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Castanhal": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Chaves": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Colares": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Conceição do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Concórdia do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Cumaru do Norte": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Curionópolis": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Curralinho": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Curuá": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Curuçá": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Dom Eliseu": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Eldorado dos Carajás": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Faro": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Floresta do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Garrafão do Norte": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Goianésia do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Gurupá": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Igarapé-Açu": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Igarapé-Miri": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Inhangapi": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Ipixuna do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Irituia": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Itaituba": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Itupiranga": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Jacareacanga": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Jacundá": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Juruti": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Limoeiro do Ajuru": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Magalhães Barata": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Marabá": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Maracanã": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Marapanim": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Marituba": {
-							regex: `^67[2-9]`},
+							regex: `^(?:67[2-9])`},
 						"Medicilândia": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Melgaço": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Mocajuba": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Moju": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Monte Alegre": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Muaná": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Mãe do Rio": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Nova Esperança do Piriá": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Nova Ipixuna": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Nova Timboteua": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Novo Progresso": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Novo Repartimento": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Oeiras do Pará": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Oriximiná": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Ourilândia do Norte": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Ourém": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Pacajá": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Palestina do Pará": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Paragominas": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Parauapebas": {
-							regex: `^68[35]`},
+							regex: `^(?:68[35])`},
 						"Pau D'Arco": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Peixe-Boi": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Piçarra": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Placas": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Ponta de Pedras": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Portel": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Porto de Moz": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Prainha": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Primavera": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Quatipuru": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Redenção": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Rio Maria": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Rondon do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Rurópolis": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Salinópolis": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Salvaterra": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Santa Bárbara do Pará": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Santa Cruz do Arari": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Santa Isabel do Pará": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Santa Luzia do Pará": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Santa Maria das Barreiras": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Santa Maria do Pará": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Santana do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Santarém Novo": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Santo Antônio do Tauá": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Sapucaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Senador José Porfírio": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Soure": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"São Caetano de Odivelas": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"São Domingos do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"São Domingos do Capim": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"São Francisco do Pará": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"São Félix do Xingu": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"São Geraldo do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"São João da Ponta": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"São João de Pirabas": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"São João do Araguaia": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"São Miguel do Guamá": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"São Sebastião da Boa Vista": {
-							regex: `^688`},
+							regex: `^(?:688)`},
 						"Tailândia": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Terra Alta": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Terra Santa": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 						"Tomé-Açu": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Tracuateua": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Trairão": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Tucumã": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Tucuruí": {
-							regex: `^684`},
+							regex: `^(?:684)`},
 						"Ulianópolis": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Uruará": {
-							regex: `^681`},
+							regex: `^(?:681)`},
 						"Vigia": {
-							regex: `^687`},
+							regex: `^(?:687)`},
 						"Viseu": {
-							regex: `^686`},
+							regex: `^(?:686)`},
 						"Vitória do Xingu": {
-							regex: `^683`},
+							regex: `^(?:683)`},
 						"Xinguara": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Água Azul do Norte": {
-							regex: `^685`},
+							regex: `^(?:685)`},
 						"Óbidos": {
-							regex: `^682`},
+							regex: `^(?:682)`},
 					}},
 				"PB": {
-					regex: `^58`,
+					regex: `^(?:58)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Aguiar": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Alagoa Grande": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Alagoa Nova": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Alagoinha": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Alcantil": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Algodão de Jandaíra": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Alhandra": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Amparo": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Aparecida": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Araruna": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Arará": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Araçagi": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Areia": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Areia de Baraúnas": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Areial": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Aroeiras": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Assunção": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Bananeiras": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Baraúna": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Barra de Santa Rosa": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Barra de Santana": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Barra de São Miguel": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Bayeux": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Baía da Traição": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Belém": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Belém do Brejo do Cruz": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Bernardino Batista": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Boa Ventura": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Boa Vista": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Bom Jesus": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Bom Sucesso": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Bonito de Santa Fé": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Boqueirão": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Borborema": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Brejo do Cruz": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Brejo dos Santos": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Caaporã": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Cabaceiras": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Cabedelo": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Cachoeira dos Índios": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Cacimba de Areia": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Cacimba de Dentro": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Cacimbas": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Caiçara": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Cajazeiras": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Cajazeirinhas": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Caldas Brandão": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Camalaú": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Campina Grande": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Campo de Santana": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Capim": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Caraúbas": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Carrapateira": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Casserengue": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Catingueira": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Catolé do Rocha": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Caturité": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Conceição": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Condado": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Conde": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Congo": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Coremas": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Coxixola": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Cruz do Espírito Santo": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Cubati": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Cuitegi": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Cuité": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Cuité de Mamanguape": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Curral Velho": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Curral de Cima": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Damião": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Desterro": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Diamante": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Dona Inês": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Duas Estradas": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Emas": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Esperança": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Fagundes": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Frei Martinho": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Gado Bravo": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Guarabira": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Gurinhém": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Gurjão": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Ibiara": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Igaracy": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Imaculada": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Inga": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Itabaiana": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Itaporanga": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Itapororoca": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Itatuba": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Jacaraú": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Jerico": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"João Pessoa": {
-							regex: `^580`},
+							regex: `^(?:580)`},
 						"Juarez Távora": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Juazeirinho": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Junco do Seridó": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Juripiranga": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Juru": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Lagoa": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Lagoa Seca": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Lagoa de Dentro": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Lastro": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Livramento": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Logradouro": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Lucena": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Malta": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Mamanguape": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Manaíra": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Marcação": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Mari": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Marizópolis": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Massaranduba": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Mataraca": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Matinhas": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Mato Grosso": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Maturéia": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Mogeiro": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Montadas": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Monte Horebe": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Monteiro": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Mulungú": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Mãe d'água": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Natuba": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Nazarezinho": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Nova Floresta": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Nova Olinda": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Nova Palmeira": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Olho d'Água": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Olivedos": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Ouro Velho": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Parari": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Passagem": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Patos": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Paulista": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Pedra Branca": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Pedra Lavrada": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Pedras de Fogo": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Pedro Régis": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Piancó": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Picuí": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Pilar": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Pilões": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Pilõezinhos": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Pirpirituba": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Pitimbu": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Pocinhos": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Pombal": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Poço Dantas": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Poço de José de Moura": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Prata": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Princesa Isabel": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Puxinanã": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Queimadas": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Quixaba": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Remígio": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Riacho de Santo Antônio": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Riacho dos Cavalos": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Riachão": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Riachão do Bacamarte": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Riachão do Poço": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Rio Tinto": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Salgadinho": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Salgado de São Félix": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Santa Cecília": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Santa Cruz": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Santa Helena": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Santa Inês": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Santa Luzia": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Santa Rita": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Santa Teresinha": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Santana de Mangueira": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Santana dos Garrotes": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Santarém": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Santo André": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Sapé": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Seridó": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Serra Branca": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Serra Grande": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Serra Redonda": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Serra da Raiz": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Serraria": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Sertãozinho": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Sobrado": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"Soledade": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Solânea": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Sossego": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"Sousa": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Sumé": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"São Bentinho": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São Bento": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São Domingos de Pombal": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São Domingos do Cariri": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"São Francisco": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São José da Lagoa Tapada": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São José de Caiana": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"São José de Espinharas": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"São José de Piranhas": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"São José de Princesa": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"São José do Bonfim": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"São José do Brejo do Cruz": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"São José do Sabugi": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"São José dos Cordeiros": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"São José dos Ramos": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"São João do Cariri": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"São João do Rio do Peixe": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"São João do Tigre": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"São Mamede": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"São Miguel de Taipu": {
-							regex: `^583`},
+							regex: `^(?:583)`},
 						"São Sebastião de Lagoa de Roça": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 						"São Sebastião do Umbuzeiro": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Tacima": {
-							regex: `^582`},
+							regex: `^(?:582)`},
 						"Taperoá": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Tavares": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Teixeira": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Tenório": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Triunfo": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Uiraúna": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"Umbuzeiro": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"Vieirópolis": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"Vista Serrana": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 						"Várzea": {
-							regex: `^586`},
+							regex: `^(?:586)`},
 						"Zabelê": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"Água Branca": {
-							regex: `^587`},
+							regex: `^(?:587)`},
 					}},
 				"PE": {
-					regex: `^5[0-6]`,
+					regex: `^(?:5[0-6])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abreu e Lima": {
-							regex: `^535`},
+							regex: `^(?:535)`},
 						"Afogados da Ingazeira": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Afrânio": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"Agrestina": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Alagoinha": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Aliança": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Altinho": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Amaraji": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Angelim": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Aracoiaba": {
-							regex: `^536`},
+							regex: `^(?:536)`},
 						"Araripina": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Arcoverde": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Barra de Guabiraba": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Barreiros": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Belo Jardim": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Belém de Maria": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Belém de São Francisco": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Betania": {
-							regex: `^566`},
+							regex: `^(?:566)`},
 						"Bezerros": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Bodoco": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Bom Conselho": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Bom Jardim": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Bonito": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Brejinho": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Brejo da Madre de Deus": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Brejão": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Buenos Aires": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Buíque": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Cabo de Santo Agostinho": {
-							regex: `^545`},
+							regex: `^(?:545)`},
 						"Cabrobó": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Cachoeirinha": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Caetés": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Calumbi": {
-							regex: `^569`},
+							regex: `^(?:569)`},
 						"Calçado": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Camaragibe": {
-							regex: `^547`},
+							regex: `^(?:547)`},
 						"Camocim de São Félix": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Camutanga": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"Canhotinho": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Capoeiras": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Carnaiba": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Carnaubeira da Penha": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Carpina": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Casinhas": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Catende": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Cedro": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Chã Grande": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Chã de Alegria": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Condado": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"Correntes": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Cortés": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Cumaru": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Cupira": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Custodia": {
-							regex: `^566`},
+							regex: `^(?:566)`},
 						"Dormentes": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"Escada": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Exu": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Feira Nova": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Ferreiros": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Flores": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Floresta": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Frei Miguelinho": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Gameleira": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Garanhuns": {
-							regex: `^55[2-3]`},
+							regex: `^(?:55[2-3])`},
 						"Glória do Goitá": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Goiana": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"Granito": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Gravatá": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Iati": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Ibimirim": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Ibirajuba": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Igarassu": {
-							regex: `^536`},
+							regex: `^(?:536)`},
 						"Iguaraci": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Ilha de Itamaracá": {
-							regex: `^539`},
+							regex: `^(?:539)`},
 						"Inajá": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Ingazeira": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Ipojuca": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Ipubi": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Itacuruba": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Itaiba": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Itambé": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"Itapetim": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Itapissuma": {
-							regex: `^53[7-8]`},
+							regex: `^(?:53[7-8])`},
 						"Itaquitinga": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"Jaqueira": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Jatauba": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Jatobá": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Joaquim Nabuco": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"João Alfredo": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Jucati": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Jupi": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Jurema": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Lagoa Grande": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"Lagoa do Carro": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Lagoa do Itaenga": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Lagoa do Ouro": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Lagoa dos Gatos": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Lajedo": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Limoeiro": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Macaparana": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Machados": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Manari": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Maraial": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Mirandiba": {
-							regex: `^569`},
+							regex: `^(?:569)`},
 						"Moreilandia": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Moreno": {
-							regex: `^54[8-9]`},
+							regex: `^(?:54[8-9])`},
 						"Nazaré da Mata": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Orobó": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Oroco": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Ouricuri": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Palmares": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Palmeirina": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Panelas": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Paranatama": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Parnamirim": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Passira": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Paudalho": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Paulista": {
-							regex: `^534`},
+							regex: `^(?:534)`},
 						"Pedrá": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Pesqueira": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Petrolina": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"Petrolândia": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Pombos": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Poção": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Primavera": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Quipapá": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"Quixaba": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Riacho das Almas": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Ribeirão": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Rio Formoso": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Sairé": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Salgadinho": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Saloa": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Sanharo": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Santa Cruz": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Santa Cruz da Baixa Verde": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Santa Cruz do Capibaribe": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Santa Filomena": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Santa Maria da Boa Vista": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"Santa Maria do Cambucá": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Santa Terezinha": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Serra Talhada": {
-							regex: `^569`},
+							regex: `^(?:569)`},
 						"Serrita": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Sertânia": {
-							regex: `^566`},
+							regex: `^(?:566)`},
 						"Sirinhaém": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Solidao": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Surubim": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"São Benedito do Sul": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"São Bento do Una": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"São Joaquim do Monte": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"São José da Coroa Grande": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"São José do Belmonte": {
-							regex: `^569`},
+							regex: `^(?:569)`},
 						"São José do Egito": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"São João": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 						"São Lourenço da Mata": {
-							regex: `^547`},
+							regex: `^(?:547)`},
 						"São Vicente Ferrer": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Tabira": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Tacaimbó": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Tacaratu": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"Tamandaré": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Taquaritinga do Norte": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Terezinha": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"Terra Nova": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Timbaúba": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Toritama": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"Tracunhaém": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Trindade": {
-							regex: `^562`},
+							regex: `^(?:562)`},
 						"Triunfo": {
-							regex: `^568`},
+							regex: `^(?:568)`},
 						"Tupanatinga": {
-							regex: `^565`},
+							regex: `^(?:565)`},
 						"Tuparetama": {
-							regex: `^567`},
+							regex: `^(?:567)`},
 						"Venturosa": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"Verdejante": {
-							regex: `^561`},
+							regex: `^(?:561)`},
 						"Vertentes": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"Vicência": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 						"Vitória de Santo Antão": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"Xexéu": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Água Preta": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"Águas Belas": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 					}},
 				"PI": {
-					regex: `^64`,
+					regex: `^(?:64)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Acauã": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Agricolândia": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Alagoinha do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Alegrete do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Alto Longá": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Altos": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Alvorada do Gurguéia": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Amarante": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Angical do Piauí": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Antônio Almeida": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Anísio de Abreu": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Aroazes": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Arraial": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Assunção do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Avelino Lopes": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Baixa Grande do Ribeiro": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Barra d'Alcântara": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Barras": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Barreiras do Piauí": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Barro Duro": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Batalha": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Bela Vista do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Belém do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Beneditinos": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Bertolínia": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Betânia do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Boa Hora": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Bocaina": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Bom Jesus": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Bom Princípio do Piauí": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Bonfim do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Boqueirão do Piauí": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Brasileira": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Brejo do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Buriti dos Lopes": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Buriti dos Montes": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Cabeceiras do Piauí": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Cajazeiras do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Cajueiro da Praia": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Caldeirão Grande do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Campinas do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Campo Alegre do Fidalgo": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Campo Grande do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Campo Largo do Piauí": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Campo Maior": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Canavieira": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Canto do Buriti": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Capitão Gervásio Oliveira": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Capitão de Campos": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Caracol": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Caraúbas do Piauí": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Caridade do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Castelo do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Caxingó": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Cocal": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Cocal de Telha": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Cocal dos Alves": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Coivaras": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Colônia do Gurguéia": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Colônia do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Conceição do Canindé": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Coronel José Dias": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Corrente": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Cristalândia do Piauí": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Cristino Castro": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Curimatá": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Currais": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Curral Novo do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Curralinhos": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Demerval Lobão": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Dirceu Arcoverde": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Dom Expedito Lopes": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Dom Inocêncio": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Domingos Mourão": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Elesbão Veloso": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Eliseu Martins": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Esperantina": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Fartura do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Flores do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Floresta do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Floriano": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Francinópolis": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Francisco Ayres": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Francisco Macedo": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Francisco Santos": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Fronteiras": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Geminiano": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Gilbués": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Guadalupe": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Guaribas": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Hugo Napoleão": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Ilha Grande": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Inhuma": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Ipiranga do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Isaías Coelho": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Itainópolis": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Itaueira": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Jacobina do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Jaicós": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Jardim do Mulato": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Jatobá do Piauí": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Jerumenha": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Joaquim Pires": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Joca Marques": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"José de Freitas": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"João Costa": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Juazeiro do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Julio Borges": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Jurema": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Lagoa Alegre": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Lagoa de São Francisco": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Lagoa do Barro do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Lagoa do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Lagoa do Sítio": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Lagoinha do Piauí": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Landri Sales": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Luzilândia": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Luís Correia": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Madeiro": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Manoel Emídio": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Marcolândia": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Marcos Parente": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Massapê do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Matias Olímpio": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Miguel Alves": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Miguel Leão": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Milton Brandão": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Monsenhor Gil": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Monsenhor Hipólito": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Monte Alegre do Piauí": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Morro Cabeça no Tempo": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Morro do Chapéu do Piauí": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Murici dos Portelas": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Nazaré do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Nossa Senhora de Nazaré": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Nossa Senhora dos Remédios": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Nova Santa Rita": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Novo Oriente do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Novo Santo Antônio": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Oeiras": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Olho d'Água do Piauí": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Padre Marcos": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Paes Landim": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Pajeú do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Palmeira do Piauí": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Palmeirais": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Paquetá": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Parnaguá": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Parnaíba": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Passagem Franca do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Patos do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Paulistana": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Pavussu": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Pedro II": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Pedro Laurentino": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Picos": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Pimenteiras": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Pio IX": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Piracuruca": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Piripiri": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Porto": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Porto Alegre do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Prata do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Queimada Nova": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Redenção do Gurguéia": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Regeneração": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Riacho Frio": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Ribeira do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Ribeiro Gonçalves": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Rio Grande do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Santa Cruz do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Santa Cruz dos Milagres": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Santa Filomena": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Santa Luz": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Santa Rosa do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Santana do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Santo Antônio de Lisboa": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Santo Antônio dos Milagres": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"Santo Inácio do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Sebastião Barros": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"Sebastião Leal": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Sigefredo Pacheco": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"Simplício Mendes": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Simões": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Socorro do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Sussuapara": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"São Braz do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"São Francisco de Assis do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"São Francisco do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"São Félix do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"São Gonçalo do Gurguéia": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"São Gonçalo do Piauí": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"São José do Divino": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"São José do Peixe": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"São José do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"São João da Canabrava": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"São João da Fronteira": {
-							regex: `^642`},
+							regex: `^(?:642)`},
 						"São João da Serra": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"São João da Varjota": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"São João do Arraial": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"São João do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"São Julião": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"São Lourenço do Piauí": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"São Luís do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"São Miguel da Baixa Grande": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"São Miguel do Fidalgo": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"São Miguel do Tapuio": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"São Pedro do Piauí": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 						"São Raimundo Nonato": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Tamboril do Piauí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Tanque do Piauí": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"União": {
-							regex: `^641`},
+							regex: `^(?:641)`},
 						"Uruçuí": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"Valença do Piauí": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"Vera Mendes": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Vila Nova do Piauí": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"Várzea Branca": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"Várzea Grande": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Wall Ferraz": {
-							regex: `^645`},
+							regex: `^(?:645)`},
 						"Água Branca": {
-							regex: `^644`},
+							regex: `^(?:644)`},
 					}},
 				"PR": {
-					regex: `^8[0-7]`,
+					regex: `^(?:8[0-7])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abatiá": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Adrianópolis": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Agudos do Sul": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Almirante Tamandaré": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Altamira do Paraná": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Alto Paraná": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Alto Piquiri": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Altônia": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Alvorada do Sul": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Amaporã": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Ampere": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Anahy": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Andira": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Angulo": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Antonina": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"Antônio Olinto": {
-							regex: `^839`},
+							regex: `^(?:839)`},
 						"Apucarana": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Arapongas": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Arapoti": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Arapuá": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Araruna": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Araucaria": {
-							regex: `^837`},
+							regex: `^(?:837)`},
 						"Ariranha do Ivaí": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Assaí": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Assis Chateaubriand": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Astorga": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Atalaia": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Balsa Nova": {
-							regex: `^836`},
+							regex: `^(?:836)`},
 						"Bandeirantes": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Barbosa Ferraz": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Barra do Jacaré": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Barracão": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Bela Vista da Caroba": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Bela Vista do Paraíso": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Bituruna": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Boa Esperança": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Boa Esperança do Iguaçu": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Boa Ventura de São Roque": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Boa Vista da Aparecida": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Bocaiúva do Sul": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Bom Jesus do Sul": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Bom Sucesso": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Bom Sucesso do Sul": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Borrazópolis": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Braganey": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Brasilândia do Sul": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Cafeara": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Cafelândia": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Cafezal do Sul": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"California": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Cambará": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Cambira": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Cambé": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Campina Grande do Sul": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Campina da Lagoa": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Campina do Simão": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Campo Bonito": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Campo Largo": {
-							regex: `^836`},
+							regex: `^(?:836)`},
 						"Campo Magro": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Campo Mourão": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Campo do Tenente": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Candói": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Cantagalo": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Capanema": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Capitão Leônidas Marques": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Carambeí": {
-							regex: `^841`},
+							regex: `^(?:841)`},
 						"Carlópolis": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Cascavel": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Castro": {
-							regex: `^841`},
+							regex: `^(?:841)`},
 						"Catanduvas": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Centenário do Sul": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Cerro Azul": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Chopinzinho": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Cianorte": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Cidade Gaúcha": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Clevelândia": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Colombo": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Colorado": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Congonhinhas": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Conselheiro Mairinck": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Contenda": {
-							regex: `^837`},
+							regex: `^(?:837)`},
 						"Corbélia": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Cornélio Procópio": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Coronel Domingos Soares": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Coronel Vivida": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Corumbataí do Sul": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Cruz Machado": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Cruzeiro do Iguaçu": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Cruzeiro do Oeste": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Cruzeiro do Sul": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Cruzmaltina": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Curiúva": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Cândido de Abreu": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Céu Azul": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Diamante d'Oeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Diamante do Norte": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Diamante do Sul": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Dois Vizinhos": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Douradina": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Doutor Camargo": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Doutor Ulysses": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Engenheiro Beltrão": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Entre Rios do Oeste": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Enéas Marques": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Esperança Nova": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Espigão Alto do Iguaçu": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Farol": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Faxinal": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Fazenda Rio Grande": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Fernandes Pinheiro": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Figueira": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Flor da Serra do Sul": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Floraí": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Floresta": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Florestópolis": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Flórida": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Formosa do Oeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Foz do Iguaçu": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Foz do Jordão": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Francisco Alves": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Francisco Beltrão": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Fênix": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"General Carneiro": {
-							regex: `^84[6-8]`},
+							regex: `^(?:84[6-8])`},
 						"Godoy Moreira": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Goioerê": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Goioxim": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Grandes Rios": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Guairaçá": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Guamiranga": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Guapirama": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Guaporema": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Guaraci": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Guaraniaçu": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Guaraqueçaba": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"Guaratuba": {
-							regex: `^832`},
+							regex: `^(?:832)`},
 						"Guaíra": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Honório Serpa": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Ibaiti": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Ibema": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Ibiporã": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Icaraíma": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Iguaraçu": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Iguatu": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Imbaú": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Imbituva": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Inajá": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Indianópolis": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Inácio Martins": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Ipiranga": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Iporã": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Iracema do Oeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Irati": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Iretama": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Itaguajé": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Itaipulândia": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Itambaracá": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Itambé": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Itapejara d'Oeste": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Itaperuçu": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Itaúna do Sul": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Ivaiporã": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Ivatuba": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Ivaté": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Ivaí": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Jaboti": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Jacarezinho": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Jaguapitã": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Jaguariaíva": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Jandaia do Sul": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Janiópolis": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Japira": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Japurá": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Jardim Alegre": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Jardim Olinda": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Jataizinho": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Jesuítas": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Joaquim Távora": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Jundiaí do Sul": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Juranda": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Jussara": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Kaloré": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Lapa": {
-							regex: `^837`},
+							regex: `^(?:837)`},
 						"Laranjal": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Laranjeiras do Sul": {
-							regex: `^853`},
+							regex: `^(?:853)`},
 						"Leopolis": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Lidianópolis": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Lindoeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Loanda": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Lobato": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Luiziana": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Lunardelli": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Lupionópolis": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Mallet": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Mamborê": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Mandaguari": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Mandaguaçu": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Mandirituba": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Manfrinópolis": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Mangueirinha": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Manoel Ribas": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Marechal Cândido Rondon": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Maria Helena": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Marialva": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Marilena": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Mariluz": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Marilândia do Sul": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Maripá": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Mariópolis": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Marmeleiro": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Marquinho": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Marumbi": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"Matelândia": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Matinhos": {
-							regex: `^832`},
+							regex: `^(?:832)`},
 						"Mato Rico": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Mauá da Serra": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Medianeira": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Mercedes": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Mirador": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Miraselva": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Missal": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Moreira Sales": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Morretes": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"Munhoz de Melo": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Nossa Senhora das Graças": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Nova Aliança do Ivaí": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Nova América da Colina": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Nova Aurora": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Nova Cantu": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Nova Esperança": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Nova Esperança do Sudoeste": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Nova Fátima": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Nova Laranjeiras": {
-							regex: `^853`},
+							regex: `^(?:853)`},
 						"Nova Londrina": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Nova Olímpia": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Nova Prata do Iguaçu": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Nova Santa Bárbara": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Nova Santa Rosa": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Nova Tebas": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Novo Itacolomi": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Ortigueira": {
-							regex: `^843`},
+							regex: `^(?:843)`},
 						"Ourizona": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Ouro Verde do Oeste": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Paiçandu": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Palmas": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Palmeira": {
-							regex: `^841`},
+							regex: `^(?:841)`},
 						"Palmital": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Palotina": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Paranacity": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Paranaguá": {
-							regex: `^832`},
+							regex: `^(?:832)`},
 						"Paranapoema": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"Paranavaí": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Paraíso do Norte": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Pato Bragado": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Pato Branco": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Paula Freitas": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Paulo Frontin": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Peabiru": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Perobal": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Pinhais": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"Pinhal de São Bento": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Pinhalão": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Pinhão": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Piraquara": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"Piraí do Sul": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Pitanga": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Pitangueiras": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Piên": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Planaltina do Paraná": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Planalto": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Pontal do Paraná": {
-							regex: `^832`},
+							regex: `^(?:832)`},
 						"Porecatu": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Porto Amazonas": {
-							regex: `^841`},
+							regex: `^(?:841)`},
 						"Porto Barreiro": {
-							regex: `^853`},
+							regex: `^(?:853)`},
 						"Porto Rico": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Porto Vitória": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Prado Ferreira": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Pranchita": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Presidente Castelo Branco": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Primeiro de Maio": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Prudentópolis": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"Pérola": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Pérola d'Oeste": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Quarto Centenário": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Quatiguá": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Quatro Barras": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Quatro Pontes": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Quedas do Iguaçu": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Querência do Norte": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Quinta do Sol": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Quitandinha": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Ramilândia": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Rancho Alegre": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Rancho Alegre d'Oeste": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Realeza": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Rebouças": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Renascença": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Reserva": {
-							regex: `^843`},
+							regex: `^(?:843)`},
 						"Reserva do Iguaçu": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Ribeirão Claro": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Ribeirão do Pinhal": {
-							regex: `^86[4-5]`},
+							regex: `^(?:86[4-5])`},
 						"Rio Bom": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Rio Bonito do Iguaçu": {
-							regex: `^853`},
+							regex: `^(?:853)`},
 						"Rio Branco do Ivaí": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Rio Branco do Sul": {
-							regex: `^835`},
+							regex: `^(?:835)`},
 						"Rio Negro": {
-							regex: `^838`},
+							regex: `^(?:838)`},
 						"Rolândia": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Roncador": {
-							regex: `^873`},
+							regex: `^(?:873)`},
 						"Rondon": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Rosário do Ivaí": {
-							regex: `^868`},
+							regex: `^(?:868)`},
 						"Río Azul": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Sabaudia": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Salgado Filho": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Salto do Itararé": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Salto do Lontra": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Santa Amélia": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Santa Cecília do Pavão": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Santa Fé": {
-							regex: `^867`},
+							regex: `^(?:867)`},
 						"Santa Helena": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Santa Inês": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Santa Isabel do Ivaí": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Santa Izabel do Oeste": {
-							regex: `^856`},
+							regex: `^(?:856)`},
 						"Santa Lucia": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Santa Maria do Oeste": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"Santa Mariana": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Santa Monica": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"Santa Tereza do Oeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Santa Terezinha de Itaipu": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Santana do Itararé": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Santo Antonio Do Sudoeste": {
-							regex: `^857`},
+							regex: `^(?:857)`},
 						"Santo Antônio da Platina": {
-							regex: `^864`},
+							regex: `^(?:864)`},
 						"Santo Antônio do Caiuá": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Santo Antônio do Paraíso": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Santo Inácio": {
-							regex: `^866`},
+							regex: `^(?:866)`},
 						"Sapopema": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Sarandí": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"Saudade do Iguaçu": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Sengés": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Serranópolis do Iguaçu": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Sertaneja": {
-							regex: `^863`},
+							regex: `^(?:863)`},
 						"Sertanópolis": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Siqueira Campos": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Sulina": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"São Carlos do Ivaí": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"São Jerônimo da Serra": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"São Jorge d'Oeste": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"São Jorge do Ivaí": {
-							regex: `^871`},
+							regex: `^(?:871)`},
 						"São Jorge do Patrocínio": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"São José da Boa Vista": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"São José das Palmeiras": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"São João": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"São João do Caiuá": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"São João do Ivaí": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"São João do Triunfo": {
-							regex: `^841`},
+							regex: `^(?:841)`},
 						"São Manoel do Paraná": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"São Mateus do Sul": {
-							regex: `^839`},
+							regex: `^(?:839)`},
 						"São Miguel do Iguaçu": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"São Pedro do Iguaçu": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"São Pedro do Ivaí": {
-							regex: `^869`},
+							regex: `^(?:869)`},
 						"São Pedro do Paraná": {
-							regex: `^879`},
+							regex: `^(?:879)`},
 						"São Sebastião da Amoreira": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"São Tomé": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Tamarana": {
-							regex: `^861`},
+							regex: `^(?:861)`},
 						"Tamboara": {
-							regex: `^877`},
+							regex: `^(?:877)`},
 						"Tapejara": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Tapira": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Teixeira Soares": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"Telêmaco Borba": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"Terra Boa": {
-							regex: `^872`},
+							regex: `^(?:872)`},
 						"Terra Rica": {
-							regex: `^878`},
+							regex: `^(?:878)`},
 						"Terra Roxa": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Tibagi": {
-							regex: `^843`},
+							regex: `^(?:843)`},
 						"Tijucas do Sul": {
-							regex: `^831`},
+							regex: `^(?:831)`},
 						"Toledo": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Tomazina": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Três Barras do Paraná": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Tunas do Paraná": {
-							regex: `^834`},
+							regex: `^(?:834)`},
 						"Tuneiras do Oeste": {
-							regex: `^874`},
+							regex: `^(?:874)`},
 						"Tupãssi": {
-							regex: `^859`},
+							regex: `^(?:859)`},
 						"Turvo": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"Ubiratã": {
-							regex: `^854`},
+							regex: `^(?:854)`},
 						"Umuarama": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Uniflor": {
-							regex: `^876`},
+							regex: `^(?:876)`},
 						"União da Vitória": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"Uraí": {
-							regex: `^862`},
+							regex: `^(?:862)`},
 						"Ventania": {
-							regex: `^843`},
+							regex: `^(?:843)`},
 						"Vera Cruz do Oeste": {
-							regex: `^858`},
+							regex: `^(?:858)`},
 						"Verê": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Vila Alta": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 						"Virmond": {
-							regex: `^853`},
+							regex: `^(?:853)`},
 						"Vitorino": {
-							regex: `^855`},
+							regex: `^(?:855)`},
 						"Wenceslau Braz": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"Xambrê": {
-							regex: `^875`},
+							regex: `^(?:875)`},
 					}},
 				"RJ": {
-					regex: `^2[0-8]`,
+					regex: `^(?:2[0-8])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Angra dos Reis": {
-							regex: `^239`},
+							regex: `^(?:239)`},
 						"Aperibé": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"Araruama": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Areal": {
-							regex: `^258`},
+							regex: `^(?:258)`},
 						"Armação dos Búzios": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Arraial do Cabo": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Barra Mansa": {
-							regex: `^273`},
+							regex: `^(?:273)`},
 						"Belford Roxo": {
-							regex: `^261`},
+							regex: `^(?:261)`},
 						"Bom Jardim": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"Bom Jesus do Itabapoana": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Cabo Frio": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Cachoeiras de Macacu": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"Cambuci": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"Cantagalo": {
-							regex: `^285`},
+							regex: `^(?:285)`},
 						"Carapebus": {
-							regex: `^279`},
+							regex: `^(?:279)`},
 						"Cardoso Moreira": {
-							regex: `^281`},
+							regex: `^(?:281)`},
 						"Carmo": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"Casimiro de Abreu": {
-							regex: `^288`},
+							regex: `^(?:288)`},
 						"Comendador Levy Gasparian": {
-							regex: `^258`},
+							regex: `^(?:258)`},
 						"Conceição de Macabu": {
-							regex: `^287`},
+							regex: `^(?:287)`},
 						"Cordeiro": {
-							regex: `^285`},
+							regex: `^(?:285)`},
 						"Duas Barras": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"Engenheiro Paulo de Frontin": {
-							regex: `^266`},
+							regex: `^(?:266)`},
 						"Guapimirim": {
-							regex: `^259`},
+							regex: `^(?:259)`},
 						"Iguaba Grande": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Itaboraí": {
-							regex: `^248`},
+							regex: `^(?:248)`},
 						"Itaguaí": {
-							regex: `^238`},
+							regex: `^(?:238)`},
 						"Italva": {
-							regex: `^282`},
+							regex: `^(?:282)`},
 						"Itaocara": {
-							regex: `^285`},
+							regex: `^(?:285)`},
 						"Itaperuna": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Itatiaia": {
-							regex: `^275`},
+							regex: `^(?:275)`},
 						"Japeri": {
-							regex: `^264`},
+							regex: `^(?:264)`},
 						"Laje do Muriaé": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Macaé": {
-							regex: `^279`},
+							regex: `^(?:279)`},
 						"Macuco": {
-							regex: `^285`},
+							regex: `^(?:285)`},
 						"Magé": {
-							regex: `^259`},
+							regex: `^(?:259)`},
 						"Mangaratiba": {
-							regex: `^238`},
+							regex: `^(?:238)`},
 						"Maricá": {
-							regex: `^249`},
+							regex: `^(?:249)`},
 						"Mendes": {
-							regex: `^26[7-8]`},
+							regex: `^(?:26[7-8])`},
 						"Miguel Pereira": {
-							regex: `^269`},
+							regex: `^(?:269)`},
 						"Miracema": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"Natividade": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Nilópolis": {
-							regex: `^265`},
+							regex: `^(?:265)`},
 						"Nova Friburgo": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"Paracambi": {
-							regex: `^266`},
+							regex: `^(?:266)`},
 						"Paraíba do Sul": {
-							regex: `^258`},
+							regex: `^(?:258)`},
 						"Paty do Alferes": {
-							regex: `^269`},
+							regex: `^(?:269)`},
 						"Petrópolis": {
-							regex: `^25[67]`},
+							regex: `^(?:25[67])`},
 						"Pinheiral": {
-							regex: `^271`},
+							regex: `^(?:271)`},
 						"Piraí": {
-							regex: `^271`},
+							regex: `^(?:271)`},
 						"Porciúncula": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Porto Real": {
-							regex: `^275`},
+							regex: `^(?:275)`},
 						"Quatis": {
-							regex: `^274`},
+							regex: `^(?:274)`},
 						"Queimados": {
-							regex: `^263`},
+							regex: `^(?:263)`},
 						"Quissamã": {
-							regex: `^287`},
+							regex: `^(?:287)`},
 						"Resende": {
-							regex: `^275`},
+							regex: `^(?:275)`},
 						"Rio Bonito": {
-							regex: `^288`},
+							regex: `^(?:288)`},
 						"Rio Claro": {
-							regex: `^274`},
+							regex: `^(?:274)`},
 						"Rio das Flores": {
-							regex: `^276`},
+							regex: `^(?:276)`},
 						"Rio das Ostras": {
-							regex: `^288`},
+							regex: `^(?:288)`},
 						"Santa Maria Madalena": {
-							regex: `^287`},
+							regex: `^(?:287)`},
 						"Santo Antônio de Pádua": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"Sapucaia": {
-							regex: `^258`},
+							regex: `^(?:258)`},
 						"Saquarema": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"Seropédica": {
-							regex: `^238`},
+							regex: `^(?:238)`},
 						"Silva Jardim": {
-							regex: `^288`},
+							regex: `^(?:288)`},
 						"Sumidouro": {
-							regex: `^286`},
+							regex: `^(?:286)`},
 						"São Fidélis": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"São Francisco de Itabapoana": {
-							regex: `^282`},
+							regex: `^(?:282)`},
 						"São Gonçalo": {
-							regex: `^24[4-7]`},
+							regex: `^(?:24[4-7])`},
 						"São José de Ubá": {
-							regex: `^284`},
+							regex: `^(?:284)`},
 						"São José do Vale do Rio Preto": {
-							regex: `^257`},
+							regex: `^(?:257)`},
 						"São João da Barra": {
-							regex: `^282`},
+							regex: `^(?:282)`},
 						"São João de Meriti": {
-							regex: `^255`},
+							regex: `^(?:255)`},
 						"São Pedro da Aldeia": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"São Sebastião do Alto": {
-							regex: `^285`},
+							regex: `^(?:285)`},
 						"Tanguá": {
-							regex: `^248`},
+							regex: `^(?:248)`},
 						"Teresópolis": {
-							regex: `^259`},
+							regex: `^(?:259)`},
 						"Trajano de Morais": {
-							regex: `^287`},
+							regex: `^(?:287)`},
 						"Três Rios": {
-							regex: `^258`},
+							regex: `^(?:258)`},
 						"Valença": {
-							regex: `^276`},
+							regex: `^(?:276)`},
 						"Varre-Sai": {
-							regex: `^283`},
+							regex: `^(?:283)`},
 						"Vassouras": {
-							regex: `^27[7-8]`},
+							regex: `^(?:27[7-8])`},
 						"Volta Redonda": {
-							regex: `^272`},
+							regex: `^(?:272)`},
 					}},
 				"RN": {
-					regex: `^59`,
+					regex: `^(?:59)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Acari": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Afonso Bezerra": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Alexandria": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Almino Afonso": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Alto do Rodrigues": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Angicos": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Antônio Martins": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Apodi": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Areia Branca": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Arês": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Açu": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Baraúna": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Barcelona": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Baía Formosa": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Bento Fernandes": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Bodó": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Bom Jesus": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Brejinho": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Caicó": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Caiçara do Norte": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Caiçara do Rio do Vento": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Campo Redondo": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Canguaretama": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Caraúbas": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Carnaubais": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Carnaúba dos Dantas": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Ceará-Mirim": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Cerro Corá": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Coronel Ezequiel": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Coronel João Pessoa": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Cruzeta": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Currais Novos": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Doutor Severiano": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Encanto": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Equador": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Extremoz": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Felipe Guerra": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Fernando Pedroza": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Florânia": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Francisco Dantas": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Frutuoso Gomes": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Galinhos": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Goianinha": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Governador Dix-Sept Rosado": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Grossos": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Guamare": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Ielmo Marinho": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Ipanguaçu": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Ipueira": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Itajá": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Itaú": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Jandaíra": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Janduís": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Japi": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Jardim de Angicos": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Jardim de Piranhas": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Jardim do Seridó": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Jaçanã": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"José da Penha": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"João Câmara": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"João Dias": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Jucurutu": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Lagoa Nova": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Lagoa Salgada": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Lagoa d'Anta": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Lagoa de Pedras": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Lagoa de Velhos": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Lajes": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Lajes Pintadas": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Lucrecia": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Luís Gomes": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Macau": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Macaíba": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Major Sales": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Marcelino Vieira": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Martins": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Maxaranguape": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Messias Targino": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Montanhas": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Monte Alegre": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Monte das Gameleiras": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Mossoró": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Nova Cruz": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Nísia Floresta": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Ouro Branco": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Paraná": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Parazinho": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Parelhas": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Parnamirim": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Passa e Fica": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Passagem": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Patu": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Pau dos Ferros": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Pedra Grande": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Pedra Preta": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Pedro Avelino": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Pedro Velho": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Pendências": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Pilões": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Portalegre": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Porto do Mangue": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Poço Branco": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Pureza": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Părău": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Rafael Fernandes": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Rafael Godeiro": {
-							regex: `^597`},
+							regex: `^(?:597)`},
 						"Riacho da Cruz": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Riacho de Santana": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Riachuelo": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Rio do Fogo": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Rodolfo Fernandes": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Ruy Barbosa": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Santa Cruz": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Santa Maria": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Santana do Matos": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Santana do Seridó": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Santo António": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Senador Elói de Souza": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Senador Georgino Avelino": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Serra Negra do Norte": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Serra de São Bento": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Serra do Mel": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Serrinha": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Serrinha dos Pintos": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Severiano Melo": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"São Bento do Norte": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"São Bento do Trairi": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"São Fernando": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"São Francisco do Oeste": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"São Gonçalo do Amarante": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"São José de Mipibu": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"São José do Campestre": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"São José do Seridó": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"São João do Sabugi": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"São Miguel": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"São Paulo do Potengi": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"São Pedro": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"São Rafael": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"São Tomé": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"São Vicente": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Sítio Novo": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"Taboleiro Grande": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Taipu": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Tangara": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"Tenente Ananias": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Tenente Laurentino Cruz": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Tibau": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Tibau do Sul": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Timbaúba dos Batistas": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"Touros": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"Triunfo Potiguar": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Umarizal": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Upanema": {
-							regex: `^596`},
+							regex: `^(?:596)`},
 						"Venha-Ver": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 						"Vera Cruz": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Vila Flor": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Viçosa": {
-							regex: `^598`},
+							regex: `^(?:598)`},
 						"Várzea": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"Água Nova": {
-							regex: `^599`},
+							regex: `^(?:599)`},
 					}},
 				"RO": {
-					regex: `^76[89]`,
+					regex: `^(?:76[89])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Alta Floresta d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Alto Alegre do Parecis": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Alto Paraíso": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Alvorada d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Ariquemes": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Buritis": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Cabixi": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Cacaulândia": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Cacoal": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Campo Novo de Rondônia": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Candeias do Jamari": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Castanheiras": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Cerejeiras": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Chupinguaia": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Colorado do Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Corumbiara": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Costa Marques": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Cujubim": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Espigão d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Governador Jorge Teixeira": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Guajará-Mirim": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Itapuã do Oeste": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Jaru": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Ji-Paraná": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Machadinho d'Oeste": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Ministro Andreazza": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Mirante da Serra": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Monte Negro": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Nova Brasilândia d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Nova Mamoré": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Nova União": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Novo Horizonte do Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Ouro Preto do Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Parecis": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Pimenta Bueno": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Pimenteiras do Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Porto Velho": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Presidente Médici": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Primavera de Rondônia": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Rio Crespo": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Rolim de Moura": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Santa Luzia d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Seringueiras": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"São Felipe d'Oeste": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"São Francisco do Guaporé": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"São Miguel do Guaporé": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Teixeirópolis": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Theobroma": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Urupá": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Vale do Anari": {
-							regex: `^768`},
+							regex: `^(?:768)`},
 						"Vale do Paraíso": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 						"Vilhena": {
-							regex: `^769`},
+							regex: `^(?:769)`},
 					}},
 				"RR": {
-					regex: `^693`,
+					regex: `^(?:693)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Alto Alegre": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Amajari": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Boa Vista": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Bonfim": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Cantá": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Caracaraí": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Caroebe": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Iracema": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Mucajaí": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Normandia": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Pacaraima": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Rorainópolis": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"São João da Baliza": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"São Luiz": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 						"Uiramutã": {
-							regex: `^693`},
+							regex: `^(?:693)`},
 					}},
 				"RS": {
-					regex: `^9`,
+					regex: `^(?:9)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Agudo": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Ajuricaba": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Alecrim": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Alegrete": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 						"Alegría": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Alpestre": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Alto Alegre": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Alto Feliz": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Alvorada": {
-							regex: `^948`},
+							regex: `^(?:948)`},
 						"Amaral Ferrador": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Ametista do Sul": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"André da Rocha": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Anta Gorda": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Antônio Prado": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Arambaré": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Araricá": {
-							regex: `^938`},
+							regex: `^(?:938)`},
 						"Aratiba": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Arroio Grande": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"Arroio do Meio": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Arroio do Sal": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Arroio do Tigre": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Arroio dos Ratos": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Arvorezinha": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Augusto Pestana": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Aurea": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Bagé": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Balneário Pinhal": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Barra Funda": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Barra do Guarita": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Barra do Quaraí": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 						"Barra do Ribeiro": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Barra do Rio Azul": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Barracão": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Barros Cassal": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Barão": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Barão de Cotegipe": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Barão do Triunfo": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Benjamin Constant do Sul": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Bento Gonçalves": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Boa Vista das Missões": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Boa Vista do Buricá": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Boa Vista do Sul": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Bom Jesus": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Bom Princípio": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Bom Progresso": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Bom Retiro do Sul": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Boqueirão do Leão": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Bossoroca": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"Braga": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Brochier": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Butia": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Cacequi": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"Cachoeira do Sul": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Cachoeirinha": {
-							regex: `^949`},
+							regex: `^(?:949)`},
 						"Cacique Doble": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Caibaté": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Caiçara": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Camaquã": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Camargo": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Cambará do Sul": {
-							regex: `^954`},
+							regex: `^(?:954)`},
 						"Campestre da Serra": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Campina das Missões": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Campinas do Sul": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Campo Bom": {
-							regex: `^937`},
+							regex: `^(?:937)`},
 						"Campo Novo": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Campos Borges": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Candelária": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Candiota": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Canela": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Canguçu": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Capela de Santana": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Capitao": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Capivari do Sul": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Capão da Canoa": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Capão do Leão": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Carazinho": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Caraá": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Carlos Barbosa": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"Carlos Gomes": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Casca": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Caseiros": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Catuípe": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Caçapava do Sul": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Centenário": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Cerrito": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"Cerro Branco": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Cerro Grande": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Cerro Grande do Sul": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Cerro Largo": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Chapada": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Charqueadas": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Charrua": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Chui": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"Chuvisca": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Cidreira": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Ciríaco": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Colinas": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Colorado": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Condor": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Constantina": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Coqueiros do Sul": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Coronel Barros": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Coronel Bicaco": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Cotiporã": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Coxilha": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Crissiumal": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Cristal": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Cristal do Sul": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Cruzeiro do Sul": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Cândido Godói": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"David Canabarro": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Derrubadas": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Dezesseis de Novembro": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"Dilermando de Aguiar": {
-							regex: `^971`},
+							regex: `^(?:971)`},
 						"Dois Irmãos": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Dois Irmãos das Missões": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Dois Lajeados": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Dom Feliciano": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Dom Pedrito": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Dom Pedro de Alcântara": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Dona Francisca": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"Doutor Maurício Cardoso": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Doutor Ricardo": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Eldorado do Sul": {
-							regex: `^929`},
+							regex: `^(?:929)`},
 						"Encantado": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Encruzilhada do Sul": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Engenho Velho": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Entre Rios do Sul": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Entre-Ijuís": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Erebango": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Erechim": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Ernestina": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Erval Grande": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Erval Seco": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Esmeralda": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Esperança do Sul": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Espumoso": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Estação": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Esteio": {
-							regex: `^932`},
+							regex: `^(?:932)`},
 						"Estrela": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Estrela Velha": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Estância Velha": {
-							regex: `^936`},
+							regex: `^(?:936)`},
 						"Eugênio de Castro": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Fagundes Varela": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Farroupilha": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"Faxinal do Soturno": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"Faxinalzinho": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Fazenda Vilanova": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Feliz": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Flores da Cunha": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Floriano Peixoto": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Fontoura Xavier": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Formigueiro": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"Fortaleza dos Valos": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Frederico Westphalen": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Garibaldi": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Garruchos": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"Gaurama": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"General Câmara": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Gentil": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Getúlio Vargas": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Giruá": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Glorinha": {
-							regex: `^943`},
+							regex: `^(?:943)`},
 						"Gramado": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Gramado Xavier": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Gramado dos Loureiros": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Guabiju": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Guaporé": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Guarani das Missões": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Guaíba": {
-							regex: `^92[5-8]`},
+							regex: `^(?:92[5-8])`},
 						"Harmonia": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Herval": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"Herveiras": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Horizontina": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Hulha Negra": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Humaitá": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Ibarama": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Ibiaçá": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Ibiraiaras": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Ibirapuitã": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Ibirubá": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Igrejinha": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Ijuí": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Ilópolis": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Imbé": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Imigrante": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Independencia": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Inhacorá": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Ipiranga do Sul": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Ipê": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Irai": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Itaara": {
-							regex: `^971`},
+							regex: `^(?:971)`},
 						"Itacurubi": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"Itapuca": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Itaqui": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"Itatiba do Sul": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Ivorá": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Ivoti": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Jaboticaba": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Jacutinga": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Jaguari": {
-							regex: `^977`},
+							regex: `^(?:977)`},
 						"Jaguarão": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"Jaquirana": {
-							regex: `^954`},
+							regex: `^(?:954)`},
 						"Jari": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Jóia": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Júlio de Castilhos": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Lagoa Vermelha": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Lagoa dos Três Cantos": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Lagoão": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Lajeado": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Lajeado do Bugre": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Lavras do Sul": {
-							regex: `^973`},
+							regex: `^(?:973)`},
 						"Liberato Salzano": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Lindolfo Collor": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Linha Nova": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Machadinho": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Mampituba": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Manoel Viana": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"Maquiné": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Maratá": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Marau": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Marcelino Ramos": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Mariana Pimentel": {
-							regex: `^929`},
+							regex: `^(?:929)`},
 						"Mariano Moro": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Marques de Souza": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Mata": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"Mato Castelhano": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Mato Leitão": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Maximiliano de Almeida": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Maçambara": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"Minas do Leão": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Miraguaí": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Montauri": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Monte Alegre dos Campos": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Monte Belo do Sul": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Montenegro": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Mormaço": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Morrinhos do Sul": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Morro Redondo": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Morro Reuter": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Mostardas": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"Muitos Capões": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Muliterno": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Muçum": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Nicolau Vergueiro": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Nonoai": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Nova Alvorada": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Nova Araçá": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Nova Bassano": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Nova Boa Vista": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Nova Bréscia": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Nova Candelária": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Nova Esperança do Sul": {
-							regex: `^977`},
+							regex: `^(?:977)`},
 						"Nova Hartz": {
-							regex: `^938`},
+							regex: `^(?:938)`},
 						"Nova Palma": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"Nova Petrópolis": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"Nova Prata": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Nova Pádua": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Nova Ramada": {
-							regex: `^987`},
+							regex: `^(?:987)`},
 						"Nova Roma do Sul": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Nova Santa Rita": {
-							regex: `^924`},
+							regex: `^(?:924)`},
 						"Novo Barreiro": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Novo Cabrais": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Novo Hamburgo": {
-							regex: `^93[3-5]`},
+							regex: `^(?:93[3-5])`},
 						"Novo Machado": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Novo Tiradentes": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Não-Me-Toque": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Osório": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Paim Filho": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Palmares do Sul": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Palmeira das Missões": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Palmitinho": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Panambi": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Pantano Grande": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Paraí": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Paraíso do Sul": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Pareci Novo": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Parobé": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Passa Sete": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Passo do Sobrado": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Paverama": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Pedro Osório": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"Pejuçara": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Picada Café": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"Pinhal": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Pinhal Grande": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Pinheirinho do Vale": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Pinheiro Machado": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Pirapó": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"Piratini": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"Planalto": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Ponte Preta": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Pontão": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Porto Lucena": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Porto Mauá": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Porto Vera Cruz": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Porto Xavier": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Portão": {
-							regex: `^931`},
+							regex: `^(?:931)`},
 						"Pouso Novo": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Poço das Antas": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Presidente Lucena": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Progresso": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Protásio Alves": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Putinga": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Quaraí": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 						"Quevedos": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Quinze de Novembro": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Redentora": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Relvado": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Restinga Seca": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"Rio Grande": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"Rio Pardo": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"Rio dos Índios": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Riozinho": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Roca Sales": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Rodeio Bonito": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Rolante": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Ronda Alta": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Rondinha": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Roque Gonzales": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Rosário do Sul": {
-							regex: `^97[5-6]`},
+							regex: `^(?:97[5-6])`},
 						"Sagrada Familia": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Saldanha Marinho": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Salto do Jacuí": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Salvador das Missões": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Salvador do Sul": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Sananduva": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Santa Bárbara do Sul": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"Santa Clara do Sul": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Santa Cruz do Sul": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Santa Maria do Herval": {
-							regex: `^939`},
+							regex: `^(?:939)`},
 						"Santa Rosa": {
-							regex: `^989|987`},
+							regex: `^(?:989|987)`},
 						"Santa Tereza": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Santa Vitória do Palmar": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"Santana da Boa Vista": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"Santana do Livramento": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 						"Santiago": {
-							regex: `^977`},
+							regex: `^(?:977)`},
 						"Santo Antônio da Patrulha": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Santo Antônio das Missões": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"Santo Antônio do Palma": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Santo Antônio do Planalto": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Santo Augusto": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Santo Cristo": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Santo Expedito do Sul": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Santo Ângelo": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Sapiranga": {
-							regex: `^938`},
+							regex: `^(?:938)`},
 						"Sapucaia do Sul": {
-							regex: `^932`},
+							regex: `^(?:932)`},
 						"Sarandí": {
-							regex: `^995`},
+							regex: `^(?:995)`},
 						"Seberi": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"Sede Nova": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Segredo": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Selbach": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Senador Salgado Filho": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Sentinela do Sul": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Serafina Corrêa": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Sertão": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Sertão Santana": {
-							regex: `^928`},
+							regex: `^(?:928)`},
 						"Sete de Setembro": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"Severiano de Almeida": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Silveira Martins": {
-							regex: `^971`},
+							regex: `^(?:971)`},
 						"Sinimbu": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Sobradinho": {
-							regex: `^969`},
+							regex: `^(?:969)`},
 						"Soledade": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"São Borja": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"São Domingos do Sul": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"São Francisco de Assis": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"São Francisco de Paula": {
-							regex: `^954`},
+							regex: `^(?:954)`},
 						"São Gabriel": {
-							regex: `^973`},
+							regex: `^(?:973)`},
 						"São Jerônimo": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"São Jorge": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"São José das Missões": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"São José do Herval": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"São José do Hortêncio": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"São José do Inhacorá": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"São José do Norte": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"São José do Ouro": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"São José dos Ausentes": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"São João da Urtiga": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"São João do Polêsine": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"São Lourenço do Sul": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"São Luiz Gonzaga": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"São Marcos": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"São Martinho": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"São Martinho da Serra": {
-							regex: `^971`},
+							regex: `^(?:971)`},
 						"São Miguel das Missões": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"São Nicolau": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"São Paulo das Missões": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"São Pedro da Serra": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"São Pedro do Butiá": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"São Pedro do Sul": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"São Sebastião do Caí": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"São Sepé": {
-							regex: `^973`},
+							regex: `^(?:973)`},
 						"São Valentim": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"São Valentim do Sul": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"São Valério do Sul": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"São Vendelino": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"São Vicente do Sul": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"Sério": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Tabaí": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Tapejara": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Tapera": {
-							regex: `^994`},
+							regex: `^(?:994)`},
 						"Tapes": {
-							regex: `^967`},
+							regex: `^(?:967)`},
 						"Taquara": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Taquari": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Taquaruçu do Sul": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Tavares": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"Tenente Portela": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Terra de Areia": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Teutônia": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Tiradentes do Sul": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Toropi": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"Torres": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Tramandaí": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Travesseiro": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Trindade do Sul": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Triunfo": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Três Arroios": {
-							regex: `^997`},
+							regex: `^(?:997)`},
 						"Três Cachoeiras": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Três Coroas": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"Três Forquilhas": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Três Palmeiras": {
-							regex: `^996`},
+							regex: `^(?:996)`},
 						"Três Passos": {
-							regex: `^986`},
+							regex: `^(?:986)`},
 						"Três de Maio": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Tucunduva": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Tunas": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Tupanci do Sul": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Tupanciretã": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"Tupandi": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Tuparendi": {
-							regex: `^989`},
+							regex: `^(?:989)`},
 						"Turuçu": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"Ubiretama": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Unistalda": {
-							regex: `^977`},
+							regex: `^(?:977)`},
 						"União da Serra": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Uruguaiana": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 						"Vacaria": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"Vale Real": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"Vale Verde": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Vale do Sol": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Vanini": {
-							regex: `^992`},
+							regex: `^(?:992)`},
 						"Venâncio Aires": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"Vera Cruz": {
-							regex: `^968`},
+							regex: `^(?:968)`},
 						"Veranópolis": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Vespasiano Correa": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"Viadutos": {
-							regex: `^998`},
+							regex: `^(?:998)`},
 						"Viamão": {
-							regex: `^94[4-7]`},
+							regex: `^(?:94[4-7])`},
 						"Vicente Dutra": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Victor Graeff": {
-							regex: `^993`},
+							regex: `^(?:993)`},
 						"Vila Flores": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Vila Lângaro": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 						"Vila Maria": {
-							regex: `^991`},
+							regex: `^(?:991)`},
 						"Vila Nova do Sul": {
-							regex: `^973`},
+							regex: `^(?:973)`},
 						"Vista Alegre": {
-							regex: `^984`},
+							regex: `^(?:984)`},
 						"Vista Alegre do Prata": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"Vista Gaúcha": {
-							regex: `^985`},
+							regex: `^(?:985)`},
 						"Vitória das Missões": {
-							regex: `^988`},
+							regex: `^(?:988)`},
 						"Xangri-lá": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 						"Água Santa": {
-							regex: `^999`},
+							regex: `^(?:999)`},
 					}},
 				"SC": {
-					regex: `^8[89]`,
+					regex: `^(?:8[89])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abdon Batista": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Abelardo Luz": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Agrolândia": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Agronômica": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Alfredo Wagner": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Alto Bela Vista": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Anchieta": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Angelina": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Anita Garibaldi": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Anitápolis": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Antônio Carlos": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Apiúna": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Arabutã": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Araquari": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Araranguá": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Armazém": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Arroio Trinta": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Arvoredo": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Ascurra": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Atalanta": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Aurora": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Balneário Arroio do Silva": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Balneário Barra do Sul": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Balneário Camboriú": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Balneário Gaivota": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Bandeirante": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Barra Bonita": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Barra Velha": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Bela Vista do Toldo": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Belmonte": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Benedito Novo": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Biguaçu": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Bocaina do Sul": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Bom Jardim da Serra": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"Bom Jesus": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Bom Jesus do Oeste": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Bom Retiro": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"Bombinhas": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Botuverá": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Braço do Norte": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Braço do Trombudo": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Brunópolis": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Brusque": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Caibi": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Calmon": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Camboriú": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Campo Alegre": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Campo Belo do Sul": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Campo Erê": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Campos Novos": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Canelinha": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Canoinhas": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Capinzal": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Capivari de Baixo": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Capão Alto": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Catanduvas": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Caxambu do Sul": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Caçador": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Celso Ramos": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Cerro Negro": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Chapadão do Lageado": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Chapecó": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Cocal do Sul": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Concórdia": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Cordilheira Alta": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Coronel Freitas": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Coronel Martins": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Correia Pinto": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Corupá": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Criciúma": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Cunha Porã": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Cunhataí": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Curitibanos": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Descanso": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Dionísio Cerqueira": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Dona Emma": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Doutor Pedrinho": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Entre Rios": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Ermo": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Erval Velho": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Faxinal dos Guedes": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Flor do Sertão": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Formosa do Sul": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Forquilhinha": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Fraiburgo": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Frei Rogério": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Galvão": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Garopaba": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Garuva": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Gaspar": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Governador Celso Ramos": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Gravatal": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Grão Pará": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Guabiruba": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Guaraciaba": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Guaramirim": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Guarujá do Sul": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Guatambú": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Herval d'Oeste": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Ibiam": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Ibicaré": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Ibirama": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Ilhota": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Imaruí": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Imbituba": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Imbuia": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Indaial": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Iomerê": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Ipirá": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Iporã do Oeste": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Ipuaçu": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Ipumirim": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Iraceminha": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Irani": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Irati": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Irineópolis": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Itaiópolis": {
-							regex: `^893`},
+							regex: `^(?:893)`},
 						"Itajaí": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Itapema": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Itapiranga": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Itapoá": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Ituporanga": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Itá": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Içara": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Jaborá": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Jacinto Machado": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Jaguaruna": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Jaraguá do Sul": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Jardinópolis": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Joaçaba": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Joinville": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"José Boiteux": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Jupiá": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Lacerdópolis": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Lages": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Laguna": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Lajeado Grande": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Laurentino": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Lauro Muller": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Lebon Régis": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Leoberto Leal": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Lindóia do Sul": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Lontras": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Luiz Alves": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Luzerna": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Macieira": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Mafra": {
-							regex: `^893`},
+							regex: `^(?:893)`},
 						"Major Gercino": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Major Vieira": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Maracajá": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Maravilha": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Marema": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Massaranduba": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Matos Costa": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Meleiro": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Mirim Doce": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Modelo": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Mondaí": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Monte Carlo": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Monte Castelo": {
-							regex: `^893`},
+							regex: `^(?:893)`},
 						"Morro Grande": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Morro da Fumaça": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Navegantes": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Nova Erechim": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Nova Itaberaba": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Nova Trento": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Nova Veneza": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Novo Horizonte": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Orléans": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Otacílio Costa": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Ouro": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Ouro Verde": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Paial": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Painel": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Palhoça": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Palma Sola": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Palmeira": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Palmitos": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Papanduva": {
-							regex: `^893`},
+							regex: `^(?:893)`},
 						"Paraiso": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Passo de Torres": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Passos Maia": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Paulo Lopes": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Pedras Grandes": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Penha": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Peritiba": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Petrolândia": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Pinhalzinho": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Pinheiro Preto": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Piratuba": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Piçarras": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"Planalto Alegre": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Pomerode": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Ponte Alta": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"Ponte Alta do Norte": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Ponte Serrada": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Porto Belo": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Porto União": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Pouso Redondo": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Praia Grande": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Presidente Castelo Branco": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Presidente Getúlio": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Presidente Nereu": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Princesa": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Quilombo": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Rancho Queimado": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Rio Fortuna": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Rio Negrinho": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Rio Rufino": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"Rio das Antas": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Rio do Campo": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Rio do Oeste": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Rio do Sul": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Rio dos Cedros": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Riqueza": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Rodeio": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Romelândia": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Salete": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Saltinho": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Salto Veloso": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Sangão": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Santa Cecília": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Santa Helena": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Santa Rosa de Lima": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Santa Rosa do Sul": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Santa Terezinha": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Santa Terezinha do Progresso": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"Santiago do Sul": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Santo Amaro da Imperatriz": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Saudades": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Schroeder": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"Seara": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Serra Alta": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Siderópolis": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Sombrio": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Sul Brasil": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"São Bento do Sul": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"São Bernardino": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"São Bonifácio": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"São Carlos": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"São Cristóvão do Sul": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"São Domingos": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"São Francisco do Sul": {
-							regex: `^892`},
+							regex: `^(?:892)`},
 						"São Joaquim": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"São José": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"São José do Cedro": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"São José do Cerrito": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"São João Batista": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"São João do Itaperiú": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"São João do Oeste": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"São João do Sul": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"São Lourenço do Oeste": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"São Ludgero": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"São Martinho": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"São Miguel da Boa Vista": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"São Miguel do Oeste": {
-							regex: `^899`},
+							regex: `^(?:899)`},
 						"São Pedro de Alcântara": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Taió": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Tangara": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Tigrinhos": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Tijucas": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"Timbo": {
-							regex: `^89[0-1]`},
+							regex: `^(?:89[0-1])`},
 						"Timbé do Sul": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"Timbó Grande": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Treviso": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Treze Tílias": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Treze de Maio": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Trombudo Central": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Três Barras": {
-							regex: `^894`},
+							regex: `^(?:894)`},
 						"Tubarão": {
-							regex: `^887`},
+							regex: `^(?:887)`},
 						"Tunápolis": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Turvo": {
-							regex: `^889`},
+							regex: `^(?:889)`},
 						"União do Oeste": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Urubici": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"Urupema": {
-							regex: `^886`},
+							regex: `^(?:886)`},
 						"Urussanga": {
-							regex: `^888`},
+							regex: `^(?:888)`},
 						"Vargem": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Vargem Bonita": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Vargeão": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Vidal Ramos": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"Videira": {
-							regex: `^895`},
+							regex: `^(?:895)`},
 						"Vitor Meireles": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Witmarsum": {
-							regex: `^891`},
+							regex: `^(?:891)`},
 						"Xanxerê": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Xavantina": {
-							regex: `^897`},
+							regex: `^(?:897)`},
 						"Xaxim": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Zortéa": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Água Doce": {
-							regex: `^896`},
+							regex: `^(?:896)`},
 						"Águas Frias": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 						"Águas Mornas": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"Águas de Chapecó": {
-							regex: `^898`},
+							regex: `^(?:898)`},
 					}},
 				"SE": {
-					regex: `^49`,
+					regex: `^(?:49)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Amparo de São Francisco": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Aquidabã": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Arauá": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Areia Branca": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Barra dos Coqueiros": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Boquim": {
-							regex: `^493`},
+							regex: `^(?:493)`},
 						"Brejo Grande": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Campo do Brito": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Canhoba": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Canindé de São Francisco": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Capela": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Carira": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Carmópolis": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Cedro de São João": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Cristinápolis": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Cumbe": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Divina Pastora": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Estancia": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Feira Nova": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Frei Paulo": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Gararu": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"General Maynard": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Gracho Cardoso": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Ilha das Flores": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Indiaroba": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Itabaiana": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Itabaianinha": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Itabi": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Itaporanga d'Ajuda": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Japaratuba": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Japoatã": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Lagarto": {
-							regex: `^494`},
+							regex: `^(?:494)`},
 						"Laranjeiras": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Macambira": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Malhada dos Bois": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Malhador": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Maruim": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Moita Bonita": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Monte Alegre de Sergipe": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Muribeca": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Neópolis": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Nossa Senhora Aparecida": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Nossa Senhora da Glória": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Nossa Senhora das Dores": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Nossa Senhora de Lourdes": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Nossa Senhora do Socorro": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Pacatuba": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Pedra Mole": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Pedrinhas": {
-							regex: `^493`},
+							regex: `^(?:493)`},
 						"Pinhão": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Pirambu": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Porto da Folha": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Poço Redondo": {
-							regex: `^498`},
+							regex: `^(?:498)`},
 						"Poço Verde": {
-							regex: `^494`},
+							regex: `^(?:494)`},
 						"Propriá": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Riachuelo": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Riachão do Dantas": {
-							regex: `^493`},
+							regex: `^(?:493)`},
 						"Ribeirópolis": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Rosário do Catete": {
-							regex: `^497`},
+							regex: `^(?:497)`},
 						"Salgado": {
-							regex: `^493`},
+							regex: `^(?:493)`},
 						"Santa Luzia do Itanhy": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Santa Rosa de Lima": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"Santana do São Francisco": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Santo Amaro das Brotas": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"Simão Dias": {
-							regex: `^494`},
+							regex: `^(?:494)`},
 						"Siriri": {
-							regex: `^496`},
+							regex: `^(?:496)`},
 						"São Cristóvão": {
-							regex: `^491`},
+							regex: `^(?:491)`},
 						"São Domingos": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"São Francisco": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"São Miguel do Aleixo": {
-							regex: `^495`},
+							regex: `^(?:495)`},
 						"Telha": {
-							regex: `^499`},
+							regex: `^(?:499)`},
 						"Tobias Barreto": {
-							regex: `^493`},
+							regex: `^(?:493)`},
 						"Tomar do Geru": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"Umbaúba": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 					}},
 				"SP": {
-					regex: `^[01][1-9]`,
+					regex: `^(?:[01][1-9])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Adamantina": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Adolfo": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Aguaí": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Agudos": {
-							regex: `^171`},
+							regex: `^(?:171)`},
 						"Alambari": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Alfredo Marcondes": {
-							regex: `^191`},
+							regex: `^(?:191)`},
 						"Altair": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Altinópolis": {
-							regex: `^143`},
+							regex: `^(?:143)`},
 						"Alto Alegre": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Alumínio": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Alvinlândia": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Americana": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Amparo": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Américo Brasiliense": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Américo de Campos": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Analândia": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Andradina": {
-							regex: `^169`},
+							regex: `^(?:169)`},
 						"Angatuba": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Anhembi": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Anhumas": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Aparecida": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"Aparecida d'Oeste": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Apiaí": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Aramina": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Arandu": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Arapeí": {
-							regex: `^128`},
+							regex: `^(?:128)`},
 						"Araraquara": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Araras": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Araçariguama": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Araçoiaba da Serra": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Arco-Íris": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Arealva": {
-							regex: `^171`},
+							regex: `^(?:171)`},
 						"Areias": {
-							regex: `^128`},
+							regex: `^(?:128)`},
 						"Areiópolis": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Ariranha": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Artur Nogueira": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Arujá": {
-							regex: `^074`},
+							regex: `^(?:074)`},
 						"Aspásia": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Assis": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Atibaia": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Auriflama": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Avanhandava": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Avaré": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Avaí": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Bady Bassitt": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Balbinos": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Bananal": {
-							regex: `^128`},
+							regex: `^(?:128)`},
 						"Barbosa": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Bariri": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Barra Bonita": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Barra do Chapéu": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Barra do Turvo": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Barretos": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Barrinha": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Barueri": {
-							regex: `^064`},
+							regex: `^(?:064)`},
 						"Barão de Antonina": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Bastos": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Batatais": {
-							regex: `^143`},
+							regex: `^(?:143)`},
 						"Bebedouro": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Bento de Abreu": {
-							regex: `^167`},
+							regex: `^(?:167)`},
 						"Bernardino de Campos": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Bertioga": {
-							regex: `^112`},
+							regex: `^(?:112)`},
 						"Bilac": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Birigüi": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Biritiba-Mirim": {
-							regex: `^089`},
+							regex: `^(?:089)`},
 						"Boa Esperança do Sul": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Bocaina": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Bofete": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Boituva": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Bom Jesus dos Perdões": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Bom Sucesso de Itararé": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Boracéia": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Borborema": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Borebi": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Borá": {
-							regex: `^197`},
+							regex: `^(?:197)`},
 						"Botucatu": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Bragança Paulista": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Braúna": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Brejo Alegre": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Brodowski": {
-							regex: `^143`},
+							regex: `^(?:143)`},
 						"Brotas": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Buri": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Buritama": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Buritizal": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Bálsamo": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Cabreúva": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Cabrália Paulista": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Cachoeira Paulista": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"Caconde": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Cafelândia": {
-							regex: `^165`},
+							regex: `^(?:165)`},
 						"Caiabu": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Caieiras": {
-							regex: `^077`},
+							regex: `^(?:077)`},
 						"Caiuá": {
-							regex: `^194`},
+							regex: `^(?:194)`},
 						"Cajamar": {
-							regex: `^077`},
+							regex: `^(?:077)`},
 						"Cajati": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Cajobi": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Cajuru": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Campina do Monte Alegre": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Campo Limpo Paulista": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Campos Novos Paulista": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Campos do Jordão": {
-							regex: `^124`},
+							regex: `^(?:124)`},
 						"Cananéia": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Canas": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"Canitar": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Capela do Alto": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Capivari": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Capão Bonito": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Caraguatatuba": {
-							regex: `^116`},
+							regex: `^(?:116)`},
 						"Carapicuíba": {
-							regex: `^063`},
+							regex: `^(?:063)`},
 						"Cardoso": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Casa Branca": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Castilho": {
-							regex: `^169`},
+							regex: `^(?:169)`},
 						"Catanduva": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Catiguá": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Caçapava": {
-							regex: `^122`},
+							regex: `^(?:122)`},
 						"Cedral": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Cerqueira César": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Cerquilho": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Cesário Lange": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Charqueada": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Chavantes": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Clementina": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Colina": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Colombia": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Conchal": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Conchas": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Cordeirópolis": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Coroados": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Coronel Macedo": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Corumbataí": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Cosmopolis": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Cosmorama": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Cotia": {
-							regex: `^067`},
+							regex: `^(?:067)`},
 						"Cravinhos": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Cristais Paulista": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Cruzeiro": {
-							regex: `^127`},
+							regex: `^(?:127)`},
 						"Cruzália": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Cubatão": {
-							regex: `^115`},
+							regex: `^(?:115)`},
 						"Cunha": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"Cássia dos Coqueiros": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Cândido Mota": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Cândido Rodrigues": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Descalvado": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Diadema": {
-							regex: `^099`},
+							regex: `^(?:099)`},
 						"Dirce Reis": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Divinolândia": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Dobrada": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Dois Córregos": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Dolcinópolis": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Dourado": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Dracena": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Duartina": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Dumont": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Echaporã": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Eldorado": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Elias Fausto": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Elisiário": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Embaúba": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Embu-Guaçu": {
-							regex: `^069`},
+							regex: `^(?:069)`},
 						"Emilianópolis": {
-							regex: `^193`},
+							regex: `^(?:193)`},
 						"Engenheiro Coelho": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Espírito Santo do Pinhal": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Espírito Santo do Turvo": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Estiva Gerbi": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Estrela d'Oeste": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Estrela do Norte": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Euclides da Cunha Paulista": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Fartura": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Fernando Prestes": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Fernandópolis": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Fernão": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Ferraz de Vasconcelos": {
-							regex: `^085`},
+							regex: `^(?:085)`},
 						"Flora Rica": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Floréal": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Florínia": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Flórida Paulista": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Franca": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Francisco Morato": {
-							regex: `^079`},
+							regex: `^(?:079)`},
 						"Franco da Rocha": {
-							regex: `^078`},
+							regex: `^(?:078)`},
 						"Gabriel Monteiro": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Garça": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Gastão Vidigal": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Gavião Peixoto": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"General Salgado": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Getulina": {
-							regex: `^164`},
+							regex: `^(?:164)`},
 						"Glicério": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Guaimbê": {
-							regex: `^164`},
+							regex: `^(?:164)`},
 						"Guaiçara": {
-							regex: `^164`},
+							regex: `^(?:164)`},
 						"Guapiara": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Guapiaçu": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Guaraci": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Guarani d'Oeste": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Guarantã": {
-							regex: `^165`},
+							regex: `^(?:165)`},
 						"Guararapes": {
-							regex: `^167`},
+							regex: `^(?:167)`},
 						"Guararema": {
-							regex: `^089`},
+							regex: `^(?:089)`},
 						"Guaratinguetá": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"Guaraçaí": {
-							regex: `^169`},
+							regex: `^(?:169)`},
 						"Guareí": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Guariba": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Guarujá": {
-							regex: `^114`},
+							regex: `^(?:114)`},
 						"Guará": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Guatapará": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Guaíra": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Guzolândia": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Gália": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Herculândia": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Holambra": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Hortolândia": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Iacanga": {
-							regex: `^171`},
+							regex: `^(?:171)`},
 						"Iacri": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Iaras": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Ibaté": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Ibirarema": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Ibirá": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Ibitinga": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Ibiúna": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Icém": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Iepê": {
-							regex: `^196`},
+							regex: `^(?:196)`},
 						"Igarapava": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Igaratá": {
-							regex: `^123`},
+							regex: `^(?:123)`},
 						"Igaraçu do Tietê": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Iguape": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Ilha Comprida": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Ilha Solteira": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Ilhabela": {
-							regex: `^116`},
+							regex: `^(?:116)`},
 						"Indaiatuba": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Indiana": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Indiaporã": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Inúbia Paulista": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Ipaussu": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Iperó": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Ipeúna": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Ipiguá": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Iporanga": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Ipuã": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Iracemápolis": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Irapuru": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Irapuã": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Itaberá": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Itajobi": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Itaju": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Itanhaém": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Itapecerica da Serra": {
-							regex: `^068`},
+							regex: `^(?:068)`},
 						"Itapetininga": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Itapeva": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Itapevi": {
-							regex: `^066`},
+							regex: `^(?:066)`},
 						"Itapira": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Itapirapuã Paulista": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Itaporanga": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Itapura": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Itapuí": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Itaquaquecetuba": {
-							regex: `^085`},
+							regex: `^(?:085)`},
 						"Itararé": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Itariri": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Itatiba": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Itatinga": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Itaí": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Itaóca": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Itirapina": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Itirapuã": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Itobi": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Itu": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Itupeva": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Ituverava": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Itápolis": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Jaborandi": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Jaboticabal": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Jacareí": {
-							regex: `^123`},
+							regex: `^(?:123)`},
 						"Jaci": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Jacupiranga": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Jaguariúna": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Jales": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Jambeiro": {
-							regex: `^122`},
+							regex: `^(?:122)`},
 						"Jandira": {
-							regex: `^066`},
+							regex: `^(?:066)`},
 						"Jardinópolis": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Jarinu": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Jaú": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Jeriquara": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Joanópolis": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"José Bonifácio": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"João Ramalho": {
-							regex: `^196`},
+							regex: `^(?:196)`},
 						"Jumirim": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Jundiaí": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Junqueirópolis": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Juquitiba": {
-							regex: `^069`},
+							regex: `^(?:069)`},
 						"Juquiá": {
-							regex: `^118`},
+							regex: `^(?:118)`},
 						"Júlio Mesquita": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Lagoinha": {
-							regex: `^121`},
+							regex: `^(?:121)`},
 						"Laranjal Paulista": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Lavrinhas": {
-							regex: `^127`},
+							regex: `^(?:127)`},
 						"Lavínia": {
-							regex: `^168`},
+							regex: `^(?:168)`},
 						"Leme": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Lençóis Paulista": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Limeira": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Lindóia": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Lins": {
-							regex: `^164`},
+							regex: `^(?:164)`},
 						"Lorena": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"Lourdes": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Louveira": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Lucianópolis": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Lucélia": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Luiziânia": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Lupércio": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Lutécia": {
-							regex: `^197`},
+							regex: `^(?:197)`},
 						"Luís Antônio": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Macatuba": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Macaubal": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Macedônia": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Magda": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Mairinque": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Mairiporã": {
-							regex: `^076`},
+							regex: `^(?:076)`},
 						"Manduri": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Marabá Paulista": {
-							regex: `^194`},
+							regex: `^(?:194)`},
 						"Maracaí": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Marapoama": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Marinópolis": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Mariápolis": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Martinópolis": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Marília": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Matão": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Mauá": {
-							regex: `^093`},
+							regex: `^(?:093)`},
 						"Mendonça": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Meridiano": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Mesópolis": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Miguelópolis": {
-							regex: `^145`},
+							regex: `^(?:145)`},
 						"Mineiros do Tietê": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Mira Estrela": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Miracatu": {
-							regex: `^118`},
+							regex: `^(?:118)`},
 						"Mirandópolis": {
-							regex: `^168`},
+							regex: `^(?:168)`},
 						"Mirante do Paranapanema": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Mirassol": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Mirassolândia": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Mococa": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Mogi Guaçu": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Mombuca": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Mongaguá": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Monte Alegre do Sul": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Monte Alto": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Monte Aprazível": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Monte Azul Paulista": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Monte Castelo": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Monte Mor": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Monteiro Lobato": {
-							regex: `^122`},
+							regex: `^(?:122)`},
 						"Monções": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Morro Agudo": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Morungaba": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Motuca": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Murutinga do Sul": {
-							regex: `^169`},
+							regex: `^(?:169)`},
 						"Nantes": {
-							regex: `^196`},
+							regex: `^(?:196)`},
 						"Narandiba": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Natividade da Serra": {
-							regex: `^121`},
+							regex: `^(?:121)`},
 						"Nazaré Paulista": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Neves Paulista": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Nhandeara": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Nipoã": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Nova Aliança": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Nova Campina": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Nova Canaã Paulista": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Nova Castilho": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Nova Europa": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Nova Granada": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Nova Guataporanga": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Nova Independência": {
-							regex: `^169`},
+							regex: `^(?:169)`},
 						"Nova Luzitânia": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Nova Odessa": {
-							regex: `^13[34]`},
+							regex: `^(?:13[34])`},
 						"Novais": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Novo Horizonte": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Nuporanga": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Ocauçu": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Oleo": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Olímpia": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Onda Verde": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Oriente": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Orindiúva": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Orlândia": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Oscar Bressane": {
-							regex: `^197`},
+							regex: `^(?:197)`},
 						"Osvaldo Cruz": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Ourinhos": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Ouro Verde": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Ouroeste": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Pacaembu": {
-							regex: `^178`},
+							regex: `^(?:178)`},
 						"Palestina": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Palmares Paulista": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Palmeira d'Oeste": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Palmital": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Panorama": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Paraguaçu Paulista": {
-							regex: `^197`},
+							regex: `^(?:197)`},
 						"Paraibuna": {
-							regex: `^122`},
+							regex: `^(?:122)`},
 						"Paraiso": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Paranapanema": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Paranapuã": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Parapuã": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Pardinho": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Pariquera-Açu": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Parisi": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Patrocínio Paulista": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Paulicéia": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Paulistânia": {
-							regex: `^171`},
+							regex: `^(?:171)`},
 						"Paulo de Faria": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Paulínia": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Pederneiras": {
-							regex: `^172`},
+							regex: `^(?:172)`},
 						"Pedra Bela": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Pedranópolis": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Pedregulho": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Pedreira": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Pedrinhas Paulista": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Pedro de Toledo": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Penápolis": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Pereira Barreto": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Pereiras": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Peruíbe": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Piacatu": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Piedade": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Pilar do Sul": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Pindamonhangaba": {
-							regex: `^124`},
+							regex: `^(?:124)`},
 						"Pindorama": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Pinhalzinho": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Piquerobi": {
-							regex: `^194`},
+							regex: `^(?:194)`},
 						"Piquete": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"Piracaia": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Piracicaba": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Piraju": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Pirajuí": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Pirangi": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Pirapora do Bom Jesus": {
-							regex: `^065`},
+							regex: `^(?:065)`},
 						"Pirapozinho": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Pirassununga": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Piratininga": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Pitangueiras": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Planalto": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Platina": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Poa": {
-							regex: `^085`},
+							regex: `^(?:085)`},
 						"Poloni": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Pompéia": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Pongaí": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Pontal": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Pontalinda": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Pontes Gestal": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Populina": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"Porangaba": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Porto Feliz": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Porto Ferreira": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Potim": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"Potirendaba": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Pracinha": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Pradópolis": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Praia Grande": {
-							regex: `^117`},
+							regex: `^(?:117)`},
 						"Pratânia": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"Presidente Alves": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Presidente Bernardes": {
-							regex: `^193`},
+							regex: `^(?:193)`},
 						"Presidente Epitácio": {
-							regex: `^194`},
+							regex: `^(?:194)`},
 						"Presidente Venceslau": {
-							regex: `^194`},
+							regex: `^(?:194)`},
 						"Promissão": {
-							regex: `^163`},
+							regex: `^(?:163)`},
 						"Quadra": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Quatá": {
-							regex: `^197`},
+							regex: `^(?:197)`},
 						"Queiroz": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Queluz": {
-							regex: `^128`},
+							regex: `^(?:128)`},
 						"Quintana": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Rafard": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Rancharia": {
-							regex: `^196`},
+							regex: `^(?:196)`},
 						"Redenção da Serra": {
-							regex: `^121`},
+							regex: `^(?:121)`},
 						"Regente Feijó": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Reginópolis": {
-							regex: `^171`},
+							regex: `^(?:171)`},
 						"Registro": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Restinga": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Ribeira": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Ribeirão Bonito": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Ribeirão Branco": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Ribeirão Corrente": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Ribeirão Grande": {
-							regex: `^183`},
+							regex: `^(?:183)`},
 						"Ribeirão Pires": {
-							regex: `^094`},
+							regex: `^(?:094)`},
 						"Ribeirão do Sul": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Ribeirão dos Índios": {
-							regex: `^193`},
+							regex: `^(?:193)`},
 						"Rifaina": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"Rincão": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Rinópolis": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Rio Claro": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Rio Grande da Serra": {
-							regex: `^094`},
+							regex: `^(?:094)`},
 						"Rio das Pedras": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Riolândia": {
-							regex: `^154`},
+							regex: `^(?:154)`},
 						"Riversul": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Rosana": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Roseira": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"Rubinéia": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Rubiácea": {
-							regex: `^167`},
+							regex: `^(?:167)`},
 						"Sabino": {
-							regex: `^164`},
+							regex: `^(?:164)`},
 						"Sagres": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Sales": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Sales Oliveira": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"Salesópolis": {
-							regex: `^089`},
+							regex: `^(?:089)`},
 						"Salmourão": {
-							regex: `^177`},
+							regex: `^(?:177)`},
 						"Saltinho": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Salto": {
-							regex: `^133`},
+							regex: `^(?:133)`},
 						"Salto Grande": {
-							regex: `^199`},
+							regex: `^(?:199)`},
 						"Salto de Pirapora": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Sandovalina": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Santa Adélia": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Santa Albertina": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santa Branca": {
-							regex: `^123`},
+							regex: `^(?:123)`},
 						"Santa Bárbara d'Oeste": {
-							regex: `^134`},
+							regex: `^(?:134)`},
 						"Santa Clara d'Oeste": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santa Cruz da Conceição": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Santa Cruz da Esperança": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Santa Cruz das Palmeiras": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Santa Cruz do Rio Pardo": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"Santa Ernestina": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Santa Fé do Sul": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santa Gertrudes": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Santa Isabel": {
-							regex: `^075`},
+							regex: `^(?:075)`},
 						"Santa Lucia": {
-							regex: `^148`},
+							regex: `^(?:148)`},
 						"Santa Maria da Serra": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Santa Mercedes": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Santa Rita d'Oeste": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santa Rita do Passa Quatro": {
-							regex: `^136`},
+							regex: `^(?:136)`},
 						"Santa Rosa de Viterbo": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Santa Salete": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santana da Ponte Pensa": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Santana de Parnaíba": {
-							regex: `^065`},
+							regex: `^(?:065)`},
 						"Santo Anastácio": {
-							regex: `^193`},
+							regex: `^(?:193)`},
 						"Santo Antônio da Alegria": {
-							regex: `^143`},
+							regex: `^(?:143)`},
 						"Santo Antônio de Posse": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Santo Antônio do Aracanguá": {
-							regex: `^161`},
+							regex: `^(?:161)`},
 						"Santo Antônio do Jardim": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Santo Antônio do Pinhal": {
-							regex: `^124`},
+							regex: `^(?:124)`},
 						"Santo Expedito": {
-							regex: `^191`},
+							regex: `^(?:191)`},
 						"Santópolis do Aguapeí": {
-							regex: `^162`},
+							regex: `^(?:162)`},
 						"Sarapuí": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Sarutaiá": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Sebastianópolis do Sul": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Serra Azul": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"Serra Negra": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Serrana": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Sertãozinho": {
-							regex: `^141`},
+							regex: `^(?:141)`},
 						"Sete Barras": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"Severínia": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Silveiras": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"Socorro": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Sud Mennucci": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"Sumaré": {
-							regex: `^131`},
+							regex: `^(?:131)`},
 						"Suzano": {
-							regex: `^086`},
+							regex: `^(?:086)`},
 						"Suzanápolis": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"São Bento do Sapucaí": {
-							regex: `^124`},
+							regex: `^(?:124)`},
 						"São Bernardo do Campo": {
-							regex: `^09[678]`},
+							regex: `^(?:09[678])`},
 						"São Caetano do Sul": {
-							regex: `^095`},
+							regex: `^(?:095)`},
 						"São Carlos": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"São Francisco": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"São Joaquim da Barra": {
-							regex: `^146`},
+							regex: `^(?:146)`},
 						"São José da Bela Vista": {
-							regex: `^144`},
+							regex: `^(?:144)`},
 						"São José do Barreiro": {
-							regex: `^128`},
+							regex: `^(?:128)`},
 						"São José do Rio Pardo": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"São José dos Campos": {
-							regex: `^122`},
+							regex: `^(?:122)`},
 						"São João da Boa Vista": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"São João das Duas Pontes": {
-							regex: `^156`},
+							regex: `^(?:156)`},
 						"São João de Iracema": {
-							regex: `^153`},
+							regex: `^(?:153)`},
 						"São João do Pau d'Alho": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"São Lourenço da Serra": {
-							regex: `^068`},
+							regex: `^(?:068)`},
 						"São Manuel": {
-							regex: `^186`},
+							regex: `^(?:186)`},
 						"São Miguel Arcanjo": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"São Pedro": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"São Pedro do Turvo": {
-							regex: `^189`},
+							regex: `^(?:189)`},
 						"São Roque": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"São Sebastião": {
-							regex: `^116`},
+							regex: `^(?:116)`},
 						"São Sebastião da Grama": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"São Simão": {
-							regex: `^142`},
+							regex: `^(?:142)`},
 						"São Vicente": {
-							regex: `^113`},
+							regex: `^(?:113)`},
 						"Tabapuã": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Tabatinga": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Taboão da Serra": {
-							regex: `^067`},
+							regex: `^(?:067)`},
 						"Taciba": {
-							regex: `^195`},
+							regex: `^(?:195)`},
 						"Taguaí": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Taiaçu": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Taiúva": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Tambaú": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Tanabi": {
-							regex: `^151`},
+							regex: `^(?:151)`},
 						"Tapiratiba": {
-							regex: `^137`},
+							regex: `^(?:137)`},
 						"Tapiraí": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Taquaral": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Taquaritinga": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Taquarituba": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Taquarivaí": {
-							regex: `^184`},
+							regex: `^(?:184)`},
 						"Tarabai": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Tarumã": {
-							regex: `^198`},
+							regex: `^(?:198)`},
 						"Tatuí": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Tejupá": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Teodoro Sampaio": {
-							regex: `^192`},
+							regex: `^(?:192)`},
 						"Terra Roxa": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Tietê": {
-							regex: `^185`},
+							regex: `^(?:185)`},
 						"Timburi": {
-							regex: `^188`},
+							regex: `^(?:188)`},
 						"Torre de Pedra": {
-							regex: `^182`},
+							regex: `^(?:182)`},
 						"Torrinha": {
-							regex: `^173`},
+							regex: `^(?:173)`},
 						"Trabiju": {
-							regex: `^149`},
+							regex: `^(?:149)`},
 						"Tremembé": {
-							regex: `^121`},
+							regex: `^(?:121)`},
 						"Três Fronteiras": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Tuiuti": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Tupi Paulista": {
-							regex: `^179`},
+							regex: `^(?:179)`},
 						"Tupã": {
-							regex: `^176`},
+							regex: `^(?:176)`},
 						"Turiúba": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Turmalina": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Ubarana": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Ubatuba": {
-							regex: `^116`},
+							regex: `^(?:116)`},
 						"Ubirajara": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 						"Uchoa": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"União Paulista": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Uru": {
-							regex: `^166`},
+							regex: `^(?:166)`},
 						"Urupês": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"Urânia": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Valentim Gentil": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Valinhos": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Valparaíso": {
-							regex: `^168`},
+							regex: `^(?:168)`},
 						"Vargem": {
-							regex: `^129`},
+							regex: `^(?:129)`},
 						"Vargem Grande Paulista": {
-							regex: `^067`},
+							regex: `^(?:067)`},
 						"Vargem Grande do Sul": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Vera Cruz": {
-							regex: `^175`},
+							regex: `^(?:175)`},
 						"Vinhedo": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Viradouro": {
-							regex: `^147`},
+							regex: `^(?:147)`},
 						"Vista Alegre do Alto": {
-							regex: `^159`},
+							regex: `^(?:159)`},
 						"Vitória Brasil": {
-							regex: `^157`},
+							regex: `^(?:157)`},
 						"Votorantim": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"Votuporanga": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Várzea Paulista": {
-							regex: `^132`},
+							regex: `^(?:132)`},
 						"Zacarias": {
-							regex: `^152`},
+							regex: `^(?:152)`},
 						"Águas da Prata": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"Águas de Lindóia": {
-							regex: `^139`},
+							regex: `^(?:139)`},
 						"Águas de Santa Bárbara": {
-							regex: `^187`},
+							regex: `^(?:187)`},
 						"Águas de São Pedro": {
-							regex: `^135`},
+							regex: `^(?:135)`},
 						"Álvares Florence": {
-							regex: `^155`},
+							regex: `^(?:155)`},
 						"Álvares Machado": {
-							regex: `^191`},
+							regex: `^(?:191)`},
 						"Álvaro de Carvalho": {
-							regex: `^174`},
+							regex: `^(?:174)`},
 					}},
 				"TO": {
-					regex: `^77`,
+					regex: `^(?:77)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"Abreulândia": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Aguiarnópolis": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Aliança do Tocantins": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Almas": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Alvorada": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Ananas": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Angico": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Aparecida do Rio Negro": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Aragominas": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Araguacema": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Araguanã": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Araguatins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Araguaçu": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Araguaína": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Arapoema": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Arraias": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Augustinópolis": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Aurora do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Axixá do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Babaçulândia": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Bandeirantes do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Barra do Ouro": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Barrolândia": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Bernardo Sayão": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Bom Jesus do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Brasilândia do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Brejinho de Nazaré": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Buriti do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Cachoeirinha": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Campos Lindos": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Cariri do Tocantins": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Carmolândia": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Carrasco Bonito": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Caseara": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Centenário": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Chapada da Natividade": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Chapada de Areia": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Colinas do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Colméia": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Combinado": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Conceição do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Couto de Magalhães": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Cristalândia": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Crixás do Tocantins": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Darcinópolis": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Dianópolis": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Divinópolis do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Dois Irmãos do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Dueré": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Esperantina": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Figueirópolis": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Filadelfia": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Formoso do Araguaia": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Fortaleza do Tabocão": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Fátima": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Goianorte": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Goiatins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Guaraí": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Gurupi": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Ipueiras": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Itacajá": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Itaguatins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Itapiratins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Itaporã do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Jaú do Tocantins": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Juarina": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Lagoa da Confusão": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Lagoa do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Lajeado": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Lavandeira": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Lizarda": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Luzinópolis": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Marianópolis do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Mateiros": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Maurilândia do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Miracema do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Miranorte": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Monte Santo do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Monte do Carmo": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Muricilândia": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Natividade": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Nazaré": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Nova Olinda": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Nova Rosalândia": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Novo Acordo": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Novo Alegre": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Novo Jardim": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Oliveira de Fátima": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Palmeirante": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Palmeirópolis": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Paraná": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Paraíso do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Pau D'Arco": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Pedro Afonso": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Peixe": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Pequizeiro": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Pindorama do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Piraquê": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Pium": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Ponte Alta do Bom Jesus": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Ponte Alta do Tocantins": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Porto Alegre do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Porto Nacional": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Praia Norte": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Presidente Kennedy": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Pugmil": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Recursolândia": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Riachinho": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Rio Sono": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Rio da Conceição": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Rio dos Bois": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Sampaio": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Sandolândia": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Santa Fé do Araguaia": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Santa Maria do Tocantins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Santa Rita do Tocantins": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Santa Rosa do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Santa Tereza do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Santa Terezinha do Tocantins": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Silvanópolis": {
-							regex: `^775`},
+							regex: `^(?:775)`},
 						"Sucupira": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"São Bento do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"São Félix do Tocantins": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"São Miguel do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"São Salvador do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"São Sebastião do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"São Valério da Natividade": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Sítio Novo do Tocantins": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Taguatinga": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Taipas do Tocantins": {
-							regex: `^773`},
+							regex: `^(?:773)`},
 						"Talisma": {
-							regex: `^774`},
+							regex: `^(?:774)`},
 						"Tocantinópolis": {
-							regex: `^779`},
+							regex: `^(?:779)`},
 						"Tocantínia": {
-							regex: `^776`},
+							regex: `^(?:776)`},
 						"Tupirama": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Tupiratins": {
-							regex: `^777`},
+							regex: `^(?:777)`},
 						"Wanderlândia": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 						"Xambioá": {
-							regex: `^778`},
+							regex: `^(?:778)`},
 					}},
 			}},
 		Format:                     "%O%n%N%n%A%n%D%n%C-%S%n%Z",
@@ -34717,31 +34717,31 @@ var generated = data{
 			regex: `^([ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z] ?\d[ABCEGHJ-NPRSTV-Z]\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AB": {
-					regex: `^T`},
+					regex: `^(?:T)`},
 				"BC": {
-					regex: `^V`},
+					regex: `^(?:V)`},
 				"MB": {
-					regex: `^R`},
+					regex: `^(?:R)`},
 				"NB": {
-					regex: `^E`},
+					regex: `^(?:E)`},
 				"NL": {
-					regex: `^A`},
+					regex: `^(?:A)`},
 				"NS": {
-					regex: `^B`},
+					regex: `^(?:B)`},
 				"NT": {
-					regex: `^X0E|X0G|X1A`},
+					regex: `^(?:X0E|X0G|X1A)`},
 				"NU": {
-					regex: `^X0A|X0B|X0C`},
+					regex: `^(?:X0A|X0B|X0C)`},
 				"ON": {
-					regex: `^K|L|M|N|P`},
+					regex: `^(?:K|L|M|N|P)`},
 				"PE": {
-					regex: `^C`},
+					regex: `^(?:C)`},
 				"QC": {
-					regex: `^G|H|J|K1A`},
+					regex: `^(?:G|H|J|K1A)`},
 				"SK": {
-					regex: `^S|R8A`},
+					regex: `^(?:S|R8A)`},
 				"YT": {
-					regex: `^Y`},
+					regex: `^(?:Y)`},
 			}},
 		Format: "%N%n%O%n%A%n%C %S %Z",
 		AllowedFields: map[Field]struct{}{
@@ -64830,109 +64830,109 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"A": {
-					regex: `^03`},
+					regex: `^(?:03)`},
 				"AB": {
-					regex: `^02`},
+					regex: `^(?:02)`},
 				"AL": {
-					regex: `^04`},
+					regex: `^(?:04)`},
 				"AV": {
-					regex: `^05`},
+					regex: `^(?:05)`},
 				"B": {
-					regex: `^08`},
+					regex: `^(?:08)`},
 				"BA": {
-					regex: `^06`},
+					regex: `^(?:06)`},
 				"BI": {
-					regex: `^48`},
+					regex: `^(?:48)`},
 				"BU": {
-					regex: `^09`},
+					regex: `^(?:09)`},
 				"C": {
-					regex: `^15`},
+					regex: `^(?:15)`},
 				"CA": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"CC": {
-					regex: `^10`},
+					regex: `^(?:10)`},
 				"CE": {
-					regex: `^51`},
+					regex: `^(?:51)`},
 				"CO": {
-					regex: `^14`},
+					regex: `^(?:14)`},
 				"CR": {
-					regex: `^13`},
+					regex: `^(?:13)`},
 				"CS": {
-					regex: `^12`},
+					regex: `^(?:12)`},
 				"CU": {
-					regex: `^16`},
+					regex: `^(?:16)`},
 				"GC": {
-					regex: `^35`},
+					regex: `^(?:35)`},
 				"GI": {
-					regex: `^17`},
+					regex: `^(?:17)`},
 				"GR": {
-					regex: `^18`},
+					regex: `^(?:18)`},
 				"GU": {
-					regex: `^19`},
+					regex: `^(?:19)`},
 				"H": {
-					regex: `^21`},
+					regex: `^(?:21)`},
 				"HU": {
-					regex: `^22`},
+					regex: `^(?:22)`},
 				"J": {
-					regex: `^23`},
+					regex: `^(?:23)`},
 				"L": {
-					regex: `^25`},
+					regex: `^(?:25)`},
 				"LE": {
-					regex: `^24`},
+					regex: `^(?:24)`},
 				"LO": {
-					regex: `^26`},
+					regex: `^(?:26)`},
 				"LU": {
-					regex: `^27`},
+					regex: `^(?:27)`},
 				"M": {
-					regex: `^28`},
+					regex: `^(?:28)`},
 				"MA": {
-					regex: `^29`},
+					regex: `^(?:29)`},
 				"ML": {
-					regex: `^52`},
+					regex: `^(?:52)`},
 				"MU": {
-					regex: `^30`},
+					regex: `^(?:30)`},
 				"NA": {
-					regex: `^31`},
+					regex: `^(?:31)`},
 				"O": {
-					regex: `^33`},
+					regex: `^(?:33)`},
 				"OR": {
-					regex: `^32`},
+					regex: `^(?:32)`},
 				"P": {
-					regex: `^34`},
+					regex: `^(?:34)`},
 				"PM": {
-					regex: `^07`},
+					regex: `^(?:07)`},
 				"PO": {
-					regex: `^36`},
+					regex: `^(?:36)`},
 				"S": {
-					regex: `^39`},
+					regex: `^(?:39)`},
 				"SA": {
-					regex: `^37`},
+					regex: `^(?:37)`},
 				"SE": {
-					regex: `^41`},
+					regex: `^(?:41)`},
 				"SG": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"SO": {
-					regex: `^26127|42`},
+					regex: `^(?:26127|42)`},
 				"SS": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"T": {
-					regex: `^43`},
+					regex: `^(?:43)`},
 				"TE": {
-					regex: `^44`},
+					regex: `^(?:44)`},
 				"TF": {
-					regex: `^38`},
+					regex: `^(?:38)`},
 				"TO": {
-					regex: `^45`},
+					regex: `^(?:45)`},
 				"V": {
-					regex: `^46`},
+					regex: `^(?:46)`},
 				"VA": {
-					regex: `^47`},
+					regex: `^(?:47)`},
 				"VI": {
-					regex: `^01`},
+					regex: `^(?:01)`},
 				"Z": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"ZA": {
-					regex: `^49`},
+					regex: `^(?:49)`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
@@ -68283,77 +68283,77 @@ var generated = data{
 			regex: `^(\d{6})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AN": {
-					regex: `^744`},
+					regex: `^(?:744)`},
 				"AP": {
-					regex: `^50[2-7|9]|5[1-3]`},
+					regex: `^(?:50[2-7|9]|5[1-3])`},
 				"AR": {
-					regex: `^79[0-2]`},
+					regex: `^(?:79[0-2])`},
 				"AS": {
-					regex: `^78`},
+					regex: `^(?:78)`},
 				"BR": {
-					regex: `^8[0-5]`},
+					regex: `^(?:8[0-5])`},
 				"CG": {
-					regex: `^49`},
+					regex: `^(?:49)`},
 				"CH": {
-					regex: `^16|1440[3-9]`},
+					regex: `^(?:16|1440[3-9])`},
 				"DH": {
-					regex: `^396|362`},
+					regex: `^(?:396|362)`},
 				"DL": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"GA": {
-					regex: `^403`},
+					regex: `^(?:403)`},
 				"GJ": {
-					regex: `^3[6-9]`},
+					regex: `^(?:3[6-9])`},
 				"HP": {
-					regex: `^17`},
+					regex: `^(?:17)`},
 				"HR": {
-					regex: `^1[23]`},
+					regex: `^(?:1[23])`},
 				"JH": {
-					regex: `^81[4-9]|82|83[0-5]`},
+					regex: `^(?:81[4-9]|82|83[0-5])`},
 				"JK": {
-					regex: `^1[89]`},
+					regex: `^(?:1[89])`},
 				"KA": {
-					regex: `^5[4-9]|53[7-9]`},
+					regex: `^(?:5[4-9]|53[7-9])`},
 				"KL": {
-					regex: `^6[7-9]|6010|607008|777`},
+					regex: `^(?:6[7-9]|6010|607008|777)`},
 				"LA": {
-					regex: `^194`},
+					regex: `^(?:194)`},
 				"LD": {
-					regex: `^682`},
+					regex: `^(?:682)`},
 				"MH": {
-					regex: `^4[0-4]`},
+					regex: `^(?:4[0-4])`},
 				"ML": {
-					regex: `^79[34]`},
+					regex: `^(?:79[34])`},
 				"MN": {
-					regex: `^79[56]`},
+					regex: `^(?:79[56])`},
 				"MP": {
-					regex: `^4[5-8]|490`},
+					regex: `^(?:4[5-8]|490)`},
 				"MZ": {
-					regex: `^796`},
+					regex: `^(?:796)`},
 				"NL": {
-					regex: `^79[78]`},
+					regex: `^(?:79[78])`},
 				"OD": {
-					regex: `^7[5-7]`},
+					regex: `^(?:7[5-7])`},
 				"PB": {
-					regex: `^1[456]`},
+					regex: `^(?:1[456])`},
 				"PY": {
-					regex: `^60[579]|673310`},
+					regex: `^(?:60[579]|673310)`},
 				"RJ": {
-					regex: `^3[0-4]`},
+					regex: `^(?:3[0-4])`},
 				"SK": {
-					regex: `^737|750`},
+					regex: `^(?:737|750)`},
 				"TN": {
-					regex: `^6[0-6]|536`},
+					regex: `^(?:6[0-6]|536)`},
 				"TR": {
-					regex: `^799`},
+					regex: `^(?:799)`},
 				"TS": {
-					regex: `^50|53[1|4]`},
+					regex: `^(?:50|53[1|4])`},
 				"UK": {
-					regex: `^24[46-9]|254|26[23]`},
+					regex: `^(?:24[46-9]|254|26[23])`},
 				"UP": {
-					regex: `^2[0-35-8]|24[0-7]|26[12]`},
+					regex: `^(?:2[0-35-8]|24[0-7]|26[12])`},
 				"WB": {
-					regex: `^7[0-4]`},
+					regex: `^(?:7[0-4])`},
 			}},
 		Format:                     "%N%n%O%n%A%n%T%n%F%n%L%n%C %Z%n%S",
 		AdministrativeAreaNameType: State,
@@ -69341,227 +69341,227 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AG": {
-					regex: `^92`},
+					regex: `^(?:92)`},
 				"AL": {
-					regex: `^15`},
+					regex: `^(?:15)`},
 				"AN": {
-					regex: `^60`},
+					regex: `^(?:60)`},
 				"AO": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"AP": {
-					regex: `^63`},
+					regex: `^(?:63)`},
 				"AQ": {
-					regex: `^67`},
+					regex: `^(?:67)`},
 				"AR": {
-					regex: `^52`},
+					regex: `^(?:52)`},
 				"AT": {
-					regex: `^14`},
+					regex: `^(?:14)`},
 				"AV": {
-					regex: `^83`},
+					regex: `^(?:83)`},
 				"BA": {
-					regex: `^70`},
+					regex: `^(?:70)`},
 				"BG": {
-					regex: `^24`},
+					regex: `^(?:24)`},
 				"BI": {
-					regex: `^13[89]`},
+					regex: `^(?:13[89])`},
 				"BL": {
-					regex: `^32`},
+					regex: `^(?:32)`},
 				"BN": {
-					regex: `^82`},
+					regex: `^(?:82)`},
 				"BO": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"BR": {
-					regex: `^72`},
+					regex: `^(?:72)`},
 				"BS": {
-					regex: `^25`},
+					regex: `^(?:25)`},
 				"BT": {
-					regex: `^76[01]`},
+					regex: `^(?:76[01])`},
 				"BZ": {
-					regex: `^39`},
+					regex: `^(?:39)`},
 				"CA": {
-					regex: `^0803|090[1-6]|091[23]`},
+					regex: `^(?:0803|090[1-6]|091[23])`},
 				"CB": {
-					regex: `^860[1-4]|86100`},
+					regex: `^(?:860[1-4]|86100)`},
 				"CE": {
-					regex: `^81`},
+					regex: `^(?:81)`},
 				"CH": {
-					regex: `^66`},
+					regex: `^(?:66)`},
 				"CL": {
-					regex: `^93`},
+					regex: `^(?:93)`},
 				"CN": {
-					regex: `^12|18025`},
+					regex: `^(?:12|18025)`},
 				"CO": {
-					regex: `^22`},
+					regex: `^(?:22)`},
 				"CR": {
-					regex: `^26[01]`},
+					regex: `^(?:26[01])`},
 				"CS": {
-					regex: `^87`},
+					regex: `^(?:87)`},
 				"CT": {
-					regex: `^95`},
+					regex: `^(?:95)`},
 				"CZ": {
-					regex: `^88[01]`},
+					regex: `^(?:88[01])`},
 				"EN": {
-					regex: `^94`},
+					regex: `^(?:94)`},
 				"FC": {
-					regex: `^47[015]`},
+					regex: `^(?:47[015])`},
 				"FE": {
-					regex: `^44`},
+					regex: `^(?:44)`},
 				"FG": {
-					regex: `^71`},
+					regex: `^(?:71)`},
 				"FI": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"FM": {
-					regex: `^638|63900`},
+					regex: `^(?:638|63900)`},
 				"FR": {
-					regex: `^03`},
+					regex: `^(?:03)`},
 				"GA": {
-					regex: `^070[235]|0802`},
+					regex: `^(?:070[235]|0802)`},
 				"GE": {
-					regex: `^16`},
+					regex: `^(?:16)`},
 				"GO": {
-					regex: `^34[01]7`},
+					regex: `^(?:34[01]7)`},
 				"GR": {
-					regex: `^58`},
+					regex: `^(?:58)`},
 				"IM": {
-					regex: `^18`},
+					regex: `^(?:18)`},
 				"IS": {
-					regex: `^860[7-9]|86170`},
+					regex: `^(?:860[7-9]|86170)`},
 				"KR": {
-					regex: `^88[89]`},
+					regex: `^(?:88[89])`},
 				"LC": {
-					regex: `^23[89]`},
+					regex: `^(?:23[89])`},
 				"LE": {
-					regex: `^73`},
+					regex: `^(?:73)`},
 				"LI": {
-					regex: `^57`},
+					regex: `^(?:57)`},
 				"LO": {
-					regex: `^26[89]`},
+					regex: `^(?:26[89])`},
 				"LT": {
-					regex: `^04`},
+					regex: `^(?:04)`},
 				"LU": {
-					regex: `^55`},
+					regex: `^(?:55)`},
 				"MB": {
-					regex: `^208|20900`},
+					regex: `^(?:208|20900)`},
 				"MC": {
-					regex: `^62`},
+					regex: `^(?:62)`},
 				"ME": {
-					regex: `^98`},
+					regex: `^(?:98)`},
 				"MI": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"MN": {
-					regex: `^46`},
+					regex: `^(?:46)`},
 				"MO": {
-					regex: `^41`},
+					regex: `^(?:41)`},
 				"MS": {
-					regex: `^54`},
+					regex: `^(?:54)`},
 				"MT": {
-					regex: `^75`},
+					regex: `^(?:75)`},
 				"NA": {
-					regex: `^80`},
+					regex: `^(?:80)`},
 				"NO": {
-					regex: `^28[01]`},
+					regex: `^(?:28[01])`},
 				"NU": {
-					regex: `^080[123]|0810`},
+					regex: `^(?:080[123]|0810)`},
 				"OG": {
-					regex: `^080[34]`},
+					regex: `^(?:080[34])`},
 				"OR": {
-					regex: `^080[13]|090[789]|0917`},
+					regex: `^(?:080[13]|090[789]|0917)`},
 				"PA": {
-					regex: `^90`},
+					regex: `^(?:90)`},
 				"PC": {
-					regex: `^29`},
+					regex: `^(?:29)`},
 				"PD": {
-					regex: `^35`},
+					regex: `^(?:35)`},
 				"PE": {
-					regex: `^65`},
+					regex: `^(?:65)`},
 				"PG": {
-					regex: `^06`},
+					regex: `^(?:06)`},
 				"PI": {
-					regex: `^56`},
+					regex: `^(?:56)`},
 				"PN": {
-					regex: `^330[7-9]|33170`},
+					regex: `^(?:330[7-9]|33170)`},
 				"PO": {
-					regex: `^59`},
+					regex: `^(?:59)`},
 				"PR": {
-					regex: `^43`},
+					regex: `^(?:43)`},
 				"PT": {
-					regex: `^51`},
+					regex: `^(?:51)`},
 				"PU": {
-					regex: `^61`},
+					regex: `^(?:61)`},
 				"PV": {
-					regex: `^27`},
+					regex: `^(?:27)`},
 				"PZ": {
-					regex: `^85`},
+					regex: `^(?:85)`},
 				"RA": {
-					regex: `^48`},
+					regex: `^(?:48)`},
 				"RC": {
-					regex: `^89[01]`},
+					regex: `^(?:89[01])`},
 				"RE": {
-					regex: `^42`},
+					regex: `^(?:42)`},
 				"RG": {
-					regex: `^97`},
+					regex: `^(?:97)`},
 				"RI": {
-					regex: `^02`},
+					regex: `^(?:02)`},
 				"RM": {
-					regex: `^00`},
+					regex: `^(?:00)`},
 				"RN": {
-					regex: `^47[89]`},
+					regex: `^(?:47[89])`},
 				"RO": {
-					regex: `^45`},
+					regex: `^(?:45)`},
 				"SA": {
-					regex: `^84`},
+					regex: `^(?:84)`},
 				"SD": {
-					regex: `^0901`},
+					regex: `^(?:0901)`},
 				"SI": {
-					regex: `^53`},
+					regex: `^(?:53)`},
 				"SO": {
-					regex: `^23[01]`},
+					regex: `^(?:23[01])`},
 				"SP": {
-					regex: `^19`},
+					regex: `^(?:19)`},
 				"SR": {
-					regex: `^96`},
+					regex: `^(?:96)`},
 				"SS": {
-					regex: `^070|071`},
+					regex: `^(?:070|071)`},
 				"SU": {
-					regex: `^090[1-5][0-9]|0906[0-6]|080[1-4]`},
+					regex: `^(?:090[1-5][0-9]|0906[0-6]|080[1-4])`},
 				"SV": {
-					regex: `^17|12071`},
+					regex: `^(?:17|12071)`},
 				"TA": {
-					regex: `^74`},
+					regex: `^(?:74)`},
 				"TE": {
-					regex: `^64`},
+					regex: `^(?:64)`},
 				"TN": {
-					regex: `^38`},
+					regex: `^(?:38)`},
 				"TO": {
-					regex: `^10`},
+					regex: `^(?:10)`},
 				"TP": {
-					regex: `^91`},
+					regex: `^(?:91)`},
 				"TR": {
-					regex: `^05`},
+					regex: `^(?:05)`},
 				"TS": {
-					regex: `^3401|341[0-689]|34062`},
+					regex: `^(?:3401|341[0-689]|34062)`},
 				"TV": {
-					regex: `^31`},
+					regex: `^(?:31)`},
 				"UD": {
-					regex: `^330[1-5]|33100`},
+					regex: `^(?:330[1-5]|33100)`},
 				"VA": {
-					regex: `^21`},
+					regex: `^(?:21)`},
 				"VB": {
-					regex: `^28[89]`},
+					regex: `^(?:28[89])`},
 				"VC": {
-					regex: `^13[01]`},
+					regex: `^(?:13[01])`},
 				"VE": {
-					regex: `^30`},
+					regex: `^(?:30)`},
 				"VI": {
-					regex: `^36`},
+					regex: `^(?:36)`},
 				"VR": {
-					regex: `^37`},
+					regex: `^(?:37)`},
 				"VS": {
-					regex: `^090[234]`},
+					regex: `^(?:090[234])`},
 				"VT": {
-					regex: `^01`},
+					regex: `^(?:01)`},
 				"VV": {
-					regex: `^89[89]`},
+					regex: `^(?:89[89])`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{
@@ -70283,99 +70283,99 @@ var generated = data{
 			regex: `^(\d{3}-?\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
-					regex: `^0[4-9]|00[1-7]`},
+					regex: `^(?:0[4-9]|00[1-7])`},
 				"02": {
-					regex: `^03|018`},
+					regex: `^(?:03|018)`},
 				"03": {
-					regex: `^02`},
+					regex: `^(?:02)`},
 				"04": {
-					regex: `^98`},
+					regex: `^(?:98)`},
 				"05": {
-					regex: `^01`},
+					regex: `^(?:01)`},
 				"06": {
-					regex: `^99`},
+					regex: `^(?:99)`},
 				"07": {
-					regex: `^9[67]`},
+					regex: `^(?:9[67])`},
 				"08": {
-					regex: `^3[01]`},
+					regex: `^(?:3[01])`},
 				"09": {
-					regex: `^32|311|349`},
+					regex: `^(?:32|311|349)`},
 				"10": {
-					regex: `^37|38[49]`},
+					regex: `^(?:37|38[49])`},
 				"11": {
-					regex: `^3[3-6]`},
+					regex: `^(?:3[3-6])`},
 				"12": {
-					regex: `^2[6-9]`},
+					regex: `^(?:2[6-9])`},
 				"13": {
-					regex: `^1[0-8]|19[0-8]|20`},
+					regex: `^(?:1[0-8]|19[0-8]|20)`},
 				"14": {
-					regex: `^2[1-5]|199`},
+					regex: `^(?:2[1-5]|199)`},
 				"15": {
-					regex: `^9[45]|389`},
+					regex: `^(?:9[45]|389)`},
 				"16": {
-					regex: `^93`},
+					regex: `^(?:93)`},
 				"17": {
-					regex: `^92|939`},
+					regex: `^(?:92|939)`},
 				"18": {
-					regex: `^91|922`},
+					regex: `^(?:91|922)`},
 				"19": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"20": {
-					regex: `^3[89]|949`},
+					regex: `^(?:3[89]|949)`},
 				"21": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"22": {
-					regex: `^4[1-9]`},
+					regex: `^(?:4[1-9])`},
 				"23": {
-					regex: `^4[4-9]|431`},
+					regex: `^(?:4[4-9]|431)`},
 				"24": {
-					regex: `^51|498|647`},
+					regex: `^(?:51|498|647)`},
 				"25": {
-					regex: `^52`},
+					regex: `^(?:52)`},
 				"26": {
-					regex: `^6[0-2]|520`},
+					regex: `^(?:6[0-2]|520)`},
 				"27": {
-					regex: `^5[3-9]|618|630`},
+					regex: `^(?:5[3-9]|618|630)`},
 				"28": {
-					regex: `^6[5-7]|563`},
+					regex: `^(?:6[5-7]|563)`},
 				"29": {
-					regex: `^63|64[78]`},
+					regex: `^(?:63|64[78])`},
 				"30": {
-					regex: `^64|519`},
+					regex: `^(?:64|519)`},
 				"31": {
-					regex: `^68`},
+					regex: `^(?:68)`},
 				"32": {
-					regex: `^69|68[45]`},
+					regex: `^(?:69|68[45])`},
 				"33": {
-					regex: `^7[01]`},
+					regex: `^(?:7[01])`},
 				"34": {
-					regex: `^7[23]`},
+					regex: `^(?:7[23])`},
 				"35": {
-					regex: `^7[45]`},
+					regex: `^(?:7[45])`},
 				"36": {
-					regex: `^77`},
+					regex: `^(?:77)`},
 				"37": {
-					regex: `^76`},
+					regex: `^(?:76)`},
 				"38": {
-					regex: `^79`},
+					regex: `^(?:79)`},
 				"39": {
-					regex: `^78`},
+					regex: `^(?:78)`},
 				"40": {
-					regex: `^8[0-3]|871`},
+					regex: `^(?:8[0-3]|871)`},
 				"41": {
-					regex: `^84`},
+					regex: `^(?:84)`},
 				"42": {
-					regex: `^85|81[17]|848`},
+					regex: `^(?:85|81[17]|848)`},
 				"43": {
-					regex: `^86`},
+					regex: `^(?:86)`},
 				"44": {
-					regex: `^87|839`},
+					regex: `^(?:87|839)`},
 				"45": {
-					regex: `^88`},
+					regex: `^(?:88)`},
 				"46": {
-					regex: `^89`},
+					regex: `^(?:89)`},
 				"47": {
-					regex: `^90`},
+					regex: `^(?:90)`},
 			}},
 		Format:                     "〒%Z%n%S%n%A%n%O%n%N",
 		LatinizedFormat:            "%N%n%O%n%A, %S%n%Z",
@@ -71139,621 +71139,621 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"11": {
-					regex: `^0[1-8]\d{2}`,
+					regex: `^(?:0[1-8]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"강남구": {
-							regex: `^06[0-3]`},
+							regex: `^(?:06[0-3])`},
 						"강동구": {
-							regex: `^05[2-4]`},
+							regex: `^(?:05[2-4])`},
 						"강북구": {
-							regex: `^01[0-2]`},
+							regex: `^(?:01[0-2])`},
 						"강서구": {
-							regex: `^07[5-8]`},
+							regex: `^(?:07[5-8])`},
 						"관악구": {
-							regex: `^08[78]`},
+							regex: `^(?:08[78])`},
 						"광진구": {
-							regex: `^0(?:49|5[01])`},
+							regex: `^(?:0(?:49|5[01]))`},
 						"구로구": {
-							regex: `^08[23]`},
+							regex: `^(?:08[23])`},
 						"금천구": {
-							regex: `^08[56]`},
+							regex: `^(?:08[56])`},
 						"노원구": {
-							regex: `^01[6-9]`},
+							regex: `^(?:01[6-9])`},
 						"도봉구": {
-							regex: `^01[34]`},
+							regex: `^(?:01[34])`},
 						"동대문구": {
-							regex: `^02[4-6]`},
+							regex: `^(?:02[4-6])`},
 						"동작구": {
-							regex: `^0(?:69|70)`},
+							regex: `^(?:0(?:69|70))`},
 						"마포구": {
-							regex: `^0(?:39|4[0-2])`},
+							regex: `^(?:0(?:39|4[0-2]))`},
 						"서대문구": {
-							regex: `^03[67]`},
+							regex: `^(?:03[67])`},
 						"서초구": {
-							regex: `^06[5-8]`},
+							regex: `^(?:06[5-8])`},
 						"성동구": {
-							regex: `^04[78]`},
+							regex: `^(?:04[78])`},
 						"성북구": {
-							regex: `^02[78]`},
+							regex: `^(?:02[78])`},
 						"송파구": {
-							regex: `^05[5-8]`},
+							regex: `^(?:05[5-8])`},
 						"양천구": {
-							regex: `^0(?:7[89]|8[01])`},
+							regex: `^(?:0(?:7[89]|8[01]))`},
 						"영등포구": {
-							regex: `^07[2-4]`},
+							regex: `^(?:07[2-4])`},
 						"용산구": {
-							regex: `^04[34]`},
+							regex: `^(?:04[34])`},
 						"은평구": {
-							regex: `^03[3-5]`},
+							regex: `^(?:03[3-5])`},
 						"종로구": {
-							regex: `^03[01]`},
+							regex: `^(?:03[01])`},
 						"중구": {
-							regex: `^04[56]|100`},
+							regex: `^(?:04[56]|100)`},
 						"중랑구": {
-							regex: `^02[0-2]`},
+							regex: `^(?:02[0-2])`},
 					}},
 				"26": {
-					regex: `^4[6-9]\d{2}`,
+					regex: `^(?:4[6-9]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"강서구": {
-							regex: `^467`},
+							regex: `^(?:467)`},
 						"금정구": {
-							regex: `^46[23]`},
+							regex: `^(?:46[23])`},
 						"기장군": {
-							regex: `^460`},
+							regex: `^(?:460)`},
 						"남구": {
-							regex: `^48[45]`},
+							regex: `^(?:48[45])`},
 						"동구": {
-							regex: `^48[78]`},
+							regex: `^(?:48[78])`},
 						"동래구": {
-							regex: `^47[789]`},
+							regex: `^(?:47[789])`},
 						"부산진구": {
-							regex: `^47[123]`},
+							regex: `^(?:47[123])`},
 						"북구": {
-							regex: `^46[56]`},
+							regex: `^(?:46[56])`},
 						"사상구": {
-							regex: `^4(?:69|70)`},
+							regex: `^(?:4(?:69|70))`},
 						"사하구": {
-							regex: `^49[345]`},
+							regex: `^(?:49[345])`},
 						"서구": {
-							regex: `^492`},
+							regex: `^(?:492)`},
 						"수영구": {
-							regex: `^48[23]`},
+							regex: `^(?:48[23])`},
 						"연제구": {
-							regex: `^47[56]`},
+							regex: `^(?:47[56])`},
 						"영도구": {
-							regex: `^49[01]`},
+							regex: `^(?:49[01])`},
 						"중구": {
-							regex: `^489`},
+							regex: `^(?:489)`},
 						"해운대구": {
-							regex: `^48[01]`},
+							regex: `^(?:48[01])`},
 					}},
 				"27": {
-					regex: `^4[123]\d{2}`,
+					regex: `^(?:4[123]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"군위군": {
-							regex: `^431`},
+							regex: `^(?:431)`},
 						"남구": {
-							regex: `^42[45]`},
+							regex: `^(?:42[45])`},
 						"달서구": {
-							regex: `^42[678]`},
+							regex: `^(?:42[678])`},
 						"달성군": {
-							regex: `^4(?:29|30)`},
+							regex: `^(?:4(?:29|30))`},
 						"동구": {
-							regex: `^41[0-2]`},
+							regex: `^(?:41[0-2])`},
 						"북구": {
-							regex: `^41[45]`},
+							regex: `^(?:41[45])`},
 						"서구": {
-							regex: `^41[78]`},
+							regex: `^(?:41[78])`},
 						"수성구": {
-							regex: `^42[0-2]`},
+							regex: `^(?:42[0-2])`},
 						"중구": {
-							regex: `^419`},
+							regex: `^(?:419)`},
 					}},
 				"28": {
-					regex: `^2[1-3]\d{2}`,
+					regex: `^(?:2[1-3]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"강화군": {
-							regex: `^230`},
+							regex: `^(?:230)`},
 						"계양구": {
-							regex: `^21[01]`},
+							regex: `^(?:21[01])`},
 						"남동구": {
-							regex: `^21[5-7]`},
+							regex: `^(?:21[5-7])`},
 						"동구": {
-							regex: `^225`},
+							regex: `^(?:225)`},
 						"미추홀구": {
-							regex: `^22[12]`},
+							regex: `^(?:22[12])`},
 						"부평구": {
-							regex: `^21[34]`},
+							regex: `^(?:21[34])`},
 						"서구": {
-							regex: `^22[6-8]`},
+							regex: `^(?:22[6-8])`},
 						"연수구": {
-							regex: `^2(?:19|20)`},
+							regex: `^(?:2(?:19|20))`},
 						"옹진군": {
-							regex: `^231`},
+							regex: `^(?:231)`},
 						"중구": {
-							regex: `^22[34]`},
+							regex: `^(?:22[34])`},
 					}},
 				"29": {
-					regex: `^6[12]\d{2}`,
+					regex: `^(?:6[12]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"광산구": {
-							regex: `^62[2-4]`},
+							regex: `^(?:62[2-4])`},
 						"남구": {
-							regex: `^61[67]`},
+							regex: `^(?:61[67])`},
 						"동구": {
-							regex: `^61[45]`},
+							regex: `^(?:61[45])`},
 						"북구": {
-							regex: `^61[0-2]`},
+							regex: `^(?:61[0-2])`},
 						"서구": {
-							regex: `^6(?:19|20)`},
+							regex: `^(?:6(?:19|20))`},
 					}},
 				"30": {
-					regex: `^3[45]\d{2}`,
+					regex: `^(?:3[45]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"대덕구": {
-							regex: `^34[34]`},
+							regex: `^(?:34[34])`},
 						"동구": {
-							regex: `^34[5-7]`},
+							regex: `^(?:34[5-7])`},
 						"서구": {
-							regex: `^35[2-4]`},
+							regex: `^(?:35[2-4])`},
 						"유성구": {
-							regex: `^34[0-2]`},
+							regex: `^(?:34[0-2])`},
 						"중구": {
-							regex: `^3(?:4[89]|50)`},
+							regex: `^(?:3(?:4[89]|50))`},
 					}},
 				"31": {
-					regex: `^4[45]\d{2}`,
+					regex: `^(?:4[45]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"남구": {
-							regex: `^44[67]`},
+							regex: `^(?:44[67])`},
 						"동구": {
-							regex: `^44[01]`},
+							regex: `^(?:44[01])`},
 						"북구": {
-							regex: `^442`},
+							regex: `^(?:442)`},
 						"울주군": {
-							regex: `^4(?:49|50)`},
+							regex: `^(?:4(?:49|50))`},
 						"중구": {
-							regex: `^44[45]`},
+							regex: `^(?:44[45])`},
 					}},
 				"41": {
-					regex: `^1[0-8]\d{2}`,
+					regex: `^(?:1[0-8]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"가평군": {
-							regex: `^124`},
+							regex: `^(?:124)`},
 						"고양시": {
-							regex: `^10[2-5]`,
+							regex: `^(?:10[2-5])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"덕양구": {
-									regex: `^10[245]`},
+									regex: `^(?:10[245])`},
 								"일산동구": {
-									regex: `^10[2-4]`},
+									regex: `^(?:10[2-4])`},
 								"일산서구": {
-									regex: `^10[2-4]`},
+									regex: `^(?:10[2-4])`},
 							}},
 						"과천시": {
-							regex: `^138`},
+							regex: `^(?:138)`},
 						"광명시": {
-							regex: `^14[23]`},
+							regex: `^(?:14[23])`},
 						"광주시": {
-							regex: `^12[78]`},
+							regex: `^(?:12[78])`},
 						"구리시": {
-							regex: `^119`},
+							regex: `^(?:119)`},
 						"군포시": {
-							regex: `^158`},
+							regex: `^(?:158)`},
 						"김포시": {
-							regex: `^10[01]`},
+							regex: `^(?:10[01])`},
 						"남양주시": {
-							regex: `^12[0-3]`},
+							regex: `^(?:12[0-3])`},
 						"동두천시": {
-							regex: `^113`},
+							regex: `^(?:113)`},
 						"부천시": {
-							regex: `^14[4-7]`,
+							regex: `^(?:14[4-7])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"소사구": {
-									regex: `^14[67]`},
+									regex: `^(?:14[67])`},
 								"오정구": {
-									regex: `^14[45]`},
+									regex: `^(?:14[45])`},
 								"원미구": {
-									regex: `^14[456]`},
+									regex: `^(?:14[456])`},
 							}},
 						"성남시": {
-							regex: `^13[1-6]`,
+							regex: `^(?:13[1-6])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"분당구": {
-									regex: `^13[3-6]`},
+									regex: `^(?:13[3-6])`},
 								"수정구": {
-									regex: `^13[1-46]`},
+									regex: `^(?:13[1-46])`},
 								"중원구": {
-									regex: `^13[1-4]`},
+									regex: `^(?:13[1-4])`},
 							}},
 						"수원시": {
-							regex: `^16[2-7]`,
+							regex: `^(?:16[2-7])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"권선구": {
-									regex: `^16[3-6]`},
+									regex: `^(?:16[3-6])`},
 								"영통구": {
-									regex: `^16[245-7]`},
+									regex: `^(?:16[245-7])`},
 								"장안구": {
-									regex: `^16[2-4]`},
+									regex: `^(?:16[2-4])`},
 								"팔달구": {
-									regex: `^16[2-6]`},
+									regex: `^(?:16[2-6])`},
 							}},
 						"시흥시": {
-							regex: `^1(?:49|5[01])`},
+							regex: `^(?:1(?:49|5[01]))`},
 						"안산시": {
-							regex: `^15[2-6]`,
+							regex: `^(?:15[2-6])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"단원구": {
-									regex: `^15[2-6]`},
+									regex: `^(?:15[2-6])`},
 								"상록구": {
-									regex: `^15[2-6]`},
+									regex: `^(?:15[2-6])`},
 							}},
 						"안성시": {
-							regex: `^17[56]`},
+							regex: `^(?:17[56])`},
 						"안양시": {
-							regex: `^1(?:39|4[01])`,
+							regex: `^(?:1(?:39|4[01]))`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"동안구": {
-									regex: `^1(?:39|4[01])`},
+									regex: `^(?:1(?:39|4[01]))`},
 								"만안구": {
-									regex: `^1(?:39|40)`},
+									regex: `^(?:1(?:39|40))`},
 							}},
 						"양주시": {
-							regex: `^11[45]`},
+							regex: `^(?:11[45])`},
 						"양평군": {
-							regex: `^125`},
+							regex: `^(?:125)`},
 						"여주시": {
-							regex: `^126`},
+							regex: `^(?:126)`},
 						"연천군": {
-							regex: `^110`},
+							regex: `^(?:110)`},
 						"오산시": {
-							regex: `^181`},
+							regex: `^(?:181)`},
 						"용인시": {
-							regex: `^1(?:6[89]|7[01])`,
+							regex: `^(?:1(?:6[89]|7[01]))`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"기흥구": {
-									regex: `^1(?:6[89]|7[01])`},
+									regex: `^(?:1(?:6[89]|7[01]))`},
 								"수지구": {
-									regex: `^16[89]`},
+									regex: `^(?:16[89])`},
 								"처인구": {
-									regex: `^1(?:6[89]|7[01])`},
+									regex: `^(?:1(?:6[89]|7[01]))`},
 							}},
 						"의왕시": {
-							regex: `^16[01]`},
+							regex: `^(?:16[01])`},
 						"의정부시": {
-							regex: `^11[6-8]`},
+							regex: `^(?:11[6-8])`},
 						"이천시": {
-							regex: `^17[34]`},
+							regex: `^(?:17[34])`},
 						"파주시": {
-							regex: `^10[89]`},
+							regex: `^(?:10[89])`},
 						"평택시": {
-							regex: `^1(?:7[7-9]|80)`},
+							regex: `^(?:1(?:7[7-9]|80))`},
 						"포천시": {
-							regex: `^111`},
+							regex: `^(?:111)`},
 						"하남시": {
-							regex: `^1(?:29|30)`},
+							regex: `^(?:1(?:29|30))`},
 						"화성시": {
-							regex: `^18[2-6]`},
+							regex: `^(?:18[2-6])`},
 					}},
 				"42": {
-					regex: `^2[456]\d{2}`,
+					regex: `^(?:2[456]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"강릉시": {
-							regex: `^25[4-6]`},
+							regex: `^(?:25[4-6])`},
 						"고성군": {
-							regex: `^247`},
+							regex: `^(?:247)`},
 						"동해시": {
-							regex: `^25[78]`},
+							regex: `^(?:25[78])`},
 						"삼척시": {
-							regex: `^259`},
+							regex: `^(?:259)`},
 						"속초시": {
-							regex: `^24[89]`},
+							regex: `^(?:24[89])`},
 						"양구군": {
-							regex: `^245`},
+							regex: `^(?:245)`},
 						"양양군": {
-							regex: `^250`},
+							regex: `^(?:250)`},
 						"영월군": {
-							regex: `^262`},
+							regex: `^(?:262)`},
 						"원주시": {
-							regex: `^26[3-5]`},
+							regex: `^(?:26[3-5])`},
 						"인제군": {
-							regex: `^246`},
+							regex: `^(?:246)`},
 						"정선군": {
-							regex: `^261`},
+							regex: `^(?:261)`},
 						"철원군": {
-							regex: `^240`},
+							regex: `^(?:240)`},
 						"춘천시": {
-							regex: `^24[2-4]`},
+							regex: `^(?:24[2-4])`},
 						"태백시": {
-							regex: `^260`},
+							regex: `^(?:260)`},
 						"평창군": {
-							regex: `^253`},
+							regex: `^(?:253)`},
 						"홍천군": {
-							regex: `^251`},
+							regex: `^(?:251)`},
 						"화천군": {
-							regex: `^241`},
+							regex: `^(?:241)`},
 						"횡성군": {
-							regex: `^252`},
+							regex: `^(?:252)`},
 					}},
 				"43": {
-					regex: `^2[789]\d{2}`,
+					regex: `^(?:2[789]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"괴산군": {
-							regex: `^280`},
+							regex: `^(?:280)`},
 						"단양군": {
-							regex: `^270`},
+							regex: `^(?:270)`},
 						"보은군": {
-							regex: `^289`},
+							regex: `^(?:289)`},
 						"영동군": {
-							regex: `^291`},
+							regex: `^(?:291)`},
 						"옥천군": {
-							regex: `^290`},
+							regex: `^(?:290)`},
 						"음성군": {
-							regex: `^27[67]`},
+							regex: `^(?:27[67])`},
 						"제천시": {
-							regex: `^27[12]`},
+							regex: `^(?:27[12])`},
 						"증평군": {
-							regex: `^279`},
+							regex: `^(?:279)`},
 						"진천군": {
-							regex: `^278`},
+							regex: `^(?:278)`},
 						"청주시": {
-							regex: `^28[0-9]`,
+							regex: `^(?:28[0-9])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"상당구": {
-									regex: `^28[1-3578]`},
+									regex: `^(?:28[1-3578])`},
 								"서원구": {
-									regex: `^28[1-35-8]`},
+									regex: `^(?:28[1-35-8])`},
 								"청원구": {
-									regex: `^28[13-5]`},
+									regex: `^(?:28[13-5])`},
 								"흥덕구": {
-									regex: `^28[1-6]`},
+									regex: `^(?:28[1-6])`},
 							}},
 						"충주시": {
-							regex: `^27[3-5]`},
+							regex: `^(?:27[3-5])`},
 					}},
 				"44": {
-					regex: `^3[1-3]\d{2}`,
+					regex: `^(?:3[1-3]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"계룡시": {
-							regex: `^328`},
+							regex: `^(?:328)`},
 						"공주시": {
-							regex: `^32[56]`},
+							regex: `^(?:32[56])`},
 						"금산군": {
-							regex: `^327`},
+							regex: `^(?:327)`},
 						"논산시": {
-							regex: `^3(?:29|30)`},
+							regex: `^(?:3(?:29|30))`},
 						"당진시": {
-							regex: `^31[78]`},
+							regex: `^(?:31[78])`},
 						"보령시": {
-							regex: `^33[45]`},
+							regex: `^(?:33[45])`},
 						"부여군": {
-							regex: `^33[12]`},
+							regex: `^(?:33[12])`},
 						"서산시": {
-							regex: `^3(?:19|20)`},
+							regex: `^(?:3(?:19|20))`},
 						"서천군": {
-							regex: `^336`},
+							regex: `^(?:336)`},
 						"아산시": {
-							regex: `^31[45]`},
+							regex: `^(?:31[45])`},
 						"예산군": {
-							regex: `^324`},
+							regex: `^(?:324)`},
 						"천안시": {
-							regex: `^31[0-2]`,
+							regex: `^(?:31[0-2])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"동남구": {
-									regex: `^31[0-2]`},
+									regex: `^(?:31[0-2])`},
 								"서북구": {
-									regex: `^31[01]`},
+									regex: `^(?:31[01])`},
 							}},
 						"청양군": {
-							regex: `^333`},
+							regex: `^(?:333)`},
 						"태안군": {
-							regex: `^321`},
+							regex: `^(?:321)`},
 						"홍성군": {
-							regex: `^322`},
+							regex: `^(?:322)`},
 					}},
 				"45": {
-					regex: `^5[4-6]\d{2}`,
+					regex: `^(?:5[4-6]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"고창군": {
-							regex: `^564`},
+							regex: `^(?:564)`},
 						"군산시": {
-							regex: `^54[01]`},
+							regex: `^(?:54[01])`},
 						"김제시": {
-							regex: `^54[34]`},
+							regex: `^(?:54[34])`},
 						"남원시": {
-							regex: `^55[78]`},
+							regex: `^(?:55[78])`},
 						"무주군": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"부안군": {
-							regex: `^563`},
+							regex: `^(?:563)`},
 						"순창군": {
-							regex: `^560`},
+							regex: `^(?:560)`},
 						"완주군": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"익산시": {
-							regex: `^54[56]`},
+							regex: `^(?:54[56])`},
 						"임실군": {
-							regex: `^559`},
+							regex: `^(?:559)`},
 						"장수군": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"전주시": {
-							regex: `^5(?:4[89]|5[01])`,
+							regex: `^(?:5(?:4[89]|5[01]))`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"덕진구": {
-									regex: `^5(?:4[89]|5[01])`},
+									regex: `^(?:5(?:4[89]|5[01]))`},
 								"완산구": {
-									regex: `^5(?:4[89]|5[01])`},
+									regex: `^(?:5(?:4[89]|5[01]))`},
 							}},
 						"정읍시": {
-							regex: `^56[12]`},
+							regex: `^(?:56[12])`},
 						"진안군": {
-							regex: `^554`},
+							regex: `^(?:554)`},
 					}},
 				"46": {
-					regex: `^5[7-9]\d{2}`,
+					regex: `^(?:5[7-9]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"강진군": {
-							regex: `^592`},
+							regex: `^(?:592)`},
 						"고흥군": {
-							regex: `^595`},
+							regex: `^(?:595)`},
 						"곡성군": {
-							regex: `^575`},
+							regex: `^(?:575)`},
 						"광양시": {
-							regex: `^57[78]`},
+							regex: `^(?:57[78])`},
 						"구례군": {
-							regex: `^576`},
+							regex: `^(?:576)`},
 						"나주시": {
-							regex: `^58[23]`},
+							regex: `^(?:58[23])`},
 						"담양군": {
-							regex: `^573`},
+							regex: `^(?:573)`},
 						"목포시": {
-							regex: `^58[67]`},
+							regex: `^(?:58[67])`},
 						"무안군": {
-							regex: `^585`},
+							regex: `^(?:585)`},
 						"보성군": {
-							regex: `^594`},
+							regex: `^(?:594)`},
 						"순천시": {
-							regex: `^5(?:79|80)`},
+							regex: `^(?:5(?:79|80))`},
 						"신안군": {
-							regex: `^588`},
+							regex: `^(?:588)`},
 						"여수시": {
-							regex: `^59[67]`},
+							regex: `^(?:59[67])`},
 						"영광군": {
-							regex: `^570`},
+							regex: `^(?:570)`},
 						"영암군": {
-							regex: `^584`},
+							regex: `^(?:584)`},
 						"완도군": {
-							regex: `^591`},
+							regex: `^(?:591)`},
 						"장성군": {
-							regex: `^572`},
+							regex: `^(?:572)`},
 						"장흥군": {
-							regex: `^593`},
+							regex: `^(?:593)`},
 						"진도군": {
-							regex: `^589`},
+							regex: `^(?:589)`},
 						"함평군": {
-							regex: `^571`},
+							regex: `^(?:571)`},
 						"해남군": {
-							regex: `^590`},
+							regex: `^(?:590)`},
 						"화순군": {
-							regex: `^581`},
+							regex: `^(?:581)`},
 					}},
 				"47": {
-					regex: `^(?:3[6-9]|40)\d{2}`,
+					regex: `^(?:(?:3[6-9]|40)\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"경산시": {
-							regex: `^38[4-6]`},
+							regex: `^(?:38[4-6])`},
 						"경주시": {
-							regex: `^38[0-2]`},
+							regex: `^(?:38[0-2])`},
 						"고령군": {
-							regex: `^401`},
+							regex: `^(?:401)`},
 						"구미시": {
-							regex: `^39[1-4]`},
+							regex: `^(?:39[1-4])`},
 						"김천시": {
-							regex: `^39[56]`},
+							regex: `^(?:39[56])`},
 						"문경시": {
-							regex: `^3(?:69|70)`},
+							regex: `^(?:3(?:69|70))`},
 						"봉화군": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 						"상주시": {
-							regex: `^37[12]`},
+							regex: `^(?:37[12])`},
 						"성주군": {
-							regex: `^400`},
+							regex: `^(?:400)`},
 						"안동시": {
-							regex: `^36[67]`},
+							regex: `^(?:36[67])`},
 						"영덕군": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"영양군": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"영주시": {
-							regex: `^36[01]`},
+							regex: `^(?:36[01])`},
 						"영천시": {
-							regex: `^38[89]`},
+							regex: `^(?:38[89])`},
 						"예천군": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"울릉군": {
-							regex: `^402`},
+							regex: `^(?:402)`},
 						"울진군": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"의성군": {
-							regex: `^373`},
+							regex: `^(?:373)`},
 						"청도군": {
-							regex: `^383`},
+							regex: `^(?:383)`},
 						"청송군": {
-							regex: `^374`},
+							regex: `^(?:374)`},
 						"칠곡군": {
-							regex: `^39[89]`},
+							regex: `^(?:39[89])`},
 						"포항시": {
-							regex: `^37[5-9]`,
+							regex: `^(?:37[5-9])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"남구": {
-									regex: `^37[6-9]`},
+									regex: `^(?:37[6-9])`},
 								"북구": {
-									regex: `^37[5-79]`},
+									regex: `^(?:37[5-79])`},
 							}},
 					}},
 				"48": {
-					regex: `^5[0-3]\d{2}`,
+					regex: `^(?:5[0-3]\d{2})`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"거제시": {
-							regex: `^53[23]`},
+							regex: `^(?:53[23])`},
 						"거창군": {
-							regex: `^501`},
+							regex: `^(?:501)`},
 						"고성군": {
-							regex: `^529`},
+							regex: `^(?:529)`},
 						"김해시": {
-							regex: `^5(?:0[89]|10)`},
+							regex: `^(?:5(?:0[89]|10))`},
 						"남해군": {
-							regex: `^524`},
+							regex: `^(?:524)`},
 						"밀양시": {
-							regex: `^504`},
+							regex: `^(?:504)`},
 						"사천시": {
-							regex: `^525`},
+							regex: `^(?:525)`},
 						"산청군": {
-							regex: `^522`},
+							regex: `^(?:522)`},
 						"양산시": {
-							regex: `^50[56]`},
+							regex: `^(?:50[56])`},
 						"의령군": {
-							regex: `^521`},
+							regex: `^(?:521)`},
 						"진주시": {
-							regex: `^52[6-8]`},
+							regex: `^(?:52[6-8])`},
 						"창녕군": {
-							regex: `^503`},
+							regex: `^(?:503)`},
 						"창원시": {
-							regex: `^51[1-7]`,
+							regex: `^(?:51[1-7])`,
 							subdivisionRegex: map[string]postCodeRegex{
 								"마산합포구": {
-									regex: `^51[237]`},
+									regex: `^(?:51[237])`},
 								"마산회원구": {
-									regex: `^51[23]`},
+									regex: `^(?:51[23])`},
 								"성산구": {
-									regex: `^51[457]`},
+									regex: `^(?:51[457])`},
 								"의창구": {
-									regex: `^51[1-4]`},
+									regex: `^(?:51[1-4])`},
 								"진해구": {
-									regex: `^51[5-7]`},
+									regex: `^(?:51[5-7])`},
 							}},
 						"통영시": {
-							regex: `^53[01]`},
+							regex: `^(?:53[01])`},
 						"하동군": {
-							regex: `^523`},
+							regex: `^(?:523)`},
 						"함안군": {
-							regex: `^520`},
+							regex: `^(?:520)`},
 						"함양군": {
-							regex: `^500`},
+							regex: `^(?:500)`},
 						"합천군": {
-							regex: `^502`},
+							regex: `^(?:502)`},
 					}},
 				"49": {
-					regex: `^63[0-356]\d`,
+					regex: `^(?:63[0-356]\d)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"서귀포시": {
-							regex: `^63[56]`},
+							regex: `^(?:63[56])`},
 						"제주시": {
-							regex: `^63[0-3]`},
+							regex: `^(?:63[0-3])`},
 					}},
 				"50": {
-					regex: `^30[01]\d`},
+					regex: `^(?:30[01]\d)`},
 			}},
 		Format:                     "%S %C%D%n%A%n%O%n%N%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%D%n%C%n%S%n%Z",
@@ -75489,69 +75489,69 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AGU": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"BCN": {
-					regex: `^2[12]`},
+					regex: `^(?:2[12])`},
 				"BCS": {
-					regex: `^23`},
+					regex: `^(?:23)`},
 				"CAM": {
-					regex: `^24`},
+					regex: `^(?:24)`},
 				"CHH": {
-					regex: `^3[1-3]`},
+					regex: `^(?:3[1-3])`},
 				"CHP": {
-					regex: `^29|30`},
+					regex: `^(?:29|30)`},
 				"CMX": {
-					regex: `^0|1[0-6]`},
+					regex: `^(?:0|1[0-6])`},
 				"COA": {
-					regex: `^2[5-7]`},
+					regex: `^(?:2[5-7])`},
 				"COL": {
-					regex: `^28`},
+					regex: `^(?:28)`},
 				"DUR": {
-					regex: `^3[45]`},
+					regex: `^(?:3[45])`},
 				"GRO": {
-					regex: `^39|4[01]`},
+					regex: `^(?:39|4[01])`},
 				"GUA": {
-					regex: `^3[6-8]`},
+					regex: `^(?:3[6-8])`},
 				"HID": {
-					regex: `^4[23]`},
+					regex: `^(?:4[23])`},
 				"JAL": {
-					regex: `^4[4-9]`},
+					regex: `^(?:4[4-9])`},
 				"MEX": {
-					regex: `^5[0-7]`},
+					regex: `^(?:5[0-7])`},
 				"MIC": {
-					regex: `^5[89]|6[01]`},
+					regex: `^(?:5[89]|6[01])`},
 				"MOR": {
-					regex: `^62`},
+					regex: `^(?:62)`},
 				"NAY": {
-					regex: `^63`},
+					regex: `^(?:63)`},
 				"NLE": {
-					regex: `^6[4-7]`},
+					regex: `^(?:6[4-7])`},
 				"OAX": {
-					regex: `^6[89]|7[01]`},
+					regex: `^(?:6[89]|7[01])`},
 				"PUE": {
-					regex: `^7[2-5]`},
+					regex: `^(?:7[2-5])`},
 				"QUE": {
-					regex: `^76`},
+					regex: `^(?:76)`},
 				"ROO": {
-					regex: `^77`},
+					regex: `^(?:77)`},
 				"SIN": {
-					regex: `^8[0-2]`},
+					regex: `^(?:8[0-2])`},
 				"SLP": {
-					regex: `^7[89]`},
+					regex: `^(?:7[89])`},
 				"SON": {
-					regex: `^8[3-5]`},
+					regex: `^(?:8[3-5])`},
 				"TAB": {
-					regex: `^86`},
+					regex: `^(?:86)`},
 				"TAM": {
-					regex: `^8[7-9]`},
+					regex: `^(?:8[7-9])`},
 				"TLA": {
-					regex: `^90`},
+					regex: `^(?:90)`},
 				"VER": {
-					regex: `^9[1-6]`},
+					regex: `^(?:9[1-6])`},
 				"YUC": {
-					regex: `^97`},
+					regex: `^(?:97)`},
 				"ZAC": {
-					regex: `^9[89]`},
+					regex: `^(?:9[89])`},
 			}},
 		Format:                     "%N%n%O%n%A%n%D%n%Z %C, %S",
 		AdministrativeAreaNameType: State,
@@ -75749,37 +75749,37 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
-					regex: `^79|8[0-6]`},
+					regex: `^(?:79|8[0-6])`},
 				"02": {
-					regex: `^0[5-9]|34950`},
+					regex: `^(?:0[5-9]|34950)`},
 				"03": {
-					regex: `^1[5-9]`},
+					regex: `^(?:1[5-9])`},
 				"04": {
-					regex: `^7[5-8]`},
+					regex: `^(?:7[5-8])`},
 				"05": {
-					regex: `^7[0-4]`},
+					regex: `^(?:7[0-4])`},
 				"06": {
-					regex: `^2[5-8]|[346]9`},
+					regex: `^(?:2[5-8]|[346]9)`},
 				"07": {
-					regex: `^1[0-4]`},
+					regex: `^(?:1[0-4])`},
 				"08": {
-					regex: `^3[0-6]|39000`},
+					regex: `^(?:3[0-6]|39000)`},
 				"09": {
-					regex: `^0[12]`},
+					regex: `^(?:0[12])`},
 				"10": {
-					regex: `^4[0-8]|6[3-8]`},
+					regex: `^(?:4[0-8]|6[3-8])`},
 				"11": {
-					regex: `^2[0-4]`},
+					regex: `^(?:2[0-4])`},
 				"12": {
-					regex: `^8[89]|9[01]`},
+					regex: `^(?:8[89]|9[01])`},
 				"13": {
-					regex: `^9[3-8]`},
+					regex: `^(?:9[3-8])`},
 				"14": {
-					regex: `^5|60`},
+					regex: `^(?:5|60)`},
 				"15": {
-					regex: `^87`},
+					regex: `^(?:87)`},
 				"16": {
-					regex: `^62`},
+					regex: `^(?:62)`},
 			}},
 		Format:                     "%N%n%O%n%A%n%D%n%Z %C%n%S",
 		AdministrativeAreaNameType: State,
@@ -76257,39 +76257,39 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AN": {
-					regex: `^7[12]`},
+					regex: `^(?:7[12])`},
 				"AS": {
-					regex: `^8[1-3]`},
+					regex: `^(?:8[1-3])`},
 				"BO": {
-					regex: `^5[12]`},
+					regex: `^(?:5[12])`},
 				"CA": {
-					regex: `^4[56]`},
+					regex: `^(?:4[56])`},
 				"CI": {
-					regex: `^2[5-7]`},
+					regex: `^(?:2[5-7])`},
 				"CO": {
-					regex: `^5[56]`},
+					regex: `^(?:5[56])`},
 				"ES": {
-					regex: `^3[12]`},
+					regex: `^(?:3[12])`},
 				"GR": {
-					regex: `^4[34]`},
+					regex: `^(?:4[34])`},
 				"JI": {
-					regex: `^6[56]`},
+					regex: `^(?:6[56])`},
 				"LE": {
-					regex: `^2[12]`},
+					regex: `^(?:2[12])`},
 				"MD": {
-					regex: `^3[45]`},
+					regex: `^(?:3[45])`},
 				"MN": {
-					regex: `^1[0-6]`},
+					regex: `^(?:1[0-6])`},
 				"MS": {
-					regex: `^4[12]`},
+					regex: `^(?:4[12])`},
 				"MT": {
-					regex: `^6[1-3]`},
+					regex: `^(?:6[1-3])`},
 				"NS": {
-					regex: `^3[7-9]`},
+					regex: `^(?:3[7-9])`},
 				"RI": {
-					regex: `^4[78]`},
+					regex: `^(?:4[78])`},
 				"SJ": {
-					regex: `^9[12]`},
+					regex: `^(?:9[12])`},
 			}},
 		Format:                     "%N%n%O%n%A%n%Z%n%C, %S",
 		AdministrativeAreaNameType: Department,
@@ -77220,167 +77220,167 @@ var generated = data{
 			regex: `^(\d{4})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"ABR": {
-					regex: `^28[0-2]`},
+					regex: `^(?:28[0-2])`},
 				"AGN": {
-					regex: `^86[01]`},
+					regex: `^(?:86[01])`},
 				"AGS": {
-					regex: `^85[01]`},
+					regex: `^(?:85[01])`},
 				"AKL": {
-					regex: `^56[01]`},
+					regex: `^(?:56[01])`},
 				"ALB": {
-					regex: `^45[01]`},
+					regex: `^(?:45[01])`},
 				"ANT": {
-					regex: `^57[01]`},
+					regex: `^(?:57[01])`},
 				"APA": {
-					regex: `^380[0-68]`},
+					regex: `^(?:380[0-68])`},
 				"AUR": {
-					regex: `^320`},
+					regex: `^(?:320)`},
 				"BAN": {
-					regex: `^21[01]`},
+					regex: `^(?:21[01])`},
 				"BAS": {
-					regex: `^730`},
+					regex: `^(?:730)`},
 				"BEN": {
-					regex: `^26(0|1[0-5])`},
+					regex: `^(?:26(0|1[0-5]))`},
 				"BIL": {
-					regex: `^65(4[3-9]|5)`},
+					regex: `^(?:65(4[3-9]|5))`},
 				"BOH": {
-					regex: `^63[0-3]`},
+					regex: `^(?:63[0-3])`},
 				"BTG": {
-					regex: `^42[0-3]`},
+					regex: `^(?:42[0-3])`},
 				"BTN": {
-					regex: `^390`},
+					regex: `^(?:390)`},
 				"BUK": {
-					regex: `^87[0-2]`},
+					regex: `^(?:87[0-2])`},
 				"BUL": {
-					regex: `^30[0-2]`},
+					regex: `^(?:30[0-2])`},
 				"CAG": {
-					regex: `^35[0-2]`},
+					regex: `^(?:35[0-2])`},
 				"CAM": {
-					regex: `^910`},
+					regex: `^(?:910)`},
 				"CAN": {
-					regex: `^46[01]`},
+					regex: `^(?:46[01])`},
 				"CAP": {
-					regex: `^58[01]`},
+					regex: `^(?:58[01])`},
 				"CAS": {
-					regex: `^44[0-3]`},
+					regex: `^(?:44[0-3])`},
 				"CAT": {
-					regex: `^48[01]`},
+					regex: `^(?:48[01])`},
 				"CAV": {
-					regex: `^41[0-2]`},
+					regex: `^(?:41[0-2])`},
 				"CEB": {
-					regex: `^60[0-5]`},
+					regex: `^(?:60[0-5])`},
 				"COM": {
-					regex: `^88[01]`},
+					regex: `^(?:88[01])`},
 				"DAO": {
-					regex: `^82[01]`},
+					regex: `^(?:82[01])`},
 				"DAS": {
-					regex: `^80[01]`},
+					regex: `^(?:80[01])`},
 				"DAV": {
-					regex: `^81[0-2]`},
+					regex: `^(?:81[0-2])`},
 				"DIN": {
-					regex: `^84[12]`},
+					regex: `^(?:84[12])`},
 				"DVO": {
-					regex: `^801[1-5]`},
+					regex: `^(?:801[1-5])`},
 				"EAS": {
-					regex: `^68[0-2]`},
+					regex: `^(?:68[0-2])`},
 				"GUI": {
-					regex: `^504[4-6]`},
+					regex: `^(?:504[4-6])`},
 				"IFU": {
-					regex: `^36[01]`},
+					regex: `^(?:36[01])`},
 				"ILI": {
-					regex: `^50([0-3]|4[0-3])`},
+					regex: `^(?:50([0-3]|4[0-3]))`},
 				"ILN": {
-					regex: `^29[0-2]`},
+					regex: `^(?:29[0-2])`},
 				"ILS": {
-					regex: `^27[0-3]`},
+					regex: `^(?:27[0-3])`},
 				"ISA": {
-					regex: `^33[0-3]`},
+					regex: `^(?:33[0-3])`},
 				"KAL": {
-					regex: `^38(0[79]|1[0-4])`},
+					regex: `^(?:38(0[79]|1[0-4]))`},
 				"LAG": {
-					regex: `^40[0-3]`},
+					regex: `^(?:40[0-3])`},
 				"LAN": {
-					regex: `^92[0-2]`},
+					regex: `^(?:92[0-2])`},
 				"LAS": {
-					regex: `^9(3[0-2]|7[01])`},
+					regex: `^(?:9(3[0-2]|7[01]))`},
 				"LEY": {
-					regex: `^65([0-3]|4[0-2])`},
+					regex: `^(?:65([0-3]|4[0-2]))`},
 				"LUN": {
-					regex: `^25[0-2]`},
+					regex: `^(?:25[0-2])`},
 				"MAD": {
-					regex: `^490`},
+					regex: `^(?:490)`},
 				"MAG": {
-					regex: `^96[01]`},
+					regex: `^(?:96[01])`},
 				"MAS": {
-					regex: `^54[0-2]`},
+					regex: `^(?:54[0-2])`},
 				"MDC": {
-					regex: `^51[01]`},
+					regex: `^(?:51[01])`},
 				"MDR": {
-					regex: `^52[01]`},
+					regex: `^(?:52[01])`},
 				"MOU": {
-					regex: `^26(1[6-9]|2[0-5])`},
+					regex: `^(?:26(1[6-9]|2[0-5]))`},
 				"MSC": {
-					regex: `^72[01]`},
+					regex: `^(?:72[01])`},
 				"MSR": {
-					regex: `^90[0-2]`},
+					regex: `^(?:90[0-2])`},
 				"NCO": {
-					regex: `^94[01]`},
+					regex: `^(?:94[01])`},
 				"NEC": {
-					regex: `^61[0-3]`},
+					regex: `^(?:61[0-3])`},
 				"NER": {
-					regex: `^62[0-2]`},
+					regex: `^(?:62[0-2])`},
 				"NSA": {
-					regex: `^64[0-2]`},
+					regex: `^(?:64[0-2])`},
 				"NUE": {
-					regex: `^31[0-3]`},
+					regex: `^(?:31[0-3])`},
 				"NUV": {
-					regex: `^37[01]`},
+					regex: `^(?:37[01])`},
 				"PAM": {
-					regex: `^20[0-2]`},
+					regex: `^(?:20[0-2])`},
 				"PAN": {
-					regex: `^24[0-4]`},
+					regex: `^(?:24[0-4])`},
 				"PLW": {
-					regex: `^53[0-2]`},
+					regex: `^(?:53[0-2])`},
 				"QUE": {
-					regex: `^43[0-4]`},
+					regex: `^(?:43[0-4])`},
 				"QUI": {
-					regex: `^340`},
+					regex: `^(?:340)`},
 				"RIZ": {
-					regex: `^1[89]`},
+					regex: `^(?:1[89])`},
 				"ROM": {
-					regex: `^55[01]`},
+					regex: `^(?:55[01])`},
 				"SAR": {
-					regex: `^95[01]`},
+					regex: `^(?:95[01])`},
 				"SCO": {
-					regex: `^95[01]`},
+					regex: `^(?:95[01])`},
 				"SIG": {
-					regex: `^62(2[5-9]|30)`},
+					regex: `^(?:62(2[5-9]|30))`},
 				"SLE": {
-					regex: `^66[10]`},
+					regex: `^(?:66[10])`},
 				"SLU": {
-					regex: `^74[01]`},
+					regex: `^(?:74[01])`},
 				"SOR": {
-					regex: `^47[01]`},
+					regex: `^(?:47[01])`},
 				"SUK": {
-					regex: `^98[01]`},
+					regex: `^(?:98[01])`},
 				"SUN": {
-					regex: `^84[0-2]`},
+					regex: `^(?:84[0-2])`},
 				"SUR": {
-					regex: `^83[01]`},
+					regex: `^(?:83[01])`},
 				"TAR": {
-					regex: `^23[01]`},
+					regex: `^(?:23[01])`},
 				"TAW": {
-					regex: `^750`},
+					regex: `^(?:750)`},
 				"WSA": {
-					regex: `^67[0-2]`},
+					regex: `^(?:67[0-2])`},
 				"ZAN": {
-					regex: `^71[0-2]`},
+					regex: `^(?:71[0-2])`},
 				"ZAS": {
-					regex: `^70[0-4]`},
+					regex: `^(?:70[0-4])`},
 				"ZMB": {
-					regex: `^22[01]`},
+					regex: `^(?:22[01])`},
 				"ZSI": {
-					regex: `^70[0-4]`},
+					regex: `^(?:70[0-4])`},
 			}},
 		Format: "%N%n%O%n%A%n%D, %C%n%Z %S",
 		AllowedFields: map[Field]struct{}{
@@ -78455,171 +78455,171 @@ var generated = data{
 			regex: `^(\d{6})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AD": {
-					regex: `^385`},
+					regex: `^(?:385)`},
 				"AL": {
-					regex: `^649`},
+					regex: `^(?:649)`},
 				"ALT": {
-					regex: `^65[6-9]`},
+					regex: `^(?:65[6-9])`},
 				"AMU": {
-					regex: `^67[56]`},
+					regex: `^(?:67[56])`},
 				"ARK": {
-					regex: `^16[3-5]`},
+					regex: `^(?:16[3-5])`},
 				"AST": {
-					regex: `^41[4-6]`},
+					regex: `^(?:41[4-6])`},
 				"BA": {
-					regex: `^45[0-3]`},
+					regex: `^(?:45[0-3])`},
 				"BEL": {
-					regex: `^30[89]`},
+					regex: `^(?:30[89])`},
 				"BRY": {
-					regex: `^24[1-3]`},
+					regex: `^(?:24[1-3])`},
 				"BU": {
-					regex: `^67[01]`},
+					regex: `^(?:67[01])`},
 				"CE": {
-					regex: `^36[4-6]`},
+					regex: `^(?:36[4-6])`},
 				"CHE": {
-					regex: `^45[4-7]`},
+					regex: `^(?:45[4-7])`},
 				"CHU": {
-					regex: `^689`},
+					regex: `^(?:689)`},
 				"CU": {
-					regex: `^42[89]`},
+					regex: `^(?:42[89])`},
 				"DA": {
-					regex: `^36[78]`},
+					regex: `^(?:36[78])`},
 				"IN": {
-					regex: `^386`},
+					regex: `^(?:386)`},
 				"IRK": {
-					regex: `^66[4-9]`},
+					regex: `^(?:66[4-9])`},
 				"IVA": {
-					regex: `^15[3-5]`},
+					regex: `^(?:15[3-5])`},
 				"KAM": {
-					regex: `^68[348]`},
+					regex: `^(?:68[348])`},
 				"KB": {
-					regex: `^36[01]`},
+					regex: `^(?:36[01])`},
 				"KC": {
-					regex: `^369`},
+					regex: `^(?:369)`},
 				"KDA": {
-					regex: `^35[0-4]`},
+					regex: `^(?:35[0-4])`},
 				"KEM": {
-					regex: `^65[0-4]`},
+					regex: `^(?:65[0-4])`},
 				"KGD": {
-					regex: `^23[6-8]`},
+					regex: `^(?:23[6-8])`},
 				"KGN": {
-					regex: `^64[01]`},
+					regex: `^(?:64[01])`},
 				"KHA": {
-					regex: `^68[0-2]`},
+					regex: `^(?:68[0-2])`},
 				"KHM": {
-					regex: `^628`},
+					regex: `^(?:628)`},
 				"KIR": {
-					regex: `^61[0-3]`},
+					regex: `^(?:61[0-3])`},
 				"KK": {
-					regex: `^655`},
+					regex: `^(?:655)`},
 				"KL": {
-					regex: `^35[89]`},
+					regex: `^(?:35[89])`},
 				"KLU": {
-					regex: `^24[89]`},
+					regex: `^(?:24[89])`},
 				"KO": {
-					regex: `^16[7-9]`},
+					regex: `^(?:16[7-9])`},
 				"KOS": {
-					regex: `^15[67]`},
+					regex: `^(?:15[67])`},
 				"KR": {
-					regex: `^18[56]`},
+					regex: `^(?:18[56])`},
 				"KRS": {
-					regex: `^30[5-7]`},
+					regex: `^(?:30[5-7])`},
 				"KYA": {
-					regex: `^6(?:6[0-3]|4[78])`},
+					regex: `^(?:6(?:6[0-3]|4[78]))`},
 				"LEN": {
-					regex: `^18[78]`},
+					regex: `^(?:18[78])`},
 				"LIP": {
-					regex: `^39[89]`},
+					regex: `^(?:39[89])`},
 				"MAG": {
-					regex: `^68[56]`},
+					regex: `^(?:68[56])`},
 				"ME": {
-					regex: `^42[45]`},
+					regex: `^(?:42[45])`},
 				"MO": {
-					regex: `^43[01]`},
+					regex: `^(?:43[01])`},
 				"MOS": {
-					regex: `^14[0-4]`},
+					regex: `^(?:14[0-4])`},
 				"MOW": {
-					regex: `^1(?:0[1-9]|1|2|3[0-5]|4[0-4])`},
+					regex: `^(?:1(?:0[1-9]|1|2|3[0-5]|4[0-4]))`},
 				"MUR": {
-					regex: `^18[34]`},
+					regex: `^(?:18[34])`},
 				"NEN": {
-					regex: `^166`},
+					regex: `^(?:166)`},
 				"NGR": {
-					regex: `^17[3-5]`},
+					regex: `^(?:17[3-5])`},
 				"NIZ": {
-					regex: `^60[3-7]`},
+					regex: `^(?:60[3-7])`},
 				"NVS": {
-					regex: `^63[0-3]`},
+					regex: `^(?:63[0-3])`},
 				"OMS": {
-					regex: `^64[4-6]`},
+					regex: `^(?:64[4-6])`},
 				"ORE": {
-					regex: `^46[0-2]`},
+					regex: `^(?:46[0-2])`},
 				"ORL": {
-					regex: `^30[23]`},
+					regex: `^(?:30[23])`},
 				"PER": {
-					regex: `^61[4-9]`},
+					regex: `^(?:61[4-9])`},
 				"PNZ": {
-					regex: `^44[0-2]`},
+					regex: `^(?:44[0-2])`},
 				"PRI": {
-					regex: `^69[0-2]`},
+					regex: `^(?:69[0-2])`},
 				"PSK": {
-					regex: `^18[0-2]`},
+					regex: `^(?:18[0-2])`},
 				"ROS": {
-					regex: `^34[4-7]`},
+					regex: `^(?:34[4-7])`},
 				"RYA": {
-					regex: `^39[01]`},
+					regex: `^(?:39[01])`},
 				"SA": {
-					regex: `^67[78]`},
+					regex: `^(?:67[78])`},
 				"SAK": {
-					regex: `^69[34]`},
+					regex: `^(?:69[34])`},
 				"SAM": {
-					regex: `^44[3-6]`},
+					regex: `^(?:44[3-6])`},
 				"SAR": {
-					regex: `^41[0-3]`},
+					regex: `^(?:41[0-3])`},
 				"SE": {
-					regex: `^36[23]`},
+					regex: `^(?:36[23])`},
 				"SMO": {
-					regex: `^21[4-6]`},
+					regex: `^(?:21[4-6])`},
 				"SPE": {
-					regex: `^19`},
+					regex: `^(?:19)`},
 				"STA": {
-					regex: `^35[5-7]`},
+					regex: `^(?:35[5-7])`},
 				"SVE": {
-					regex: `^62[0-4]`},
+					regex: `^(?:62[0-4])`},
 				"TA": {
-					regex: `^42[0-3]`},
+					regex: `^(?:42[0-3])`},
 				"TAM": {
-					regex: `^39[23]`},
+					regex: `^(?:39[23])`},
 				"TOM": {
-					regex: `^63[4-6]`},
+					regex: `^(?:63[4-6])`},
 				"TUL": {
-					regex: `^30[01]`},
+					regex: `^(?:30[01])`},
 				"TVE": {
-					regex: `^17[0-2]`},
+					regex: `^(?:17[0-2])`},
 				"TY": {
-					regex: `^66[78]`},
+					regex: `^(?:66[78])`},
 				"TYU": {
-					regex: `^62[5-7]`},
+					regex: `^(?:62[5-7])`},
 				"UD": {
-					regex: `^42[67]`},
+					regex: `^(?:42[67])`},
 				"ULY": {
-					regex: `^43[23]`},
+					regex: `^(?:43[23])`},
 				"VGG": {
-					regex: `^40[0-4]`},
+					regex: `^(?:40[0-4])`},
 				"VLA": {
-					regex: `^60[0-2]`},
+					regex: `^(?:60[0-2])`},
 				"VLG": {
-					regex: `^16[0-2]`},
+					regex: `^(?:16[0-2])`},
 				"VOR": {
-					regex: `^39[4-7]`},
+					regex: `^(?:39[4-7])`},
 				"YAN": {
-					regex: `^629`},
+					regex: `^(?:629)`},
 				"YAR": {
-					regex: `^15[0-2]`},
+					regex: `^(?:15[0-2])`},
 				"YEV": {
-					regex: `^679`},
+					regex: `^(?:679)`},
 				"ZAB": {
-					regex: `^6(?:7[2-4]|87)`},
+					regex: `^(?:6(?:7[2-4]|87))`},
 			}},
 		Format:                     "%N%n%O%n%A%n%C%n%S%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%C%n%S%n%Z",
@@ -79908,33 +79908,33 @@ var generated = data{
 			regex: `^([1-3][1-7][0-2]\d)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AH": {
-					regex: `^21`},
+					regex: `^(?:21)`},
 				"CA": {
-					regex: `^12`},
+					regex: `^(?:12)`},
 				"CH": {
-					regex: `^13`},
+					regex: `^(?:13)`},
 				"CU": {
-					regex: `^14`},
+					regex: `^(?:14)`},
 				"LI": {
-					regex: `^15`},
+					regex: `^(?:15)`},
 				"MO": {
-					regex: `^32`},
+					regex: `^(?:32)`},
 				"PA": {
-					regex: `^16`},
+					regex: `^(?:16)`},
 				"SA": {
-					regex: `^22`},
+					regex: `^(?:22)`},
 				"SM": {
-					regex: `^33`},
+					regex: `^(?:33)`},
 				"SO": {
-					regex: `^23`},
+					regex: `^(?:23)`},
 				"SS": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"SV": {
-					regex: `^17`},
+					regex: `^(?:17)`},
 				"UN": {
-					regex: `^31`},
+					regex: `^(?:31)`},
 				"US": {
-					regex: `^34`},
+					regex: `^(?:34)`},
 			}},
 		Format: "%N%n%O%n%A%n%Z-%C%n%S",
 		AllowedFields: map[Field]struct{}{
@@ -80123,157 +80123,157 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"10": {
-					regex: `^10`},
+					regex: `^(?:10)`},
 				"11": {
-					regex: `^10`},
+					regex: `^(?:10)`},
 				"12": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"13": {
-					regex: `^12`},
+					regex: `^(?:12)`},
 				"14": {
-					regex: `^13`},
+					regex: `^(?:13)`},
 				"15": {
-					regex: `^14`},
+					regex: `^(?:14)`},
 				"16": {
-					regex: `^15`},
+					regex: `^(?:15)`},
 				"17": {
-					regex: `^16`},
+					regex: `^(?:16)`},
 				"18": {
-					regex: `^17`},
+					regex: `^(?:17)`},
 				"19": {
-					regex: `^18`},
+					regex: `^(?:18)`},
 				"20": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"21": {
-					regex: `^21`},
+					regex: `^(?:21)`},
 				"22": {
-					regex: `^22`},
+					regex: `^(?:22)`},
 				"23": {
-					regex: `^23`},
+					regex: `^(?:23)`},
 				"24": {
-					regex: `^24`},
+					regex: `^(?:24)`},
 				"25": {
-					regex: `^25`},
+					regex: `^(?:25)`},
 				"26": {
-					regex: `^26`},
+					regex: `^(?:26)`},
 				"27": {
-					regex: `^27`},
+					regex: `^(?:27)`},
 				"30": {
-					regex: `^30`},
+					regex: `^(?:30)`},
 				"31": {
-					regex: `^31`},
+					regex: `^(?:31)`},
 				"32": {
-					regex: `^32`},
+					regex: `^(?:32)`},
 				"33": {
-					regex: `^33`},
+					regex: `^(?:33)`},
 				"34": {
-					regex: `^34`},
+					regex: `^(?:34)`},
 				"35": {
-					regex: `^35`},
+					regex: `^(?:35)`},
 				"36": {
-					regex: `^36`},
+					regex: `^(?:36)`},
 				"37": {
-					regex: `^37`},
+					regex: `^(?:37)`},
 				"39": {
-					regex: `^39`},
+					regex: `^(?:39)`},
 				"40": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"41": {
-					regex: `^41`},
+					regex: `^(?:41)`},
 				"42": {
-					regex: `^42`},
+					regex: `^(?:42)`},
 				"43": {
-					regex: `^43`},
+					regex: `^(?:43)`},
 				"44": {
-					regex: `^44`},
+					regex: `^(?:44)`},
 				"45": {
-					regex: `^45`},
+					regex: `^(?:45)`},
 				"46": {
-					regex: `^46`},
+					regex: `^(?:46)`},
 				"47": {
-					regex: `^47`},
+					regex: `^(?:47)`},
 				"48": {
-					regex: `^48`},
+					regex: `^(?:48)`},
 				"49": {
-					regex: `^49`},
+					regex: `^(?:49)`},
 				"50": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"51": {
-					regex: `^51`},
+					regex: `^(?:51)`},
 				"52": {
-					regex: `^52`},
+					regex: `^(?:52)`},
 				"53": {
-					regex: `^53`},
+					regex: `^(?:53)`},
 				"54": {
-					regex: `^54`},
+					regex: `^(?:54)`},
 				"55": {
-					regex: `^55`},
+					regex: `^(?:55)`},
 				"56": {
-					regex: `^56`},
+					regex: `^(?:56)`},
 				"57": {
-					regex: `^57`},
+					regex: `^(?:57)`},
 				"58": {
-					regex: `^58`},
+					regex: `^(?:58)`},
 				"60": {
-					regex: `^60`},
+					regex: `^(?:60)`},
 				"61": {
-					regex: `^61`},
+					regex: `^(?:61)`},
 				"62": {
-					regex: `^62`},
+					regex: `^(?:62)`},
 				"63": {
-					regex: `^63`},
+					regex: `^(?:63)`},
 				"64": {
-					regex: `^64`},
+					regex: `^(?:64)`},
 				"65": {
-					regex: `^65`},
+					regex: `^(?:65)`},
 				"66": {
-					regex: `^66`},
+					regex: `^(?:66)`},
 				"67": {
-					regex: `^67`},
+					regex: `^(?:67)`},
 				"70": {
-					regex: `^70`},
+					regex: `^(?:70)`},
 				"71": {
-					regex: `^71`},
+					regex: `^(?:71)`},
 				"72": {
-					regex: `^72`},
+					regex: `^(?:72)`},
 				"73": {
-					regex: `^73`},
+					regex: `^(?:73)`},
 				"74": {
-					regex: `^74`},
+					regex: `^(?:74)`},
 				"75": {
-					regex: `^75`},
+					regex: `^(?:75)`},
 				"76": {
-					regex: `^76`},
+					regex: `^(?:76)`},
 				"77": {
-					regex: `^77`},
+					regex: `^(?:77)`},
 				"80": {
-					regex: `^80`},
+					regex: `^(?:80)`},
 				"81": {
-					regex: `^81`},
+					regex: `^(?:81)`},
 				"82": {
-					regex: `^82`},
+					regex: `^(?:82)`},
 				"83": {
-					regex: `^83`},
+					regex: `^(?:83)`},
 				"84": {
-					regex: `^84`},
+					regex: `^(?:84)`},
 				"85": {
-					regex: `^85`},
+					regex: `^(?:85)`},
 				"86": {
-					regex: `^86`},
+					regex: `^(?:86)`},
 				"90": {
-					regex: `^90`},
+					regex: `^(?:90)`},
 				"91": {
-					regex: `^91`},
+					regex: `^(?:91)`},
 				"92": {
-					regex: `^92`},
+					regex: `^(?:92)`},
 				"93": {
-					regex: `^93`},
+					regex: `^(?:93)`},
 				"94": {
-					regex: `^94`},
+					regex: `^(?:94)`},
 				"95": {
-					regex: `^95`},
+					regex: `^(?:95)`},
 				"96": {
-					regex: `^96`},
+					regex: `^(?:96)`},
 			}},
 		Format:          "%N%n%O%n%A%n%D %C%n%S %Z",
 		LatinizedFormat: "%N%n%O%n%A%n%D, %C%n%S %Z",
@@ -81134,167 +81134,167 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"01": {
-					regex: `^01`},
+					regex: `^(?:01)`},
 				"02": {
-					regex: `^02`},
+					regex: `^(?:02)`},
 				"03": {
-					regex: `^03`},
+					regex: `^(?:03)`},
 				"04": {
-					regex: `^04`},
+					regex: `^(?:04)`},
 				"05": {
-					regex: `^05`},
+					regex: `^(?:05)`},
 				"06": {
-					regex: `^06`},
+					regex: `^(?:06)`},
 				"07": {
-					regex: `^07`},
+					regex: `^(?:07)`},
 				"08": {
-					regex: `^08`},
+					regex: `^(?:08)`},
 				"09": {
-					regex: `^09`},
+					regex: `^(?:09)`},
 				"10": {
-					regex: `^10`},
+					regex: `^(?:10)`},
 				"11": {
-					regex: `^11`},
+					regex: `^(?:11)`},
 				"12": {
-					regex: `^12`},
+					regex: `^(?:12)`},
 				"13": {
-					regex: `^13`},
+					regex: `^(?:13)`},
 				"14": {
-					regex: `^14`},
+					regex: `^(?:14)`},
 				"15": {
-					regex: `^15`},
+					regex: `^(?:15)`},
 				"16": {
-					regex: `^16`},
+					regex: `^(?:16)`},
 				"17": {
-					regex: `^17`},
+					regex: `^(?:17)`},
 				"18": {
-					regex: `^18`},
+					regex: `^(?:18)`},
 				"19": {
-					regex: `^19`},
+					regex: `^(?:19)`},
 				"20": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"21": {
-					regex: `^21`},
+					regex: `^(?:21)`},
 				"22": {
-					regex: `^22`},
+					regex: `^(?:22)`},
 				"23": {
-					regex: `^23`},
+					regex: `^(?:23)`},
 				"24": {
-					regex: `^24`},
+					regex: `^(?:24)`},
 				"25": {
-					regex: `^25`},
+					regex: `^(?:25)`},
 				"26": {
-					regex: `^26`},
+					regex: `^(?:26)`},
 				"27": {
-					regex: `^27`},
+					regex: `^(?:27)`},
 				"28": {
-					regex: `^28`},
+					regex: `^(?:28)`},
 				"29": {
-					regex: `^29`},
+					regex: `^(?:29)`},
 				"30": {
-					regex: `^30`},
+					regex: `^(?:30)`},
 				"31": {
-					regex: `^31`},
+					regex: `^(?:31)`},
 				"32": {
-					regex: `^32`},
+					regex: `^(?:32)`},
 				"33": {
-					regex: `^33`},
+					regex: `^(?:33)`},
 				"34": {
-					regex: `^34`},
+					regex: `^(?:34)`},
 				"35": {
-					regex: `^35`},
+					regex: `^(?:35)`},
 				"36": {
-					regex: `^36`},
+					regex: `^(?:36)`},
 				"37": {
-					regex: `^37`},
+					regex: `^(?:37)`},
 				"38": {
-					regex: `^38`},
+					regex: `^(?:38)`},
 				"39": {
-					regex: `^39`},
+					regex: `^(?:39)`},
 				"40": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"41": {
-					regex: `^41`},
+					regex: `^(?:41)`},
 				"42": {
-					regex: `^42`},
+					regex: `^(?:42)`},
 				"43": {
-					regex: `^43`},
+					regex: `^(?:43)`},
 				"44": {
-					regex: `^44`},
+					regex: `^(?:44)`},
 				"45": {
-					regex: `^45`},
+					regex: `^(?:45)`},
 				"46": {
-					regex: `^46`},
+					regex: `^(?:46)`},
 				"47": {
-					regex: `^47`},
+					regex: `^(?:47)`},
 				"48": {
-					regex: `^48`},
+					regex: `^(?:48)`},
 				"49": {
-					regex: `^49`},
+					regex: `^(?:49)`},
 				"50": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"51": {
-					regex: `^51`},
+					regex: `^(?:51)`},
 				"52": {
-					regex: `^52`},
+					regex: `^(?:52)`},
 				"53": {
-					regex: `^53`},
+					regex: `^(?:53)`},
 				"54": {
-					regex: `^54`},
+					regex: `^(?:54)`},
 				"55": {
-					regex: `^55`},
+					regex: `^(?:55)`},
 				"56": {
-					regex: `^56`},
+					regex: `^(?:56)`},
 				"57": {
-					regex: `^57`},
+					regex: `^(?:57)`},
 				"58": {
-					regex: `^58`},
+					regex: `^(?:58)`},
 				"59": {
-					regex: `^59`},
+					regex: `^(?:59)`},
 				"60": {
-					regex: `^60`},
+					regex: `^(?:60)`},
 				"61": {
-					regex: `^61`},
+					regex: `^(?:61)`},
 				"62": {
-					regex: `^62`},
+					regex: `^(?:62)`},
 				"63": {
-					regex: `^63`},
+					regex: `^(?:63)`},
 				"64": {
-					regex: `^64`},
+					regex: `^(?:64)`},
 				"65": {
-					regex: `^65`},
+					regex: `^(?:65)`},
 				"66": {
-					regex: `^66`},
+					regex: `^(?:66)`},
 				"67": {
-					regex: `^67`},
+					regex: `^(?:67)`},
 				"68": {
-					regex: `^68`},
+					regex: `^(?:68)`},
 				"69": {
-					regex: `^69`},
+					regex: `^(?:69)`},
 				"70": {
-					regex: `^70`},
+					regex: `^(?:70)`},
 				"71": {
-					regex: `^71`},
+					regex: `^(?:71)`},
 				"72": {
-					regex: `^72`},
+					regex: `^(?:72)`},
 				"73": {
-					regex: `^73`},
+					regex: `^(?:73)`},
 				"74": {
-					regex: `^74`},
+					regex: `^(?:74)`},
 				"75": {
-					regex: `^75`},
+					regex: `^(?:75)`},
 				"76": {
-					regex: `^76`},
+					regex: `^(?:76)`},
 				"77": {
-					regex: `^77`},
+					regex: `^(?:77)`},
 				"78": {
-					regex: `^78`},
+					regex: `^(?:78)`},
 				"79": {
-					regex: `^79`},
+					regex: `^(?:79)`},
 				"80": {
-					regex: `^80`},
+					regex: `^(?:80)`},
 				"81": {
-					regex: `^81`},
+					regex: `^(?:81)`},
 			}},
 		Format:           "%N%n%O%n%A%n%Z %C/%S",
 		LocalityNameType: District,
@@ -81807,790 +81807,790 @@ var generated = data{
 			regex: `^(\d{3}(?:\d{2,3})?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"CHA": {
-					regex: `^5[0123]`,
+					regex: `^(?:5[0123])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"二林鎮": {
-							regex: `^526`},
+							regex: `^(?:526)`},
 						"二水鄉": {
-							regex: `^530`},
+							regex: `^(?:530)`},
 						"伸港鄉": {
-							regex: `^509`},
+							regex: `^(?:509)`},
 						"北斗鎮": {
-							regex: `^521`},
+							regex: `^(?:521)`},
 						"和美鎮": {
-							regex: `^508`},
+							regex: `^(?:508)`},
 						"員林市": {
-							regex: `^510`},
+							regex: `^(?:510)`},
 						"埔心鄉": {
-							regex: `^513`},
+							regex: `^(?:513)`},
 						"埔鹽鄉": {
-							regex: `^516`},
+							regex: `^(?:516)`},
 						"埤頭鄉": {
-							regex: `^523`},
+							regex: `^(?:523)`},
 						"大城鄉": {
-							regex: `^527`},
+							regex: `^(?:527)`},
 						"大村鄉": {
-							regex: `^515`},
+							regex: `^(?:515)`},
 						"彰化市": {
-							regex: `^500`},
+							regex: `^(?:500)`},
 						"永靖鄉": {
-							regex: `^512`},
+							regex: `^(?:512)`},
 						"溪州鄉": {
-							regex: `^524`},
+							regex: `^(?:524)`},
 						"溪湖鎮": {
-							regex: `^514`},
+							regex: `^(?:514)`},
 						"田中鎮": {
-							regex: `^520`},
+							regex: `^(?:520)`},
 						"田尾鄉": {
-							regex: `^522`},
+							regex: `^(?:522)`},
 						"社頭鄉": {
-							regex: `^511`},
+							regex: `^(?:511)`},
 						"福興鄉": {
-							regex: `^506`},
+							regex: `^(?:506)`},
 						"秀水鄉": {
-							regex: `^504`},
+							regex: `^(?:504)`},
 						"竹塘鄉": {
-							regex: `^525`},
+							regex: `^(?:525)`},
 						"線西鄉": {
-							regex: `^507`},
+							regex: `^(?:507)`},
 						"芬園鄉": {
-							regex: `^502`},
+							regex: `^(?:502)`},
 						"花壇鄉": {
-							regex: `^503`},
+							regex: `^(?:503)`},
 						"芳苑鄉": {
-							regex: `^528`},
+							regex: `^(?:528)`},
 						"鹿港鎮": {
-							regex: `^505`},
+							regex: `^(?:505)`},
 					}},
 				"CYI": {
-					regex: `^600`},
+					regex: `^(?:600)`},
 				"CYQ": {
-					regex: `^60[1-9]|6[12]`,
+					regex: `^(?:60[1-9]|6[12])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"中埔鄉": {
-							regex: `^606`},
+							regex: `^(?:606)`},
 						"六腳鄉": {
-							regex: `^615`},
+							regex: `^(?:615)`},
 						"大埔鄉": {
-							regex: `^607`},
+							regex: `^(?:607)`},
 						"大林鎮": {
-							regex: `^622`},
+							regex: `^(?:622)`},
 						"太保市": {
-							regex: `^612`},
+							regex: `^(?:612)`},
 						"布袋鎮": {
-							regex: `^625`},
+							regex: `^(?:625)`},
 						"新港鄉": {
-							regex: `^616`},
+							regex: `^(?:616)`},
 						"朴子市": {
-							regex: `^613`},
+							regex: `^(?:613)`},
 						"東石鄉": {
-							regex: `^614`},
+							regex: `^(?:614)`},
 						"梅山鄉": {
-							regex: `^603`},
+							regex: `^(?:603)`},
 						"民雄鄉": {
-							regex: `^621`},
+							regex: `^(?:621)`},
 						"水上鄉": {
-							regex: `^608`},
+							regex: `^(?:608)`},
 						"溪口鄉": {
-							regex: `^623`},
+							regex: `^(?:623)`},
 						"番路鄉": {
-							regex: `^602`},
+							regex: `^(?:602)`},
 						"竹崎鄉": {
-							regex: `^604`},
+							regex: `^(?:604)`},
 						"義竹鄉": {
-							regex: `^624`},
+							regex: `^(?:624)`},
 						"阿里山鄉": {
-							regex: `^605`},
+							regex: `^(?:605)`},
 						"鹿草鄉": {
-							regex: `^611`},
+							regex: `^(?:611)`},
 					}},
 				"HSQ": {
-					regex: `^30[2-8]|31`,
+					regex: `^(?:30[2-8]|31)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"五峰鄉": {
-							regex: `^311`},
+							regex: `^(?:311)`},
 						"北埔鄉": {
-							regex: `^314`},
+							regex: `^(?:314)`},
 						"寶山鄉": {
-							regex: `^308`},
+							regex: `^(?:308)`},
 						"尖石鄉": {
-							regex: `^313`},
+							regex: `^(?:313)`},
 						"峨眉鄉": {
-							regex: `^315`},
+							regex: `^(?:315)`},
 						"新埔鎮": {
-							regex: `^305`},
+							regex: `^(?:305)`},
 						"新豐鄉": {
-							regex: `^304`},
+							regex: `^(?:304)`},
 						"橫山鄉": {
-							regex: `^312`},
+							regex: `^(?:312)`},
 						"湖口鄉": {
-							regex: `^303`},
+							regex: `^(?:303)`},
 						"竹北市": {
-							regex: `^302`},
+							regex: `^(?:302)`},
 						"竹東鎮": {
-							regex: `^310`},
+							regex: `^(?:310)`},
 						"芎林鄉": {
-							regex: `^307`},
+							regex: `^(?:307)`},
 						"關西鎮": {
-							regex: `^306`},
+							regex: `^(?:306)`},
 					}},
 				"HSZ": {
-					regex: `^300`},
+					regex: `^(?:300)`},
 				"HUA": {
-					regex: `^9[78]`,
+					regex: `^(?:9[78])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"光復鄉": {
-							regex: `^976`},
+							regex: `^(?:976)`},
 						"卓溪鄉": {
-							regex: `^982`},
+							regex: `^(?:982)`},
 						"吉安鄉": {
-							regex: `^973`},
+							regex: `^(?:973)`},
 						"壽豐鄉": {
-							regex: `^974`},
+							regex: `^(?:974)`},
 						"富里鄉": {
-							regex: `^983`},
+							regex: `^(?:983)`},
 						"新城鄉": {
-							regex: `^971`},
+							regex: `^(?:971)`},
 						"玉里鎮": {
-							regex: `^981`},
+							regex: `^(?:981)`},
 						"瑞穗鄉": {
-							regex: `^978`},
+							regex: `^(?:978)`},
 						"秀林鄉": {
-							regex: `^972`},
+							regex: `^(?:972)`},
 						"花蓮市": {
-							regex: `^970`},
+							regex: `^(?:970)`},
 						"萬榮鄉": {
-							regex: `^979`},
+							regex: `^(?:979)`},
 						"豐濱鄉": {
-							regex: `^977`},
+							regex: `^(?:977)`},
 						"鳳林鎮": {
-							regex: `^975`},
+							regex: `^(?:975)`},
 					}},
 				"ILA": {
-					regex: `^2[67]`,
+					regex: `^(?:2[67])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"三星鄉": {
-							regex: `^266`},
+							regex: `^(?:266)`},
 						"五結鄉": {
-							regex: `^268`},
+							regex: `^(?:268)`},
 						"冬山鄉": {
-							regex: `^269`},
+							regex: `^(?:269)`},
 						"南澳鄉": {
-							regex: `^272`},
+							regex: `^(?:272)`},
 						"員山鄉": {
-							regex: `^264`},
+							regex: `^(?:264)`},
 						"壯圍鄉": {
-							regex: `^263`},
+							regex: `^(?:263)`},
 						"大同鄉": {
-							regex: `^267`},
+							regex: `^(?:267)`},
 						"宜蘭市": {
-							regex: `^260`},
+							regex: `^(?:260)`},
 						"礁溪鄉": {
-							regex: `^262`},
+							regex: `^(?:262)`},
 						"羅東鎮": {
-							regex: `^265`},
+							regex: `^(?:265)`},
 						"蘇澳鎮": {
-							regex: `^270`},
+							regex: `^(?:270)`},
 						"頭城鎮": {
-							regex: `^261`},
+							regex: `^(?:261)`},
 					}},
 				"KEE": {
-					regex: `^20[0-6]`,
+					regex: `^(?:20[0-6])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"七堵區": {
-							regex: `^206`},
+							regex: `^(?:206)`},
 						"中山區": {
-							regex: `^203`},
+							regex: `^(?:203)`},
 						"中正區": {
-							regex: `^202`},
+							regex: `^(?:202)`},
 						"仁愛區": {
-							regex: `^200`},
+							regex: `^(?:200)`},
 						"信義區": {
-							regex: `^201`},
+							regex: `^(?:201)`},
 						"安樂區": {
-							regex: `^204`},
+							regex: `^(?:204)`},
 						"暖暖區": {
-							regex: `^205`},
+							regex: `^(?:205)`},
 					}},
 				"KHH": {
-					regex: `^8[02-5]|81[1-579]`,
+					regex: `^(?:8[02-5]|81[1-579])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"三民區": {
-							regex: `^807`},
+							regex: `^(?:807)`},
 						"仁武區": {
-							regex: `^814`},
+							regex: `^(?:814)`},
 						"內門區": {
-							regex: `^845`},
+							regex: `^(?:845)`},
 						"六龜區": {
-							regex: `^844`},
+							regex: `^(?:844)`},
 						"前金區": {
-							regex: `^801`},
+							regex: `^(?:801)`},
 						"前鎮區": {
-							regex: `^806`},
+							regex: `^(?:806)`},
 						"南沙島": {
-							regex: `^819`},
+							regex: `^(?:819)`},
 						"大寮區": {
-							regex: `^831`},
+							regex: `^(?:831)`},
 						"大樹區": {
-							regex: `^840`},
+							regex: `^(?:840)`},
 						"大社區": {
-							regex: `^815`},
+							regex: `^(?:815)`},
 						"小港區": {
-							regex: `^812`},
+							regex: `^(?:812)`},
 						"岡山區": {
-							regex: `^820`},
+							regex: `^(?:820)`},
 						"左營區": {
-							regex: `^813`},
+							regex: `^(?:813)`},
 						"彌陀區": {
-							regex: `^827`},
+							regex: `^(?:827)`},
 						"新興區": {
-							regex: `^800`},
+							regex: `^(?:800)`},
 						"旗山區": {
-							regex: `^842`},
+							regex: `^(?:842)`},
 						"旗津區": {
-							regex: `^805`},
+							regex: `^(?:805)`},
 						"杉林區": {
-							regex: `^846`},
+							regex: `^(?:846)`},
 						"東沙島": {
-							regex: `^817`},
+							regex: `^(?:817)`},
 						"林園區": {
-							regex: `^832`},
+							regex: `^(?:832)`},
 						"桃源區": {
-							regex: `^848`},
+							regex: `^(?:848)`},
 						"梓官區": {
-							regex: `^826`},
+							regex: `^(?:826)`},
 						"楠梓區": {
-							regex: `^811`},
+							regex: `^(?:811)`},
 						"橋頭區": {
-							regex: `^825`},
+							regex: `^(?:825)`},
 						"永安區": {
-							regex: `^828`},
+							regex: `^(?:828)`},
 						"湖內區": {
-							regex: `^829`},
+							regex: `^(?:829)`},
 						"燕巢區": {
-							regex: `^824`},
+							regex: `^(?:824)`},
 						"田寮區": {
-							regex: `^823`},
+							regex: `^(?:823)`},
 						"甲仙區": {
-							regex: `^847`},
+							regex: `^(?:847)`},
 						"美濃區": {
-							regex: `^843`},
+							regex: `^(?:843)`},
 						"苓雅區": {
-							regex: `^802`},
+							regex: `^(?:802)`},
 						"茂林區": {
-							regex: `^851`},
+							regex: `^(?:851)`},
 						"茄萣區": {
-							regex: `^852`},
+							regex: `^(?:852)`},
 						"路竹區": {
-							regex: `^821`},
+							regex: `^(?:821)`},
 						"那瑪夏區": {
-							regex: `^849`},
+							regex: `^(?:849)`},
 						"阿蓮區": {
-							regex: `^822`},
+							regex: `^(?:822)`},
 						"鳥松區": {
-							regex: `^833`},
+							regex: `^(?:833)`},
 						"鳳山區": {
-							regex: `^830`},
+							regex: `^(?:830)`},
 						"鹽埕區": {
-							regex: `^803`},
+							regex: `^(?:803)`},
 						"鼓山區": {
-							regex: `^804`},
+							regex: `^(?:804)`},
 					}},
 				"MIA": {
-					regex: `^3[56]`,
+					regex: `^(?:3[56])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"三灣鄉": {
-							regex: `^352`},
+							regex: `^(?:352)`},
 						"三義鄉": {
-							regex: `^367`},
+							regex: `^(?:367)`},
 						"公館鄉": {
-							regex: `^363`},
+							regex: `^(?:363)`},
 						"卓蘭鎮": {
-							regex: `^369`},
+							regex: `^(?:369)`},
 						"南庄鄉": {
-							regex: `^353`},
+							regex: `^(?:353)`},
 						"大湖鄉": {
-							regex: `^364`},
+							regex: `^(?:364)`},
 						"後龍鎮": {
-							regex: `^356`},
+							regex: `^(?:356)`},
 						"泰安鄉": {
-							regex: `^365`},
+							regex: `^(?:365)`},
 						"獅潭鄉": {
-							regex: `^354`},
+							regex: `^(?:354)`},
 						"竹南鎮": {
-							regex: `^350`},
+							regex: `^(?:350)`},
 						"苑裡鎮": {
-							regex: `^358`},
+							regex: `^(?:358)`},
 						"苗栗市": {
-							regex: `^360`},
+							regex: `^(?:360)`},
 						"西湖鄉": {
-							regex: `^368`},
+							regex: `^(?:368)`},
 						"通霄鎮": {
-							regex: `^357`},
+							regex: `^(?:357)`},
 						"造橋鄉": {
-							regex: `^361`},
+							regex: `^(?:361)`},
 						"銅鑼鄉": {
-							regex: `^366`},
+							regex: `^(?:366)`},
 						"頭份市": {
-							regex: `^351`},
+							regex: `^(?:351)`},
 						"頭屋鄉": {
-							regex: `^362`},
+							regex: `^(?:362)`},
 					}},
 				"NAN": {
-					regex: `^5[45]`,
+					regex: `^(?:5[45])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"中寮鄉": {
-							regex: `^541`},
+							regex: `^(?:541)`},
 						"仁愛鄉": {
-							regex: `^546`},
+							regex: `^(?:546)`},
 						"信義鄉": {
-							regex: `^556`},
+							regex: `^(?:556)`},
 						"南投市": {
-							regex: `^540`},
+							regex: `^(?:540)`},
 						"名間鄉": {
-							regex: `^551`},
+							regex: `^(?:551)`},
 						"國姓鄉": {
-							regex: `^544`},
+							regex: `^(?:544)`},
 						"埔里鎮": {
-							regex: `^545`},
+							regex: `^(?:545)`},
 						"水里鄉": {
-							regex: `^553`},
+							regex: `^(?:553)`},
 						"竹山鎮": {
-							regex: `^557`},
+							regex: `^(?:557)`},
 						"草屯鎮": {
-							regex: `^542`},
+							regex: `^(?:542)`},
 						"集集鎮": {
-							regex: `^552`},
+							regex: `^(?:552)`},
 						"魚池鄉": {
-							regex: `^555`},
+							regex: `^(?:555)`},
 						"鹿谷鄉": {
-							regex: `^558`},
+							regex: `^(?:558)`},
 					}},
 				"NWT": {
-					regex: `^20[78]|2[2345]`,
+					regex: `^(?:20[78]|2[2345])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"三峽區": {
-							regex: `^237`},
+							regex: `^(?:237)`},
 						"三芝區": {
-							regex: `^252`},
+							regex: `^(?:252)`},
 						"三重區": {
-							regex: `^241`},
+							regex: `^(?:241)`},
 						"中和區": {
-							regex: `^235`},
+							regex: `^(?:235)`},
 						"五股區": {
-							regex: `^248`},
+							regex: `^(?:248)`},
 						"八里區": {
-							regex: `^249`},
+							regex: `^(?:249)`},
 						"土城區": {
-							regex: `^236`},
+							regex: `^(?:236)`},
 						"坪林區": {
-							regex: `^232`},
+							regex: `^(?:232)`},
 						"平溪區": {
-							regex: `^226`},
+							regex: `^(?:226)`},
 						"新店區": {
-							regex: `^231`},
+							regex: `^(?:231)`},
 						"新莊區": {
-							regex: `^24[28]`},
+							regex: `^(?:24[28])`},
 						"板橋區": {
-							regex: `^220`},
+							regex: `^(?:220)`},
 						"林口區": {
-							regex: `^244`},
+							regex: `^(?:244)`},
 						"樹林區": {
-							regex: `^238`},
+							regex: `^(?:238)`},
 						"永和區": {
-							regex: `^234`},
+							regex: `^(?:234)`},
 						"汐止區": {
-							regex: `^221`},
+							regex: `^(?:221)`},
 						"泰山區": {
-							regex: `^243`},
+							regex: `^(?:243)`},
 						"淡水區": {
-							regex: `^251`},
+							regex: `^(?:251)`},
 						"深坑區": {
-							regex: `^222`},
+							regex: `^(?:222)`},
 						"烏來區": {
-							regex: `^233`},
+							regex: `^(?:233)`},
 						"瑞芳區": {
-							regex: `^224`},
+							regex: `^(?:224)`},
 						"石碇區": {
-							regex: `^223`},
+							regex: `^(?:223)`},
 						"石門區": {
-							regex: `^253`},
+							regex: `^(?:253)`},
 						"萬里區": {
-							regex: `^207`},
+							regex: `^(?:207)`},
 						"蘆洲區": {
-							regex: `^247`},
+							regex: `^(?:247)`},
 						"貢寮區": {
-							regex: `^228`},
+							regex: `^(?:228)`},
 						"金山區": {
-							regex: `^208`},
+							regex: `^(?:208)`},
 						"雙溪區": {
-							regex: `^227`},
+							regex: `^(?:227)`},
 						"鶯歌區": {
-							regex: `^239`},
+							regex: `^(?:239)`},
 					}},
 				"PEN": {
-					regex: `^88`,
+					regex: `^(?:88)`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"七美鄉": {
-							regex: `^883`},
+							regex: `^(?:883)`},
 						"望安鄉": {
-							regex: `^882`},
+							regex: `^(?:882)`},
 						"湖西鄉": {
-							regex: `^885`},
+							regex: `^(?:885)`},
 						"白沙鄉": {
-							regex: `^884`},
+							regex: `^(?:884)`},
 						"西嶼鄉": {
-							regex: `^881`},
+							regex: `^(?:881)`},
 						"馬公市": {
-							regex: `^880`},
+							regex: `^(?:880)`},
 					}},
 				"PIF": {
-					regex: `^9[0-4]`,
+					regex: `^(?:9[0-4])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"三地門鄉": {
-							regex: `^901`},
+							regex: `^(?:901)`},
 						"九如鄉": {
-							regex: `^904`},
+							regex: `^(?:904)`},
 						"佳冬鄉": {
-							regex: `^931`},
+							regex: `^(?:931)`},
 						"來義鄉": {
-							regex: `^922`},
+							regex: `^(?:922)`},
 						"內埔鄉": {
-							regex: `^912`},
+							regex: `^(?:912)`},
 						"南州鄉": {
-							regex: `^926`},
+							regex: `^(?:926)`},
 						"屏東市": {
-							regex: `^900`},
+							regex: `^(?:900)`},
 						"崁頂鄉": {
-							regex: `^924`},
+							regex: `^(?:924)`},
 						"恆春鎮": {
-							regex: `^946`},
+							regex: `^(?:946)`},
 						"新園鄉": {
-							regex: `^932`},
+							regex: `^(?:932)`},
 						"新埤鄉": {
-							regex: `^925`},
+							regex: `^(?:925)`},
 						"春日鄉": {
-							regex: `^942`},
+							regex: `^(?:942)`},
 						"東港鎮": {
-							regex: `^928`},
+							regex: `^(?:928)`},
 						"枋寮鄉": {
-							regex: `^940`},
+							regex: `^(?:940)`},
 						"枋山鄉": {
-							regex: `^941`},
+							regex: `^(?:941)`},
 						"林邊鄉": {
-							regex: `^927`},
+							regex: `^(?:927)`},
 						"泰武鄉": {
-							regex: `^921`},
+							regex: `^(?:921)`},
 						"滿洲鄉": {
-							regex: `^947`},
+							regex: `^(?:947)`},
 						"潮州鎮": {
-							regex: `^920`},
+							regex: `^(?:920)`},
 						"牡丹鄉": {
-							regex: `^945`},
+							regex: `^(?:945)`},
 						"獅子鄉": {
-							regex: `^943`},
+							regex: `^(?:943)`},
 						"琉球鄉": {
-							regex: `^929`},
+							regex: `^(?:929)`},
 						"瑪家鄉": {
-							regex: `^903`},
+							regex: `^(?:903)`},
 						"竹田鄉": {
-							regex: `^911`},
+							regex: `^(?:911)`},
 						"萬丹鄉": {
-							regex: `^913`},
+							regex: `^(?:913)`},
 						"萬巒鄉": {
-							regex: `^923`},
+							regex: `^(?:923)`},
 						"車城鄉": {
-							regex: `^944`},
+							regex: `^(?:944)`},
 						"里港鄉": {
-							regex: `^905`},
+							regex: `^(?:905)`},
 						"長治鄉": {
-							regex: `^908`},
+							regex: `^(?:908)`},
 						"霧台鄉": {
-							regex: `^902`},
+							regex: `^(?:902)`},
 						"高樹鄉": {
-							regex: `^906`},
+							regex: `^(?:906)`},
 						"鹽埔鄉": {
-							regex: `^907`},
+							regex: `^(?:907)`},
 						"麟洛鄉": {
-							regex: `^909`},
+							regex: `^(?:909)`},
 					}},
 				"TAO": {
-					regex: `^3[23]`,
+					regex: `^(?:3[23])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"中壢區": {
-							regex: `^320`},
+							regex: `^(?:320)`},
 						"八德區": {
-							regex: `^334`},
+							regex: `^(?:334)`},
 						"大園區": {
-							regex: `^337`},
+							regex: `^(?:337)`},
 						"大溪區": {
-							regex: `^335`},
+							regex: `^(?:335)`},
 						"平鎮區": {
-							regex: `^324`},
+							regex: `^(?:324)`},
 						"復興區": {
-							regex: `^336`},
+							regex: `^(?:336)`},
 						"新屋區": {
-							regex: `^327`},
+							regex: `^(?:327)`},
 						"桃園區": {
-							regex: `^330`},
+							regex: `^(?:330)`},
 						"楊梅區": {
-							regex: `^326`},
+							regex: `^(?:326)`},
 						"蘆竹區": {
-							regex: `^338`},
+							regex: `^(?:338)`},
 						"觀音區": {
-							regex: `^328`},
+							regex: `^(?:328)`},
 						"龍潭區": {
-							regex: `^325`},
+							regex: `^(?:325)`},
 						"龜山區": {
-							regex: `^333`},
+							regex: `^(?:333)`},
 					}},
 				"TNN": {
-					regex: `^7[0-4]`,
+					regex: `^(?:7[0-4])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"七股區": {
-							regex: `^724`},
+							regex: `^(?:724)`},
 						"下營區": {
-							regex: `^735`},
+							regex: `^(?:735)`},
 						"中西區": {
-							regex: `^700`},
+							regex: `^(?:700)`},
 						"仁德區": {
-							regex: `^717`},
+							regex: `^(?:717)`},
 						"佳里區": {
-							regex: `^722`},
+							regex: `^(?:722)`},
 						"六甲區": {
-							regex: `^734`},
+							regex: `^(?:734)`},
 						"北區": {
-							regex: `^704`},
+							regex: `^(?:704)`},
 						"北門區": {
-							regex: `^727`},
+							regex: `^(?:727)`},
 						"南化區": {
-							regex: `^716`},
+							regex: `^(?:716)`},
 						"南區": {
-							regex: `^702`},
+							regex: `^(?:702)`},
 						"善化區": {
-							regex: `^741`},
+							regex: `^(?:741)`},
 						"大內區": {
-							regex: `^742`},
+							regex: `^(?:742)`},
 						"學甲區": {
-							regex: `^726`},
+							regex: `^(?:726)`},
 						"安南區": {
-							regex: `^709`},
+							regex: `^(?:709)`},
 						"安定區": {
-							regex: `^745`},
+							regex: `^(?:745)`},
 						"安平區": {
-							regex: `^708`},
+							regex: `^(?:708)`},
 						"官田區": {
-							regex: `^720`},
+							regex: `^(?:720)`},
 						"將軍區": {
-							regex: `^725`},
+							regex: `^(?:725)`},
 						"山上區": {
-							regex: `^743`},
+							regex: `^(?:743)`},
 						"左鎮區": {
-							regex: `^713`},
+							regex: `^(?:713)`},
 						"後壁區": {
-							regex: `^731`},
+							regex: `^(?:731)`},
 						"新化區": {
-							regex: `^712`},
+							regex: `^(?:712)`},
 						"新市區": {
-							regex: `^744`},
+							regex: `^(?:744)`},
 						"新營區": {
-							regex: `^730`},
+							regex: `^(?:730)`},
 						"東區": {
-							regex: `^701`},
+							regex: `^(?:701)`},
 						"東山區": {
-							regex: `^733`},
+							regex: `^(?:733)`},
 						"柳營區": {
-							regex: `^736`},
+							regex: `^(?:736)`},
 						"楠西區": {
-							regex: `^715`},
+							regex: `^(?:715)`},
 						"歸仁區": {
-							regex: `^711`},
+							regex: `^(?:711)`},
 						"永康區": {
-							regex: `^710`},
+							regex: `^(?:710)`},
 						"玉井區": {
-							regex: `^714`},
+							regex: `^(?:714)`},
 						"白河區": {
-							regex: `^732`},
+							regex: `^(?:732)`},
 						"西港區": {
-							regex: `^723`},
+							regex: `^(?:723)`},
 						"關廟區": {
-							regex: `^718`},
+							regex: `^(?:718)`},
 						"鹽水區": {
-							regex: `^737`},
+							regex: `^(?:737)`},
 						"麻豆區": {
-							regex: `^721`},
+							regex: `^(?:721)`},
 						"龍崎區": {
-							regex: `^719`},
+							regex: `^(?:719)`},
 					}},
 				"TPE": {
-					regex: `^1[01]`,
+					regex: `^(?:1[01])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"中山區": {
-							regex: `^104`},
+							regex: `^(?:104)`},
 						"中正區": {
-							regex: `^100`},
+							regex: `^(?:100)`},
 						"信義區": {
-							regex: `^110`},
+							regex: `^(?:110)`},
 						"內湖區": {
-							regex: `^114`},
+							regex: `^(?:114)`},
 						"北投區": {
-							regex: `^112`},
+							regex: `^(?:112)`},
 						"南港區": {
-							regex: `^115`},
+							regex: `^(?:115)`},
 						"士林區": {
-							regex: `^111`},
+							regex: `^(?:111)`},
 						"大同區": {
-							regex: `^103`},
+							regex: `^(?:103)`},
 						"大安區": {
-							regex: `^106`},
+							regex: `^(?:106)`},
 						"文山區": {
-							regex: `^116`},
+							regex: `^(?:116)`},
 						"松山區": {
-							regex: `^105`},
+							regex: `^(?:105)`},
 						"萬華區": {
-							regex: `^108`},
+							regex: `^(?:108)`},
 					}},
 				"TTT": {
-					regex: `^9[56]`,
+					regex: `^(?:9[56])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"卑南鄉": {
-							regex: `^954`},
+							regex: `^(?:954)`},
 						"台東市": {
-							regex: `^950`},
+							regex: `^(?:950)`},
 						"大武鄉": {
-							regex: `^965`},
+							regex: `^(?:965)`},
 						"太麻里鄉": {
-							regex: `^963`},
+							regex: `^(?:963)`},
 						"延平鄉": {
-							regex: `^953`},
+							regex: `^(?:953)`},
 						"成功鎮": {
-							regex: `^961`},
+							regex: `^(?:961)`},
 						"東河鄉": {
-							regex: `^959`},
+							regex: `^(?:959)`},
 						"池上鄉": {
-							regex: `^958`},
+							regex: `^(?:958)`},
 						"海端鄉": {
-							regex: `^957`},
+							regex: `^(?:957)`},
 						"綠島鄉": {
-							regex: `^951`},
+							regex: `^(?:951)`},
 						"蘭嶼鄉": {
-							regex: `^952`},
+							regex: `^(?:952)`},
 						"達仁鄉": {
-							regex: `^966`},
+							regex: `^(?:966)`},
 						"金峰鄉": {
-							regex: `^964`},
+							regex: `^(?:964)`},
 						"長濱鄉": {
-							regex: `^962`},
+							regex: `^(?:962)`},
 						"關山鎮": {
-							regex: `^956`},
+							regex: `^(?:956)`},
 						"鹿野鄉": {
-							regex: `^955`},
+							regex: `^(?:955)`},
 					}},
 				"TXG": {
-					regex: `^4[0-3]`,
+					regex: `^(?:4[0-3])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"中區": {
-							regex: `^400`},
+							regex: `^(?:400)`},
 						"北區": {
-							regex: `^404`},
+							regex: `^(?:404)`},
 						"北屯區": {
-							regex: `^406`},
+							regex: `^(?:406)`},
 						"南區": {
-							regex: `^402`},
+							regex: `^(?:402)`},
 						"南屯區": {
-							regex: `^408`},
+							regex: `^(?:408)`},
 						"后里區": {
-							regex: `^421`},
+							regex: `^(?:421)`},
 						"和平區": {
-							regex: `^424`},
+							regex: `^(?:424)`},
 						"外埔區": {
-							regex: `^438`},
+							regex: `^(?:438)`},
 						"大安區": {
-							regex: `^439`},
+							regex: `^(?:439)`},
 						"大甲區": {
-							regex: `^437`},
+							regex: `^(?:437)`},
 						"大肚區": {
-							regex: `^432`},
+							regex: `^(?:432)`},
 						"大里區": {
-							regex: `^412`},
+							regex: `^(?:412)`},
 						"大雅區": {
-							regex: `^428`},
+							regex: `^(?:428)`},
 						"太平區": {
-							regex: `^411`},
+							regex: `^(?:411)`},
 						"新社區": {
-							regex: `^426`},
+							regex: `^(?:426)`},
 						"東勢區": {
-							regex: `^423`},
+							regex: `^(?:423)`},
 						"東區": {
-							regex: `^401`},
+							regex: `^(?:401)`},
 						"梧棲區": {
-							regex: `^435`},
+							regex: `^(?:435)`},
 						"沙鹿區": {
-							regex: `^433`},
+							regex: `^(?:433)`},
 						"清水區": {
-							regex: `^436`},
+							regex: `^(?:436)`},
 						"潭子區": {
-							regex: `^427`},
+							regex: `^(?:427)`},
 						"烏日區": {
-							regex: `^414`},
+							regex: `^(?:414)`},
 						"石岡區": {
-							regex: `^422`},
+							regex: `^(?:422)`},
 						"神岡區": {
-							regex: `^429`},
+							regex: `^(?:429)`},
 						"西區": {
-							regex: `^403`},
+							regex: `^(?:403)`},
 						"西屯區": {
-							regex: `^407`},
+							regex: `^(?:407)`},
 						"豐原區": {
-							regex: `^420`},
+							regex: `^(?:420)`},
 						"霧峰區": {
-							regex: `^413`},
+							regex: `^(?:413)`},
 						"龍井區": {
-							regex: `^434`},
+							regex: `^(?:434)`},
 					}},
 				"YUN": {
-					regex: `^6[3-5]`,
+					regex: `^(?:6[3-5])`,
 					subdivisionRegex: map[string]postCodeRegex{
 						"二崙鄉": {
-							regex: `^649`},
+							regex: `^(?:649)`},
 						"元長鄉": {
-							regex: `^655`},
+							regex: `^(?:655)`},
 						"北港鎮": {
-							regex: `^651`},
+							regex: `^(?:651)`},
 						"口湖鄉": {
-							regex: `^653`},
+							regex: `^(?:653)`},
 						"古坑鄉": {
-							regex: `^646`},
+							regex: `^(?:646)`},
 						"台西鄉": {
-							regex: `^636`},
+							regex: `^(?:636)`},
 						"四湖鄉": {
-							regex: `^654`},
+							regex: `^(?:654)`},
 						"土庫鎮": {
-							regex: `^633`},
+							regex: `^(?:633)`},
 						"大埤鄉": {
-							regex: `^631`},
+							regex: `^(?:631)`},
 						"崙背鄉": {
-							regex: `^637`},
+							regex: `^(?:637)`},
 						"斗六市": {
-							regex: `^640`},
+							regex: `^(?:640)`},
 						"斗南鎮": {
-							regex: `^630`},
+							regex: `^(?:630)`},
 						"東勢鄉": {
-							regex: `^635`},
+							regex: `^(?:635)`},
 						"林內鄉": {
-							regex: `^643`},
+							regex: `^(?:643)`},
 						"水林鄉": {
-							regex: `^652`},
+							regex: `^(?:652)`},
 						"莿桐鄉": {
-							regex: `^647`},
+							regex: `^(?:647)`},
 						"虎尾鎮": {
-							regex: `^632`},
+							regex: `^(?:632)`},
 						"褒忠鄉": {
-							regex: `^634`},
+							regex: `^(?:634)`},
 						"西螺鎮": {
-							regex: `^648`},
+							regex: `^(?:648)`},
 						"麥寮鄉": {
-							regex: `^638`},
+							regex: `^(?:638)`},
 					}},
 			}},
 		Format:                     "%Z%n%S%C%n%A%n%O%n%N",
@@ -85801,59 +85801,59 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"05": {
-					regex: `^2[1-4]`},
+					regex: `^(?:2[1-4])`},
 				"07": {
-					regex: `^4[3-5]`},
+					regex: `^(?:4[3-5])`},
 				"09": {
-					regex: `^9[1-4]`},
+					regex: `^(?:9[1-4])`},
 				"12": {
-					regex: `^49|5[0-3]`},
+					regex: `^(?:49|5[0-3])`},
 				"14": {
-					regex: `^8[3-7]`},
+					regex: `^(?:8[3-7])`},
 				"18": {
-					regex: `^1[0-3]`},
+					regex: `^(?:1[0-3])`},
 				"21": {
-					regex: `^8[89]|90`},
+					regex: `^(?:8[89]|90)`},
 				"23": {
-					regex: `^69|7[0-2]`},
+					regex: `^(?:69|7[0-2])`},
 				"26": {
-					regex: `^7[6-8]`},
+					regex: `^(?:7[6-8])`},
 				"30": {
-					regex: `^0[1-6]`},
+					regex: `^(?:0[1-6])`},
 				"32": {
-					regex: `^0[7-9]`},
+					regex: `^(?:0[7-9])`},
 				"35": {
-					regex: `^2[5-8]`},
+					regex: `^(?:2[5-8])`},
 				"40": {
-					regex: `^99`},
+					regex: `^(?:99)`},
 				"43": {
-					regex: `^9[5-8]`},
+					regex: `^(?:9[5-8])`},
 				"46": {
-					regex: `^79|8[0-2]`},
+					regex: `^(?:79|8[0-2])`},
 				"48": {
-					regex: `^5[4-7]`},
+					regex: `^(?:5[4-7])`},
 				"51": {
-					regex: `^6[5-8]`},
+					regex: `^(?:6[5-8])`},
 				"53": {
-					regex: `^3[6-9]`},
+					regex: `^(?:3[6-9])`},
 				"56": {
-					regex: `^3[3-5]`},
+					regex: `^(?:3[3-5])`},
 				"59": {
-					regex: `^4[0-2]`},
+					regex: `^(?:4[0-2])`},
 				"61": {
-					regex: `^4[6-8]`},
+					regex: `^(?:4[6-8])`},
 				"63": {
-					regex: `^6[1-4]`},
+					regex: `^(?:6[1-4])`},
 				"65": {
-					regex: `^7[3-5]`},
+					regex: `^(?:7[3-5])`},
 				"68": {
-					regex: `^29|3[0-2]`},
+					regex: `^(?:29|3[0-2])`},
 				"71": {
-					regex: `^1[89]|20`},
+					regex: `^(?:1[89]|20)`},
 				"74": {
-					regex: `^1[4-7]`},
+					regex: `^(?:1[4-7])`},
 				"77": {
-					regex: `^5[89]|60`},
+					regex: `^(?:5[89]|60)`},
 			}},
 		Format:                     "%N%n%O%n%A%n%C%n%S%n%Z",
 		LatinizedFormat:            "%N%n%O%n%A%n%C%n%S%n%Z",
@@ -86191,129 +86191,129 @@ var generated = data{
 			regex: `^((\d{5})(?:[ \-](\d{4}))?)$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AA": {
-					regex: `^340`},
+					regex: `^(?:340)`},
 				"AE": {
-					regex: `^09`},
+					regex: `^(?:09)`},
 				"AK": {
-					regex: `^99[5-9]`},
+					regex: `^(?:99[5-9])`},
 				"AL": {
-					regex: `^3[56]`},
+					regex: `^(?:3[56])`},
 				"AP": {
-					regex: `^96[2-6]`},
+					regex: `^(?:96[2-6])`},
 				"AR": {
-					regex: `^71[6-9]|72`},
+					regex: `^(?:71[6-9]|72)`},
 				"AS": {
-					regex: `^96799`},
+					regex: `^(?:96799)`},
 				"AZ": {
-					regex: `^8[56]`},
+					regex: `^(?:8[56])`},
 				"CA": {
-					regex: `^9[0-5]|96[01]`},
+					regex: `^(?:9[0-5]|96[01])`},
 				"CO": {
-					regex: `^8[01]`},
+					regex: `^(?:8[01])`},
 				"CT": {
-					regex: `^06`},
+					regex: `^(?:06)`},
 				"DC": {
-					regex: `^20[02-5]|569`},
+					regex: `^(?:20[02-5]|569)`},
 				"DE": {
-					regex: `^19[7-9]`},
+					regex: `^(?:19[7-9])`},
 				"FL": {
-					regex: `^3[23]|34[1-9]`},
+					regex: `^(?:3[23]|34[1-9])`},
 				"FM": {
-					regex: `^9694[1-4]`},
+					regex: `^(?:9694[1-4])`},
 				"GA": {
-					regex: `^3[01]|398|39901`},
+					regex: `^(?:3[01]|398|39901)`},
 				"GU": {
-					regex: `^969([1-2]\d|3[12])`},
+					regex: `^(?:969([1-2]\d|3[12]))`},
 				"HI": {
-					regex: `^967[0-8]|9679[0-8]|968`},
+					regex: `^(?:967[0-8]|9679[0-8]|968)`},
 				"IA": {
-					regex: `^5[0-2]`},
+					regex: `^(?:5[0-2])`},
 				"ID": {
-					regex: `^83[2-9]`},
+					regex: `^(?:83[2-9])`},
 				"IL": {
-					regex: `^6[0-2]`},
+					regex: `^(?:6[0-2])`},
 				"IN": {
-					regex: `^4[67]`},
+					regex: `^(?:4[67])`},
 				"KS": {
-					regex: `^6[67]`},
+					regex: `^(?:6[67])`},
 				"KY": {
-					regex: `^4[01]|42[0-7]`},
+					regex: `^(?:4[01]|42[0-7])`},
 				"LA": {
-					regex: `^70|71[0-5]`},
+					regex: `^(?:70|71[0-5])`},
 				"MA": {
-					regex: `^01|02[0-7]|05501|05544`},
+					regex: `^(?:01|02[0-7]|05501|05544)`},
 				"MD": {
-					regex: `^20[6-9]|21`},
+					regex: `^(?:20[6-9]|21)`},
 				"ME": {
-					regex: `^039|04`},
+					regex: `^(?:039|04)`},
 				"MH": {
-					regex: `^969[67]`},
+					regex: `^(?:969[67])`},
 				"MI": {
-					regex: `^4[89]`},
+					regex: `^(?:4[89])`},
 				"MN": {
-					regex: `^55|56[0-7]`},
+					regex: `^(?:55|56[0-7])`},
 				"MO": {
-					regex: `^6[3-5]`},
+					regex: `^(?:6[3-5])`},
 				"MP": {
-					regex: `^9695[0-2]`},
+					regex: `^(?:9695[0-2])`},
 				"MS": {
-					regex: `^38[6-9]|39[0-7]`},
+					regex: `^(?:38[6-9]|39[0-7])`},
 				"MT": {
-					regex: `^59`},
+					regex: `^(?:59)`},
 				"NC": {
-					regex: `^2[78]`},
+					regex: `^(?:2[78])`},
 				"ND": {
-					regex: `^58`},
+					regex: `^(?:58)`},
 				"NE": {
-					regex: `^6[89]`},
+					regex: `^(?:6[89])`},
 				"NH": {
-					regex: `^03[0-8]`},
+					regex: `^(?:03[0-8])`},
 				"NJ": {
-					regex: `^0[78]`},
+					regex: `^(?:0[78])`},
 				"NM": {
-					regex: `^87|88[0-4]`},
+					regex: `^(?:87|88[0-4])`},
 				"NV": {
-					regex: `^889|89`},
+					regex: `^(?:889|89)`},
 				"NY": {
-					regex: `^1[0-4]|06390|00501|00544`},
+					regex: `^(?:1[0-4]|06390|00501|00544)`},
 				"OH": {
-					regex: `^4[3-5]`},
+					regex: `^(?:4[3-5])`},
 				"OK": {
-					regex: `^7[34]`},
+					regex: `^(?:7[34])`},
 				"OR": {
-					regex: `^97`},
+					regex: `^(?:97)`},
 				"PA": {
-					regex: `^1[5-8]|19[0-6]`},
+					regex: `^(?:1[5-8]|19[0-6])`},
 				"PR": {
-					regex: `^00[679]`},
+					regex: `^(?:00[679])`},
 				"PW": {
-					regex: `^969(39|40)`},
+					regex: `^(?:969(39|40))`},
 				"RI": {
-					regex: `^02[89]`},
+					regex: `^(?:02[89])`},
 				"SC": {
-					regex: `^29`},
+					regex: `^(?:29)`},
 				"SD": {
-					regex: `^57`},
+					regex: `^(?:57)`},
 				"TN": {
-					regex: `^37|38[0-5]`},
+					regex: `^(?:37|38[0-5])`},
 				"TX": {
-					regex: `^7[5-9]|885|73301|73344`},
+					regex: `^(?:7[5-9]|885|73301|73344)`},
 				"UT": {
-					regex: `^84`},
+					regex: `^(?:84)`},
 				"VA": {
-					regex: `^201|2[23]|24[0-6]`},
+					regex: `^(?:201|2[23]|24[0-6])`},
 				"VI": {
-					regex: `^008`},
+					regex: `^(?:008)`},
 				"VT": {
-					regex: `^05`},
+					regex: `^(?:05)`},
 				"WA": {
-					regex: `^98|99[0-4]`},
+					regex: `^(?:98|99[0-4])`},
 				"WI": {
-					regex: `^5[34]`},
+					regex: `^(?:5[34])`},
 				"WV": {
-					regex: `^24[7-9]|2[56]`},
+					regex: `^(?:24[7-9]|2[56])`},
 				"WY": {
-					regex: `^82|83[01]|83414`},
+					regex: `^(?:82|83[01]|83414)`},
 			}},
 		Format:                     "%N%n%O%n%A%n%C, %S %Z",
 		AdministrativeAreaNameType: State,
@@ -86659,43 +86659,43 @@ var generated = data{
 			regex: `^(\d{5})$`,
 			subdivisionRegex: map[string]postCodeRegex{
 				"AR": {
-					regex: `^55`},
+					regex: `^(?:55)`},
 				"CA": {
-					regex: `^9[01]|1[456]`},
+					regex: `^(?:9[01]|1[456])`},
 				"CL": {
-					regex: `^37`},
+					regex: `^(?:37)`},
 				"CO": {
-					regex: `^70|75204`},
+					regex: `^(?:70|75204)`},
 				"DU": {
-					regex: `^97`},
+					regex: `^(?:97)`},
 				"FD": {
-					regex: `^94|9060|97005`},
+					regex: `^(?:94|9060|97005)`},
 				"FS": {
-					regex: `^85`},
+					regex: `^(?:85)`},
 				"LA": {
-					regex: `^30`},
+					regex: `^(?:30)`},
 				"MA": {
-					regex: `^20`},
+					regex: `^(?:20)`},
 				"MO": {
-					regex: `^1|91600`},
+					regex: `^(?:1|91600)`},
 				"PA": {
-					regex: `^60`},
+					regex: `^(?:60)`},
 				"RN": {
-					regex: `^65|60002`},
+					regex: `^(?:65|60002)`},
 				"RO": {
-					regex: `^27`},
+					regex: `^(?:27)`},
 				"RV": {
-					regex: `^40`},
+					regex: `^(?:40)`},
 				"SA": {
-					regex: `^50`},
+					regex: `^(?:50)`},
 				"SJ": {
-					regex: `^80`},
+					regex: `^(?:80)`},
 				"SO": {
-					regex: `^75|70003`},
+					regex: `^(?:75|70003)`},
 				"TA": {
-					regex: `^45`},
+					regex: `^(?:45)`},
 				"TT": {
-					regex: `^33|30203|30204|30302|37007`},
+					regex: `^(?:33|30203|30204|30302|37007)`},
 			}},
 		Format: "%N%n%O%n%A%n%Z %C %S",
 		AllowedFields: map[Field]struct{}{

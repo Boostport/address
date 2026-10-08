@@ -396,6 +396,39 @@ func TestInvalidAddresses(t *testing.T) {
 				WithCountry("KR"),
 			},
 		},
+		{
+			Address: []func(*Address){
+				WithStreetAddress([]string{
+					"1 Main street",
+				}),
+				WithLocality("Portsmouth"),
+				WithAdministrativeArea("VA"),
+				WithPostCode("10023"), // Invalid post code
+				WithCountry("US"),
+			},
+		},
+		{
+			Address: []func(*Address){
+				WithStreetAddress([]string{
+					"1 Main street",
+				}),
+				WithLocality("Germantown"),
+				WithAdministrativeArea("TN"),
+				WithPostCode("13800"), // Invalid post code
+				WithCountry("US"),
+			},
+		},
+		{
+			Address: []func(*Address){
+				WithStreetAddress([]string{
+					"1 Main street",
+				}),
+				WithLocality("Austin"),
+				WithAdministrativeArea("TX"),
+				WithPostCode("10885"), // Invalid post code
+				WithCountry("US"),
+			},
+		},
 	}
 
 	for i, testCase := range tests {
@@ -469,21 +502,21 @@ func TestGetCountry(t *testing.T) {
 			Regex: `^(\d{4})$`,
 			SubdivisionRegex: map[string]PostCodeRegexData{
 				"ACT": {
-					Regex: `^29|2540|260|261[0-8]|02|2620`},
+					Regex: `^(?:29|2540|260|261[0-8]|02|2620)`},
 				"NSW": {
-					Regex: `^1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707`},
+					Regex: `^(?:1|2[0-57-8]|26[2-9]|261[189]|3500|358[56]|3644|3707)`},
 				"NT": {
-					Regex: `^0[89]`},
+					Regex: `^(?:0[89])`},
 				"QLD": {
-					Regex: `^[49]`},
+					Regex: `^(?:[49])`},
 				"SA": {
-					Regex: `^5|0872`},
+					Regex: `^(?:5|0872)`},
 				"TAS": {
-					Regex: `^7`},
+					Regex: `^(?:7)`},
 				"VIC": {
-					Regex: `^[38]`},
+					Regex: `^(?:[38])`},
 				"WA": {
-					Regex: `^6|0872`},
+					Regex: `^(?:6|0872)`},
 			},
 		},
 		AdministrativeAreas: map[string][]AdministrativeAreaData{
@@ -572,621 +605,621 @@ func TestGetCountry(t *testing.T) {
 			Regex: `^(\d{5})$`,
 			SubdivisionRegex: map[string]PostCodeRegexData{
 				"11": {
-					Regex: `^0[1-8]\d{2}`,
+					Regex: `^(?:0[1-8]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"강남구": {
-							Regex: `^06[0-3]`},
+							Regex: `^(?:06[0-3])`},
 						"강동구": {
-							Regex: `^05[2-4]`},
+							Regex: `^(?:05[2-4])`},
 						"강북구": {
-							Regex: `^01[0-2]`},
+							Regex: `^(?:01[0-2])`},
 						"강서구": {
-							Regex: `^07[5-8]`},
+							Regex: `^(?:07[5-8])`},
 						"관악구": {
-							Regex: `^08[78]`},
+							Regex: `^(?:08[78])`},
 						"광진구": {
-							Regex: `^0(?:49|5[01])`},
+							Regex: `^(?:0(?:49|5[01]))`},
 						"구로구": {
-							Regex: `^08[23]`},
+							Regex: `^(?:08[23])`},
 						"금천구": {
-							Regex: `^08[56]`},
+							Regex: `^(?:08[56])`},
 						"노원구": {
-							Regex: `^01[6-9]`},
+							Regex: `^(?:01[6-9])`},
 						"도봉구": {
-							Regex: `^01[34]`},
+							Regex: `^(?:01[34])`},
 						"동대문구": {
-							Regex: `^02[4-6]`},
+							Regex: `^(?:02[4-6])`},
 						"동작구": {
-							Regex: `^0(?:69|70)`},
+							Regex: `^(?:0(?:69|70))`},
 						"마포구": {
-							Regex: `^0(?:39|4[0-2])`},
+							Regex: `^(?:0(?:39|4[0-2]))`},
 						"서대문구": {
-							Regex: `^03[67]`},
+							Regex: `^(?:03[67])`},
 						"서초구": {
-							Regex: `^06[5-8]`},
+							Regex: `^(?:06[5-8])`},
 						"성동구": {
-							Regex: `^04[78]`},
+							Regex: `^(?:04[78])`},
 						"성북구": {
-							Regex: `^02[78]`},
+							Regex: `^(?:02[78])`},
 						"송파구": {
-							Regex: `^05[5-8]`},
+							Regex: `^(?:05[5-8])`},
 						"양천구": {
-							Regex: `^0(?:7[89]|8[01])`},
+							Regex: `^(?:0(?:7[89]|8[01]))`},
 						"영등포구": {
-							Regex: `^07[2-4]`},
+							Regex: `^(?:07[2-4])`},
 						"용산구": {
-							Regex: `^04[34]`},
+							Regex: `^(?:04[34])`},
 						"은평구": {
-							Regex: `^03[3-5]`},
+							Regex: `^(?:03[3-5])`},
 						"종로구": {
-							Regex: `^03[01]`},
+							Regex: `^(?:03[01])`},
 						"중구": {
-							Regex: `^04[56]|100`},
+							Regex: `^(?:04[56]|100)`},
 						"중랑구": {
-							Regex: `^02[0-2]`},
+							Regex: `^(?:02[0-2])`},
 					}},
 				"26": {
-					Regex: `^4[6-9]\d{2}`,
+					Regex: `^(?:4[6-9]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"강서구": {
-							Regex: `^467`},
+							Regex: `^(?:467)`},
 						"금정구": {
-							Regex: `^46[23]`},
+							Regex: `^(?:46[23])`},
 						"기장군": {
-							Regex: `^460`},
+							Regex: `^(?:460)`},
 						"남구": {
-							Regex: `^48[45]`},
+							Regex: `^(?:48[45])`},
 						"동구": {
-							Regex: `^48[78]`},
+							Regex: `^(?:48[78])`},
 						"동래구": {
-							Regex: `^47[789]`},
+							Regex: `^(?:47[789])`},
 						"부산진구": {
-							Regex: `^47[123]`},
+							Regex: `^(?:47[123])`},
 						"북구": {
-							Regex: `^46[56]`},
+							Regex: `^(?:46[56])`},
 						"사상구": {
-							Regex: `^4(?:69|70)`},
+							Regex: `^(?:4(?:69|70))`},
 						"사하구": {
-							Regex: `^49[345]`},
+							Regex: `^(?:49[345])`},
 						"서구": {
-							Regex: `^492`},
+							Regex: `^(?:492)`},
 						"수영구": {
-							Regex: `^48[23]`},
+							Regex: `^(?:48[23])`},
 						"연제구": {
-							Regex: `^47[56]`},
+							Regex: `^(?:47[56])`},
 						"영도구": {
-							Regex: `^49[01]`},
+							Regex: `^(?:49[01])`},
 						"중구": {
-							Regex: `^489`},
+							Regex: `^(?:489)`},
 						"해운대구": {
-							Regex: `^48[01]`},
+							Regex: `^(?:48[01])`},
 					}},
 				"27": {
-					Regex: `^4[123]\d{2}`,
+					Regex: `^(?:4[123]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"군위군": {
-							Regex: `^431`},
+							Regex: `^(?:431)`},
 						"남구": {
-							Regex: `^42[45]`},
+							Regex: `^(?:42[45])`},
 						"달서구": {
-							Regex: `^42[678]`},
+							Regex: `^(?:42[678])`},
 						"달성군": {
-							Regex: `^4(?:29|30)`},
+							Regex: `^(?:4(?:29|30))`},
 						"동구": {
-							Regex: `^41[0-2]`},
+							Regex: `^(?:41[0-2])`},
 						"북구": {
-							Regex: `^41[45]`},
+							Regex: `^(?:41[45])`},
 						"서구": {
-							Regex: `^41[78]`},
+							Regex: `^(?:41[78])`},
 						"수성구": {
-							Regex: `^42[0-2]`},
+							Regex: `^(?:42[0-2])`},
 						"중구": {
-							Regex: `^419`},
+							Regex: `^(?:419)`},
 					}},
 				"28": {
-					Regex: `^2[1-3]\d{2}`,
+					Regex: `^(?:2[1-3]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"강화군": {
-							Regex: `^230`},
+							Regex: `^(?:230)`},
 						"계양구": {
-							Regex: `^21[01]`},
+							Regex: `^(?:21[01])`},
 						"남동구": {
-							Regex: `^21[5-7]`},
+							Regex: `^(?:21[5-7])`},
 						"동구": {
-							Regex: `^225`},
+							Regex: `^(?:225)`},
 						"미추홀구": {
-							Regex: `^22[12]`},
+							Regex: `^(?:22[12])`},
 						"부평구": {
-							Regex: `^21[34]`},
+							Regex: `^(?:21[34])`},
 						"서구": {
-							Regex: `^22[6-8]`},
+							Regex: `^(?:22[6-8])`},
 						"연수구": {
-							Regex: `^2(?:19|20)`},
+							Regex: `^(?:2(?:19|20))`},
 						"옹진군": {
-							Regex: `^231`},
+							Regex: `^(?:231)`},
 						"중구": {
-							Regex: `^22[34]`},
+							Regex: `^(?:22[34])`},
 					}},
 				"29": {
-					Regex: `^6[12]\d{2}`,
+					Regex: `^(?:6[12]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"광산구": {
-							Regex: `^62[2-4]`},
+							Regex: `^(?:62[2-4])`},
 						"남구": {
-							Regex: `^61[67]`},
+							Regex: `^(?:61[67])`},
 						"동구": {
-							Regex: `^61[45]`},
+							Regex: `^(?:61[45])`},
 						"북구": {
-							Regex: `^61[0-2]`},
+							Regex: `^(?:61[0-2])`},
 						"서구": {
-							Regex: `^6(?:19|20)`},
+							Regex: `^(?:6(?:19|20))`},
 					}},
 				"30": {
-					Regex: `^3[45]\d{2}`,
+					Regex: `^(?:3[45]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"대덕구": {
-							Regex: `^34[34]`},
+							Regex: `^(?:34[34])`},
 						"동구": {
-							Regex: `^34[5-7]`},
+							Regex: `^(?:34[5-7])`},
 						"서구": {
-							Regex: `^35[2-4]`},
+							Regex: `^(?:35[2-4])`},
 						"유성구": {
-							Regex: `^34[0-2]`},
+							Regex: `^(?:34[0-2])`},
 						"중구": {
-							Regex: `^3(?:4[89]|50)`},
+							Regex: `^(?:3(?:4[89]|50))`},
 					}},
 				"31": {
-					Regex: `^4[45]\d{2}`,
+					Regex: `^(?:4[45]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"남구": {
-							Regex: `^44[67]`},
+							Regex: `^(?:44[67])`},
 						"동구": {
-							Regex: `^44[01]`},
+							Regex: `^(?:44[01])`},
 						"북구": {
-							Regex: `^442`},
+							Regex: `^(?:442)`},
 						"울주군": {
-							Regex: `^4(?:49|50)`},
+							Regex: `^(?:4(?:49|50))`},
 						"중구": {
-							Regex: `^44[45]`},
+							Regex: `^(?:44[45])`},
 					}},
 				"41": {
-					Regex: `^1[0-8]\d{2}`,
+					Regex: `^(?:1[0-8]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"가평군": {
-							Regex: `^124`},
+							Regex: `^(?:124)`},
 						"고양시": {
-							Regex: `^10[2-5]`,
+							Regex: `^(?:10[2-5])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"덕양구": {
-									Regex: `^10[245]`},
+									Regex: `^(?:10[245])`},
 								"일산동구": {
-									Regex: `^10[2-4]`},
+									Regex: `^(?:10[2-4])`},
 								"일산서구": {
-									Regex: `^10[2-4]`},
+									Regex: `^(?:10[2-4])`},
 							}},
 						"과천시": {
-							Regex: `^138`},
+							Regex: `^(?:138)`},
 						"광명시": {
-							Regex: `^14[23]`},
+							Regex: `^(?:14[23])`},
 						"광주시": {
-							Regex: `^12[78]`},
+							Regex: `^(?:12[78])`},
 						"구리시": {
-							Regex: `^119`},
+							Regex: `^(?:119)`},
 						"군포시": {
-							Regex: `^158`},
+							Regex: `^(?:158)`},
 						"김포시": {
-							Regex: `^10[01]`},
+							Regex: `^(?:10[01])`},
 						"남양주시": {
-							Regex: `^12[0-3]`},
+							Regex: `^(?:12[0-3])`},
 						"동두천시": {
-							Regex: `^113`},
+							Regex: `^(?:113)`},
 						"부천시": {
-							Regex: `^14[4-7]`,
+							Regex: `^(?:14[4-7])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"소사구": {
-									Regex: `^14[67]`},
+									Regex: `^(?:14[67])`},
 								"오정구": {
-									Regex: `^14[45]`},
+									Regex: `^(?:14[45])`},
 								"원미구": {
-									Regex: `^14[456]`},
+									Regex: `^(?:14[456])`},
 							}},
 						"성남시": {
-							Regex: `^13[1-6]`,
+							Regex: `^(?:13[1-6])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"분당구": {
-									Regex: `^13[3-6]`},
+									Regex: `^(?:13[3-6])`},
 								"수정구": {
-									Regex: `^13[1-46]`},
+									Regex: `^(?:13[1-46])`},
 								"중원구": {
-									Regex: `^13[1-4]`},
+									Regex: `^(?:13[1-4])`},
 							}},
 						"수원시": {
-							Regex: `^16[2-7]`,
+							Regex: `^(?:16[2-7])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"권선구": {
-									Regex: `^16[3-6]`},
+									Regex: `^(?:16[3-6])`},
 								"영통구": {
-									Regex: `^16[245-7]`},
+									Regex: `^(?:16[245-7])`},
 								"장안구": {
-									Regex: `^16[2-4]`},
+									Regex: `^(?:16[2-4])`},
 								"팔달구": {
-									Regex: `^16[2-6]`},
+									Regex: `^(?:16[2-6])`},
 							}},
 						"시흥시": {
-							Regex: `^1(?:49|5[01])`},
+							Regex: `^(?:1(?:49|5[01]))`},
 						"안산시": {
-							Regex: `^15[2-6]`,
+							Regex: `^(?:15[2-6])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"단원구": {
-									Regex: `^15[2-6]`},
+									Regex: `^(?:15[2-6])`},
 								"상록구": {
-									Regex: `^15[2-6]`},
+									Regex: `^(?:15[2-6])`},
 							}},
 						"안성시": {
-							Regex: `^17[56]`},
+							Regex: `^(?:17[56])`},
 						"안양시": {
-							Regex: `^1(?:39|4[01])`,
+							Regex: `^(?:1(?:39|4[01]))`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"동안구": {
-									Regex: `^1(?:39|4[01])`},
+									Regex: `^(?:1(?:39|4[01]))`},
 								"만안구": {
-									Regex: `^1(?:39|40)`},
+									Regex: `^(?:1(?:39|40))`},
 							}},
 						"양주시": {
-							Regex: `^11[45]`},
+							Regex: `^(?:11[45])`},
 						"양평군": {
-							Regex: `^125`},
+							Regex: `^(?:125)`},
 						"여주시": {
-							Regex: `^126`},
+							Regex: `^(?:126)`},
 						"연천군": {
-							Regex: `^110`},
+							Regex: `^(?:110)`},
 						"오산시": {
-							Regex: `^181`},
+							Regex: `^(?:181)`},
 						"용인시": {
-							Regex: `^1(?:6[89]|7[01])`,
+							Regex: `^(?:1(?:6[89]|7[01]))`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"기흥구": {
-									Regex: `^1(?:6[89]|7[01])`},
+									Regex: `^(?:1(?:6[89]|7[01]))`},
 								"수지구": {
-									Regex: `^16[89]`},
+									Regex: `^(?:16[89])`},
 								"처인구": {
-									Regex: `^1(?:6[89]|7[01])`},
+									Regex: `^(?:1(?:6[89]|7[01]))`},
 							}},
 						"의왕시": {
-							Regex: `^16[01]`},
+							Regex: `^(?:16[01])`},
 						"의정부시": {
-							Regex: `^11[6-8]`},
+							Regex: `^(?:11[6-8])`},
 						"이천시": {
-							Regex: `^17[34]`},
+							Regex: `^(?:17[34])`},
 						"파주시": {
-							Regex: `^10[89]`},
+							Regex: `^(?:10[89])`},
 						"평택시": {
-							Regex: `^1(?:7[7-9]|80)`},
+							Regex: `^(?:1(?:7[7-9]|80))`},
 						"포천시": {
-							Regex: `^111`},
+							Regex: `^(?:111)`},
 						"하남시": {
-							Regex: `^1(?:29|30)`},
+							Regex: `^(?:1(?:29|30))`},
 						"화성시": {
-							Regex: `^18[2-6]`},
+							Regex: `^(?:18[2-6])`},
 					}},
 				"42": {
-					Regex: `^2[456]\d{2}`,
+					Regex: `^(?:2[456]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"강릉시": {
-							Regex: `^25[4-6]`},
+							Regex: `^(?:25[4-6])`},
 						"고성군": {
-							Regex: `^247`},
+							Regex: `^(?:247)`},
 						"동해시": {
-							Regex: `^25[78]`},
+							Regex: `^(?:25[78])`},
 						"삼척시": {
-							Regex: `^259`},
+							Regex: `^(?:259)`},
 						"속초시": {
-							Regex: `^24[89]`},
+							Regex: `^(?:24[89])`},
 						"양구군": {
-							Regex: `^245`},
+							Regex: `^(?:245)`},
 						"양양군": {
-							Regex: `^250`},
+							Regex: `^(?:250)`},
 						"영월군": {
-							Regex: `^262`},
+							Regex: `^(?:262)`},
 						"원주시": {
-							Regex: `^26[3-5]`},
+							Regex: `^(?:26[3-5])`},
 						"인제군": {
-							Regex: `^246`},
+							Regex: `^(?:246)`},
 						"정선군": {
-							Regex: `^261`},
+							Regex: `^(?:261)`},
 						"철원군": {
-							Regex: `^240`},
+							Regex: `^(?:240)`},
 						"춘천시": {
-							Regex: `^24[2-4]`},
+							Regex: `^(?:24[2-4])`},
 						"태백시": {
-							Regex: `^260`},
+							Regex: `^(?:260)`},
 						"평창군": {
-							Regex: `^253`},
+							Regex: `^(?:253)`},
 						"홍천군": {
-							Regex: `^251`},
+							Regex: `^(?:251)`},
 						"화천군": {
-							Regex: `^241`},
+							Regex: `^(?:241)`},
 						"횡성군": {
-							Regex: `^252`},
+							Regex: `^(?:252)`},
 					}},
 				"43": {
-					Regex: `^2[789]\d{2}`,
+					Regex: `^(?:2[789]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"괴산군": {
-							Regex: `^280`},
+							Regex: `^(?:280)`},
 						"단양군": {
-							Regex: `^270`},
+							Regex: `^(?:270)`},
 						"보은군": {
-							Regex: `^289`},
+							Regex: `^(?:289)`},
 						"영동군": {
-							Regex: `^291`},
+							Regex: `^(?:291)`},
 						"옥천군": {
-							Regex: `^290`},
+							Regex: `^(?:290)`},
 						"음성군": {
-							Regex: `^27[67]`},
+							Regex: `^(?:27[67])`},
 						"제천시": {
-							Regex: `^27[12]`},
+							Regex: `^(?:27[12])`},
 						"증평군": {
-							Regex: `^279`},
+							Regex: `^(?:279)`},
 						"진천군": {
-							Regex: `^278`},
+							Regex: `^(?:278)`},
 						"청주시": {
-							Regex: `^28[0-9]`,
+							Regex: `^(?:28[0-9])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"상당구": {
-									Regex: `^28[1-3578]`},
+									Regex: `^(?:28[1-3578])`},
 								"서원구": {
-									Regex: `^28[1-35-8]`},
+									Regex: `^(?:28[1-35-8])`},
 								"청원구": {
-									Regex: `^28[13-5]`},
+									Regex: `^(?:28[13-5])`},
 								"흥덕구": {
-									Regex: `^28[1-6]`},
+									Regex: `^(?:28[1-6])`},
 							}},
 						"충주시": {
-							Regex: `^27[3-5]`},
+							Regex: `^(?:27[3-5])`},
 					}},
 				"44": {
-					Regex: `^3[1-3]\d{2}`,
+					Regex: `^(?:3[1-3]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"계룡시": {
-							Regex: `^328`},
+							Regex: `^(?:328)`},
 						"공주시": {
-							Regex: `^32[56]`},
+							Regex: `^(?:32[56])`},
 						"금산군": {
-							Regex: `^327`},
+							Regex: `^(?:327)`},
 						"논산시": {
-							Regex: `^3(?:29|30)`},
+							Regex: `^(?:3(?:29|30))`},
 						"당진시": {
-							Regex: `^31[78]`},
+							Regex: `^(?:31[78])`},
 						"보령시": {
-							Regex: `^33[45]`},
+							Regex: `^(?:33[45])`},
 						"부여군": {
-							Regex: `^33[12]`},
+							Regex: `^(?:33[12])`},
 						"서산시": {
-							Regex: `^3(?:19|20)`},
+							Regex: `^(?:3(?:19|20))`},
 						"서천군": {
-							Regex: `^336`},
+							Regex: `^(?:336)`},
 						"아산시": {
-							Regex: `^31[45]`},
+							Regex: `^(?:31[45])`},
 						"예산군": {
-							Regex: `^324`},
+							Regex: `^(?:324)`},
 						"천안시": {
-							Regex: `^31[0-2]`,
+							Regex: `^(?:31[0-2])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"동남구": {
-									Regex: `^31[0-2]`},
+									Regex: `^(?:31[0-2])`},
 								"서북구": {
-									Regex: `^31[01]`},
+									Regex: `^(?:31[01])`},
 							}},
 						"청양군": {
-							Regex: `^333`},
+							Regex: `^(?:333)`},
 						"태안군": {
-							Regex: `^321`},
+							Regex: `^(?:321)`},
 						"홍성군": {
-							Regex: `^322`},
+							Regex: `^(?:322)`},
 					}},
 				"45": {
-					Regex: `^5[4-6]\d{2}`,
+					Regex: `^(?:5[4-6]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"고창군": {
-							Regex: `^564`},
+							Regex: `^(?:564)`},
 						"군산시": {
-							Regex: `^54[01]`},
+							Regex: `^(?:54[01])`},
 						"김제시": {
-							Regex: `^54[34]`},
+							Regex: `^(?:54[34])`},
 						"남원시": {
-							Regex: `^55[78]`},
+							Regex: `^(?:55[78])`},
 						"무주군": {
-							Regex: `^555`},
+							Regex: `^(?:555)`},
 						"부안군": {
-							Regex: `^563`},
+							Regex: `^(?:563)`},
 						"순창군": {
-							Regex: `^560`},
+							Regex: `^(?:560)`},
 						"완주군": {
-							Regex: `^553`},
+							Regex: `^(?:553)`},
 						"익산시": {
-							Regex: `^54[56]`},
+							Regex: `^(?:54[56])`},
 						"임실군": {
-							Regex: `^559`},
+							Regex: `^(?:559)`},
 						"장수군": {
-							Regex: `^556`},
+							Regex: `^(?:556)`},
 						"전주시": {
-							Regex: `^5(?:4[89]|5[01])`,
+							Regex: `^(?:5(?:4[89]|5[01]))`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"덕진구": {
-									Regex: `^5(?:4[89]|5[01])`},
+									Regex: `^(?:5(?:4[89]|5[01]))`},
 								"완산구": {
-									Regex: `^5(?:4[89]|5[01])`},
+									Regex: `^(?:5(?:4[89]|5[01]))`},
 							}},
 						"정읍시": {
-							Regex: `^56[12]`},
+							Regex: `^(?:56[12])`},
 						"진안군": {
-							Regex: `^554`},
+							Regex: `^(?:554)`},
 					}},
 				"46": {
-					Regex: `^5[7-9]\d{2}`,
+					Regex: `^(?:5[7-9]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"강진군": {
-							Regex: `^592`},
+							Regex: `^(?:592)`},
 						"고흥군": {
-							Regex: `^595`},
+							Regex: `^(?:595)`},
 						"곡성군": {
-							Regex: `^575`},
+							Regex: `^(?:575)`},
 						"광양시": {
-							Regex: `^57[78]`},
+							Regex: `^(?:57[78])`},
 						"구례군": {
-							Regex: `^576`},
+							Regex: `^(?:576)`},
 						"나주시": {
-							Regex: `^58[23]`},
+							Regex: `^(?:58[23])`},
 						"담양군": {
-							Regex: `^573`},
+							Regex: `^(?:573)`},
 						"목포시": {
-							Regex: `^58[67]`},
+							Regex: `^(?:58[67])`},
 						"무안군": {
-							Regex: `^585`},
+							Regex: `^(?:585)`},
 						"보성군": {
-							Regex: `^594`},
+							Regex: `^(?:594)`},
 						"순천시": {
-							Regex: `^5(?:79|80)`},
+							Regex: `^(?:5(?:79|80))`},
 						"신안군": {
-							Regex: `^588`},
+							Regex: `^(?:588)`},
 						"여수시": {
-							Regex: `^59[67]`},
+							Regex: `^(?:59[67])`},
 						"영광군": {
-							Regex: `^570`},
+							Regex: `^(?:570)`},
 						"영암군": {
-							Regex: `^584`},
+							Regex: `^(?:584)`},
 						"완도군": {
-							Regex: `^591`},
+							Regex: `^(?:591)`},
 						"장성군": {
-							Regex: `^572`},
+							Regex: `^(?:572)`},
 						"장흥군": {
-							Regex: `^593`},
+							Regex: `^(?:593)`},
 						"진도군": {
-							Regex: `^589`},
+							Regex: `^(?:589)`},
 						"함평군": {
-							Regex: `^571`},
+							Regex: `^(?:571)`},
 						"해남군": {
-							Regex: `^590`},
+							Regex: `^(?:590)`},
 						"화순군": {
-							Regex: `^581`},
+							Regex: `^(?:581)`},
 					}},
 				"47": {
-					Regex: `^(?:3[6-9]|40)\d{2}`,
+					Regex: `^(?:(?:3[6-9]|40)\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"경산시": {
-							Regex: `^38[4-6]`},
+							Regex: `^(?:38[4-6])`},
 						"경주시": {
-							Regex: `^38[0-2]`},
+							Regex: `^(?:38[0-2])`},
 						"고령군": {
-							Regex: `^401`},
+							Regex: `^(?:401)`},
 						"구미시": {
-							Regex: `^39[1-4]`},
+							Regex: `^(?:39[1-4])`},
 						"김천시": {
-							Regex: `^39[56]`},
+							Regex: `^(?:39[56])`},
 						"문경시": {
-							Regex: `^3(?:69|70)`},
+							Regex: `^(?:3(?:69|70))`},
 						"봉화군": {
-							Regex: `^362`},
+							Regex: `^(?:362)`},
 						"상주시": {
-							Regex: `^37[12]`},
+							Regex: `^(?:37[12])`},
 						"성주군": {
-							Regex: `^400`},
+							Regex: `^(?:400)`},
 						"안동시": {
-							Regex: `^36[67]`},
+							Regex: `^(?:36[67])`},
 						"영덕군": {
-							Regex: `^364`},
+							Regex: `^(?:364)`},
 						"영양군": {
-							Regex: `^365`},
+							Regex: `^(?:365)`},
 						"영주시": {
-							Regex: `^36[01]`},
+							Regex: `^(?:36[01])`},
 						"영천시": {
-							Regex: `^38[89]`},
+							Regex: `^(?:38[89])`},
 						"예천군": {
-							Regex: `^368`},
+							Regex: `^(?:368)`},
 						"울릉군": {
-							Regex: `^402`},
+							Regex: `^(?:402)`},
 						"울진군": {
-							Regex: `^363`},
+							Regex: `^(?:363)`},
 						"의성군": {
-							Regex: `^373`},
+							Regex: `^(?:373)`},
 						"청도군": {
-							Regex: `^383`},
+							Regex: `^(?:383)`},
 						"청송군": {
-							Regex: `^374`},
+							Regex: `^(?:374)`},
 						"칠곡군": {
-							Regex: `^39[89]`},
+							Regex: `^(?:39[89])`},
 						"포항시": {
-							Regex: `^37[5-9]`,
+							Regex: `^(?:37[5-9])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"남구": {
-									Regex: `^37[6-9]`},
+									Regex: `^(?:37[6-9])`},
 								"북구": {
-									Regex: `^37[5-79]`},
+									Regex: `^(?:37[5-79])`},
 							}},
 					}},
 				"48": {
-					Regex: `^5[0-3]\d{2}`,
+					Regex: `^(?:5[0-3]\d{2})`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"거제시": {
-							Regex: `^53[23]`},
+							Regex: `^(?:53[23])`},
 						"거창군": {
-							Regex: `^501`},
+							Regex: `^(?:501)`},
 						"고성군": {
-							Regex: `^529`},
+							Regex: `^(?:529)`},
 						"김해시": {
-							Regex: `^5(?:0[89]|10)`},
+							Regex: `^(?:5(?:0[89]|10))`},
 						"남해군": {
-							Regex: `^524`},
+							Regex: `^(?:524)`},
 						"밀양시": {
-							Regex: `^504`},
+							Regex: `^(?:504)`},
 						"사천시": {
-							Regex: `^525`},
+							Regex: `^(?:525)`},
 						"산청군": {
-							Regex: `^522`},
+							Regex: `^(?:522)`},
 						"양산시": {
-							Regex: `^50[56]`},
+							Regex: `^(?:50[56])`},
 						"의령군": {
-							Regex: `^521`},
+							Regex: `^(?:521)`},
 						"진주시": {
-							Regex: `^52[6-8]`},
+							Regex: `^(?:52[6-8])`},
 						"창녕군": {
-							Regex: `^503`},
+							Regex: `^(?:503)`},
 						"창원시": {
-							Regex: `^51[1-7]`,
+							Regex: `^(?:51[1-7])`,
 							SubdivisionRegex: map[string]PostCodeRegexData{
 								"마산합포구": {
-									Regex: `^51[237]`},
+									Regex: `^(?:51[237])`},
 								"마산회원구": {
-									Regex: `^51[23]`},
+									Regex: `^(?:51[23])`},
 								"성산구": {
-									Regex: `^51[457]`},
+									Regex: `^(?:51[457])`},
 								"의창구": {
-									Regex: `^51[1-4]`},
+									Regex: `^(?:51[1-4])`},
 								"진해구": {
-									Regex: `^51[5-7]`},
+									Regex: `^(?:51[5-7])`},
 							}},
 						"통영시": {
-							Regex: `^53[01]`},
+							Regex: `^(?:53[01])`},
 						"하동군": {
-							Regex: `^523`},
+							Regex: `^(?:523)`},
 						"함안군": {
-							Regex: `^520`},
+							Regex: `^(?:520)`},
 						"함양군": {
-							Regex: `^500`},
+							Regex: `^(?:500)`},
 						"합천군": {
-							Regex: `^502`},
+							Regex: `^(?:502)`},
 					}},
 				"49": {
-					Regex: `^63[0-356]\d`,
+					Regex: `^(?:63[0-356]\d)`,
 					SubdivisionRegex: map[string]PostCodeRegexData{
 						"서귀포시": {
-							Regex: `^63[56]`},
+							Regex: `^(?:63[56])`},
 						"제주시": {
-							Regex: `^63[0-3]`},
+							Regex: `^(?:63[0-3])`},
 					}},
 				"50": {
-					Regex: `^30[01]\d`},
+					Regex: `^(?:30[01]\d)`},
 			},
 		},
 		AdministrativeAreas: map[string][]AdministrativeAreaData{
