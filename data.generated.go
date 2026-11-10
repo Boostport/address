@@ -7838,7 +7838,7 @@ var generated = data{
 						"Paiçandu": {
 							regex: `^(?:871)`},
 						"Palmas": {
-							regex: `^(?:855)`},
+							regex: `^(?:855|8569)`},
 						"Palmeira": {
 							regex: `^(?:841)`},
 						"Palmital": {
@@ -8381,6 +8381,8 @@ var generated = data{
 							regex: `^(?:599)`},
 						"Equador": {
 							regex: `^(?:593)`},
+						"Espírito Santo": {
+							regex: `^(?:591)`},
 						"Extremoz": {
 							regex: `^(?:595)`},
 						"Felipe Guerra": {
@@ -9934,7 +9936,7 @@ var generated = data{
 						"Itapiranga": {
 							regex: `^(?:898)`},
 						"Itapoá": {
-							regex: `^(?:892)`},
+							regex: `^(?:89[23])`},
 						"Ituporanga": {
 							regex: `^(?:884)`},
 						"Itá": {
@@ -27024,6 +27026,10 @@ var generated = data{
 						{
 							ID:   "Equador",
 							Name: "Equador",
+						},
+						{
+							ID:   "Espírito Santo",
+							Name: "Espírito Santo",
 						},
 						{
 							ID:   "Extremoz",
@@ -49808,6 +49814,10 @@ var generated = data{
 									Name: "Lin'an Shi",
 								},
 								{
+									ID:   "临平区",
+									Name: "Linping Qu",
+								},
+								{
 									ID:   "上城区",
 									Name: "Shangcheng Qu",
 								},
@@ -63455,6 +63465,10 @@ var generated = data{
 									Name: "临安市",
 								},
 								{
+									ID:   "临平区",
+									Name: "临平区",
+								},
+								{
 									ID:   "上城区",
 									Name: "上城区",
 								},
@@ -71255,38 +71269,26 @@ var generated = data{
 					subdivisionRegex: map[string]postCodeRegex{
 						"강화군": {
 							regex: `^(?:230)`},
+						"검단구": {
+							regex: `^(?:22[6-8]|23[45])`},
 						"계양구": {
 							regex: `^(?:21[01])`},
 						"남동구": {
 							regex: `^(?:21[5-7])`},
-						"동구": {
-							regex: `^(?:225)`},
 						"미추홀구": {
 							regex: `^(?:22[12])`},
 						"부평구": {
 							regex: `^(?:21[34])`},
-						"서구": {
-							regex: `^(?:22[6-8])`},
+						"서해구": {
+							regex: `^(?:22[6-9])`},
 						"연수구": {
 							regex: `^(?:2(?:19|20))`},
+						"영종구": {
+							regex: `^(?:22[34]|23[23])`},
 						"옹진군": {
 							regex: `^(?:231)`},
-						"중구": {
-							regex: `^(?:22[34])`},
-					}},
-				"29": {
-					regex: `^(?:6[12]\d{2})`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"광산구": {
-							regex: `^(?:62[2-4])`},
-						"남구": {
-							regex: `^(?:61[67])`},
-						"동구": {
-							regex: `^(?:61[45])`},
-						"북구": {
-							regex: `^(?:61[0-2])`},
-						"서구": {
-							regex: `^(?:6(?:19|20))`},
+						"제물포구": {
+							regex: `^(?:22[3-5])`},
 					}},
 				"30": {
 					regex: `^(?:3[45]\d{2})`,
@@ -71589,54 +71591,6 @@ var generated = data{
 							regex: `^(?:56[12])`},
 						"진안군": {
 							regex: `^(?:554)`},
-					}},
-				"46": {
-					regex: `^(?:5[7-9]\d{2})`,
-					subdivisionRegex: map[string]postCodeRegex{
-						"강진군": {
-							regex: `^(?:592)`},
-						"고흥군": {
-							regex: `^(?:595)`},
-						"곡성군": {
-							regex: `^(?:575)`},
-						"광양시": {
-							regex: `^(?:57[78])`},
-						"구례군": {
-							regex: `^(?:576)`},
-						"나주시": {
-							regex: `^(?:58[23])`},
-						"담양군": {
-							regex: `^(?:573)`},
-						"목포시": {
-							regex: `^(?:58[67])`},
-						"무안군": {
-							regex: `^(?:585)`},
-						"보성군": {
-							regex: `^(?:594)`},
-						"순천시": {
-							regex: `^(?:5(?:79|80))`},
-						"신안군": {
-							regex: `^(?:588)`},
-						"여수시": {
-							regex: `^(?:59[67])`},
-						"영광군": {
-							regex: `^(?:570)`},
-						"영암군": {
-							regex: `^(?:584)`},
-						"완도군": {
-							regex: `^(?:591)`},
-						"장성군": {
-							regex: `^(?:572)`},
-						"장흥군": {
-							regex: `^(?:593)`},
-						"진도군": {
-							regex: `^(?:589)`},
-						"함평군": {
-							regex: `^(?:571)`},
-						"해남군": {
-							regex: `^(?:590)`},
-						"화순군": {
-							regex: `^(?:581)`},
 					}},
 				"47": {
 					regex: `^(?:(?:3[6-9]|40)\d{2})`,
@@ -72146,33 +72100,6 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "29",
-					Name:      "Gwangju",
-					PostalKey: "광주광역시",
-					Localities: []locality{
-						{
-							ID:   "북구",
-							Name: "Buk-gu",
-						},
-						{
-							ID:   "동구",
-							Name: "Dong-gu",
-						},
-						{
-							ID:   "광산구",
-							Name: "Gwangsan-gu",
-						},
-						{
-							ID:   "남구",
-							Name: "Nam-gu",
-						},
-						{
-							ID:   "서구",
-							Name: "Seo-gu",
-						},
-					},
-				},
-				{
 					ID:        "41",
 					Name:      "Gyeonggi-do",
 					PostalKey: "경기도",
@@ -72613,20 +72540,20 @@ var generated = data{
 							Name: "Bupyeong-gu",
 						},
 						{
-							ID:   "동구",
-							Name: "Dong-gu",
-						},
-						{
 							ID:   "강화군",
 							Name: "Ganghwa-gun",
+						},
+						{
+							ID:   "검단구",
+							Name: "Geomdan-gu",
 						},
 						{
 							ID:   "계양구",
 							Name: "Gyeyang-gu",
 						},
 						{
-							ID:   "중구",
-							Name: "Jung-gu",
+							ID:   "제물포구",
+							Name: "Jemulpo-gu",
 						},
 						{
 							ID:   "미추홀구",
@@ -72641,8 +72568,12 @@ var generated = data{
 							Name: "Ongjin-gun",
 						},
 						{
-							ID:   "서구",
-							Name: "Seo-gu",
+							ID:   "서해구",
+							Name: "Seohae-gu",
+						},
+						{
+							ID:   "영종구",
+							Name: "Yeongjong-gu",
 						},
 						{
 							ID:   "연수구",
@@ -72735,101 +72666,6 @@ var generated = data{
 						{
 							ID:   "완주군",
 							Name: "Wanju-gun",
-						},
-					},
-				},
-				{
-					ID:        "46",
-					Name:      "Jeollanam-do",
-					PostalKey: "전라남도",
-					Localities: []locality{
-						{
-							ID:   "보성군",
-							Name: "Boseong-gun",
-						},
-						{
-							ID:   "담양군",
-							Name: "Damyang-gun",
-						},
-						{
-							ID:   "강진군",
-							Name: "Gangjin-gun",
-						},
-						{
-							ID:   "고흥군",
-							Name: "Goheung-gun",
-						},
-						{
-							ID:   "곡성군",
-							Name: "Gokseong-gun",
-						},
-						{
-							ID:   "구례군",
-							Name: "Gurye-gun",
-						},
-						{
-							ID:   "광양시",
-							Name: "Gwangyang-si",
-						},
-						{
-							ID:   "해남군",
-							Name: "Haenam-gun",
-						},
-						{
-							ID:   "함평군",
-							Name: "Hampyeong-gun",
-						},
-						{
-							ID:   "화순군",
-							Name: "Hwasun-gun",
-						},
-						{
-							ID:   "장흥군",
-							Name: "Jangheung-gun",
-						},
-						{
-							ID:   "장성군",
-							Name: "Jangseong-gun",
-						},
-						{
-							ID:   "진도군",
-							Name: "Jindo-gun",
-						},
-						{
-							ID:   "목포시",
-							Name: "Mokpo-si",
-						},
-						{
-							ID:   "무안군",
-							Name: "Muan-gun",
-						},
-						{
-							ID:   "나주시",
-							Name: "Naju-si",
-						},
-						{
-							ID:   "신안군",
-							Name: "Sinan-gun",
-						},
-						{
-							ID:   "순천시",
-							Name: "Suncheon-si",
-						},
-						{
-							ID:   "완도군",
-							Name: "Wando-gun",
-						},
-						{
-							ID:   "영암군",
-							Name: "Yeongam-gun",
-						},
-						{
-							ID:   "영광군",
-							Name: "Yeonggwang-gun",
-						},
-						{
-							ID:   "여수시",
-							Name: "Yeosu-si",
 						},
 					},
 				},
@@ -73587,33 +73423,6 @@ var generated = data{
 					},
 				},
 				{
-					ID:        "29",
-					Name:      "광주",
-					PostalKey: "광주광역시",
-					Localities: []locality{
-						{
-							ID:   "광산구",
-							Name: "광산구",
-						},
-						{
-							ID:   "남구",
-							Name: "남구",
-						},
-						{
-							ID:   "동구",
-							Name: "동구",
-						},
-						{
-							ID:   "북구",
-							Name: "북구",
-						},
-						{
-							ID:   "서구",
-							Name: "서구",
-						},
-					},
-				},
-				{
 					ID:        "27",
 					Name:      "대구",
 					PostalKey: "대구광역시",
@@ -74005,16 +73814,16 @@ var generated = data{
 							Name: "강화군",
 						},
 						{
+							ID:   "검단구",
+							Name: "검단구",
+						},
+						{
 							ID:   "계양구",
 							Name: "계양구",
 						},
 						{
 							ID:   "남동구",
 							Name: "남동구",
-						},
-						{
-							ID:   "동구",
-							Name: "동구",
 						},
 						{
 							ID:   "미추홀구",
@@ -74025,115 +73834,24 @@ var generated = data{
 							Name: "부평구",
 						},
 						{
-							ID:   "서구",
-							Name: "서구",
+							ID:   "서해구",
+							Name: "서해구",
 						},
 						{
 							ID:   "연수구",
 							Name: "연수구",
 						},
 						{
+							ID:   "영종구",
+							Name: "영종구",
+						},
+						{
 							ID:   "옹진군",
 							Name: "옹진군",
 						},
 						{
-							ID:   "중구",
-							Name: "중구",
-						},
-					},
-				},
-				{
-					ID:        "46",
-					Name:      "전남",
-					PostalKey: "전라남도",
-					Localities: []locality{
-						{
-							ID:   "강진군",
-							Name: "강진군",
-						},
-						{
-							ID:   "고흥군",
-							Name: "고흥군",
-						},
-						{
-							ID:   "곡성군",
-							Name: "곡성군",
-						},
-						{
-							ID:   "광양시",
-							Name: "광양시",
-						},
-						{
-							ID:   "구례군",
-							Name: "구례군",
-						},
-						{
-							ID:   "나주시",
-							Name: "나주시",
-						},
-						{
-							ID:   "담양군",
-							Name: "담양군",
-						},
-						{
-							ID:   "목포시",
-							Name: "목포시",
-						},
-						{
-							ID:   "무안군",
-							Name: "무안군",
-						},
-						{
-							ID:   "보성군",
-							Name: "보성군",
-						},
-						{
-							ID:   "순천시",
-							Name: "순천시",
-						},
-						{
-							ID:   "신안군",
-							Name: "신안군",
-						},
-						{
-							ID:   "여수시",
-							Name: "여수시",
-						},
-						{
-							ID:   "영광군",
-							Name: "영광군",
-						},
-						{
-							ID:   "영암군",
-							Name: "영암군",
-						},
-						{
-							ID:   "완도군",
-							Name: "완도군",
-						},
-						{
-							ID:   "장성군",
-							Name: "장성군",
-						},
-						{
-							ID:   "장흥군",
-							Name: "장흥군",
-						},
-						{
-							ID:   "진도군",
-							Name: "진도군",
-						},
-						{
-							ID:   "함평군",
-							Name: "함평군",
-						},
-						{
-							ID:   "해남군",
-							Name: "해남군",
-						},
-						{
-							ID:   "화순군",
-							Name: "화순군",
+							ID:   "제물포구",
+							Name: "제물포구",
 						},
 					},
 				},
@@ -74433,7 +74151,7 @@ var generated = data{
 		Name:            "KAZAKHSTAN",
 		DefaultLanguage: "kk",
 		PostCodeRegex: postCodeRegex{
-			regex: `^(\d{6})$`},
+			regex: `^([A-Z]\d{2}[A-Z0-9]{4}|\d{6})$`},
 		Format: "%Z%n%S%n%C%n%A%n%O%n%N",
 		AllowedFields: map[Field]struct{}{
 			AdministrativeArea: {},
@@ -76043,7 +75761,7 @@ var generated = data{
 		Name:            "NIGERIA",
 		DefaultLanguage: "en",
 		PostCodeRegex: postCodeRegex{
-			regex: `^(\d{6})$`},
+			regex: `^([A-Z]{2}[ -]?(?:0[1-9]|[1-9]\d)[ -]?[A-Z\d]{3}[ -]?[A-Z]{2}[ -]?(?:0[1-9]|[1-9]\d)|\d{6})$`},
 		Format:                     "%N%n%O%n%A%n%D%n%C %Z%n%S",
 		AdministrativeAreaNameType: State,
 		AllowedFields: map[Field]struct{}{
@@ -76058,6 +75776,7 @@ var generated = data{
 		Upper: map[Field]struct{}{
 			AdministrativeArea: {},
 			Locality:           {},
+			PostCode:           {},
 		},
 		AdministrativeAreas: map[string][]administrativeArea{
 			"en": {
@@ -87331,7 +87050,7 @@ var generated = data{
 				},
 				{
 					ID:        "56",
-					Name:      "Bac Ninh Province",
+					Name:      "Bac Ninh City",
 					PostalKey: "Bắc Ninh",
 				},
 				{
@@ -87396,7 +87115,7 @@ var generated = data{
 				},
 				{
 					ID:        "39",
-					Name:      "Dong Nai Province",
+					Name:      "Dong Nai City",
 					PostalKey: "Đồng Nai",
 				},
 				{
